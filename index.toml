@@ -54,3 +54,8 @@ metafile = true
 file = "mods/storage-drawers.pw.toml"
 hash = "592910d12bfb5966d1c142b2ba219e6b79a09f96e3c06a4cef3d93645d1ec3f7"
 metafile = true
+
+[[files]]
+file = "mods/toms-storage.pw.toml"
+hash = "ed9f3adc51548afe0756eb9e527a1272dda6b407e27f00457659c283edea14ea"
+metafile = true
