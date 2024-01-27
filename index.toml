@@ -26,6 +26,11 @@ hash = "09c8abfaa96974aa8cf2e2f41fc4ef6829b2660a84511d6b77df931a739ac171"
 metafile = true
 
 [[files]]
+file = "mods/chat-heads.pw.toml"
+hash = "897f1247fd595e1bf90a2dde57a8ee35aeffca6fac1475dce794d7a4576dc011"
+metafile = true
+
+[[files]]
 file = "mods/cloth-config.pw.toml"
 hash = "38cf4a76862812fefc9b1ae0b8fac02b3f706716f3228eb859b511950273e791"
 metafile = true
