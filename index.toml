@@ -182,6 +182,16 @@ hash = "da7df0ef478a2760755cdb092276426649e35f3d01d11e9af4d220f01692c454"
 metafile = true
 
 [[files]]
+file = "mods/just-zoom.pw.toml"
+hash = "70d7de27218f14f5ef6ed6d23833189abc0b3c50e89033e0d27c4e43d380a006"
+metafile = true
+
+[[files]]
+file = "mods/konkrete.pw.toml"
+hash = "fa7634d905dd53799f9b42d57f7954a9b04df7a9f9e95760b310f2861ac630de"
+metafile = true
+
+[[files]]
 file = "mods/kubejs-create.pw.toml"
 hash = "6ba38b772ff6217503bbba600deef53ae2b57b481fc7bcb304642e24e0f79136"
 metafile = true
@@ -294,9 +304,4 @@ metafile = true
 [[files]]
 file = "mods/trash-cans.pw.toml"
 hash = "8f4cbc021d4158a2ae30f0cc3090e00bcf38121b0bef53c2e01e4b97e9ab5859"
-metafile = true
-
-[[files]]
-file = "mods/wi-zoom.pw.toml"
-hash = "11c6be6047de8136ed9048f4e3ef3eaf4bfc144b5480b5b474e5c4a7b0093a10"
 metafile = true
