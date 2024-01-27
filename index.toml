@@ -181,6 +181,11 @@ hash = "11076d97e1627a4355d0bc985896766d50f9161e38f22f50a7abdbdad371e6ad"
 metafile = true
 
 [[files]]
+file = "mods/ping-wheel.pw.toml"
+hash = "a8f888a312e8b0dc77e94f2cdf144c3300ee804d3ffa65c959efd35d849ee3e4"
+metafile = true
+
+[[files]]
 file = "mods/placebo.pw.toml"
 hash = "3efe1725ae6105d992ab8be92044c83e1886b0b9f0972415c3f72ab018e82f79"
 metafile = true
