@@ -232,16 +232,6 @@ hash = "ea6ddbc21c6d4fb8079c243f7b40ca49adc67b126183673eb5505a640914d72d"
 metafile = true
 
 [[files]]
-file = "mods/resourceful-config.pw.toml"
-hash = "92b0bc142a7cbc4af73ec922b72e9ab6f7b41cedc35a7dbbd49bbc3d66f88fcc"
-metafile = true
-
-[[files]]
-file = "mods/resourceful-lib.pw.toml"
-hash = "1b81dd66034ae46b30ca85679c1482596caf26ca6e71c820f5cdeade760e5b93"
-metafile = true
-
-[[files]]
 file = "mods/rhino.pw.toml"
 hash = "614a7bd300f1eac1aa5693b2b331d3dab75bd2f1e5989ab14f8d463c3b58d19c"
 metafile = true
