@@ -1,13 +1,13 @@
 name = "AntiPortals"
-filename = "antiportals-mc1.20.1-1.1.jar"
+filename = "antiportals-m1.18.2-1.1.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/2IyQrutX/versions/624fGoEl/antiportals-mc1.20.1-1.1.jar"
+url = "https://cdn.modrinth.com/data/2IyQrutX/versions/PtGFzHCS/antiportals-m1.18.2-1.1.jar"
 hash-format = "sha1"
-hash = "0145f6616ef6e3bfba7e4e202a3bd141d651c801"
+hash = "42ef5cf246a102912fabc2215bc5e42498f8c773"
 
 [update]
 [update.modrinth]
 mod-id = "2IyQrutX"
-version = "624fGoEl"
+version = "PtGFzHCS"

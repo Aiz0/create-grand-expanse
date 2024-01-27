@@ -1,13 +1,13 @@
 name = "Botarium"
-filename = "botarium-forge-1.20.1-2.3.1.jar"
+filename = "botarium-forge-1.18.2-2.0.5.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/2u6LRnMa/versions/aB6vOqFQ/botarium-forge-1.20.1-2.3.1.jar"
+url = "https://cdn.modrinth.com/data/2u6LRnMa/versions/WQsGLmIm/botarium-forge-1.18.2-2.0.5.jar"
 hash-format = "sha1"
-hash = "63771432a99cbef41cd5fb29035120bac5fb963b"
+hash = "f09f6b30017476f1135dd8fccb446ab5ea8cd52e"
 
 [update]
 [update.modrinth]
 mod-id = "2u6LRnMa"
-version = "aB6vOqFQ"
+version = "WQsGLmIm"
