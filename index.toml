@@ -33,7 +33,7 @@ metafile = true
 
 [[files]]
 file = "mods/architectury-api.pw.toml"
-hash = "4864451af376b26104b421900f69a0bea7c462edc2e47e359a341dbc457f3508"
+hash = "0112d33ef55ca337e21a5d71bb570ef8a72eb408f68ad1c9b7f58835cf579980"
 metafile = true
 
 [[files]]
@@ -169,6 +169,11 @@ metafile = true
 [[files]]
 file = "mods/harvest-with-ease.pw.toml"
 hash = "52efe5788d0d3e75abac3cbf3a0f61dc86e0fe64e07dfb0225db2bdcec8e173b"
+metafile = true
+
+[[files]]
+file = "mods/item-filters.pw.toml"
+hash = "b5d50a2815512a7e2224173edd77f7b798c29607640f8144e4c3f122d61b40d6"
 metafile = true
 
 [[files]]
