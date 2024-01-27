@@ -1,6 +1,22 @@
 hash-format = "sha256"
 
 [[files]]
+file = ".github/workflows/super-linter.yml"
+hash = "e26b7bda1caec83beaea9b94a2c61596b5469a31e806394937cc0e87bcdbf580"
+
+[[files]]
+file = ".prettierrc"
+hash = "238510728f79b3a68ede8e4cbee8184082dbd3079adf76a9874648b0b8e633b5"
+
+[[files]]
+file = ".vscode/settings.json"
+hash = "80a24f604988a4f268e073e399a594ff9a3c82ead06b23c4ae87480f464fb123"
+
+[[files]]
+file = "README.asc"
+hash = "8dfee6d0238d13a6c04229743ce7bde940f9505380b37984c10ab4dfe5f20d49"
+
+[[files]]
 file = "mods/ad-astra.pw.toml"
 hash = "0ebc4981674c04268946b87795d4c5ac7f94aa7422edd139b5123922a2099a34"
 metafile = true
@@ -148,11 +164,6 @@ metafile = true
 [[files]]
 file = "mods/fusion-connected-textures.pw.toml"
 hash = "237943d8bc91464f51cd8e2af91a0b5415622e87d2315d467b50b2e1b5af6391"
-metafile = true
-
-[[files]]
-file = "mods/geophilic.pw.toml"
-hash = "dff520bc4934ac3bf7fa1b0634c25a8d3b150117d20860f2d13b2d88664c52f1"
 metafile = true
 
 [[files]]
