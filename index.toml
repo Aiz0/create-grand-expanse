@@ -12,7 +12,7 @@ metafile = true
 
 [[files]]
 file = "mods/architectury-api.pw.toml"
-hash = "52614d4074179a2819bbb70aec41cf3dd181e6d4bf9763e181fb2fd2a539e189"
+hash = "b7321e670cc58aa8062f7cae470c9806c2ed83680ca598df5fe6e75ab40df452"
 metafile = true
 
 [[files]]
@@ -23,6 +23,11 @@ metafile = true
 [[files]]
 file = "mods/canary.pw.toml"
 hash = "09c8abfaa96974aa8cf2e2f41fc4ef6829b2660a84511d6b77df931a739ac171"
+metafile = true
+
+[[files]]
+file = "mods/cloth-config.pw.toml"
+hash = "38cf4a76862812fefc9b1ae0b8fac02b3f706716f3228eb859b511950273e791"
 metafile = true
 
 [[files]]
@@ -88,6 +93,11 @@ metafile = true
 [[files]]
 file = "mods/placebo.pw.toml"
 hash = "3efe1725ae6105d992ab8be92044c83e1886b0b9f0972415c3f72ab018e82f79"
+metafile = true
+
+[[files]]
+file = "mods/rei.pw.toml"
+hash = "9f406e80eecb4fd2e3e0e1e50add917360d25baedcb392a12126b991ae1a6550"
 metafile = true
 
 [[files]]
