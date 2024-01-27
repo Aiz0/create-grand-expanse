@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/forgery/features.ini"
+hash = "96addbc712254a3ea0af06709df13079c4cc9b55d215896063a52dd8a5def4d3"
+
+[[files]]
 file = "mods/ad-astra.pw.toml"
 hash = "0ebc4981674c04268946b87795d4c5ac7f94aa7422edd139b5123922a2099a34"
 metafile = true
