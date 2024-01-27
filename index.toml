@@ -6,6 +6,11 @@ hash = "0ebc4981674c04268946b87795d4c5ac7f94aa7422edd139b5123922a2099a34"
 metafile = true
 
 [[files]]
+file = "mods/ae2.pw.toml"
+hash = "795d8e7f803f53d432f1f9440d3edccdf891f9799d448c5815283fd6086b2a3c"
+metafile = true
+
+[[files]]
 file = "mods/architectury-api.pw.toml"
 hash = "52614d4074179a2819bbb70aec41cf3dd181e6d4bf9763e181fb2fd2a539e189"
 metafile = true
