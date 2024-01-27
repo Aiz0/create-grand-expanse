@@ -61,6 +61,11 @@ hash = "814db4ad681a0bf1fb6979caf675132a5703ee347aa30a77d07339343890bd03"
 metafile = true
 
 [[files]]
+file = "mods/ears.pw.toml"
+hash = "33b44f9dd0b1fef2c70b7dfa2579762051df57b13c78535be927a40dd4cf98a6"
+metafile = true
+
+[[files]]
 file = "mods/embeddium.pw.toml"
 hash = "a56422457504a6bdabee7441b050124baab086ed3daf48420b3f44776b0561d5"
 metafile = true
