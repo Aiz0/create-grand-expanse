@@ -134,3 +134,8 @@ metafile = true
 file = "mods/toms-storage.pw.toml"
 hash = "ed9f3adc51548afe0756eb9e527a1272dda6b407e27f00457659c283edea14ea"
 metafile = true
+
+[[files]]
+file = "mods/wi-zoom.pw.toml"
+hash = "11c6be6047de8136ed9048f4e3ef3eaf4bfc144b5480b5b474e5c4a7b0093a10"
+metafile = true
