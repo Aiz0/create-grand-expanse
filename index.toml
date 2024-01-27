@@ -247,6 +247,11 @@ hash = "c3ddf14ff64f95ad0c83ff5a0c07d1b1cb9f560fa383175aec72d6a0af7f4328"
 metafile = true
 
 [[files]]
+file = "mods/rubidium.pw.toml"
+hash = "2fe5c063db5622e0e0a56f739230471de2dd26e08ec80d74fb9c5b2afbe67dc3"
+metafile = true
+
+[[files]]
 file = "mods/smooth-chunk-save.pw.toml"
 hash = "7863c6ff5c8ee607d67b7f8065904f99a81903f983adc7dca35184e760358993"
 metafile = true
@@ -279,6 +284,11 @@ metafile = true
 [[files]]
 file = "mods/supermartijn642s-core-lib.pw.toml"
 hash = "0b0588c945bc9678cc99a359cb08f02edbc0a5dc55a527a9b75a8d38dd5aa406"
+metafile = true
+
+[[files]]
+file = "mods/textrues-rubidium-options.pw.toml"
+hash = "3c6c65e668388c594370efbdf63b78a0e7020e4d7a9597cb18bae27a1501ee71"
 metafile = true
 
 [[files]]
