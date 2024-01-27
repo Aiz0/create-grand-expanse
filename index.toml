@@ -17,11 +17,6 @@ file = "README.asc"
 hash = "8dfee6d0238d13a6c04229743ce7bde940f9505380b37984c10ab4dfe5f20d49"
 
 [[files]]
-file = "mods/ad-astra.pw.toml"
-hash = "0ebc4981674c04268946b87795d4c5ac7f94aa7422edd139b5123922a2099a34"
-metafile = true
-
-[[files]]
 file = "mods/ae2.pw.toml"
 hash = "16f4e87791c6d8aa4dfdd6972cadb1f6464624ca942a7f32e0898a5ce4e61268"
 metafile = true
@@ -44,6 +39,11 @@ metafile = true
 [[files]]
 file = "mods/better-advancements.pw.toml"
 hash = "ce98fd909957a9af75217647fac55add03d948210be4a362be2bb5627aaa1871"
+metafile = true
+
+[[files]]
+file = "mods/beyond-earth.pw.toml"
+hash = "04cc1e4fcdc7bccd1a4906aa24b13350a7cdd7cae1a92a3d57f5d7f90c26e7d4"
 metafile = true
 
 [[files]]
