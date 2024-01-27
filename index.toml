@@ -121,6 +121,11 @@ hash = "107d43eaec4b656e198ac68571315ec47ed3f143b8d76800d88df702a678f041"
 metafile = true
 
 [[files]]
+file = "mods/harvest-with-ease.pw.toml"
+hash = "f34a2836de386f0b340d13a6895d36f6f227ece41bc00f9efcf7f1875e13cca7"
+metafile = true
+
+[[files]]
 file = "mods/jade-addons-forge.pw.toml"
 hash = "ee91acdffc481f535911c38fbc06c62c85e6531a2ee7e4e116401b3ad544e74a"
 metafile = true
