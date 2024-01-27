@@ -82,11 +82,6 @@ hash = "4bead8d6c5c8980ab13895e7378c508f7ad9d51c80163fbb202776551f8a3384"
 metafile = true
 
 [[files]]
-file = "mods/corpse.pw.toml"
-hash = "fdda2d2ff2f57853b01df78d86334dd1ef20afbeb6fcf3949caae4580d31f911"
-metafile = true
-
-[[files]]
 file = "mods/create-deco.pw.toml"
 hash = "a870f4e08855ee1eb1845baa93c0f941f8b39842e20f6d43e78fa8b212508a87"
 metafile = true
@@ -164,6 +159,11 @@ metafile = true
 [[files]]
 file = "mods/fusion-connected-textures.pw.toml"
 hash = "237943d8bc91464f51cd8e2af91a0b5415622e87d2315d467b50b2e1b5af6391"
+metafile = true
+
+[[files]]
+file = "mods/gravestone-mod.pw.toml"
+hash = "7638c6fcf4af1039a9c99717ce8fb029ba7e7bec473994565e743d26da44a516"
 metafile = true
 
 [[files]]
