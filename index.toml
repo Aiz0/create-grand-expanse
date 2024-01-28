@@ -9,6 +9,14 @@ file = "config/forgery/features.ini"
 hash = "96addbc712254a3ea0af06709df13079c4cc9b55d215896063a52dd8a5def4d3"
 
 [[files]]
+file = "kubejs/README.txt"
+hash = "989f3737ae4621b8ff6730bce4cbeeee756921e7e510e0c281c8a350501d98af"
+
+[[files]]
+file = "kubejs/server_scripts/server.js"
+hash = "871dee465c0d596b84dcb9ac8cdad686b31c320ee66c51acf1ab0384cb28adee"
+
+[[files]]
 file = "mods/ad-astra.pw.toml"
 hash = "9931ba04fc0f075c9d132714dc703b08cd11aaab27a7db9b28d6c4fa79eb50b2"
 metafile = true
@@ -301,6 +309,11 @@ metafile = true
 [[files]]
 file = "mods/polymorph.pw.toml"
 hash = "acf3d6451ac44c6ae1c17f50b65eb8495ed24f851f818f45346a15d93696f611"
+metafile = true
+
+[[files]]
+file = "mods/probejs.pw.toml"
+hash = "54ea764147bb6bcce37550fa8676ec0c88b440681333123d5f3dc342325d23f0"
 metafile = true
 
 [[files]]
