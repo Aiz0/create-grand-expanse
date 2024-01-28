@@ -82,8 +82,18 @@ hash = "949bf41349bbdfbc8b86379546d30ad19253719c38163e25245e7443bcdaa2e4"
 metafile = true
 
 [[files]]
+file = "mods/create-connected.pw.toml"
+hash = "807e91eda37b895410e3be0c9bc4b664af03fb17d59bec30ee2aa0b0f80628af"
+metafile = true
+
+[[files]]
 file = "mods/create-deco.pw.toml"
 hash = "b0bb61105e0ac0c763edfa41ea5b0406f157bc17e421af1bf8b2cbb49325ced6"
+metafile = true
+
+[[files]]
+file = "mods/create-metallurgy.pw.toml"
+hash = "a31cecd1e29df0c562c412310f4e3aa811d3d4532bb3f2c8c762ad04bbc90a10"
 metafile = true
 
 [[files]]
