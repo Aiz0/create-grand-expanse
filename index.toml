@@ -232,6 +232,11 @@ hash = "ee7ab510ed54a662964184e366cb998e79df9a5ea4799b52a2426750a66ec083"
 metafile = true
 
 [[files]]
+file = "mods/mouse-tweaks.pw.toml"
+hash = "9cba22bdbc8c89d44438b1e22ae677f7d6bf1c7f1adecfff2760427f2d974dee"
+metafile = true
+
+[[files]]
 file = "mods/ping-wheel.pw.toml"
 hash = "608d611021d1846d054a1e2cd2991ee908a632144cc15465ce01ca5ef44fafe8"
 metafile = true
