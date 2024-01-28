@@ -17,6 +17,10 @@ file = "README.asc"
 hash = "4f00cddf56d89a8c8ea73fb06e2ded50bdf884bdf70487fe31290b57476443a3"
 
 [[files]]
+file = "kubejs/README.txt"
+hash = "989f3737ae4621b8ff6730bce4cbeeee756921e7e510e0c281c8a350501d98af"
+
+[[files]]
 file = "kubejs/server_scripts/server.js"
 hash = "871dee465c0d596b84dcb9ac8cdad686b31c320ee66c51acf1ab0384cb28adee"
 
@@ -437,4 +441,4 @@ metafile = true
 
 [[files]]
 file = "reload.sh"
-hash = "f09409a277cb9706e9740253845694a2b0eb3ec649239acbb8baad7e3b5c2d87"
+hash = "8b65ad661f7a5b29bbb367cd8163272acfe913e041b31c3201b87664ab168399"
