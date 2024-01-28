@@ -342,6 +342,11 @@ hash = "0bd8c291f5e00f334f49cd0dbbfa96af803a1f5da844003aafd7829d814974a5"
 metafile = true
 
 [[files]]
+file = "mods/terralith.pw.toml"
+hash = "970bd250c0bbd6ce0249c6e5bde09adabda4969e13ead743f684549b31beaace"
+metafile = true
+
+[[files]]
 file = "mods/thermal-expansion.pw.toml"
 hash = "a6eb809941af324a1cb499e32974e718ef1827eecb4270ee5dd209edc237b8f8"
 metafile = true
