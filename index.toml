@@ -1,20 +1,8 @@
 hash-format = "sha256"
 
 [[files]]
-file = ".github/workflows/super-linter.yml"
-hash = "e26b7bda1caec83beaea9b94a2c61596b5469a31e806394937cc0e87bcdbf580"
-
-[[files]]
-file = ".prettierrc"
-hash = "238510728f79b3a68ede8e4cbee8184082dbd3079adf76a9874648b0b8e633b5"
-
-[[files]]
-file = ".vscode/settings.json"
-hash = "8eb95bcbc154530931e15fc418c8b1fe991095671409552099ea1aa596999ede"
-
-[[files]]
-file = "README.asc"
-hash = "4f00cddf56d89a8c8ea73fb06e2ded50bdf884bdf70487fe31290b57476443a3"
+file = "LICENSE"
+hash = "01e95ac360b6293e22377aac91494120076a922c3e030766d2ad79d9329b6681"
 
 [[files]]
 file = "config/forgery/features.ini"
