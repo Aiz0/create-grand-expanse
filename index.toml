@@ -357,6 +357,11 @@ hash = "2033724e9709c1ccb35bbf7a116d5a9eac04c5267865a2dbeea89bab3a2ffbe8"
 metafile = true
 
 [[files]]
+file = "mods/torchmaster.pw.toml"
+hash = "abf3caed290977a3943d18ba395ad9c8d363c73b3cf74aed7aa5ad8c374f2e18"
+metafile = true
+
+[[files]]
 file = "mods/trash-cans.pw.toml"
 hash = "70d2151591356fb60fe868627cc07ccaae1ad41e6a9973678a7610c25e41231b"
 metafile = true
