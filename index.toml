@@ -17,6 +17,10 @@ file = "README.asc"
 hash = "4f00cddf56d89a8c8ea73fb06e2ded50bdf884bdf70487fe31290b57476443a3"
 
 [[files]]
+file = "kubejs/server_scripts/server.js"
+hash = "871dee465c0d596b84dcb9ac8cdad686b31c320ee66c51acf1ab0384cb28adee"
+
+[[files]]
 file = "mods/ad-astra.pw.toml"
 hash = "9931ba04fc0f075c9d132714dc703b08cd11aaab27a7db9b28d6c4fa79eb50b2"
 metafile = true
@@ -307,6 +311,11 @@ hash = "acf3d6451ac44c6ae1c17f50b65eb8495ed24f851f818f45346a15d93696f611"
 metafile = true
 
 [[files]]
+file = "mods/probejs.pw.toml"
+hash = "54ea764147bb6bcce37550fa8676ec0c88b440681333123d5f3dc342325d23f0"
+metafile = true
+
+[[files]]
 file = "mods/puzzles-lib.pw.toml"
 hash = "827b361fcddfa0bdb84bfa0ebf0e1a38b139804c92aaf9e39218d784e4111fb4"
 metafile = true
@@ -425,3 +434,7 @@ metafile = true
 file = "mods/trash-cans.pw.toml"
 hash = "70d2151591356fb60fe868627cc07ccaae1ad41e6a9973678a7610c25e41231b"
 metafile = true
+
+[[files]]
+file = "reload.sh"
+hash = "f09409a277cb9706e9740253845694a2b0eb3ec649239acbb8baad7e3b5c2d87"
