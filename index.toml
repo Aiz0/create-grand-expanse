@@ -282,6 +282,11 @@ hash = "6132d007267c3b5ad0634d2bd6e866357cfe387450ff1362e76732c75b4ea29f"
 metafile = true
 
 [[files]]
+file = "mods/shutup-experimental-settings.pw.toml"
+hash = "97fecd322567a954ea537e61feb6e0f848f307790d2e8a155af427c5910a4a4d"
+metafile = true
+
+[[files]]
 file = "mods/smooth-chunk-save.pw.toml"
 hash = "8d50dd4668b13a86e61d7c081e2892b64f19f2d79919020c5902d684e03522e0"
 metafile = true
