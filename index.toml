@@ -142,6 +142,11 @@ hash = "ea0d8c35669646b8d739a20b97a28c48744dcdea889ccc3c39ccd1431bf5cc6c"
 metafile = true
 
 [[files]]
+file = "mods/extended-cogwheels.pw.toml"
+hash = "11696288bc3f2f91bfd7f1c82fbe98c34bbbfa0c79561ecafcefd7e57969b8be"
+metafile = true
+
+[[files]]
 file = "mods/fallingleavesforge.pw.toml"
 hash = "e32f9d59ade1b79276e929121f03712e22395b1238e06ec8ae0a7550ac6d6ec4"
 metafile = true
