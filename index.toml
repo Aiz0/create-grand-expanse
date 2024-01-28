@@ -17,6 +17,10 @@ file = "README.asc"
 hash = "4f00cddf56d89a8c8ea73fb06e2ded50bdf884bdf70487fe31290b57476443a3"
 
 [[files]]
+file = "config/forgery/features.ini"
+hash = "96addbc712254a3ea0af06709df13079c4cc9b55d215896063a52dd8a5def4d3"
+
+[[files]]
 file = "mods/ad-astra.pw.toml"
 hash = "9931ba04fc0f075c9d132714dc703b08cd11aaab27a7db9b28d6c4fa79eb50b2"
 metafile = true
@@ -159,6 +163,11 @@ metafile = true
 [[files]]
 file = "mods/extended-cogwheels.pw.toml"
 hash = "11696288bc3f2f91bfd7f1c82fbe98c34bbbfa0c79561ecafcefd7e57969b8be"
+metafile = true
+
+[[files]]
+file = "mods/fabrication.pw.toml"
+hash = "bd3df70768fb7977f4284628616ea8221160f7eedc9631d92144a5feb0041a74"
 metafile = true
 
 [[files]]
