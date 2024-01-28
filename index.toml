@@ -102,6 +102,11 @@ hash = "278f53824f79ac545293d8fc3e73742a1a3f9d72cb708e48b598b523bc037df2"
 metafile = true
 
 [[files]]
+file = "mods/curios.pw.toml"
+hash = "912491bb046d36a1763a7891ebb176594db759d63072e874cdcefe25d5574a09"
+metafile = true
+
+[[files]]
 file = "mods/ears.pw.toml"
 hash = "e8522704a705980fdc5e35a8c8cb4083fa8cd1a20ac358b6e4c5f8a898f071eb"
 metafile = true
