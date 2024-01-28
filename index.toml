@@ -273,12 +273,12 @@ metafile = true
 
 [[files]]
 file = "mods/leaves-be-gone.pw.toml"
-hash = "6d5bbca37f778eb6e884a70cace0a24182109c324b33fb4ee309339d9b1e8a1d"
+hash = "338e95818aa7bdafffa43ff65a5779e4852fa185325ebfe28f86f5a354c3b22d"
 metafile = true
 
 [[files]]
 file = "mods/lmd.pw.toml"
-hash = "248236f9a25ecdaae6da07fca215de2e657c4c25db8d224f1d5fa77b4ac9f79a"
+hash = "9116ead38df9119fa9d8103c214482aedab1505554865cac1b3bd385019076bd"
 metafile = true
 
 [[files]]
@@ -408,7 +408,7 @@ metafile = true
 
 [[files]]
 file = "mods/terralith.pw.toml"
-hash = "970bd250c0bbd6ce0249c6e5bde09adabda4969e13ead743f684549b31beaace"
+hash = "64228ac782b244019e700da682e0006e9959f472035252c5a5354e0dc395d1e0"
 metafile = true
 
 [[files]]
