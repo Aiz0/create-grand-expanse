@@ -102,6 +102,11 @@ hash = "8db857d646fa9bc201fc1f2747d82ab8bbb69b98fa1d79a4d88fe0800071758e"
 metafile = true
 
 [[files]]
+file = "mods/create-mechanical-spawner.pw.toml"
+hash = "58aff494a185f0eb8f2062465e66412c18320c58c40682855a2394312534c158"
+metafile = true
+
+[[files]]
 file = "mods/create-metallurgy.pw.toml"
 hash = "a31cecd1e29df0c562c412310f4e3aa811d3d4532bb3f2c8c762ad04bbc90a10"
 metafile = true
