@@ -97,6 +97,11 @@ hash = "b0bb61105e0ac0c763edfa41ea5b0406f157bc17e421af1bf8b2cbb49325ced6"
 metafile = true
 
 [[files]]
+file = "mods/create-enchantment-industry.pw.toml"
+hash = "8db857d646fa9bc201fc1f2747d82ab8bbb69b98fa1d79a4d88fe0800071758e"
+metafile = true
+
+[[files]]
 file = "mods/create-metallurgy.pw.toml"
 hash = "a31cecd1e29df0c562c412310f4e3aa811d3d4532bb3f2c8c762ad04bbc90a10"
 metafile = true
