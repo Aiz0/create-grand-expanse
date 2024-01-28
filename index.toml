@@ -14,7 +14,7 @@ hash = "80a24f604988a4f268e073e399a594ff9a3c82ead06b23c4ae87480f464fb123"
 
 [[files]]
 file = "README.asc"
-hash = "8dfee6d0238d13a6c04229743ce7bde940f9505380b37984c10ab4dfe5f20d49"
+hash = "4f00cddf56d89a8c8ea73fb06e2ded50bdf884bdf70487fe31290b57476443a3"
 
 [[files]]
 file = "mods/ad-astra.pw.toml"
