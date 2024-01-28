@@ -77,6 +77,11 @@ hash = "828e6940eb60f08488cb0b477530ea82bd3ec631547a279590603cf7e20de9ff"
 metafile = true
 
 [[files]]
+file = "mods/controlling.pw.toml"
+hash = "7342959eb86faf584e6d64417064dd793ae6b4667f51954f4169d11fe5f0d5da"
+metafile = true
+
+[[files]]
 file = "mods/corpse.pw.toml"
 hash = "949bf41349bbdfbc8b86379546d30ad19253719c38163e25245e7443bcdaa2e4"
 metafile = true
