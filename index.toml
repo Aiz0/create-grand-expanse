@@ -47,6 +47,11 @@ hash = "d00e0c99eaf65566c8c26a95c11bda8c31d2b4cc868681b29f09871bc7e6bb66"
 metafile = true
 
 [[files]]
+file = "mods/blahaj-reforged.pw.toml"
+hash = "7b3e32d4e527b915afb6d611b3f49fccd29cc1ccbc8442d251eef0671f97d692"
+metafile = true
+
+[[files]]
 file = "mods/botarium.pw.toml"
 hash = "59512015694bd675c63264984669249c8190a37802427e7875b7f2d21d69e033"
 metafile = true
