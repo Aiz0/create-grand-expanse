@@ -1,0 +1,11 @@
+# .packwizignore follows the same format as .gitignore, and can be used to exclude unwanted files from pack exports
+# See https://git-scm.com/docs/gitignore
+
+# Exclude README
+/README.asc
+# Exclude everthing begining with a dot because it should only be editor stuff.
+/.*
+# probe stuff should not be necessary.
+/kubejs/probe
+# Aiz reload script
+/reload.sh
