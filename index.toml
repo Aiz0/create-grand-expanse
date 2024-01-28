@@ -212,6 +212,11 @@ hash = "2ca46f6c0e4176bad50a882b4bf1db0daf5cd271142b81644837b2fe2c9f3cee"
 metafile = true
 
 [[files]]
+file = "mods/leaves-be-gone.pw.toml"
+hash = "6d5bbca37f778eb6e884a70cace0a24182109c324b33fb4ee309339d9b1e8a1d"
+metafile = true
+
+[[files]]
 file = "mods/lmd.pw.toml"
 hash = "248236f9a25ecdaae6da07fca215de2e657c4c25db8d224f1d5fa77b4ac9f79a"
 metafile = true
@@ -224,6 +229,11 @@ metafile = true
 [[files]]
 file = "mods/placebo.pw.toml"
 hash = "954c1b5e2a9f16c08027875d6ee536058e617f644e7ed0f83915b4a504015364"
+metafile = true
+
+[[files]]
+file = "mods/puzzles-lib.pw.toml"
+hash = "827b361fcddfa0bdb84bfa0ebf0e1a38b139804c92aaf9e39218d784e4111fb4"
 metafile = true
 
 [[files]]
