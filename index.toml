@@ -1,6 +1,22 @@
 hash-format = "sha256"
 
 [[files]]
+file = ".github/workflows/super-linter.yml"
+hash = "e26b7bda1caec83beaea9b94a2c61596b5469a31e806394937cc0e87bcdbf580"
+
+[[files]]
+file = ".prettierrc"
+hash = "238510728f79b3a68ede8e4cbee8184082dbd3079adf76a9874648b0b8e633b5"
+
+[[files]]
+file = ".vscode/settings.json"
+hash = "80a24f604988a4f268e073e399a594ff9a3c82ead06b23c4ae87480f464fb123"
+
+[[files]]
+file = "README.asc"
+hash = "8dfee6d0238d13a6c04229743ce7bde940f9505380b37984c10ab4dfe5f20d49"
+
+[[files]]
 file = "mods/ad-astra.pw.toml"
 hash = "9931ba04fc0f075c9d132714dc703b08cd11aaab27a7db9b28d6c4fa79eb50b2"
 metafile = true
@@ -11,18 +27,13 @@ hash = "0404df67b1976c2bc5cbbf43af1c1a2e64d729f82213d0452f89baa0157f2d60"
 metafile = true
 
 [[files]]
-file = "mods/antiportals.pw.toml"
-hash = "5f34d805b6eeed607d47acbff3958522d86306004ae1185bdcd76a858c34624b"
-metafile = true
-
-[[files]]
 file = "mods/appleskin.pw.toml"
 hash = "1e876f20f5d441f1ba1fdbae58bd6c8679a9664ac41e0a4b57964530ff0205b8"
 metafile = true
 
 [[files]]
 file = "mods/architectury-api.pw.toml"
-hash = "e06965d8aea5dee2531377f962616b4843f3af7d5bea5b213a0b257f4595af0f"
+hash = "8c8f8222d0a2c3e1f673b137637b17bd87535b0aad111d79e242f18af48d0169"
 metafile = true
 
 [[files]]
@@ -158,6 +169,11 @@ metafile = true
 [[files]]
 file = "mods/harvest-with-ease.pw.toml"
 hash = "7cf489e054f61f32333feab802c59c7760b8fce70ed819ca47fdf41baf399d99"
+metafile = true
+
+[[files]]
+file = "mods/item-filters.pw.toml"
+hash = "e00e666fc6f0726fcca0f74f9252ba4b1022326ee65433b5aaa08bcd14f4390b"
 metafile = true
 
 [[files]]
