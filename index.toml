@@ -10,11 +10,11 @@ hash = "238510728f79b3a68ede8e4cbee8184082dbd3079adf76a9874648b0b8e633b5"
 
 [[files]]
 file = ".vscode/settings.json"
-hash = "80a24f604988a4f268e073e399a594ff9a3c82ead06b23c4ae87480f464fb123"
+hash = "8eb95bcbc154530931e15fc418c8b1fe991095671409552099ea1aa596999ede"
 
 [[files]]
 file = "README.asc"
-hash = "8dfee6d0238d13a6c04229743ce7bde940f9505380b37984c10ab4dfe5f20d49"
+hash = "4f00cddf56d89a8c8ea73fb06e2ded50bdf884bdf70487fe31290b57476443a3"
 
 [[files]]
 file = "mods/ad-astra.pw.toml"
@@ -87,8 +87,38 @@ hash = "949bf41349bbdfbc8b86379546d30ad19253719c38163e25245e7443bcdaa2e4"
 metafile = true
 
 [[files]]
+file = "mods/create-connected.pw.toml"
+hash = "807e91eda37b895410e3be0c9bc4b664af03fb17d59bec30ee2aa0b0f80628af"
+metafile = true
+
+[[files]]
 file = "mods/create-deco.pw.toml"
 hash = "b0bb61105e0ac0c763edfa41ea5b0406f157bc17e421af1bf8b2cbb49325ced6"
+metafile = true
+
+[[files]]
+file = "mods/create-enchantment-industry.pw.toml"
+hash = "8db857d646fa9bc201fc1f2747d82ab8bbb69b98fa1d79a4d88fe0800071758e"
+metafile = true
+
+[[files]]
+file = "mods/create-mechanical-spawner.pw.toml"
+hash = "58aff494a185f0eb8f2062465e66412c18320c58c40682855a2394312534c158"
+metafile = true
+
+[[files]]
+file = "mods/create-metallurgy.pw.toml"
+hash = "a31cecd1e29df0c562c412310f4e3aa811d3d4532bb3f2c8c762ad04bbc90a10"
+metafile = true
+
+[[files]]
+file = "mods/create-ore-excavation.pw.toml"
+hash = "dc14acfaaa1ddb6bc9a9f3550e92ab24e947cade2935615f41111e1e7ae32277"
+metafile = true
+
+[[files]]
+file = "mods/create-teleporters.pw.toml"
+hash = "4a5c24dfdc441bc675aa5b675de46c2921f310b3686cdcf54c1e6cf43718f89e"
 metafile = true
 
 [[files]]
@@ -119,6 +149,11 @@ metafile = true
 [[files]]
 file = "mods/entityculling.pw.toml"
 hash = "ea0d8c35669646b8d739a20b97a28c48744dcdea889ccc3c39ccd1431bf5cc6c"
+metafile = true
+
+[[files]]
+file = "mods/extended-cogwheels.pw.toml"
+hash = "11696288bc3f2f91bfd7f1c82fbe98c34bbbfa0c79561ecafcefd7e57969b8be"
 metafile = true
 
 [[files]]
@@ -172,6 +207,11 @@ hash = "c9ef346647b6d4ed7417f27768461cae6496449b74258b6d81c560e95259c9dd"
 metafile = true
 
 [[files]]
+file = "mods/geckolib.pw.toml"
+hash = "cf303e609b0beaf097122eecfa869d21be642e22465021f4f5aa0fa38c72b119"
+metafile = true
+
+[[files]]
 file = "mods/geophilic.pw.toml"
 hash = "80190a487d05dbc2a04925c2b6b3cb5e885f30da4e5559bb6bb34767b44f5694"
 metafile = true
@@ -209,6 +249,11 @@ metafile = true
 [[files]]
 file = "mods/konkrete.pw.toml"
 hash = "aa241e1683fe80eee9cb233d2a1685e4ee771f85723db9861c168be584d60c60"
+metafile = true
+
+[[files]]
+file = "mods/kotlin-for-forge.pw.toml"
+hash = "94d853ec0def62adb527aee046f2c4a32127076c2995ea5c29553534544e1c35"
 metafile = true
 
 [[files]]
@@ -304,6 +349,11 @@ metafile = true
 [[files]]
 file = "mods/shutup-experimental-settings.pw.toml"
 hash = "97fecd322567a954ea537e61feb6e0f848f307790d2e8a155af427c5910a4a4d"
+metafile = true
+
+[[files]]
+file = "mods/slice-and-dice.pw.toml"
+hash = "6b18e2055cddb936210b4f5a81374e509f32513c2716f7d240647e04b17109aa"
 metafile = true
 
 [[files]]
