@@ -37,6 +37,11 @@ hash = "8c8f8222d0a2c3e1f673b137637b17bd87535b0aad111d79e242f18af48d0169"
 metafile = true
 
 [[files]]
+file = "mods/autoreglib.pw.toml"
+hash = "2264acfbd388023f4c11b06b18e1a8b79b2b078e9fbf4cc38b31e4cb31c653dd"
+metafile = true
+
+[[files]]
 file = "mods/better-advancements.pw.toml"
 hash = "d00e0c99eaf65566c8c26a95c11bda8c31d2b4cc868681b29f09871bc7e6bb66"
 metafile = true
@@ -212,11 +217,6 @@ hash = "cf303e609b0beaf097122eecfa869d21be642e22465021f4f5aa0fa38c72b119"
 metafile = true
 
 [[files]]
-file = "mods/geophilic.pw.toml"
-hash = "80190a487d05dbc2a04925c2b6b3cb5e885f30da4e5559bb6bb34767b44f5694"
-metafile = true
-
-[[files]]
 file = "mods/harvest-with-ease.pw.toml"
 hash = "7cf489e054f61f32333feab802c59c7760b8fce70ed819ca47fdf41baf399d99"
 metafile = true
@@ -312,6 +312,11 @@ hash = "827b361fcddfa0bdb84bfa0ebf0e1a38b139804c92aaf9e39218d784e4111fb4"
 metafile = true
 
 [[files]]
+file = "mods/quark.pw.toml"
+hash = "c683cb91014392a4478573dcb54a22a64fdae1c04f998cd95b2e39bf313bdf1d"
+metafile = true
+
+[[files]]
 file = "mods/rechiseled-create.pw.toml"
 hash = "025fc5a67e964df180043021c826a9069537a516505db30d9f18a0822fe61f28"
 metafile = true
@@ -389,6 +394,11 @@ metafile = true
 [[files]]
 file = "mods/supermartijn642s-core-lib.pw.toml"
 hash = "0bd8c291f5e00f334f49cd0dbbfa96af803a1f5da844003aafd7829d814974a5"
+metafile = true
+
+[[files]]
+file = "mods/terralith.pw.toml"
+hash = "970bd250c0bbd6ce0249c6e5bde09adabda4969e13ead743f684549b31beaace"
 metafile = true
 
 [[files]]
