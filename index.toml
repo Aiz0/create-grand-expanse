@@ -117,6 +117,11 @@ hash = "dc14acfaaa1ddb6bc9a9f3550e92ab24e947cade2935615f41111e1e7ae32277"
 metafile = true
 
 [[files]]
+file = "mods/create-teleporters.pw.toml"
+hash = "4a5c24dfdc441bc675aa5b675de46c2921f310b3686cdcf54c1e6cf43718f89e"
+metafile = true
+
+[[files]]
 file = "mods/create.pw.toml"
 hash = "8f7b16bd319a4c534acbc80f83e4359b756b301c76444d5a0afa1d1cb45d20a4"
 metafile = true
@@ -199,6 +204,11 @@ metafile = true
 [[files]]
 file = "mods/fusion-connected-textures.pw.toml"
 hash = "c9ef346647b6d4ed7417f27768461cae6496449b74258b6d81c560e95259c9dd"
+metafile = true
+
+[[files]]
+file = "mods/geckolib.pw.toml"
+hash = "cf303e609b0beaf097122eecfa869d21be642e22465021f4f5aa0fa38c72b119"
 metafile = true
 
 [[files]]
