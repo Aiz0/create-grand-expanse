@@ -273,6 +273,10 @@ file = "mods/placebo.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/pluto.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/polymorph.pw.toml"
 metafile = true
 
