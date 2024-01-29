@@ -302,6 +302,11 @@ hash = "9055b4a92e2ea4ad8661c226f549040eb48ae535070942a3a95b019c08ca70f6"
 metafile = true
 
 [[files]]
+file = "mods/no-mo-portals.pw.toml"
+hash = "39ba25da9497dd738551e9df69bae33d129ac8be34aef3b111687f4f5f43742d"
+metafile = true
+
+[[files]]
 file = "mods/ping-wheel.pw.toml"
 hash = "608d611021d1846d054a1e2cd2991ee908a632144cc15465ce01ca5ef44fafe8"
 metafile = true
