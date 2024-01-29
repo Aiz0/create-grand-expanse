@@ -301,10 +301,6 @@ file = "mods/rubidium-extra.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/shutup-experimental-settings.pw.toml"
-metafile = true
-
-[[files]]
 file = "mods/slice-and-dice.pw.toml"
 metafile = true
 
@@ -362,4 +358,8 @@ metafile = true
 
 [[files]]
 file = "mods/trash-cans.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/yeetus-experimentus.pw.toml"
 metafile = true
