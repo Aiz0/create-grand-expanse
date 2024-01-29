@@ -325,6 +325,10 @@ file = "mods/spark.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/starlight-forge.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/storage-drawers.pw.toml"
 metafile = true
 
