@@ -37,10 +37,6 @@ file = "mods/better-advancements.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/better-biome-blend.pw.toml"
-metafile = true
-
-[[files]]
 file = "mods/blahaj-reforged.pw.toml"
 metafile = true
 
