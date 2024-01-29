@@ -13,6 +13,10 @@ file = "kubejs/README.txt"
 hash = "989f3737ae4621b8ff6730bce4cbeeee756921e7e510e0c281c8a350501d98af"
 
 [[files]]
+file = "kubejs/server_scripts/ore-smelting.js"
+hash = "abd0ab1869e65cd39af375dacf22453575eda4bfb6d52aa7384d7f3519c69a9b"
+
+[[files]]
 file = "kubejs/server_scripts/server.js"
 hash = "871dee465c0d596b84dcb9ac8cdad686b31c320ee66c51acf1ab0384cb28adee"
 
