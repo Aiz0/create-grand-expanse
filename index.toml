@@ -189,6 +189,10 @@ file = "mods/harvest-with-ease.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/immediatelyfast.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/inventory-sorter.pw.toml"
 metafile = true
 
