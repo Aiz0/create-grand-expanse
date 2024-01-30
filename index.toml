@@ -192,10 +192,6 @@ file = "mods/immediatelyfast.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/inventory-sorter.pw.toml"
-metafile = true
-
-[[files]]
 file = "mods/item-filters.pw.toml"
 metafile = true
 
