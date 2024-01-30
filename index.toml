@@ -185,6 +185,10 @@ file = "mods/harvest-with-ease.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/immediatelyfast.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/inventory-sorter.pw.toml"
 metafile = true
 
@@ -221,6 +225,14 @@ file = "mods/kubejs.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/lazy-dfu-forge.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/leaky.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/leaves-be-gone.pw.toml"
 metafile = true
 
@@ -230,6 +242,10 @@ metafile = true
 
 [[files]]
 file = "mods/lootr.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/modernfix.pw.toml"
 metafile = true
 
 [[files]]
@@ -250,6 +266,10 @@ metafile = true
 
 [[files]]
 file = "mods/placebo.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/pluto.pw.toml"
 metafile = true
 
 [[files]]
@@ -297,11 +317,15 @@ file = "mods/rubidium-extra.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/shutup-experimental-settings.pw.toml"
+file = "mods/saturn.pw.toml"
 metafile = true
 
 [[files]]
 file = "mods/slice-and-dice.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/smooth-boot-reloaded.pw.toml"
 metafile = true
 
 [[files]]
@@ -318,6 +342,10 @@ metafile = true
 
 [[files]]
 file = "mods/spark.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/starlight-forge.pw.toml"
 metafile = true
 
 [[files]]
@@ -354,4 +382,8 @@ metafile = true
 
 [[files]]
 file = "mods/trash-cans.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/yeetus-experimentus.pw.toml"
 metafile = true
