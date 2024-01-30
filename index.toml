@@ -10,6 +10,9 @@ file = "config/forgery/features.ini"
 file = "kubejs/README.txt"
 
 [[files]]
+file = "kubejs/client_scripts/rei.js"
+
+[[files]]
 file = "kubejs/server_scripts/ore-smelting.js"
 
 [[files]]
