@@ -11,7 +11,6 @@ file = "kubejs/README.txt"
 
 [[files]]
 file = "kubejs/server_scripts/ore-smelting.js"
-hash = "abd0ab1869e65cd39af375dacf22453575eda4bfb6d52aa7384d7f3519c69a9b"
 
 [[files]]
 file = "kubejs/server_scripts/server.js"
