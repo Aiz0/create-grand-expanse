@@ -1,0 +1,47 @@
+[general]
+    "Enable Onboarding" = false
+
+[automation]
+    # All these should be done with create.
+	"Iron Rod" = false
+	"Chains Connect Blocks" = false
+	"Dispensers Place Blocks" = false
+	Chute = false
+
+[building]
+    # Farmers delight has rope that works almost the same.
+	Rope = false
+
+[client]
+    # REI already has this if you double click the search bar.
+    "Chest Searching" = false
+    [client.camera]
+        # Why would this not be the default????
+	    "Date Format" = "yyyy-mm-dd"
+[tools]
+    # I don't think we want this.
+	Pickarang = false
+
+[features]
+    # I don't know if we want this?
+    # Maybe if golden tools can only be found as loot?
+    "Gold Tools Have Fortune" = true
+
+[experimental]
+	"Game Nerfs" = true
+    "Adjustable Chat" = true
+    [experimental.game_nerfs]
+        # Things nerfed by default that we don't want to nerf.
+		"Nerf Mending" = false
+		"Disable Ice Roads" = false
+		"Disable Wool Drops" = false
+        "Enable Dimension Locked Elytra" = false
+
+		#Disables mob griefing for only specific entities
+		"Enable Selective Mob Griefing" = true
+		"Non Griefing Entities" = ["minecraft:creeper", "minecraft:enderman"]
+    
+    [experimental.adjustable_chat]
+        # Move chat up a bit so its' not aligned with armor.
+		"Vertical Shift" = -10
+        
