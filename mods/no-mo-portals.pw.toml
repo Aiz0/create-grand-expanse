@@ -1,0 +1,13 @@
+name = "NoMo' Portals"
+filename = "nomoportals-1.19.2-3.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/shr3jwQg/versions/Jp3Z4AyG/nomoportals-1.19.2-3.1.jar"
+hash-format = "sha1"
+hash = "2d3cbcb405d575ca80d17163f357a924153e5f65"
+
+[update]
+[update.modrinth]
+mod-id = "shr3jwQg"
+version = "Jp3Z4AyG"
