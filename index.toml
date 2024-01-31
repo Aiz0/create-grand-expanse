@@ -13,6 +13,9 @@ file = "config/quark-common.toml"
 file = "kubejs/README.txt"
 
 [[files]]
+file = "kubejs/client_scripts/rei.js"
+
+[[files]]
 file = "kubejs/server_scripts/ore-smelting.js"
 
 [[files]]
