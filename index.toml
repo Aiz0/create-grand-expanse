@@ -320,6 +320,10 @@ file = "mods/rhino.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/roughly-enough-items-hacks.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/rubidium-extra.pw.toml"
 metafile = true
 
