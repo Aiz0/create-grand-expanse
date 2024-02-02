@@ -44,4 +44,9 @@
     [experimental.adjustable_chat]
         # Move chat up a bit so its' not aligned with armor.
 		"Vertical Shift" = -10
-        
+
+[tweaks]
+	[tweaks.emotes]
+        # Shift button to not conflict with no chat reports buttons
+		"Button Shift X" = -50
+		"Button Shift Y" = 3
