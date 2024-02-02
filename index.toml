@@ -361,6 +361,10 @@ file = "mods/starlight-forge.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/stop-villager-trades.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/storage-drawers.pw.toml"
 metafile = true
 

@@ -1,0 +1,13 @@
+name = "Stop Villager Trades"
+filename = "stopvillagertrades-1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "3d13ce3cb0cac6e177dd2f44c5ba447a00b7ff1c"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4636102
+project-id = 887063
