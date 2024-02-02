@@ -1,0 +1,21 @@
+{
+    /* 
+	   Enable Cinematic Camera while zooming.
+	   If you disable this, you should also try setting `zoomSmoothnessMs` to `0`.
+	   DEFAULT: `true`
+	*/
+    enableCinematicZoom: false,
+    /* 
+	   Mouse Sensitivity will not be reduced below this amount while zoomed in.
+	   Set to `1.0` to prevent it from being changed at all (not recommended without `enableCinematicZoom`).
+	   DEFAULT: `0.4`
+	*/
+    mouseSensitivityFloor: 0,
+
+    /* 
+	   FOV changes will be spread out over this many milliseconds.
+	   Set to `0` to disable animations.
+	   DEFAULT: `150`
+	*/
+    zoomSmoothnessMs: 0,
+}

@@ -1,0 +1,13 @@
+name = "Zume"
+filename = "zume-0.13.0.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/o6qsdrrQ/versions/CgUjL5RO/zume-0.13.0.jar"
+hash-format = "sha1"
+hash = "e2ab3377386740e7f61e127d34d5b089b5b3df5f"
+
+[update]
+[update.modrinth]
+mod-id = "o6qsdrrQ"
+version = "CgUjL5RO"
