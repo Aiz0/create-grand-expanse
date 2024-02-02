@@ -9,7 +9,7 @@ ServerEvents.recipes((event) => {
                 C: "farmersdelight:rope",
                 D: "minecraft:barrel",
                 E: "minecraft:bundle",
-            }
+            },
         )
         .id("sophisticatedbackpacks:backpack");
 
