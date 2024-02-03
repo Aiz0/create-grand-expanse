@@ -25,6 +25,9 @@ file = "kubejs/server_scripts/ore-smelting.js"
 file = "kubejs/server_scripts/server.js"
 
 [[files]]
+file = "kubejs/server_scripts/tags.js"
+
+[[files]]
 file = "kubejs/startup_scripts/config.js"
 
 [[files]]
