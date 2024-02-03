@@ -25,6 +25,12 @@ file = "kubejs/server_scripts/ore-smelting.js"
 file = "kubejs/server_scripts/server.js"
 
 [[files]]
+file = "kubejs/startup_scripts/config.js"
+
+[[files]]
+file = "kubejs/startup_scripts/items.js"
+
+[[files]]
 file = "mods/ad-astra.pw.toml"
 metafile = true
 
