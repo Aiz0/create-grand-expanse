@@ -1,4 +1,9 @@
 ServerEvents.recipes((event) => {
+    function SmeltAndBlast(output, input) {
+        event.smelting(output, input);
+        event.blasting(output, input);
+    }
+
     event
         .shaped(
             Item.of("sophisticatedbackpacks:backpack", 1),
@@ -9,7 +14,7 @@ ServerEvents.recipes((event) => {
                 C: "farmersdelight:rope",
                 D: "minecraft:barrel",
                 E: "minecraft:bundle",
-            },
+            }
         )
         .id("sophisticatedbackpacks:backpack");
 
@@ -21,9 +26,29 @@ ServerEvents.recipes((event) => {
         { output: "#forge:tools/gold" },
     ]);
 
-    // Remove ad astra hammer.
+    // Remove ad astra hammer recipes.
+    // We don't want this sheet/plate recipe.
     event.remove([
         { id: "ad_astra:recipes/hammer" },
         { input: "ad_astra:hammer" },
     ]);
+
+    // Remove original andesite recipe
+    event.remove({
+        output: "create:andesite_alloy",
+        input: "minecraft:andesite",
+    });
+
+    // andesite compound recipe from create:astral
+    event.shaped(
+        Item.of(global.items.andesite_compound, 1),
+        ["AAA", "BBB", "CCC"],
+        {
+            A: "minecraft:andesite",
+            B: "create:zinc_nugget",
+            C: "minecraft:clay_ball",
+        }
+    );
+
+    SmeltAndBlast("create:andesite_alloy", global.items.andesite_compound);
 });
