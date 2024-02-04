@@ -266,6 +266,14 @@ file = "mods/lootr.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/mekanism-generators.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/mekanism.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/modernfix.pw.toml"
 metafile = true
 
@@ -391,10 +399,6 @@ metafile = true
 
 [[files]]
 file = "mods/terralith.pw.toml"
-metafile = true
-
-[[files]]
-file = "mods/thermal-expansion.pw.toml"
 metafile = true
 
 [[files]]
