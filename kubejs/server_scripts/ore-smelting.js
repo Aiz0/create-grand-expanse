@@ -6,11 +6,11 @@ ServerEvents.recipes((event) => {
     const smelt_to_nuggets = (id) => {
         event.smelting(
             `${nuggets_smelting}x #forge:nuggets/${id}`,
-            `#forge:raw_materials/${id}`
+            `#forge:raw_materials/${id}`,
         );
         event.blasting(
             `${nuggets_blasting}x #forge:nuggets/${id}`,
-            `#forge:raw_materials/${id}`
+            `#forge:raw_materials/${id}`,
         );
     };
 
