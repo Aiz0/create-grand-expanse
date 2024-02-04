@@ -6,11 +6,11 @@ ServerEvents.recipes((event) => {
     const smelt_to_nuggets = (id) => {
         event.smelting(
             `${nuggets_smelting}x #forge:nuggets/${id}`,
-            `#forge:raw_materials/${id}`,
+            `#forge:raw_materials/${id}`
         );
         event.blasting(
             `${nuggets_blasting}x #forge:nuggets/${id}`,
-            `#forge:raw_materials/${id}`,
+            `#forge:raw_materials/${id}`
         );
     };
 
@@ -24,8 +24,6 @@ ServerEvents.recipes((event) => {
     // Remove existing ingot smelting recipe
     // It uses superheated blazeburners and we don't want that
     event.remove({ type: "createmetallurgy:melting", input: "#forge:ingots" });
-
-    //meltables.forEach(melting);
 
     global.config.melting.materials.forEach((material) => {
         global.config.melting.items.forEach((item) => {
