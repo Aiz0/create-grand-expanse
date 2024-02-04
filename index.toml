@@ -16,6 +16,18 @@ file = "config/zume.json5"
 file = "kubejs/README.txt"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/block/fluid/molten/flowing.png"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/fluid/molten/flowing.png.mcmeta"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/fluid/molten/still.png"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/fluid/molten/still.png.mcmeta"
+
+[[files]]
 file = "kubejs/client_scripts/rei.js"
 
 [[files]]
@@ -29,6 +41,9 @@ file = "kubejs/server_scripts/tags.js"
 
 [[files]]
 file = "kubejs/startup_scripts/config.js"
+
+[[files]]
+file = "kubejs/startup_scripts/fluids.js"
 
 [[files]]
 file = "kubejs/startup_scripts/items.js"

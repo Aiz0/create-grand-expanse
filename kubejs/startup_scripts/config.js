@@ -7,6 +7,23 @@ global.items = items.reduce((obj, item) => {
     obj[item] = `${global.packName}:${item}`;
     return obj;
 }, {});
+
+// Define fluids here
+const fluids = [
+    "andesite_mixture",
+    "molten_tin",
+    "molten_nickel",
+    "molten_desh",
+    "molten_silver",
+    "molten_lead",
+    "molten_steel",
+];
+// creates global object with our items
+global.fluids = fluids.reduce((obj, fluid) => {
+    obj[fluid] = `${global.packName}:${fluid}`;
+    return obj;
+}, {});
+
 global.config = { melting: {} };
 // Default values to use when not specifed
 global.config.melting.amount = 10; // how much a nugget melts into
@@ -19,6 +36,7 @@ global.config.melting.materials = [
     { name: "copper", fluid: "createmetallurgy:molten_copper" },
     { name: "gold", fluid: "createmetallurgy:molten_gold" },
     { name: "zinc", fluid: "createmetallurgy:molten_zinc" },
+    { name: "tin", fluid: global.fluids.molten_tin },
 ];
 // types of items that can be melted of above types
 // nuggets defaults to 9
