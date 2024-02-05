@@ -16,7 +16,6 @@ const fluids = [
     "molten_desh",
     "molten_silver",
     "molten_lead",
-    "molten_steel",
 ];
 // creates global object with our items
 global.fluids = fluids.reduce((obj, fluid) => {
