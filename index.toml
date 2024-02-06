@@ -140,10 +140,6 @@ file = "mods/create-metallurgy.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/create-ore-excavation.pw.toml"
-metafile = true
-
-[[files]]
 file = "mods/create-teleporters.pw.toml"
 metafile = true
 
