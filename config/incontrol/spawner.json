@@ -1,0 +1,23 @@
+[
+  {
+    "mob": "minecraft:blaze",
+    "persecond": 1,
+    "attempts": 2,
+    "amount": {
+      "minimum": 1,
+      "maximum": 2
+    },
+    "conditions": {
+      "dimension": "minecraft:overworld",
+      "inwater": false,
+      "inlava": false,
+      "inair": false,
+      "mindist": 24,
+      "maxdist": 120,
+      "minheight": -60,
+      "maxheight": -45,
+      "maxthis": 20,
+      "norestrictions": true
+    }
+  }
+]
