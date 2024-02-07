@@ -146,10 +146,6 @@ file = "mods/create-metallurgy.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/create-ore-excavation.pw.toml"
-metafile = true
-
-[[files]]
 file = "mods/create-teleporters.pw.toml"
 metafile = true
 
@@ -315,6 +311,10 @@ metafile = true
 
 [[files]]
 file = "mods/no-mo-portals.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/persistent-ores.pw.toml"
 metafile = true
 
 [[files]]
