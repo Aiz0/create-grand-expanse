@@ -248,6 +248,10 @@ file = "mods/jade.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/just-rose-gold.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/konkrete.pw.toml"
 metafile = true
 
