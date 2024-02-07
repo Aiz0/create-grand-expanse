@@ -1,0 +1,13 @@
+name = "Sidekick"
+filename = "sidekick-forge-2.0.5+1.19.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/goA2JoBi/versions/RCnD3N5P/sidekick-forge-2.0.5%2B1.19.2.jar"
+hash-format = "sha1"
+hash = "531aaecef45f6726325e7e2d55f7209afcebd204"
+
+[update]
+[update.modrinth]
+mod-id = "goA2JoBi"
+version = "RCnD3N5P"

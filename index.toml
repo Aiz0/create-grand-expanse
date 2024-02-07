@@ -382,6 +382,10 @@ file = "mods/saturn.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/sidekick.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/slice-and-dice.pw.toml"
 metafile = true
 
