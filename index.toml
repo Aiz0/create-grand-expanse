@@ -442,3 +442,7 @@ metafile = true
 [[files]]
 file = "mods/zume.pw.toml"
 metafile = true
+
+[[files]]
+file = "resourcepacks/default-dark-mode.pw.toml"
+metafile = true
