@@ -13,4 +13,5 @@ StartupEvents.registry("fluid", (event) => {
     molten_metal(global.fluids.molten_desh, 0xd68d4d);
     molten_metal(global.fluids.molten_silver, 0xb4c0db);
     molten_metal(global.fluids.molten_lead, 0x312d43);
+    molten_metal(global.fluids.molten_rose_gold, 0xf4af94);
 });
