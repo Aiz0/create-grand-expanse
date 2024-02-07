@@ -7,6 +7,12 @@ file = "LICENSE"
 file = "config/forgery/features.ini"
 
 [[files]]
+file = "config/incontrol/spawn.json"
+
+[[files]]
+file = "config/incontrol/spawner.json"
+
+[[files]]
 file = "config/quark-common.toml"
 
 [[files]]
@@ -233,6 +239,10 @@ metafile = true
 
 [[files]]
 file = "mods/immediatelyfast.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/in-control.pw.toml"
 metafile = true
 
 [[files]]
