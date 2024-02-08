@@ -51,4 +51,21 @@ ServerEvents.recipes((event) => {
     );
 
     SmeltAndBlast("create:andesite_alloy", global.items.andesite_compound);
+
+    //Mixing
+    event.recipes.createMixing(
+        Fluid.of(global.fluids.molten_rose_gold, FluidAmounts.NUGGET),
+        [
+            {
+                fluid: "createmetallurgy:molten_gold",
+                amount: FluidAmounts.NUGGET,
+            },
+            {
+                fluid: "createmetallurgy:molten_copper",
+                amount: FluidAmounts.NUGGET,
+            },
+        ]
+    );
+
+    //Alloying
 });
