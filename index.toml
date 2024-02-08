@@ -462,3 +462,7 @@ metafile = true
 [[files]]
 file = "resourcepacks/default-dark-mode.pw.toml"
 metafile = true
+
+[[files]]
+file = "resourcepacks/fresh-animations.pw.toml"
+metafile = true
