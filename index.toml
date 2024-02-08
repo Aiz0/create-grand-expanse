@@ -472,5 +472,9 @@ file = "resourcepacks/fresh-animations.pw.toml"
 metafile = true
 
 [[files]]
+file = "resourcepacks/smart-chutes-curvified.pw.toml"
+metafile = true
+
+[[files]]
 file = "resourcepacks/toms-create-storage.pw.toml"
 metafile = true
