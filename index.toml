@@ -456,6 +456,10 @@ file = "resourcepacks/bettervanillabuilding.pw.toml"
 metafile = true
 
 [[files]]
+file = "resourcepacks/created-applied-energistics.pw.toml"
+metafile = true
+
+[[files]]
 file = "resourcepacks/cubic-sun-moon.pw.toml"
 metafile = true
 

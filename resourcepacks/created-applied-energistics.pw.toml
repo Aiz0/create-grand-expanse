@@ -1,0 +1,13 @@
+name = "Created Applied Energistics"
+filename = "Created+Applied+Energistics.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/JjNsIkUt/versions/eJSPw0M7/Created%2BApplied%2BEnergistics.zip"
+hash-format = "sha1"
+hash = "fc871739e7a18463f2c5e9ffb8f7740eb0ff6d29"
+
+[update]
+[update.modrinth]
+mod-id = "JjNsIkUt"
+version = "eJSPw0M7"
