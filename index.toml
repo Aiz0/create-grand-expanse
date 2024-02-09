@@ -150,6 +150,10 @@ file = "mods/create-metallurgy.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/create-sifting.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/create-teleporters.pw.toml"
 metafile = true
 
