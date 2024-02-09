@@ -154,6 +154,10 @@ file = "mods/create.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/createaddition.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/cupboard.pw.toml"
 metafile = true
 
