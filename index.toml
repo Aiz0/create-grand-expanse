@@ -19,6 +19,9 @@ file = "config/incontrol/spawn.json"
 file = "config/incontrol/spawner.json"
 
 [[files]]
+file = "config/item_obliterator.json"
+
+[[files]]
 file = "config/quark-common.toml"
 
 [[files]]
@@ -252,6 +255,10 @@ file = "mods/item-filters.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/item-obliterator.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/jade-addons-forge.pw.toml"
 metafile = true
 
@@ -309,6 +316,10 @@ metafile = true
 
 [[files]]
 file = "mods/mouse-tweaks.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/necronomicon.pw.toml"
 metafile = true
 
 [[files]]
