@@ -4,6 +4,9 @@ hash-format = "sha256"
 file = "LICENSE"
 
 [[files]]
+file = "config/Mekanism/world.toml"
+
+[[files]]
 file = "config/forgery/features.ini"
 
 [[files]]

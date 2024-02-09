@@ -1,0 +1,6 @@
+[world_generation]
+	#Generation Settings for tin ore.
+	[world_generation.tin]
+		#Determines if tin ore should be added to world generation.
+        # We use thermal tin so this should be false
+		shouldGenerate = false
