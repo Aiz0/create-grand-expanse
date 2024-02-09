@@ -7,6 +7,9 @@ file = "LICENSE"
 file = "config/forgery/features.ini"
 
 [[files]]
+file = "config/item_obliterator.json"
+
+[[files]]
 file = "config/quark-common.toml"
 
 [[files]]
