@@ -130,10 +130,6 @@ file = "mods/cofh-core.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/connectedness.pw.toml"
-metafile = true
-
-[[files]]
 file = "mods/controlling.pw.toml"
 metafile = true
 
@@ -406,10 +402,6 @@ file = "mods/rechiseled.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/reforgium.pw.toml"
-metafile = true
-
-[[files]]
 file = "mods/rei.pw.toml"
 metafile = true
 
@@ -519,10 +511,6 @@ metafile = true
 
 [[files]]
 file = "mods/zume.pw.toml"
-metafile = true
-
-[[files]]
-file = "resourcepacks/bettervanillabuilding.pw.toml"
 metafile = true
 
 [[files]]
