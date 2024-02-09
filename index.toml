@@ -10,6 +10,9 @@ file = "config/forgery/features.ini"
 file = "config/quark-common.toml"
 
 [[files]]
+file = "config/resourcepackoverrides.json"
+
+[[files]]
 file = "config/zume.json5"
 
 [[files]]
