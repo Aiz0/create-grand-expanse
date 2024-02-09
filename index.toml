@@ -7,6 +7,9 @@ file = "LICENSE"
 file = "config/Mekanism/world.toml"
 
 [[files]]
+file = "config/ae2/common.json"
+
+[[files]]
 file = "config/forgery/features.ini"
 
 [[files]]
