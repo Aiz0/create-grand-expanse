@@ -4,6 +4,9 @@ hash-format = "sha256"
 file = "LICENSE"
 
 [[files]]
+file = "config/ae2/common.json"
+
+[[files]]
 file = "config/forgery/features.ini"
 
 [[files]]
