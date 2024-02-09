@@ -142,6 +142,10 @@ file = "mods/create-enchantment-industry.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/create-mechanical-extruder.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/create-mechanical-spawner.pw.toml"
 metafile = true
 
