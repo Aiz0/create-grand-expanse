@@ -14,7 +14,7 @@ ServerEvents.recipes((event) => {
                 C: "farmersdelight:rope",
                 D: "minecraft:barrel",
                 E: "minecraft:bundle",
-            }
+            },
         )
         .id("sophisticatedbackpacks:backpack");
 
@@ -47,7 +47,7 @@ ServerEvents.recipes((event) => {
             A: "minecraft:andesite",
             B: "create:zinc_nugget",
             C: "minecraft:clay_ball",
-        }
+        },
     );
 
     SmeltAndBlast("create:andesite_alloy", global.items.andesite_compound);
