@@ -143,7 +143,15 @@ file = "mods/create-deco.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/create-encased.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/create-enchantment-industry.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/create-mechanical-extruder.pw.toml"
 metafile = true
 
 [[files]]
@@ -155,11 +163,23 @@ file = "mods/create-metallurgy.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/create-power-loader.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/create-sifting.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/create-teleporters.pw.toml"
 metafile = true
 
 [[files]]
 file = "mods/create.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/createaddition.pw.toml"
 metafile = true
 
 [[files]]
