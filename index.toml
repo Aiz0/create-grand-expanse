@@ -4,7 +4,19 @@ hash-format = "sha256"
 file = "LICENSE"
 
 [[files]]
+file = "config/Mekanism/world.toml"
+
+[[files]]
+file = "config/ae2/common.json"
+
+[[files]]
 file = "config/forgery/features.ini"
+
+[[files]]
+file = "config/incontrol/spawn.json"
+
+[[files]]
+file = "config/incontrol/spawner.json"
 
 [[files]]
 file = "config/item_obliterator.json"
@@ -143,10 +155,6 @@ file = "mods/create-metallurgy.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/create-ore-excavation.pw.toml"
-metafile = true
-
-[[files]]
 file = "mods/create-teleporters.pw.toml"
 metafile = true
 
@@ -239,6 +247,10 @@ file = "mods/immediatelyfast.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/in-control.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/item-filters.pw.toml"
 metafile = true
 
@@ -319,6 +331,10 @@ file = "mods/no-mo-portals.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/persistent-ores.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/ping-wheel.pw.toml"
 metafile = true
 
@@ -383,6 +399,10 @@ file = "mods/saturn.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/sidekick.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/slice-and-dice.pw.toml"
 metafile = true
 
@@ -416,6 +436,10 @@ metafile = true
 
 [[files]]
 file = "mods/storage-drawers.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/suggestion-tweaker.pw.toml"
 metafile = true
 
 [[files]]
