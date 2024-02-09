@@ -456,10 +456,6 @@ file = "resourcepacks/bettervanillabuilding.pw.toml"
 metafile = true
 
 [[files]]
-file = "resourcepacks/created-applied-energistics.pw.toml"
-metafile = true
-
-[[files]]
 file = "resourcepacks/cubic-sun-moon.pw.toml"
 metafile = true
 
@@ -477,8 +473,4 @@ metafile = true
 
 [[files]]
 file = "resourcepacks/smart-chutes-curvified.pw.toml"
-metafile = true
-
-[[files]]
-file = "resourcepacks/toms-create-storage.pw.toml"
 metafile = true
