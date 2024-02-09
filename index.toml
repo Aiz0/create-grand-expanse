@@ -102,6 +102,10 @@ file = "mods/canary.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/cb-multipart.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/chat-heads.pw.toml"
 metafile = true
 
@@ -111,6 +115,10 @@ metafile = true
 
 [[files]]
 file = "mods/clumps.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/codechicken-lib-1-8.pw.toml"
 metafile = true
 
 [[files]]
@@ -335,6 +343,14 @@ metafile = true
 
 [[files]]
 file = "mods/probejs.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/project-red-core.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/project-red-illumination.pw.toml"
 metafile = true
 
 [[files]]
