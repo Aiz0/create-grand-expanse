@@ -356,6 +356,10 @@ file = "mods/rei.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/resource-pack-overrides.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/resourceful-config.pw.toml"
 metafile = true
 
