@@ -422,6 +422,10 @@ file = "mods/storage-drawers.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/suggestion-tweaker.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/supermartijn642s-config-lib.pw.toml"
 metafile = true
 
