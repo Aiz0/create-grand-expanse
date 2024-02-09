@@ -1,13 +1,43 @@
 [
-  {
-    "dimension": "minecraft:overworld",
-    "mob": "minecraft:blaze",
-    "biome": ["terralith:cave/deep_caves", "terralith:cave/mantle_caves"],
-    "result": "allow"
-  },
-  {
-    "dimension": "minecraft:overworld",
-    "mob": "minecraft:blaze",
-    "result": "deny"
-  }
+    {
+        "dimension": "minecraft:overworld",
+        "mob": "minecraft:blaze",
+        "biome": ["terralith:cave/deep_caves", "terralith:cave/mantle_caves"],
+        "maxcount": 5,
+        "maxlight": 7,
+        "result": "allow"
+    },
+    {
+        "dimension": "minecraft:overworld",
+        "mob": "minecraft:blaze",
+        "biome": ["terralith:volcanic_crater"],
+        "block": [
+            "minecraft:basalt",
+            "minecraft:smooth_basalt",
+            "minecraft:blackstone",
+            "minecraft:magma_block"
+        ],
+        "maxcount": 30,
+        "result": "allow"
+    },
+    {
+        "dimension": "minecraft:overworld",
+        "mob": "minecraft:blaze",
+        "biome": ["terralith:volcanic_peaks"],
+        "block": [
+            "minecraft:basalt",
+            "minecraft:smooth_basalt",
+            "minecraft:blackstone",
+            "minecraft:magma_block"
+        ],
+        "maxcount": 10,
+        "random": 0.5,
+        "result": "allow"
+    },
+
+    {
+        "dimension": "minecraft:overworld",
+        "mob": "minecraft:blaze",
+        "result": "deny"
+    }
 ]

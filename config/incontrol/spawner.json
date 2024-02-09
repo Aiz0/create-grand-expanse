@@ -1,23 +1,42 @@
 [
-  {
-    "mob": "minecraft:blaze",
-    "persecond": 1,
-    "attempts": 2,
-    "amount": {
-      "minimum": 1,
-      "maximum": 2
+    {
+        "mob": "minecraft:blaze",
+        "persecond": 0.5,
+        "attempts": 20,
+        "amount": {
+            "minimum": 2,
+            "maximum": 3
+        },
+        "conditions": {
+            "dimension": "minecraft:overworld",
+            "inwater": false,
+            "inlava": false,
+            "inair": false,
+            "mindist": 24,
+            "maxdist": 120,
+            "minheight": 50,
+            "maxheight": 200,
+            "norestrictions": true
+        }
     },
-    "conditions": {
-      "dimension": "minecraft:overworld",
-      "inwater": false,
-      "inlava": false,
-      "inair": false,
-      "mindist": 24,
-      "maxdist": 120,
-      "minheight": -60,
-      "maxheight": -45,
-      "maxthis": 20,
-      "norestrictions": true
+    {
+        "mob": "minecraft:blaze",
+        "persecond": 0.5,
+        "attempts": 10,
+        "amount": {
+            "minimum": 1,
+            "maximum": 2
+        },
+        "conditions": {
+            "dimension": "minecraft:overworld",
+            "inwater": false,
+            "inlava": false,
+            "inair": false,
+            "mindist": 24,
+            "maxdist": 120,
+            "minheight": -60,
+            "maxheight": -50,
+            "norestrictions": true
+        }
     }
-  }
 ]
