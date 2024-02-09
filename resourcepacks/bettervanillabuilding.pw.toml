@@ -1,13 +1,13 @@
 name = "BetterVanillaBuilding"
-filename = "BetterVanillaBuildingV2.94.1.zip"
-side = "client"
+filename = "BetterVanillaBuildingV2.94 LITE.zip"
+side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/LBcosBrl/versions/OoZ3v2Lc/BetterVanillaBuildingV2.94.1.zip"
 hash-format = "sha1"
-hash = "683c394bb33d4ac688ab431a3ed9f5448544db71"
+hash = "934859b21fefbae0d508e6d3bef0584417b3644c"
+mode = "metadata:curseforge"
 
 [update]
-[update.modrinth]
-mod-id = "LBcosBrl"
-version = "OoZ3v2Lc"
+[update.curseforge]
+file-id = 5045663
+project-id = 356831
