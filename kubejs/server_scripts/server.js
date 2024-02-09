@@ -52,6 +52,22 @@ ServerEvents.recipes((event) => {
 
     SmeltAndBlast("create:andesite_alloy", global.items.andesite_compound);
 
+    // Mixing Recipes.
+    // Will be replaced with helper function later.
+    event.recipes.createMixing(
+        Fluid.of(global.fluids.molten_rose_gold, FluidAmounts.NUGGET),
+        [
+            {
+                fluid: "createmetallurgy:molten_gold",
+                amount: FluidAmounts.NUGGET,
+            },
+            {
+                fluid: "createmetallurgy:molten_copper",
+                amount: FluidAmounts.NUGGET,
+            },
+        ],
+    );
+
     // Mechanical Saw now uses thermal saw blade
     event
         .shaped(Item.of("create:mechanical_saw", 1), ["A  ", "BC "], {
