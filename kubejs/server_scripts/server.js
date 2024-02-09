@@ -14,7 +14,7 @@ ServerEvents.recipes((event) => {
                 C: "farmersdelight:rope",
                 D: "minecraft:barrel",
                 E: "minecraft:bundle",
-            },
+            }
         )
         .id("sophisticatedbackpacks:backpack");
 
@@ -47,12 +47,13 @@ ServerEvents.recipes((event) => {
             A: "minecraft:andesite",
             B: "create:zinc_nugget",
             C: "minecraft:clay_ball",
-        },
+        }
     );
 
     SmeltAndBlast("create:andesite_alloy", global.items.andesite_compound);
 
-    //Mixing
+    // Mixing Recipes.
+    // Will be replaced with helper function later.
     event.recipes.createMixing(
         Fluid.of(global.fluids.molten_rose_gold, FluidAmounts.NUGGET),
         [
@@ -64,8 +65,33 @@ ServerEvents.recipes((event) => {
                 fluid: "createmetallurgy:molten_copper",
                 amount: FluidAmounts.NUGGET,
             },
-        ],
+        ]
     );
 
-    //Alloying
+    // Mechanical Saw now uses thermal saw blade
+    event
+        .shaped(Item.of("create:mechanical_saw", 1), ["A  ", "BC "], {
+            A: "thermal:saw_blade",
+            B: "create:andesite_casing",
+            C: "create:shaft",
+        })
+        .id("create:crafting/kinetics/mechanical_saw");
+    // Thermal saw blade
+    event.shaped(Item.of("thermal:saw_blade", 1), [" A ", "AAA", " A "], {
+        A: "create:iron_sheet",
+    });
+
+    // Mechanical Drill now uses thermal drill head
+    event
+        .shaped(Item.of("create:mechanical_drill", 1), ["A", "B", "C"], {
+            A: "thermal:drill_head",
+            B: "create:andesite_casing",
+            C: "create:shaft",
+        })
+        .id("create:crafting/kinetics/mechanical_drill");
+    // Thermal Drill
+    event.shaped(Item.of("thermal:drill_head", 1), [" A ", "ABA", "BBB"], {
+        A: "create:andesite_alloy",
+        B: "create:iron_sheet",
+    });
 });

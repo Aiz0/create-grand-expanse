@@ -1,0 +1,5 @@
+{
+    "worldGen": {
+        "generateMeteorites": false
+    }
+}

@@ -1,0 +1,13 @@
+[
+  {
+    "dimension": "minecraft:overworld",
+    "mob": "minecraft:blaze",
+    "biome": ["terralith:cave/deep_caves", "terralith:cave/mantle_caves"],
+    "result": "allow"
+  },
+  {
+    "dimension": "minecraft:overworld",
+    "mob": "minecraft:blaze",
+    "result": "deny"
+  }
+]

@@ -4,7 +4,22 @@ hash-format = "sha256"
 file = "LICENSE"
 
 [[files]]
+file = "config/Mekanism/world.toml"
+
+[[files]]
+file = "config/ae2/common.json"
+
+[[files]]
 file = "config/forgery/features.ini"
+
+[[files]]
+file = "config/incontrol/spawn.json"
+
+[[files]]
+file = "config/incontrol/spawner.json"
+
+[[files]]
+file = "config/item_obliterator.json"
 
 [[files]]
 file = "config/quark-common.toml"
@@ -128,7 +143,15 @@ file = "mods/create-deco.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/create-encased.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/create-enchantment-industry.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/create-mechanical-extruder.pw.toml"
 metafile = true
 
 [[files]]
@@ -140,7 +163,11 @@ file = "mods/create-metallurgy.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/create-ore-excavation.pw.toml"
+file = "mods/create-power-loader.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/create-sifting.pw.toml"
 metafile = true
 
 [[files]]
@@ -149,6 +176,10 @@ metafile = true
 
 [[files]]
 file = "mods/create.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/createaddition.pw.toml"
 metafile = true
 
 [[files]]
@@ -236,7 +267,15 @@ file = "mods/immediatelyfast.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/in-control.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/item-filters.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/item-obliterator.pw.toml"
 metafile = true
 
 [[files]]
@@ -300,11 +339,19 @@ file = "mods/mouse-tweaks.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/necronomicon.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/no-chat-reports.pw.toml"
 metafile = true
 
 [[files]]
 file = "mods/no-mo-portals.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/persistent-ores.pw.toml"
 metafile = true
 
 [[files]]
@@ -372,6 +419,10 @@ file = "mods/saturn.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/sidekick.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/slice-and-dice.pw.toml"
 metafile = true
 
@@ -405,6 +456,10 @@ metafile = true
 
 [[files]]
 file = "mods/storage-drawers.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/suggestion-tweaker.pw.toml"
 metafile = true
 
 [[files]]
