@@ -25,6 +25,9 @@ file = "config/item_obliterator.json"
 file = "config/quark-common.toml"
 
 [[files]]
+file = "config/resourcepackoverrides.json"
+
+[[files]]
 file = "config/zume.json5"
 
 [[files]]
@@ -127,6 +130,10 @@ file = "mods/cofh-core.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/connectedness.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/controlling.pw.toml"
 metafile = true
 
@@ -199,7 +206,15 @@ file = "mods/embeddium.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/entity-model-features.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/entityculling.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/entitytexturefeatures.pw.toml"
 metafile = true
 
 [[files]]
@@ -391,7 +406,15 @@ file = "mods/rechiseled.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/reforgium.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/rei.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/resource-pack-overrides.pw.toml"
 metafile = true
 
 [[files]]
@@ -496,4 +519,32 @@ metafile = true
 
 [[files]]
 file = "mods/zume.pw.toml"
+metafile = true
+
+[[files]]
+file = "resourcepacks/bettervanillabuilding.pw.toml"
+metafile = true
+
+[[files]]
+file = "resourcepacks/cubic-sun-moon.pw.toml"
+metafile = true
+
+[[files]]
+file = "resourcepacks/default-dark-mode.pw.toml"
+metafile = true
+
+[[files]]
+file = "resourcepacks/fancy-crops.pw.toml"
+metafile = true
+
+[[files]]
+file = "resourcepacks/fresh-animations.pw.toml"
+metafile = true
+
+[[files]]
+file = "resourcepacks/smart-chutes-curvified.pw.toml"
+metafile = true
+
+[[files]]
+file = "resourcepacks/toms-create-storage.pw.toml"
 metafile = true

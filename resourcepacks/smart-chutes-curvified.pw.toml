@@ -1,0 +1,13 @@
+name = "(Create) Smart Chutes Curvified"
+filename = "Smart Chute but Curvy.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/nwYMZohC/versions/QeUVWxMi/Smart%20Chute%20but%20Curvy.zip"
+hash-format = "sha1"
+hash = "38b88e7c730e42e5552541f4fed2034eca8d8f6c"
+
+[update]
+[update.modrinth]
+mod-id = "nwYMZohC"
+version = "QeUVWxMi"
