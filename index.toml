@@ -4,6 +4,12 @@ hash-format = "sha256"
 file = "LICENSE"
 
 [[files]]
+file = "config/Mekanism/world.toml"
+
+[[files]]
+file = "config/ae2/common.json"
+
+[[files]]
 file = "config/forgery/features.ini"
 
 [[files]]
@@ -13,7 +19,13 @@ file = "config/incontrol/spawn.json"
 file = "config/incontrol/spawner.json"
 
 [[files]]
+file = "config/item_obliterator.json"
+
+[[files]]
 file = "config/quark-common.toml"
+
+[[files]]
+file = "config/resourcepackoverrides.json"
 
 [[files]]
 file = "config/zume.json5"
@@ -126,6 +138,10 @@ file = "mods/cofh-core.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/connectedness.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/controlling.pw.toml"
 metafile = true
 
@@ -142,7 +158,15 @@ file = "mods/create-deco.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/create-encased.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/create-enchantment-industry.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/create-mechanical-extruder.pw.toml"
 metafile = true
 
 [[files]]
@@ -154,11 +178,23 @@ file = "mods/create-metallurgy.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/create-power-loader.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/create-sifting.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/create-teleporters.pw.toml"
 metafile = true
 
 [[files]]
 file = "mods/create.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/createaddition.pw.toml"
 metafile = true
 
 [[files]]
@@ -178,7 +214,15 @@ file = "mods/embeddium.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/entity-model-features.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/entityculling.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/entitytexturefeatures.pw.toml"
 metafile = true
 
 [[files]]
@@ -254,6 +298,10 @@ file = "mods/item-filters.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/item-obliterator.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/jade-addons-forge.pw.toml"
 metafile = true
 
@@ -311,6 +359,10 @@ metafile = true
 
 [[files]]
 file = "mods/mouse-tweaks.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/necronomicon.pw.toml"
 metafile = true
 
 [[files]]
@@ -374,7 +426,15 @@ file = "mods/redstonepen.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/reforgium.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/rei.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/resource-pack-overrides.pw.toml"
 metafile = true
 
 [[files]]
@@ -442,6 +502,10 @@ file = "mods/storage-drawers.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/suggestion-tweaker.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/supermartijn642s-config-lib.pw.toml"
 metafile = true
 
@@ -475,4 +539,32 @@ metafile = true
 
 [[files]]
 file = "mods/zume.pw.toml"
+metafile = true
+
+[[files]]
+file = "resourcepacks/bettervanillabuilding.pw.toml"
+metafile = true
+
+[[files]]
+file = "resourcepacks/cubic-sun-moon.pw.toml"
+metafile = true
+
+[[files]]
+file = "resourcepacks/default-dark-mode.pw.toml"
+metafile = true
+
+[[files]]
+file = "resourcepacks/fancy-crops.pw.toml"
+metafile = true
+
+[[files]]
+file = "resourcepacks/fresh-animations.pw.toml"
+metafile = true
+
+[[files]]
+file = "resourcepacks/smart-chutes-curvified.pw.toml"
+metafile = true
+
+[[files]]
+file = "resourcepacks/toms-create-storage.pw.toml"
 metafile = true

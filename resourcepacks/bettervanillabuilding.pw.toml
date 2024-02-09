@@ -1,0 +1,13 @@
+name = "BetterVanillaBuilding"
+filename = "BetterVanillaBuildingV2.94 LITE.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "934859b21fefbae0d508e6d3bef0584417b3644c"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5045663
+project-id = 356831

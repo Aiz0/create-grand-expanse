@@ -9,6 +9,7 @@ global.items = items.reduce((obj, item) => {
 }, {});
 
 // Define fluids here
+// Fluids beginning with molten will hava the lava tag.
 const fluids = [
     "andesite_mixture",
     "molten_tin",
@@ -16,6 +17,7 @@ const fluids = [
     "molten_desh",
     "molten_silver",
     "molten_lead",
+    "molten_rose_gold",
 ];
 // creates global object with our items
 global.fluids = fluids.reduce((obj, fluid) => {
@@ -36,6 +38,7 @@ global.config.melting.materials = [
     { name: "gold", fluid: "createmetallurgy:molten_gold" },
     { name: "zinc", fluid: "createmetallurgy:molten_zinc" },
     { name: "tin", fluid: global.fluids.molten_tin },
+    { name: "rose_gold", fluid: global.fluids.molten_rose_gold },
 ];
 // types of items that can be melted of above types
 // nuggets defaults to 9
