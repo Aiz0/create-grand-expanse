@@ -13,7 +13,7 @@ ServerEvents.recipes((event) => {
                 tag,
                 material.fluid,
                 item.fluidAmount,
-                material.heatRequirement
+                material.heatRequirement,
             );
         });
     });
@@ -23,12 +23,12 @@ ServerEvents.recipes((event) => {
         // Normal Smelting
         event.smelting(
             `${global.config.furnace.smelting_nuggets}x #forge:nuggets/${material}`,
-            `#forge:raw_materials/${material}`
+            `#forge:raw_materials/${material}`,
         );
         // Blasting. A bit Faster, A bit Better.
         event.blasting(
             `${global.config.furnace.blasting_nuggets}x #forge:nuggets/${material}`,
-            `#forge:raw_materials/${material}`
+            `#forge:raw_materials/${material}`,
         );
     }
 
@@ -45,7 +45,7 @@ ServerEvents.recipes((event) => {
         // Get processing Time from FluidAmount
         const processingTime = Math.max(
             global.config.melting.minTime,
-            fluidAmount * global.config.melting.time
+            fluidAmount * global.config.melting.time,
         );
         event.custom({
             type: "createmetallurgy:melting",

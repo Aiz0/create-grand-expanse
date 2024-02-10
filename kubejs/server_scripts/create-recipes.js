@@ -14,6 +14,6 @@ ServerEvents.recipes((event) => {
                 fluid: "createmetallurgy:molten_copper",
                 amount: FluidAmounts.NUGGET,
             },
-        ]
+        ],
     );
 });

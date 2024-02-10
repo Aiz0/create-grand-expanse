@@ -9,7 +9,7 @@ ServerEvents.recipes((event) => {
                 C: "farmersdelight:rope",
                 D: "minecraft:barrel",
                 E: "minecraft:bundle",
-            }
+            },
         )
         .id("sophisticatedbackpacks:backpack");
 
@@ -41,7 +41,7 @@ ServerEvents.recipes((event) => {
                 A: "#forge:rods/iron",
                 B: "minecraft:magma_block",
                 C: "create:iron_sheet",
-            }
+            },
         )
         .id("create:crafting/kinetics/empty_blaze_burner");
 });
