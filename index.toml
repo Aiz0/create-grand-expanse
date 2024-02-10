@@ -362,6 +362,10 @@ file = "mods/mouse-tweaks.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/natures-compass.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/necronomicon.pw.toml"
 metafile = true
 
