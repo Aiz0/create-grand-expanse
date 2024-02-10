@@ -6,7 +6,7 @@ ServerEvents.recipes((event) => {
             {
                 A: "minecraft:leather",
                 B: "farmersdelight:canvas",
-                C: "farmersdelight:rope",
+                C: "#forge:rope",
                 D: "minecraft:barrel",
                 E: "minecraft:bundle",
             },
