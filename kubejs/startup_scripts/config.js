@@ -25,29 +25,45 @@ global.fluids = fluids.reduce((obj, fluid) => {
     return obj;
 }, {});
 
-global.config = { melting: {} };
-// Default values to use when not specifed
-global.config.melting.amount = 10; // how much a nugget melts into
-global.config.melting.time = 4;
-global.config.melting.heat = "heated";
-
-// materials that can be melted
-global.config.melting.materials = [
-    { name: "iron", fluid: "createmetallurgy:molten_iron" },
-    { name: "copper", fluid: "createmetallurgy:molten_copper" },
-    { name: "gold", fluid: "createmetallurgy:molten_gold" },
-    { name: "zinc", fluid: "createmetallurgy:molten_zinc" },
-    { name: "tin", fluid: global.fluids.molten_tin },
-    { name: "rose_gold", fluid: global.fluids.molten_rose_gold },
-];
-// types of items that can be melted of above types
-// nuggets defaults to 9
-global.config.melting.items = [
-    { tag: "forge:ingots/" },
-    { tag: "forge:raw_materials/" },
-    { tag: "forge:crushed_raw_materials/" },
-    { tag: "forge:nuggets/", nuggets: 1 },
-    { tag: "forge:tools/", nuggets: 1 },
-    { tag: "forge:storage_blocks/raw_", nuggets: 9 * 9 },
-    { tag: "forge:storage_blocks/", nuggets: 9 * 9 },
-];
+global.config = {
+    furnace: {
+        // Ores that can be smelted.
+        // Anything not here can't be smelted in a furnace
+        ores: ["iron", "copper", "gold", "zinc", "tin", "nickel"],
+        smelting_nuggets: 3,
+        blasting_nuggets: 4,
+    },
+    melting: {
+        amount: FluidAmounts.INGOT,
+        heatRequirement: "heated", // Default heat should be heated not blazing.
+        time: 0.4, // time per millibucket
+        minTime: 20, // shortest melting time.
+        // materials that can be melted
+        // Can also have optional heatRequirement
+        materials: [
+            { name: "iron", fluid: "createmetallurgy:molten_iron" },
+            { name: "copper", fluid: "createmetallurgy:molten_copper" },
+            { name: "gold", fluid: "createmetallurgy:molten_gold" },
+            { name: "zinc", fluid: "createmetallurgy:molten_zinc" },
+            { name: "tin", fluid: global.fluids.molten_tin },
+            { name: "rose_gold", fluid: global.fluids.molten_rose_gold },
+        ],
+        // types of items that can be melted of above materials
+        // nuggets defaults to 9
+        items: [
+            { tag: "forge:ingots/" },
+            { tag: "forge:raw_materials/" },
+            { tag: "forge:crushed_raw_materials/" },
+            { tag: "forge:nuggets/", fluidAmount: FluidAmounts.NUGGET },
+            { tag: "forge:tools/", fluidAmount: FluidAmounts.NUGGET },
+            {
+                tag: "forge:storage_blocks/raw_",
+                fluidAmount: FluidAmounts.METAL_BLOCK,
+            },
+            {
+                tag: "forge:storage_blocks/",
+                fluidAmount: FluidAmounts.METAL_BLOCK,
+            },
+        ],
+    },
+};

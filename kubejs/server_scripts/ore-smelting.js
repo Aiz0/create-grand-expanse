@@ -1,63 +1,75 @@
 ServerEvents.recipes((event) => {
-    const furnaceOres = ["copper", "iron", "gold", "zinc", "tin", "nickel"];
-    const nuggets_smelting = 3;
-    const nuggets_blasting = 4;
-
-    const smelt_to_nuggets = (id) => {
-        event.smelting(
-            `${nuggets_smelting}x #forge:nuggets/${id}`,
-            `#forge:raw_materials/${id}`,
-        );
-        event.blasting(
-            `${nuggets_blasting}x #forge:nuggets/${id}`,
-            `#forge:raw_materials/${id}`,
-        );
-    };
-
-    // remove all ingot making from furnaces.
+    // Removals
+    // Remove all ingot making from furnaces.
     event.remove([
         { type: "minecraft:smelting", output: "#forge:ingots" },
         { type: "minecraft:blasting", output: "#forge:ingots" },
     ]);
-    furnaceOres.forEach(smelt_to_nuggets);
 
     // Remove existing ingot smelting recipe
     // It uses superheated blazeburners and we don't want that
-    event.remove({ type: "createmetallurgy:melting", input: "#forge:ingots" });
+    event.remove({ type: "createmetallurgy:melting" });
 
+    // Adds smelting recipes to the smeltable ores
+    global.config.furnace.ores.forEach(smelt_to_nuggets);
+
+    // Adds melting to the meltable materials
     global.config.melting.materials.forEach((material) => {
         global.config.melting.items.forEach((item) => {
             const tag = item.tag.concat(material.name);
             if (Item.of(`#${tag}`).empty) {
                 return;
             }
-            let fluidAmount = material.amount
-                ? material.amount
-                : global.config.melting.amount;
-            let processingTime = material.time
-                ? material.time
-                : global.config.melting.time;
-            const heatRequirement = material.heat
-                ? material.heat
-                : global.config.melting.heat;
-
-            const multiplier =
-                typeof item.nuggets !== "undefined" ? item.nuggets : 9; // amount of nuggets in a ingot
-            fluidAmount *= multiplier;
-            processingTime *= multiplier;
-
-            event.custom({
-                type: "createmetallurgy:melting",
-                ingredients: [{ tag: tag }],
-                processingTime: processingTime,
-                results: [
-                    {
-                        fluid: material.fluid,
-                        amount: fluidAmount,
-                    },
-                ],
-                heatRequirement: heatRequirement,
-            });
+            melting(
+                tag,
+                material.fluid,
+                item.fluidAmount,
+                material.heatRequirement
+            );
         });
     });
+
+    // Helper Functions
+    function smelt_to_nuggets(material) {
+        // Normal Smelting
+        event.smelting(
+            `${global.config.furnace.smelting_nuggets}x #forge:nuggets/${material}`,
+            `#forge:raw_materials/${material}`
+        );
+        // Blasting. A bit Faster
+        event.blasting(
+            `${global.config.furnace.blasting_nuggets}x #forge:nuggets/${material}`,
+            `#forge:raw_materials/${material}`
+        );
+    }
+
+    function melting(inputTag, fluid, fluidAmount, heatRequirement) {
+        // Resolve optional parameters
+        fluidAmount =
+            typeof fluidAmount !== "undefined"
+                ? fluidAmount
+                : global.config.melting.amount;
+        heatRequirement =
+            typeof heatRequirement !== "undefined"
+                ? heatRequirement
+                : global.config.melting.heatRequirement;
+        // Get processing Time from FluidAmount
+        const processingTime = Math.max(
+            global.config.melting.minTime,
+            fluidAmount * global.config.melting.time
+        );
+        event.custom({
+            type: "createmetallurgy:melting",
+            // Might change later
+            ingredients: [{ tag: inputTag }],
+            processingTime: processingTime,
+            results: [
+                {
+                    fluid: fluid,
+                    amount: fluidAmount,
+                },
+            ],
+            heatRequirement: heatRequirement,
+        });
+    }
 });
