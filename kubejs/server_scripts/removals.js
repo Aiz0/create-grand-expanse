@@ -1,6 +1,6 @@
 ServerEvents.recipes((event) => {
     // Removal of recipes should be done here
-    // If a recipe is replaced use .id instead in replacements.js
+    // If a replacement is easier do it instead in replacements.js
     // Remove all ingot making from furnaces.
     event.remove([
         // Minecraft
@@ -9,6 +9,7 @@ ServerEvents.recipes((event) => {
         // Remove iron and gold tools
         { output: "#forge:tools/iron" },
         { output: "#forge:tools/gold" },
+
         // Create
         {
             output: "create:andesite_alloy",
