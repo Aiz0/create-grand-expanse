@@ -1,29 +1,22 @@
-global.packName = "grandexpanse";
+global.packName = "grand_expanse";
 
 // Define items here
-const items = ["andesite_compound"];
-// creates global object with our items
-global.items = items.reduce((obj, item) => {
-    obj[item] = `${global.packName}:${item}`;
-    return obj;
-}, {});
+global.items = { andesite_compound: null };
+defineNames(global.items);
 
 // Define fluids here
 // Fluids beginning with molten will hava the lava tag.
-const fluids = [
-    "andesite_mixture",
-    "molten_tin",
-    "molten_nickel",
-    "molten_desh",
-    "molten_silver",
-    "molten_lead",
-    "molten_rose_gold",
-];
-// creates global object with our items
-global.fluids = fluids.reduce((obj, fluid) => {
-    obj[fluid] = `${global.packName}:${fluid}`;
-    return obj;
-}, {});
+global.fluids = {
+    andesite_mixture: null,
+    molten_tin: null,
+    molten_nickel: null,
+    molten_desh: null,
+    molten_silver: null,
+    molten_lead: null,
+    molten_rose_gold: null,
+};
+// define names from keys
+defineNames(global.fluids);
 
 global.config = {
     furnace: {
@@ -70,3 +63,9 @@ global.config = {
         ],
     },
 };
+
+function defineNames(object) {
+    Object.keys(object).forEach((key) => {
+        object[key] = `${global.packName}:${key}`;
+    });
+}
