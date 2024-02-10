@@ -40,6 +40,7 @@ global.config = {
         minTime: 20, // shortest melting time.
         // materials that can be melted
         // Can also have optional heatRequirement
+        // TODO ADD melting time to materials.
         materials: [
             { name: "iron", fluid: "createmetallurgy:molten_iron" },
             { name: "copper", fluid: "createmetallurgy:molten_copper" },
@@ -54,6 +55,8 @@ global.config = {
             { tag: "forge:ingots/" },
             { tag: "forge:raw_materials/" },
             { tag: "forge:crushed_raw_materials/" },
+            { tag: "forge:dusts/" },
+            { tag: "forge:dirty_dusts/" },
             { tag: "forge:nuggets/", fluidAmount: FluidAmounts.NUGGET },
             { tag: "forge:tools/", fluidAmount: FluidAmounts.NUGGET },
             {

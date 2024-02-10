@@ -1,15 +1,4 @@
 ServerEvents.recipes((event) => {
-    // Removals
-    // Remove all ingot making from furnaces.
-    event.remove([
-        { type: "minecraft:smelting", output: "#forge:ingots" },
-        { type: "minecraft:blasting", output: "#forge:ingots" },
-    ]);
-
-    // Remove existing ingot smelting recipe
-    // It uses superheated blazeburners and we don't want that
-    event.remove({ type: "createmetallurgy:melting" });
-
     // Adds smelting recipes to the smeltable ores
     global.config.furnace.ores.forEach(smelt_to_nuggets);
 
@@ -36,7 +25,7 @@ ServerEvents.recipes((event) => {
             `${global.config.furnace.smelting_nuggets}x #forge:nuggets/${material}`,
             `#forge:raw_materials/${material}`
         );
-        // Blasting. A bit Faster
+        // Blasting. A bit Faster, A bit Better.
         event.blasting(
             `${global.config.furnace.blasting_nuggets}x #forge:nuggets/${material}`,
             `#forge:raw_materials/${material}`
