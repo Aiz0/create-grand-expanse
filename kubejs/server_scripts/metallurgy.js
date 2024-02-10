@@ -1,4 +1,14 @@
 ServerEvents.recipes((event) => {
+    event.custom({
+        type: "createmetallurgy:melting",
+        ingredients: [
+            { fluid: "thermal:sap", amount: FluidAmounts.NUGGET * 2 },
+        ],
+        processingTime: 120,
+        results: [{ fluid: "thermal:syrup", amount: FluidAmounts.NUGGET }],
+        heatRequirement: "heated",
+    });
+
     // Adds smelting recipes to the smeltable ores
     global.config.furnace.ores.forEach(smelt_to_nuggets);
 
