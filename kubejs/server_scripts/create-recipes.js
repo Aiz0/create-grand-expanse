@@ -16,4 +16,11 @@ ServerEvents.recipes((event) => {
             },
         ],
     );
+
+    event.recipes.createMixing("thermal:rubber", [
+        {
+            fluid: "thermal:latex",
+            amount: FluidAmounts.BOTTLE,
+        },
+    ]);
 });
