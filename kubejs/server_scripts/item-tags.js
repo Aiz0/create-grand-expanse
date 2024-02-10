@@ -1,4 +1,7 @@
 ServerEvents.tags("item", (event) => {
+    event.add("forge:rope", "farmersdelight:rope");
+    event.add("forge:rope", "quark:rope");
+
     // Create crushed raw materials
     event
         .get("create:crushed_raw_materials")
