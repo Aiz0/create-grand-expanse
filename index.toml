@@ -49,16 +49,25 @@ file = "kubejs/assets/kubejs/textures/block/fluid/molten/still.png.mcmeta"
 file = "kubejs/client_scripts/rei.js"
 
 [[files]]
+file = "kubejs/server_scripts/additions.js"
+
+[[files]]
+file = "kubejs/server_scripts/create-recipes.js"
+
+[[files]]
 file = "kubejs/server_scripts/fluid-tags.js"
 
 [[files]]
 file = "kubejs/server_scripts/item-tags.js"
 
 [[files]]
-file = "kubejs/server_scripts/ore-smelting.js"
+file = "kubejs/server_scripts/metallurgy.js"
 
 [[files]]
-file = "kubejs/server_scripts/server.js"
+file = "kubejs/server_scripts/removals.js"
+
+[[files]]
+file = "kubejs/server_scripts/replacements.js"
 
 [[files]]
 file = "kubejs/startup_scripts/config.js"
