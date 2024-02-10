@@ -14,7 +14,7 @@ ServerEvents.recipes((event) => {
                 C: "farmersdelight:rope",
                 D: "minecraft:barrel",
                 E: "minecraft:bundle",
-            },
+            }
         )
         .id("sophisticatedbackpacks:backpack");
 
@@ -47,7 +47,7 @@ ServerEvents.recipes((event) => {
             A: "minecraft:andesite",
             B: "create:zinc_nugget",
             C: "minecraft:clay_ball",
-        },
+        }
     );
 
     SmeltAndBlast("create:andesite_alloy", global.items.andesite_compound);
@@ -65,7 +65,7 @@ ServerEvents.recipes((event) => {
                 fluid: "createmetallurgy:molten_copper",
                 amount: FluidAmounts.NUGGET,
             },
-        ],
+        ]
     );
 
     // Mechanical Saw now uses thermal saw blade
@@ -94,4 +94,18 @@ ServerEvents.recipes((event) => {
         A: "create:andesite_alloy",
         B: "create:iron_sheet",
     });
+
+    // Empty Blaze Burner.
+    // Magma blocks instead of netherrack because it's easier to find in the overworld.
+    event
+        .shaped(
+            Item.of("create:empty_blaze_burner", 1),
+            ["AAA", "ABA", "CCC"],
+            {
+                A: "#forge:rods/iron",
+                B: "minecraft:magma_block",
+                C: "create:iron_sheet",
+            }
+        )
+        .id("create:crafting/kinetics/empty_blaze_burner");
 });
