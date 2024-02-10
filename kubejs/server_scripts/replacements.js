@@ -44,4 +44,11 @@ ServerEvents.recipes((event) => {
             },
         )
         .id("create:crafting/kinetics/empty_blaze_burner");
+
+    event
+        .shaped(Item.of("create:fluid_tank", 1), ["ABA", "B B", "ABA"], {
+            A: "#forge:plates/copper",
+            B: "#forge:glass",
+        })
+        .id("create:crafting/kinetics/fluid_tank");
 });
