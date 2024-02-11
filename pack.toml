@@ -12,4 +12,5 @@ forge = "43.3.0"
 minecraft = "1.19.2"
 
 [options]
+acceptable-game-versions = ["1.19"]
 no-internal-hashes = true
