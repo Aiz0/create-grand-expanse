@@ -3,7 +3,7 @@ ServerEvents.recipes((event) => {
 
     // Mixing Recipes.
     // Will be replaced with helper function later.
-    event.recipes.createMixing(
+    event.recipes.create.mixing(
         Fluid.of(global.fluids.molten_rose_gold, FluidAmounts.NUGGET),
         [
             {
@@ -17,10 +17,12 @@ ServerEvents.recipes((event) => {
         ],
     );
 
-    event.recipes.createMixing("thermal:rubber", [
-        {
-            fluid: "thermal:latex",
-            amount: FluidAmounts.BOTTLE,
-        },
-    ]);
+    // rubber from latex via mixing gives 1 extra rubber compared to handcrafting
+    event.recipes.create.mixing(
+        "thermal:rubber",
+        Fluid.of("thermal:latex", FluidAmounts.BOTTLE),
+    );
+    event.recipes.create
+        .mixing("thermal:rosin", Fluid.of("thermal:resin", FluidAmounts.BOTTLE))
+        .heated();
 });
