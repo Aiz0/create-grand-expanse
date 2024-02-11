@@ -40,4 +40,27 @@ ServerEvents.recipes((event) => {
         event.smelting(output, input);
         event.blasting(output, input);
     }
+
+    // Mechanical Extruder recipes
+    event.shaped(
+        "create_mechanical_extruder:mechanical_extruder",
+        ["ABA", "CDC", "AEA"],
+        {
+            A: "create:andesite_alloy",
+            B: "create:shaft",
+            C: "#forge:glass",
+            D: "create:andesite_casing",
+            E: "minecraft:iron_block",
+        },
+    );
+
+    event.shaped(
+        "create_mechanical_extruder:mechanical_extruder",
+        ["A A", "BCB", "A A"],
+        {
+            A: "create:andesite_alloy",
+            B: "#forge:glass",
+            C: "create:mechanical_press",
+        },
+    );
 });

@@ -22,6 +22,7 @@ ServerEvents.recipes((event) => {
         { type: "createmetallurgy:melting" },
 
         // Create mechanical extruder
+        { id: "create_mechanical_extruder:mechanical_extruder" },
         { id: "create_mechanical_extruder:extruding/stone" },
 
         // Ad Astra
