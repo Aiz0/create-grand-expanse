@@ -549,6 +549,10 @@ file = "resourcepacks/fresh-animations.pw.toml"
 metafile = true
 
 [[files]]
+file = "resourcepacks/sick-compass.pw.toml"
+metafile = true
+
+[[files]]
 file = "resourcepacks/smart-chutes-curvified.pw.toml"
 metafile = true
 
