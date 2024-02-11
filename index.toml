@@ -1,0 +1,571 @@
+hash-format = "sha256"
+
+[[files]]
+file = "LICENSE"
+
+[[files]]
+file = "config/Mekanism/world.toml"
+
+[[files]]
+file = "config/ae2/common.json"
+
+[[files]]
+file = "config/almostunified/unify.json"
+
+[[files]]
+file = "config/forgery/features.ini"
+
+[[files]]
+file = "config/incontrol/spawn.json"
+
+[[files]]
+file = "config/incontrol/spawner.json"
+
+[[files]]
+file = "config/item_obliterator.json"
+
+[[files]]
+file = "config/quark-common.toml"
+
+[[files]]
+file = "config/resourcepackoverrides.json"
+
+[[files]]
+file = "config/splasher.toml"
+
+[[files]]
+file = "config/splasher/en_us.txt"
+
+[[files]]
+file = "config/zume.json5"
+
+[[files]]
+file = "kubejs/README.txt"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/fluid/molten/flowing.png"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/fluid/molten/flowing.png.mcmeta"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/fluid/molten/still.png"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/fluid/molten/still.png.mcmeta"
+
+[[files]]
+file = "kubejs/client_scripts/rei.js"
+
+[[files]]
+file = "kubejs/server_scripts/additions.js"
+
+[[files]]
+file = "kubejs/server_scripts/create-recipes.js"
+
+[[files]]
+file = "kubejs/server_scripts/extruder.js"
+
+[[files]]
+file = "kubejs/server_scripts/fluid-tags.js"
+
+[[files]]
+file = "kubejs/server_scripts/item-tags.js"
+
+[[files]]
+file = "kubejs/server_scripts/metallurgy.js"
+
+[[files]]
+file = "kubejs/server_scripts/removals.js"
+
+[[files]]
+file = "kubejs/server_scripts/replacements.js"
+
+[[files]]
+file = "kubejs/startup_scripts/config.js"
+
+[[files]]
+file = "kubejs/startup_scripts/fluids.js"
+
+[[files]]
+file = "kubejs/startup_scripts/items.js"
+
+[[files]]
+file = "mods/ad-astra.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/ae2.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/almost-unified.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/appleskin.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/architectury-api.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/autoreglib.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/better-advancements.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/blahaj-reforged.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/botarium.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/building-gadgets.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/canary.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/chat-heads.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/cloth-config.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/clumps.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/cofh-core.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/controlling.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/corpse.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/create-connected.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/create-deco.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/create-encased.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/create-enchantment-industry.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/create-mechanical-extruder.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/create-mechanical-spawner.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/create-metallurgy.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/create-power-loader.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/create-sifting.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/create-teleporters.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/create.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/createaddition.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/cupboard.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/curios.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/ears.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/embeddium.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/entity-model-features.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/entityculling.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/entitytexturefeatures.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/extended-cogwheels.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/fabrication.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/fallingleavesforge.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/farmers-delight.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/fastload.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/fastsuite.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/ferrite-core.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/ftb-chunks-forge.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/ftb-library-forge.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/ftb-quests-forge.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/ftb-teams-forge.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/ftb-xmod-compat.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/fusion-connected-textures.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/geckolib.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/harvest-with-ease.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/immediatelyfast.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/in-control.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/item-filters.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/item-obliterator.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/jade-addons-forge.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/jade.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/konkrete.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/kotlin-for-forge.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/kubejs-create.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/kubejs.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/lazy-dfu-forge.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/leaky.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/leaves-be-gone.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/lmd.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/lootr.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/mekanism-generators.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/mekanism.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/modernfix.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/mouse-tweaks.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/natures-compass.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/necronomicon.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/no-chat-reports.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/no-mo-portals.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/persistent-ores.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/ping-wheel.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/placebo.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/pluto.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/polymorph.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/probejs.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/puzzles-lib.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/quark.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/rechiseled-create.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/rechiseled.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/rei.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/resource-pack-overrides.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/resourceful-config.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/resourceful-lib.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/rhino.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/roughly-enough-items-hacks.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/rubidium-extra.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/saturn.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/sidekick.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/slice-and-dice.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/smooth-boot-reloaded.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/smooth-chunk-save.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-backpacks.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-core.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/spark.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/splasher.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/starlight-forge.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/stop-villager-trades.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/storage-drawers.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/suggestion-tweaker.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/supermartijn642s-config-lib.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/supermartijn642s-core-lib.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/terralith.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/thermal-foundation.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/toms-storage.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/torchmaster.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/trash-cans.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/yeetus-experimentus.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/zume.pw.toml"
+metafile = true
+
+[[files]]
+file = "resourcepacks/cubic-sun-moon.pw.toml"
+metafile = true
+
+[[files]]
+file = "resourcepacks/default-dark-mode.pw.toml"
+metafile = true
+
+[[files]]
+file = "resourcepacks/fancy-crops.pw.toml"
+metafile = true
+
+[[files]]
+file = "resourcepacks/fresh-animations.pw.toml"
+metafile = true
+
+[[files]]
+file = "resourcepacks/sick-compass.pw.toml"
+metafile = true
+
+[[files]]
+file = "resourcepacks/smart-chutes-curvified.pw.toml"
+metafile = true
+
+[[files]]
+file = "resourcepacks/toms-create-storage.pw.toml"
+metafile = true
