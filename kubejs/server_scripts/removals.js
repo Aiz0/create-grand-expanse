@@ -21,6 +21,9 @@ ServerEvents.recipes((event) => {
         // It uses superheated blazeburners and we don't want that
         { type: "createmetallurgy:melting" },
 
+        // Create mechanical extruder
+        { id: "create_mechanical_extruder:extruding/stone" },
+
         // Ad Astra
         // Remove ad astra hammer recipes.
         // We don't want this sheet/plate recipe.

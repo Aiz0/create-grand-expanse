@@ -58,6 +58,9 @@ file = "kubejs/server_scripts/additions.js"
 file = "kubejs/server_scripts/create-recipes.js"
 
 [[files]]
+file = "kubejs/server_scripts/extruder.js"
+
+[[files]]
 file = "kubejs/server_scripts/fluid-tags.js"
 
 [[files]]

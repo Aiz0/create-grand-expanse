@@ -19,6 +19,8 @@ global.fluids = {
 defineNames(global.fluids);
 
 global.config = {
+    // Default amount of bonks to get generate a block
+    extruder_bonks: 3, // I like 3 because it starts of slower than the drill but becomes much faster when at high speeds
     furnace: {
         // Ores that can be smelted.
         // Anything not here can't be smelted in a furnace
