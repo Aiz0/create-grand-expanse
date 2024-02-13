@@ -153,6 +153,10 @@ file = "mods/corpse.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/create-compression.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/create-connected.pw.toml"
 metafile = true
 
