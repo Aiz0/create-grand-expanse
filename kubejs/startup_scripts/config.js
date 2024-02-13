@@ -64,7 +64,10 @@ global.config = {
             },
         ],
     },
+    compressed: [{ block: "minecraft:cobblestone", amount: 99 }],
 };
+
+global.compressed = {};
 
 function defineNames(object) {
     Object.keys(object).forEach((key) => {

@@ -37,6 +37,9 @@ file = "config/zume.json5"
 file = "kubejs/README.txt"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/block/cobblestone.png"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/block/fluid/molten/flowing.png"
 
 [[files]]
@@ -74,6 +77,9 @@ file = "kubejs/server_scripts/removals.js"
 
 [[files]]
 file = "kubejs/server_scripts/replacements.js"
+
+[[files]]
+file = "kubejs/startup_scripts/blocks.js"
 
 [[files]]
 file = "kubejs/startup_scripts/config.js"

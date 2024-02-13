@@ -40,4 +40,14 @@ ServerEvents.recipes((event) => {
         event.smelting(output, input);
         event.blasting(output, input);
     }
+
+    // Compressed blocks
+    for (const [original_block, blocks] of Object.entries(global.compressed)) {
+        blocks.forEach((block, index, array) => {
+            const block_tier_below =
+                index + 1 == array.length ? original_block : array[index + 1];
+            event.shapeless(block, `9x ${block_tier_below}`);
+            event.shapeless(`9x ${block_tier_below}`, block);
+        });
+    }
 });
