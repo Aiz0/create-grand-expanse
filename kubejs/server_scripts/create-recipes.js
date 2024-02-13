@@ -25,4 +25,9 @@ ServerEvents.recipes((event) => {
     event.recipes.create
         .mixing("thermal:rosin", Fluid.of("thermal:resin", FluidAmounts.BOTTLE))
         .heated();
+
+    event.recipes.create.mixing(
+        Fluid.of(global.fluids.andesite_mixture, FluidAmounts.INGOT),
+        ["minecraft:andesite", "create:zinc_nugget", "minecraft:clay_ball"],
+    );
 });
