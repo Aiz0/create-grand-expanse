@@ -30,4 +30,22 @@ ServerEvents.recipes((event) => {
         { id: "ad_astra:recipes/hammer" },
         { input: "ad_astra:hammer" },
     ]);
+
+    // get all blocks compressed blocks that shouldn't be removed
+    const keep_regex = new RegExp(
+        `^createcompression:compressed_(${global.config.compressed.join(
+            "|",
+        )})_\\dx`,
+    );
+    // Compressed Blocks
+
+    const blocks_to_keep = Ingredient.of(keep_regex).itemIds;
+    // The compressed blocks to remove are put into an array to be used later in client_scripts/rei.js
+    global.compressed_blocks_to_remove = Ingredient.of(
+        /^createcompression:/,
+    ).itemIds.filter((id) => !blocks_to_keep.some((block) => id === block));
+    // removes them
+    global.compressed_blocks_to_remove.forEach((block) => {
+        event.remove({ output: block });
+    });
 });
