@@ -64,6 +64,8 @@ global.config = {
             },
         ],
     },
+    // compressed blocks to keep from create compression
+    compressed: ["cobblestone", "andesite"],
 };
 
 function defineNames(object) {

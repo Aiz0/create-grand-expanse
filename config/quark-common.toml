@@ -8,6 +8,10 @@
 	"Dispensers Place Blocks" = false
 	Chute = false
 
+[building]
+    # We have compressed cobblestone
+	"Sturdy Stone" = false
+
 [client]
     # REI already has this if you double click the search bar.
     "Chest Searching" = false

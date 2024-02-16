@@ -43,3 +43,7 @@ REIEvents.groupEntries((event) => {
         /spawn_egg/,
     ]);
 });
+
+REIEvents.hide("item", (event) => {
+    event.hide(global.compressed_blocks_to_remove);
+});
