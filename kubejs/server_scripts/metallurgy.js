@@ -9,8 +9,12 @@ ServerEvents.recipes((event) => {
         heatRequirement: "heated",
     });
 
+    // Custom Casting
+    castIngot("create:andesite_alloy", global.fluids.andesite_mixture);
+    castBasin("create:andesite_alloy_block", global.fluids.andesite_mixture);
+
     // Adds smelting recipes to the smeltable ores
-    global.config.furnace.ores.forEach(smelt_to_nuggets);
+    global.config.furnace.ores.forEach(smeltToNuggets);
 
     // Adds melting to the meltable materials
     global.config.melting.materials.forEach((material) => {
@@ -29,7 +33,7 @@ ServerEvents.recipes((event) => {
     });
 
     // Helper Functions
-    function smelt_to_nuggets(material) {
+    function smeltToNuggets(material) {
         // Normal Smelting
         event.smelting(
             `${global.config.furnace.smelting_nuggets}x #forge:nuggets/${material}`,
@@ -69,6 +73,46 @@ ServerEvents.recipes((event) => {
                 },
             ],
             heatRequirement: heatRequirement,
+        });
+    }
+
+    function castIngot(item, fluid) {
+        event.custom({
+            type: "createmetallurgy:casting_in_table",
+            ingredients: [
+                {
+                    item: "createmetallurgy:graphite_ingot_mold",
+                },
+                {
+                    fluid: fluid,
+                    amount: FluidAmounts.INGOT,
+                },
+            ],
+            processingTime: 80,
+            results: [
+                {
+                    item: item,
+                    amount: 1,
+                },
+            ],
+        });
+    }
+    function castBasin(item, fluid) {
+        event.custom({
+            type: "createmetallurgy:casting_in_basin",
+            ingredients: [
+                {
+                    fluid: fluid,
+                    amount: FluidAmounts.METAL_BLOCK,
+                },
+            ],
+            processingTime: 150,
+            results: [
+                {
+                    item: item,
+                    amount: 1,
+                },
+            ],
         });
     }
 });
