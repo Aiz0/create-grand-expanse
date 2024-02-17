@@ -37,6 +37,7 @@ global.config = {
         // Can also have optional heatRequirement
         // TODO ADD melting time to materials.
         materials: [
+            { name: "andesite_alloy", fluid: global.fluids.andesite_mixture },
             { name: "iron", fluid: "createmetallurgy:molten_iron" },
             { name: "copper", fluid: "createmetallurgy:molten_copper" },
             { name: "gold", fluid: "createmetallurgy:molten_gold" },

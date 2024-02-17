@@ -51,4 +51,24 @@ ServerEvents.recipes((event) => {
             B: "#forge:glass",
         })
         .id("create:crafting/kinetics/fluid_tank");
+
+    // New Smelting recipes to the smeltable ores
+    global.config.furnace.ores.forEach(smeltToNuggets);
+
+    // Helper Functions
+    function smeltToNuggets(material) {
+        const nugget = AlmostUnified.getPreferredItemForTag(
+            `forge:nuggets/${material}`,
+        ).getId();
+        // Normal Smelting
+        event.smelting(
+            `${global.config.furnace.smelting_nuggets}x ${nugget}`,
+            `#forge:raw_materials/${material}`,
+        );
+        // Blasting. A bit Faster, A bit Better.
+        event.blasting(
+            `${global.config.furnace.blasting_nuggets}x ${nugget}`,
+            `#forge:raw_materials/${material}`,
+        );
+    }
 });
