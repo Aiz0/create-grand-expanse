@@ -44,6 +44,12 @@ global.config = {
             { name: "zinc", fluid: "createmetallurgy:molten_zinc" },
             { name: "tin", fluid: global.fluids.molten_tin },
             { name: "rose_gold", fluid: global.fluids.molten_rose_gold },
+            { name: "steel", fluid: "createmetallurgy:molten_steel" },
+            { name: "tungsten", fluid: "createmetallurgy:molten_tungsten" },
+            { name: "brass", fluid: "createmetallurgy:molten_brass" },
+            { name: "nickel", fluid: global.fluids.molten_nickel },
+            { name: "silver", fluid: global.fluids.molten_silver },
+            { name: "lead", fluid: global.fluids.molten_lead },
         ],
         // types of items that can be melted of above materials
         // nuggets defaults to 9
