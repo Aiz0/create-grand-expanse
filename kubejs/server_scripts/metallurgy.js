@@ -9,15 +9,9 @@ ServerEvents.recipes((event) => {
         heatRequirement: "heated",
     });
 
-    // Custom Casting
-    castIngot("create:andesite_alloy", global.fluids.andesite_mixture);
-    castBasin("create:andesite_alloy_block", global.fluids.andesite_mixture);
-
-    // Adds smelting recipes to the smeltable ores
-    global.config.furnace.ores.forEach(smeltToNuggets);
-
     // Adds melting to the meltable materials
     global.config.melting.materials.forEach((material) => {
+        castFluid(material.name, material.fluid);
         global.config.melting.items.forEach((item) => {
             const tag = item.tag.concat(material.name);
             if (Item.of(`#${tag}`).empty) {
@@ -33,19 +27,6 @@ ServerEvents.recipes((event) => {
     });
 
     // Helper Functions
-    function smeltToNuggets(material) {
-        // Normal Smelting
-        event.smelting(
-            `${global.config.furnace.smelting_nuggets}x #forge:nuggets/${material}`,
-            `#forge:raw_materials/${material}`,
-        );
-        // Blasting. A bit Faster, A bit Better.
-        event.blasting(
-            `${global.config.furnace.blasting_nuggets}x #forge:nuggets/${material}`,
-            `#forge:raw_materials/${material}`,
-        );
-    }
-
     function melting(inputTag, fluid, fluidAmount, heatRequirement) {
         // Resolve optional parameters
         fluidAmount =
@@ -76,25 +57,51 @@ ServerEvents.recipes((event) => {
         });
     }
 
+    function castFluid(material, fluid) {
+        castIngot(
+            AlmostUnified.getPreferredItemForTag(`forge:ingots/${material}`),
+            fluid,
+        );
+        castNugget(
+            AlmostUnified.getPreferredItemForTag(`forge:nuggets/${material}`),
+            fluid,
+        );
+        castPlate(
+            AlmostUnified.getPreferredItemForTag(`forge:plates/${material}`),
+            fluid,
+        );
+        castBasin(
+            AlmostUnified.getPreferredItemForTag(
+                `forge:storage_blocks/${material}`,
+            ),
+            fluid,
+        );
+    }
+
     function castIngot(item, fluid) {
+        castMold("createmetallurgy:graphite_ingot_mold", item, fluid, 80);
+    }
+    function castNugget(item, fluid) {
+        castMold("createmetallurgy:graphite_nugget_mold", item, fluid, 40);
+    }
+    function castPlate(item, fluid) {
+        castMold("createmetallurgy:graphite_plate_mold", item, fluid, 80);
+    }
+
+    function castMold(mold, item, fluid, time) {
         event.custom({
             type: "createmetallurgy:casting_in_table",
             ingredients: [
                 {
-                    item: "createmetallurgy:graphite_ingot_mold",
+                    item: mold,
                 },
                 {
                     fluid: fluid,
                     amount: FluidAmounts.INGOT,
                 },
             ],
-            processingTime: 80,
-            results: [
-                {
-                    item: item,
-                    amount: 1,
-                },
-            ],
+            processingTime: time,
+            results: [item],
         });
     }
     function castBasin(item, fluid) {
@@ -107,12 +114,7 @@ ServerEvents.recipes((event) => {
                 },
             ],
             processingTime: 150,
-            results: [
-                {
-                    item: item,
-                    amount: 1,
-                },
-            ],
+            results: [item],
         });
     }
 });

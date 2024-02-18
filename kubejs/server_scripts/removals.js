@@ -20,6 +20,8 @@ ServerEvents.recipes((event) => {
         // Remove existing metallurgy smelting recipe
         // It uses superheated blazeburners and we don't want that
         { type: "createmetallurgy:melting" },
+        { type: "createmetallurgy:casting_in_basin" },
+        { type: "createmetallurgy:casting_in_table" },
 
         // Create mechanical extruder
         { id: "create_mechanical_extruder:mechanical_extruder" },
