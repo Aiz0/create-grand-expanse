@@ -29,10 +29,7 @@ ServerEvents.recipes((event) => {
 
         // Create Sifter
         // removes all except sifting for coral
-        {
-            type: "createsifter:sifting",
-            not: { id: "createsifter:sifting/dirt_string_mesh_waterlogged" },
-        },
+        { type: "createsifter:sifting" },
         // Ad Astra
         // Remove ad astra hammer recipes.
         // We don't want this sheet/plate recipe.
