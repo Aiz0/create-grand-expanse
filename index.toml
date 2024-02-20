@@ -85,6 +85,9 @@ file = "kubejs/startup_scripts/fluids.js"
 file = "kubejs/startup_scripts/items.js"
 
 [[files]]
+file = "kubejs/startup_scripts/tool-tiers.js"
+
+[[files]]
 file = "mods/ad-astra.pw.toml"
 metafile = true
 
