@@ -7,6 +7,12 @@ ServerEvents.tags("item", (event) => {
     // not a replacement for the block though.
     event.add("forge:slimeballs", "thermal:rosin");
 
+    tool(global.items.copper_pickaxe, "copper", "pickaxes");
+    tool(global.items.copper_axe, "copper", "axes");
+    tool(global.items.copper_shovel, "copper", "shovels");
+    tool(global.items.copper_sword, "copper", "swords");
+    tool(global.items.copper_hoe, "copper", "hoes");
+
     // Create crushed raw materials
     event
         .get("create:crushed_raw_materials")
@@ -23,5 +29,11 @@ ServerEvents.tags("item", (event) => {
         const material = Item.of(item).getId().split("_").pop();
         event.add(`forge:${category}`, item);
         event.add(`forge:${category}/${material}`, item);
+    }
+
+    function tool(item, material, tool) {
+        event.add(`forge:tools/${tool}`, item);
+        event.add("forge:tools", item);
+        event.add(`forge:tools/${material}`, item);
     }
 });
