@@ -42,6 +42,7 @@ ServerEvents.recipes((event) => {
     }
 
     // Mechanical Extruder recipes
+    // Press recipe surrounded by glass and andesite alloy
     event.shaped(
         "create_mechanical_extruder:mechanical_extruder",
         ["ABA", "CDC", "AEA"],
@@ -53,7 +54,7 @@ ServerEvents.recipes((event) => {
             E: "minecraft:iron_block",
         },
     );
-
+    // Alt Recipe using press
     event.shaped(
         "create_mechanical_extruder:mechanical_extruder",
         ["A A", "BCB", "A A"],
@@ -63,4 +64,26 @@ ServerEvents.recipes((event) => {
             C: "create:mechanical_press",
         },
     );
+
+    // Copper tools
+    event.shaped(global.items.copper_pickaxe, ["AAA", " B ", " B "], {
+        A: "#forge:ingots/copper",
+        B: "minecraft:stick",
+    });
+    event.shaped(global.items.copper_axe, ["AA ", "AB ", " B "], {
+        A: "#forge:ingots/copper",
+        B: "minecraft:stick",
+    });
+    event.shaped(global.items.copper_shovel, [" A ", " B ", " B "], {
+        A: "#forge:ingots/copper",
+        B: "minecraft:stick",
+    });
+    event.shaped(global.items.copper_sword, [" A ", " A ", " B "], {
+        A: "#forge:ingots/copper",
+        B: "minecraft:stick",
+    });
+    event.shaped(global.items.copper_hoe, ["AA ", " B ", " B "], {
+        A: "#forge:ingots/copper",
+        B: "minecraft:stick",
+    });
 });
