@@ -1,0 +1,13 @@
+name = "Sick Compass"
+filename = "Sick Compass - 1.19.X.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/96T3I0I3/versions/BBdQO4xC/Sick%20Compass%20-%201.19.X.zip"
+hash-format = "sha1"
+hash = "335d137d7385254c499cdec0c7ba071c93e2ddd5"
+
+[update]
+[update.modrinth]
+mod-id = "96T3I0I3"
+version = "BBdQO4xC"

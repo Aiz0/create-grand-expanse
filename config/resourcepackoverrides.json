@@ -2,13 +2,13 @@
     "schema_version": 1,
     "default_packs": [
         "file/Default-Dark-Mode-1.19.2-v1.4.0.zip",
-        "file/BetterVanillaBuildingV2.94 LITE.zip",
         "file/FreshAnimations_v1.8.zip",
         "create:legacy_copper",
         "file/Create+Simple+Storage+2.1.zip",
         "file/cubic-sun-moon-vb1-7-4a.zip",
         "file/Fancy Crops v1.0 pf5-22.zip",
-        "file/Smart Chute but Curvy.zip"
+        "file/Smart Chute but Curvy.zip",
+        "file/Sick Compass - 1.19.X.zip"
     ],
     "default_overrides": {
         "force_compatible": true

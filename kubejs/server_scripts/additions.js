@@ -1,0 +1,89 @@
+ServerEvents.recipes((event) => {
+    // andesite compound recipe from create:astral
+    event.shaped(
+        Item.of(global.items.andesite_compound, 1),
+        ["AAA", "BBB", "CCC"],
+        {
+            A: "minecraft:andesite",
+            B: "create:zinc_nugget",
+            C: "minecraft:clay_ball",
+        },
+    );
+    SmeltAndBlast("create:andesite_alloy", global.items.andesite_compound);
+
+    // Thermal saw blade
+    // crafting item
+    event.shaped(Item.of("thermal:saw_blade", 1), [" A ", "AAA", " A "], {
+        A: "create:iron_sheet",
+    });
+
+    // Thermal Drill
+    // crafting item
+    event.shaped(Item.of("thermal:drill_head", 1), [" A ", "ABA", "BBB"], {
+        A: "create:andesite_alloy",
+        B: "create:iron_sheet",
+    });
+    // Thermal arboreal extractor
+    // Early game to get access to tree fluids.
+    event.shaped(
+        Item.of("thermal:device_tree_extractor", 1),
+        ["ABA", "BCB", "ADA"],
+        {
+            A: "create:andesite_alloy",
+            B: "#minecraft:planks",
+            C: "create:fluid_tank",
+            D: "thermal:drill_head",
+        },
+    );
+
+    function SmeltAndBlast(output, input) {
+        event.smelting(output, input);
+        event.blasting(output, input);
+    }
+
+    // Mechanical Extruder recipes
+    // Press recipe surrounded by glass and andesite alloy
+    event.shaped(
+        "create_mechanical_extruder:mechanical_extruder",
+        ["ABA", "CDC", "AEA"],
+        {
+            A: "create:andesite_alloy",
+            B: "create:shaft",
+            C: "#forge:glass",
+            D: "create:andesite_casing",
+            E: "minecraft:iron_block",
+        },
+    );
+    // Alt Recipe using press
+    event.shaped(
+        "create_mechanical_extruder:mechanical_extruder",
+        ["A A", "BCB", "A A"],
+        {
+            A: "create:andesite_alloy",
+            B: "#forge:glass",
+            C: "create:mechanical_press",
+        },
+    );
+
+    // Copper tools
+    event.shaped(global.items.copper_pickaxe, ["AAA", " B ", " B "], {
+        A: "#forge:ingots/copper",
+        B: "minecraft:stick",
+    });
+    event.shaped(global.items.copper_axe, ["AA ", "AB ", " B "], {
+        A: "#forge:ingots/copper",
+        B: "minecraft:stick",
+    });
+    event.shaped(global.items.copper_shovel, [" A ", " B ", " B "], {
+        A: "#forge:ingots/copper",
+        B: "minecraft:stick",
+    });
+    event.shaped(global.items.copper_sword, [" A ", " A ", " B "], {
+        A: "#forge:ingots/copper",
+        B: "minecraft:stick",
+    });
+    event.shaped(global.items.copper_hoe, ["AA ", " B ", " B "], {
+        A: "#forge:ingots/copper",
+        B: "minecraft:stick",
+    });
+});

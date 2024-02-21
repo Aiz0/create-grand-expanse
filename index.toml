@@ -10,6 +10,9 @@ file = "config/Mekanism/world.toml"
 file = "config/ae2/common.json"
 
 [[files]]
+file = "config/almostunified/unify.json"
+
+[[files]]
 file = "config/forgery/features.ini"
 
 [[files]]
@@ -34,6 +37,21 @@ file = "config/zume.json5"
 file = "kubejs/README.txt"
 
 [[files]]
+file = "kubejs/assets/grand_expanse/textures/item/copper_axe.png"
+
+[[files]]
+file = "kubejs/assets/grand_expanse/textures/item/copper_hoe.png"
+
+[[files]]
+file = "kubejs/assets/grand_expanse/textures/item/copper_pickaxe.png"
+
+[[files]]
+file = "kubejs/assets/grand_expanse/textures/item/copper_shovel.png"
+
+[[files]]
+file = "kubejs/assets/grand_expanse/textures/item/copper_sword.png"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/block/fluid/molten/flowing.png"
 
 [[files]]
@@ -49,16 +67,28 @@ file = "kubejs/assets/kubejs/textures/block/fluid/molten/still.png.mcmeta"
 file = "kubejs/client_scripts/rei.js"
 
 [[files]]
+file = "kubejs/server_scripts/additions.js"
+
+[[files]]
+file = "kubejs/server_scripts/create-recipes.js"
+
+[[files]]
+file = "kubejs/server_scripts/extruder.js"
+
+[[files]]
 file = "kubejs/server_scripts/fluid-tags.js"
 
 [[files]]
 file = "kubejs/server_scripts/item-tags.js"
 
 [[files]]
-file = "kubejs/server_scripts/ore-smelting.js"
+file = "kubejs/server_scripts/metallurgy.js"
 
 [[files]]
-file = "kubejs/server_scripts/server.js"
+file = "kubejs/server_scripts/removals.js"
+
+[[files]]
+file = "kubejs/server_scripts/replacements.js"
 
 [[files]]
 file = "kubejs/startup_scripts/config.js"
@@ -68,6 +98,9 @@ file = "kubejs/startup_scripts/fluids.js"
 
 [[files]]
 file = "kubejs/startup_scripts/items.js"
+
+[[files]]
+file = "kubejs/startup_scripts/tool-tiers.js"
 
 [[files]]
 file = "mods/ad-astra.pw.toml"
@@ -138,10 +171,6 @@ file = "mods/cofh-core.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/connectedness.pw.toml"
-metafile = true
-
-[[files]]
 file = "mods/controlling.pw.toml"
 metafile = true
 
@@ -150,7 +179,7 @@ file = "mods/corpse.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/create-connected.pw.toml"
+file = "mods/create-compression.pw.toml"
 metafile = true
 
 [[files]]
@@ -158,11 +187,11 @@ file = "mods/create-deco.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/create-encased.pw.toml"
+file = "mods/create-enchantment-industry.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/create-enchantment-industry.pw.toml"
+file = "mods/create-fork.pw.toml"
 metafile = true
 
 [[files]]
@@ -187,10 +216,6 @@ metafile = true
 
 [[files]]
 file = "mods/create-teleporters.pw.toml"
-metafile = true
-
-[[files]]
-file = "mods/create.pw.toml"
 metafile = true
 
 [[files]]
@@ -223,10 +248,6 @@ metafile = true
 
 [[files]]
 file = "mods/entitytexturefeatures.pw.toml"
-metafile = true
-
-[[files]]
-file = "mods/extended-cogwheels.pw.toml"
 metafile = true
 
 [[files]]
@@ -362,6 +383,10 @@ file = "mods/mouse-tweaks.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/natures-compass.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/necronomicon.pw.toml"
 metafile = true
 
@@ -423,10 +448,6 @@ metafile = true
 
 [[files]]
 file = "mods/redstonepen.pw.toml"
-metafile = true
-
-[[files]]
-file = "mods/reforgium.pw.toml"
 metafile = true
 
 [[files]]
@@ -542,10 +563,6 @@ file = "mods/zume.pw.toml"
 metafile = true
 
 [[files]]
-file = "resourcepacks/bettervanillabuilding.pw.toml"
-metafile = true
-
-[[files]]
 file = "resourcepacks/cubic-sun-moon.pw.toml"
 metafile = true
 
@@ -559,6 +576,10 @@ metafile = true
 
 [[files]]
 file = "resourcepacks/fresh-animations.pw.toml"
+metafile = true
+
+[[files]]
+file = "resourcepacks/sick-compass.pw.toml"
 metafile = true
 
 [[files]]

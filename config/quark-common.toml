@@ -9,8 +9,8 @@
 	Chute = false
 
 [building]
-    # Farmers delight has rope that works almost the same.
-	Rope = false
+    # We have compressed cobblestone
+	"Sturdy Stone" = false
 
 [client]
     # REI already has this if you double click the search bar.
