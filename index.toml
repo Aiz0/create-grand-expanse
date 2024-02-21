@@ -37,6 +37,21 @@ file = "config/zume.json5"
 file = "kubejs/README.txt"
 
 [[files]]
+file = "kubejs/assets/grand_expanse/textures/item/copper_axe.png"
+
+[[files]]
+file = "kubejs/assets/grand_expanse/textures/item/copper_hoe.png"
+
+[[files]]
+file = "kubejs/assets/grand_expanse/textures/item/copper_pickaxe.png"
+
+[[files]]
+file = "kubejs/assets/grand_expanse/textures/item/copper_shovel.png"
+
+[[files]]
+file = "kubejs/assets/grand_expanse/textures/item/copper_sword.png"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/block/fluid/molten/flowing.png"
 
 [[files]]
@@ -83,6 +98,9 @@ file = "kubejs/startup_scripts/fluids.js"
 
 [[files]]
 file = "kubejs/startup_scripts/items.js"
+
+[[files]]
+file = "kubejs/startup_scripts/tool-tiers.js"
 
 [[files]]
 file = "mods/ad-astra.pw.toml"

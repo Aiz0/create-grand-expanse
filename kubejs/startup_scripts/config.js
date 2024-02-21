@@ -1,7 +1,14 @@
 global.packName = "grand_expanse";
 
 // Define items here
-global.items = { andesite_compound: null };
+global.items = {
+    andesite_compound: null,
+    copper_pickaxe: null,
+    copper_axe: null,
+    copper_shovel: null,
+    copper_sword: null,
+    copper_hoe: null,
+};
 defineNames(global.items);
 
 // Define fluids here
