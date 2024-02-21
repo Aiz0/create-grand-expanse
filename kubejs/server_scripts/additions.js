@@ -86,4 +86,30 @@ ServerEvents.recipes((event) => {
         A: "#forge:ingots/copper",
         B: "minecraft:stick",
     });
+
+    // metallurgy
+    event
+        .shaped("createmetallurgy:casting_basin", ["A A", "A A", "AAA"], {
+            A: "createdeco:cast_iron_ingot",
+        })
+        .id("createmetallurgy:casting_basin");
+    event
+        .shaped("createmetallurgy:casting_table", ["AAA", "B B", "B B"], {
+            A: "createdeco:cast_iron_sheet",
+            B: "createdeco:cast_iron_ingot",
+        })
+        .id("createmetallurgy:casting_table");
+
+    event.replaceInput(
+        [
+            {
+                output: "createmetallurgy:foundry_top",
+            },
+            {
+                output: "createmetallurgy:foundry_basin",
+            },
+        ],
+        "create:andesite_alloy",
+        "createdeco:cast_iron_ingot",
+    );
 });
