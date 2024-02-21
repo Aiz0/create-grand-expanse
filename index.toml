@@ -157,19 +157,15 @@ file = "mods/create-compression.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/create-connected.pw.toml"
-metafile = true
-
-[[files]]
 file = "mods/create-deco.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/create-encased.pw.toml"
+file = "mods/create-enchantment-industry.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/create-enchantment-industry.pw.toml"
+file = "mods/create-fork.pw.toml"
 metafile = true
 
 [[files]]
@@ -194,10 +190,6 @@ metafile = true
 
 [[files]]
 file = "mods/create-teleporters.pw.toml"
-metafile = true
-
-[[files]]
-file = "mods/create.pw.toml"
 metafile = true
 
 [[files]]
@@ -230,10 +222,6 @@ metafile = true
 
 [[files]]
 file = "mods/entitytexturefeatures.pw.toml"
-metafile = true
-
-[[files]]
-file = "mods/extended-cogwheels.pw.toml"
 metafile = true
 
 [[files]]
