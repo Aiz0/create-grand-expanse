@@ -48,6 +48,7 @@ ServerEvents.recipes((event) => {
         if (output.isEmpty()) {
             return;
         }
-        event.recipes.create.milling([output, output.withChance(0.5)], item);
+        //TODO NO MAGIC number move to config or something jeeeeez
+        event.recipes.create.milling([output, output.withChance(0.2)], item);
     });
 });
