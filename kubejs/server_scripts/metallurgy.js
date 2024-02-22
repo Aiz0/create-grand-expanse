@@ -89,6 +89,9 @@ ServerEvents.recipes((event) => {
     }
 
     function castMold(mold, item, fluid, time) {
+        if (Item.of(item).isEmpty()) {
+            return;
+        }
         event.custom({
             type: "createmetallurgy:casting_in_table",
             ingredients: [
@@ -105,6 +108,9 @@ ServerEvents.recipes((event) => {
         });
     }
     function castBasin(item, fluid) {
+        if (Item.of(item).isEmpty()) {
+            return;
+        }
         event.custom({
             type: "createmetallurgy:casting_in_basin",
             ingredients: [
