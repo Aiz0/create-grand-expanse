@@ -30,4 +30,12 @@ ServerEvents.recipes((event) => {
         Fluid.of(global.fluids.andesite_mixture, FluidAmounts.INGOT),
         ["minecraft:andesite", "create:zinc_nugget", "minecraft:clay_ball"],
     );
+
+    event.recipes.create
+        .compacting("createdeco:cast_iron_ingot", [
+            "minecraft:iron_ingot",
+            "createmetallurgy:graphite",
+        ])
+        .heated()
+        .id("minecraft:compacting/cast_iron_ingot");
 });
