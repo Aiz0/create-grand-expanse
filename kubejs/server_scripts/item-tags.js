@@ -5,12 +5,6 @@ ServerEvents.tags("item", (event) => {
 
     // Fix Wolframite/Tungsten Tags
     //TODO clean this up...
-    event.add("forge:dusts/tungsten", "createmetallurgy:wolframite_dust");
-    event.add(
-        "forge:dirty_dusts/tungsten",
-        "createmetallurgy:dirty_wolframite_dust",
-    );
-    event.add("forge:dirty_dusts", "createmetallurgy:dirty_wolframite_dust");
     event.add(
         "forge:raw_materials/tungsten",
         "createmetallurgy:raw_wolframite",
@@ -41,7 +35,6 @@ ServerEvents.tags("item", (event) => {
         .forEach((item) => forgeCategory(item, "crushed_raw_materials"));
 
     // Mekanism dirty dusts
-    //TODO same tag for metallurgy
     event
         .get("mekanism:dirty_dusts")
         .getObjectIds()
@@ -49,7 +42,7 @@ ServerEvents.tags("item", (event) => {
 
     // Metallurgy dirty dusts
     Ingredient.of(/^createmetallurgy:dirty/).itemIds.forEach((item) => {
-        const material = item.split("_").slice(-2).reverse().pop();
+        let material = item.split("_").slice(-2).reverse().pop();
         if (material === "wolframite") {
             material = "tungsten";
         }
@@ -57,12 +50,10 @@ ServerEvents.tags("item", (event) => {
     });
     // Get all metallurgy dusts that are non dirty and fix their tags
     Ingredient.of(/^createmetallurgy:[^_]+_dust/).itemIds.forEach((item) => {
-        console.log(item);
-        const material = item.split("_")[0].split(":").pop();
+        let material = item.split("_")[0].split(":").pop();
         if (material === "wolframite") {
             material = "tungsten";
         }
-        console.log(material);
         forgeCategory(item, "dusts", material);
     });
 
