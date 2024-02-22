@@ -38,4 +38,16 @@ ServerEvents.recipes((event) => {
         ])
         .heated()
         .id("minecraft:compacting/cast_iron_ingot");
+
+    // Mill ore to dust for chance for extra
+    Ingredient.of("#forge:raw_materials").itemIds.forEach((item) => {
+        const material = item.split("_").pop();
+        const output = AlmostUnified.getPreferredItemForTag(
+            `forge:dusts/${material}`,
+        );
+        if (output.isEmpty()) {
+            return;
+        }
+        event.recipes.create.milling([output, output.withChance(0.5)], item);
+    });
 });
