@@ -108,6 +108,9 @@ ServerEvents.recipes((event) => {
             {
                 output: "createmetallurgy:foundry_basin",
             },
+            {
+                output: "createmetallurgy:glassed_alloyer_top",
+            },
         ],
         "create:andesite_alloy",
         "createdeco:cast_iron_ingot",
