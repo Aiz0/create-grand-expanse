@@ -78,6 +78,28 @@ global.config = {
             },
         ],
     },
+    casting: {
+        table: {
+            ingot: {
+                mold: "createmetallurgy:graphite_ingot_mold",
+                resultTag: "forge:ingots",
+                amount: FluidAmounts.INGOT,
+                time: 80,
+            },
+            sheet: {
+                mold: "createmetallurgy:graphite_plate_mold",
+                resultTag: "forge:plates",
+                amount: FluidAmounts.INGOT,
+                time: 80,
+            },
+            nugget: {
+                mold: "createmetallurgy:graphite_nugget_mold",
+                resultTag: "forge:ingots",
+                amount: FluidAmounts.NUGGET,
+                time: 20,
+            },
+        },
+    },
     // compressed blocks to keep from create compression
     compressed: ["cobblestone", "andesite"],
 };
