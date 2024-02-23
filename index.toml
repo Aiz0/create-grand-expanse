@@ -422,6 +422,10 @@ file = "mods/polymorph.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/ponder.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/probejs.pw.toml"
 metafile = true
 
