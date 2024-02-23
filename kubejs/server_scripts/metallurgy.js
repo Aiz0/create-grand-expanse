@@ -9,7 +9,7 @@ ServerEvents.recipes((event) => {
         heatRequirement: "heated",
     });
 
-    // Adds melting to the meltable materials
+    // Adds melting and casting to the meltable materials
     global.config.melting.materials.forEach((material) => {
         castFluid(material.name, material.fluid);
         global.config.melting.items.forEach((item) => {
@@ -58,18 +58,17 @@ ServerEvents.recipes((event) => {
     }
 
     function castFluid(material, fluid) {
-        castIngot(
-            AlmostUnified.getPreferredItemForTag(`forge:ingots/${material}`),
-            fluid,
-        );
-        castNugget(
-            AlmostUnified.getPreferredItemForTag(`forge:nuggets/${material}`),
-            fluid,
-        );
-        castPlate(
-            AlmostUnified.getPreferredItemForTag(`forge:plates/${material}`),
-            fluid,
-        );
+        for (const [name, obj] of Object.entries(global.config.casting.table)) {
+            castMold(
+                AlmostUnified.getPreferredItemForTag(
+                    `${obj.resultTag}/${material}`,
+                ),
+                obj.mold,
+                fluid,
+                obj.amount,
+                obj.time,
+            );
+        }
         castBasin(
             AlmostUnified.getPreferredItemForTag(
                 `forge:storage_blocks/${material}`,
@@ -78,17 +77,7 @@ ServerEvents.recipes((event) => {
         );
     }
 
-    function castIngot(item, fluid) {
-        castMold("createmetallurgy:graphite_ingot_mold", item, fluid, 80);
-    }
-    function castNugget(item, fluid) {
-        castMold("createmetallurgy:graphite_nugget_mold", item, fluid, 40);
-    }
-    function castPlate(item, fluid) {
-        castMold("createmetallurgy:graphite_plate_mold", item, fluid, 80);
-    }
-
-    function castMold(mold, item, fluid, time) {
+    function castMold(item, mold, fluid, fluidAmount, time) {
         if (Item.of(item).isEmpty()) {
             return;
         }
@@ -100,7 +89,7 @@ ServerEvents.recipes((event) => {
                 },
                 {
                     fluid: fluid,
-                    amount: FluidAmounts.INGOT,
+                    amount: fluidAmount,
                 },
             ],
             processingTime: time,

@@ -52,16 +52,19 @@ file = "kubejs/assets/grand_expanse/textures/item/copper_shovel.png"
 file = "kubejs/assets/grand_expanse/textures/item/copper_sword.png"
 
 [[files]]
-file = "kubejs/assets/kubejs/textures/block/fluid/molten/flowing.png"
+file = "kubejs/assets/tinkers_construct/readme.txt"
 
 [[files]]
-file = "kubejs/assets/kubejs/textures/block/fluid/molten/flowing.png.mcmeta"
+file = "kubejs/assets/tinkers_construct/textures/block/fluid/molten/flowing.png"
 
 [[files]]
-file = "kubejs/assets/kubejs/textures/block/fluid/molten/still.png"
+file = "kubejs/assets/tinkers_construct/textures/block/fluid/molten/flowing.png.mcmeta"
 
 [[files]]
-file = "kubejs/assets/kubejs/textures/block/fluid/molten/still.png.mcmeta"
+file = "kubejs/assets/tinkers_construct/textures/block/fluid/molten/still.png"
+
+[[files]]
+file = "kubejs/assets/tinkers_construct/textures/block/fluid/molten/still.png.mcmeta"
 
 [[files]]
 file = "kubejs/client_scripts/ponder.js"
