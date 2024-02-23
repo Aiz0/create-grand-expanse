@@ -52,6 +52,9 @@ file = "kubejs/assets/grand_expanse/textures/item/copper_shovel.png"
 file = "kubejs/assets/grand_expanse/textures/item/copper_sword.png"
 
 [[files]]
+file = "kubejs/assets/kubejs/ponder/foundry_example.nbt"
+
+[[files]]
 file = "kubejs/assets/tinkers_construct/readme.txt"
 
 [[files]]

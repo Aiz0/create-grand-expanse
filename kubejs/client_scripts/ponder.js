@@ -8,9 +8,10 @@ Ponder.tags((event) => {
         "Items related to create metallurgy", // Description
         [
             // Items in Tag
-            "createmetallurgy:foundry_basin",
-            "createmetallurgy:casting_basin",
-            "createmetallurgy:casting_table",
+            "createmetallurgy:foundry_basin", // explain basic melting
+            "createmetallurgy:foundry_top", // explain right click actions
+            "createmetallurgy:casting_basin", // basic casting
+            "createmetallurgy:casting_table", // molds
             "createmetallurgy:foundry_mixer",
         ],
     );
@@ -21,34 +22,46 @@ Ponder.tags((event) => {
 Ponder.registry((event) => {
     event
         .create("createmetallurgy:foundry_basin")
-        .scene("create_foundry", "how to make a foundry", (scene, util) => {
-            // Create blocks
-            scene.world.setBlock([2, 1, 2], "create:blaze_burner", false);
-            scene.world.modifyTileNBT([2, 1, 2], (nbt) => {
-                //TODO MAKE THE BLAZE BURNER BURNNNNN
-            });
-            scene.world.setBlock(
-                [2, 2, 2],
-                "createmetallurgy:foundry_basin",
-                false,
-            );
-            scene.world.setBlock(
-                [2, 3, 2],
-                "createmetallurgy:foundry_top",
-                false,
-            );
+        .scene(
+            "create_foundry",
+            "how to make a foundry",
+            "foundry_example",
+            (scene, util) => {
+                // Show  with a fade in
+                scene.showBasePlate();
+                scene.idle(10);
+                scene.text(
+                    100,
+                    "The foundry basin functions like the normal basin, but can only hold one item type at a time.",
+                    [2, 1.5, 2],
+                );
+                fadeInOutSection(
+                    scene,
+                    [2, 1, 4],
+                    [0, 0, -2],
+                    Direction.EAST,
+                    100,
+                );
+                scene.idle(20);
 
-            scene.world.setBlock([2, 1, 1], "create:basin", false);
+                fadeIn(scene, [2, 1, 2], Direction.DOWN, 10);
+                fadeIn(scene, [2, 2, 2], Direction.DOWN, 10);
+                fadeIn(scene, [2, 3, 2], Direction.DOWN, 10);
 
-            // Show  with a fade in
-            scene.showBasePlate();
-            fadeIn(scene, [2, 1, 2], Direction.DOWN, 10);
-            fadeIn(scene, [2, 2, 2], Direction.DOWN, 10);
-            fadeIn(scene, [2, 3, 2], Direction.DOWN, 10);
-
-            scene.idle(20);
-            fadeIn(scene, [2, 1, 1], Direction.EAST, 10);
-        });
+                scene.text(
+                    100,
+                    "When placed between a blaze burner and a foundry top, Items inside will be melted.",
+                    [2, 2.5, 2],
+                );
+                scene.idle(100);
+                fadeIn(scene, [0, 1, 1, 1, 2, 2], Direction.DOWN, 10);
+                scene.text(
+                    50,
+                    "Items need to be inserted from the side when a foundry top is used.",
+                    [1, 2.5, 2],
+                );
+            },
+        );
 });
 
 /**
@@ -77,5 +90,4 @@ function fadeInOutSection(scene, selection, offset, direction, idleTicks) {
     scene.world.moveSection(link, offset, 0); // 0 to instantly move
     scene.idle(idleTicks);
     scene.world.hideIndependentSection(link, direction);
-    scene.idle(idleTicks);
 }
