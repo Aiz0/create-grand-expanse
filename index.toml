@@ -91,6 +91,9 @@ file = "kubejs/server_scripts/removals.js"
 file = "kubejs/server_scripts/replacements.js"
 
 [[files]]
+file = "kubejs/server_scripts/sifter.js"
+
+[[files]]
 file = "kubejs/startup_scripts/config.js"
 
 [[files]]

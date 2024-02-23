@@ -27,6 +27,9 @@ ServerEvents.recipes((event) => {
         { id: "create_mechanical_extruder:mechanical_extruder" },
         { id: "create_mechanical_extruder:extruding/stone" },
 
+        // Create Sifter
+        // removes all except sifting for coral
+        { type: "createsifter:sifting" },
         // Ad Astra
         // Remove ad astra hammer recipes.
         // We don't want this sheet/plate recipe.
