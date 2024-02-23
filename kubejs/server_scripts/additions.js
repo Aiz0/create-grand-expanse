@@ -36,11 +36,6 @@ ServerEvents.recipes((event) => {
         },
     );
 
-    function SmeltAndBlast(output, input) {
-        event.smelting(output, input);
-        event.blasting(output, input);
-    }
-
     // Mechanical Extruder recipes
     // Press recipe surrounded by glass and andesite alloy
     event.shaped(
@@ -115,4 +110,9 @@ ServerEvents.recipes((event) => {
         "create:andesite_alloy",
         "createdeco:cast_iron_ingot",
     );
+
+    function SmeltAndBlast(output, input) {
+        event.smelting(output, input);
+        event.blasting(output, input);
+    }
 });

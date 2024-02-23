@@ -65,10 +65,18 @@ ServerEvents.recipes((event) => {
             `${global.config.furnace.smelting_nuggets}x ${nugget}`,
             `#forge:raw_materials/${material}`,
         );
+        event.smelting(
+            `${global.config.furnace.smelting_nuggets}x ${nugget}`,
+            `#forge:dusts/${material}`,
+        );
         // Blasting. A bit Faster, A bit Better.
         event.blasting(
             `${global.config.furnace.blasting_nuggets}x ${nugget}`,
             `#forge:raw_materials/${material}`,
+        );
+        event.blasting(
+            `${global.config.furnace.blasting_nuggets}x ${nugget}`,
+            `#forge:dusts/${material}`,
         );
     }
 });
