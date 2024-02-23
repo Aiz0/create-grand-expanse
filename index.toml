@@ -64,6 +64,9 @@ file = "kubejs/assets/kubejs/textures/block/fluid/molten/still.png"
 file = "kubejs/assets/kubejs/textures/block/fluid/molten/still.png.mcmeta"
 
 [[files]]
+file = "kubejs/client_scripts/ponder.js"
+
+[[files]]
 file = "kubejs/client_scripts/rei.js"
 
 [[files]]
