@@ -13,8 +13,8 @@ StartupEvents.registry("fluid", (event) => {
     function molten_metal(fluid, color) {
         event
             .create(fluid)
-            .stillTexture("kubejs:block/fluid/molten/still")
-            .flowingTexture("kubejs:block/fluid/molten/flowing")
+            .stillTexture("tinkers_construct:block/fluid/molten/still")
+            .flowingTexture("tinkers_contruct:block/fluid/molten/flowing")
             .color(color);
     }
 });
