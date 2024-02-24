@@ -7,7 +7,6 @@ ServerEvents.recipes((event) => {
         { type: "minecraft:smelting", output: "#forge:ingots" },
         { type: "minecraft:blasting", output: "#forge:ingots" },
         // Remove iron and gold tools
-        { output: "#forge:tools/iron" },
         { output: "#forge:tools/gold" },
 
         // Create
