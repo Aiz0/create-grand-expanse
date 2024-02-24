@@ -94,7 +94,7 @@ global.config = {
             },
             nugget: {
                 mold: "createmetallurgy:graphite_nugget_mold",
-                resultTag: "forge:ingots",
+                resultTag: "forge:nuggets",
                 amount: FluidAmounts.NUGGET,
                 time: 20,
             },
