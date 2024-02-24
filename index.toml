@@ -243,6 +243,10 @@ file = "mods/curios.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/cyclops-core.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/ears.pw.toml"
 metafile = true
 
@@ -284,6 +288,10 @@ metafile = true
 
 [[files]]
 file = "mods/ferrite-core.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/flopper.pw.toml"
 metafile = true
 
 [[files]]
