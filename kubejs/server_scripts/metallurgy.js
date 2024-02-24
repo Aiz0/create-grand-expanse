@@ -112,4 +112,6 @@ ServerEvents.recipes((event) => {
             results: [item],
         });
     }
+
+    console.log(AlmostUnified.getPreferredItemForTag("forge:tool_plates/iron"));
 });
