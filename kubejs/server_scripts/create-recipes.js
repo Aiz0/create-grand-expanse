@@ -39,6 +39,11 @@ ServerEvents.recipes((event) => {
         .heated()
         .id("minecraft:compacting/cast_iron_ingot");
 
+    // early game obsidian dust recipe
+    event.recipes.create.milling(
+        ["create:powdered_obsidian"],
+        "minecraft:obsidian",
+    );
     // Mill ore to dust for chance for extra
     Ingredient.of("#forge:raw_materials").itemIds.forEach((item) => {
         const material = item.split("_").pop();
@@ -50,5 +55,23 @@ ServerEvents.recipes((event) => {
         }
         //TODO NO MAGIC number move to config or something jeeeeez
         event.recipes.create.milling([output, output.withChance(0.2)], item);
+    });
+
+    //Tier 1 create stuff
+    [
+        "create:shaft_tier_0",
+        "create:cogwheel_tier_0",
+        "create:large_cogwheel_tier_0",
+    ].forEach((item) => {
+        const output = item.substring(0, item.length - 1) + "1";
+        const amount = item.includes("shaft")
+            ? FluidAmounts.INGOT / 2
+            : item.includes("large_cogwheel")
+            ? FluidAmounts.INGOT * 2
+            : FluidAmounts.INGOT;
+        event.recipes.create.filling(output, [
+            Fluid.of("createmetallurgy:molten_copper", amount),
+            item,
+        ]);
     });
 });

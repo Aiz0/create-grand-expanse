@@ -111,6 +111,60 @@ ServerEvents.recipes((event) => {
         "createdeco:cast_iron_ingot",
     );
 
+    // Early Game Ad Astra
+    event.replaceInput(
+        { output: "ad_astra:launch_pad" },
+        "ad_astra:steel_plate",
+        "create:sturdy_sheet",
+    );
+
+    // Space Suit
+    event
+        .shaped("ad_astra:space_helmet", ["AAA", "ABA"], {
+            A: "#forge:ingots/nickel",
+            B: "create:copper_diving_helmet",
+        })
+        .id("ad_astra:recipes/space_helmet");
+    event
+        .shaped("ad_astra:space_suit", ["A A", "BCB", "AAA"], {
+            A: "#forge:ingots/nickel",
+            B: "ad_astra:oxygen_tank",
+            C: "create:copper_backtank",
+        })
+        .id("ad_astra:recipes/space_suit");
+    event
+        .shaped("ad_astra:space_pants", ["AAA", "A A", "A A"], {
+            A: "#forge:ingots/nickel",
+        })
+        .id("ad_astra:recipes/space_pants");
+    event
+        .shaped("ad_astra:space_boots", ["ABA", "A A"], {
+            A: "#forge:ingots/nickel",
+            B: "create:copper_diving_boots",
+        })
+        .id("ad_astra:recipes/space_boots");
+
+    // Copper Backtank now uses oxygen tanks and oxygen gear
+    event
+        .shaped("create:copper_backtank", ["ABA", "CDC", "AEA"], {
+            A: "#forge:plates/copper",
+            B: "create:andesite_alloy",
+            C: "ad_astra:oxygen_tank",
+            D: "#forge:storage_blocks/copper",
+            E: "ad_astra:oxygen_gear",
+        })
+        .id("create:crafting/appliances/copper_backtank");
+
+    // Should be possible to craft early game.
+    event.replaceInput(
+        [
+            { output: "ad_astra:oxygen_tank" },
+            { output: "ad_astra:oxygen_gear" },
+        ],
+        "ad_astra:steel_plate",
+        "#forge:plates/copper",
+    );
+
     function SmeltAndBlast(output, input) {
         event.smelting(output, input);
         event.blasting(output, input);
