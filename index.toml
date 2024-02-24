@@ -52,6 +52,9 @@ file = "kubejs/assets/grand_expanse/textures/item/copper_shovel.png"
 file = "kubejs/assets/grand_expanse/textures/item/copper_sword.png"
 
 [[files]]
+file = "kubejs/assets/kubejs/ponder/foundry_example.nbt"
+
+[[files]]
 file = "kubejs/assets/tinkers_construct/readme.txt"
 
 [[files]]
@@ -65,6 +68,9 @@ file = "kubejs/assets/tinkers_construct/textures/block/fluid/molten/still.png"
 
 [[files]]
 file = "kubejs/assets/tinkers_construct/textures/block/fluid/molten/still.png.mcmeta"
+
+[[files]]
+file = "kubejs/client_scripts/ponder.js"
 
 [[files]]
 file = "kubejs/client_scripts/rei.js"
@@ -422,6 +428,10 @@ metafile = true
 
 [[files]]
 file = "mods/polymorph.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/ponder.pw.toml"
 metafile = true
 
 [[files]]
