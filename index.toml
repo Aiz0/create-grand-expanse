@@ -225,6 +225,10 @@ file = "mods/create-teleporters.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/create-tfmg.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/createaddition.pw.toml"
 metafile = true
 
@@ -234,6 +238,14 @@ metafile = true
 
 [[files]]
 file = "mods/curios.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/custom-machinery-create.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/custom-machinery.pw.toml"
 metafile = true
 
 [[files]]
