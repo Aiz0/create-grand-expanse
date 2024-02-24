@@ -97,6 +97,9 @@ file = "kubejs/server_scripts/replacements.js"
 file = "kubejs/server_scripts/sifter.js"
 
 [[files]]
+file = "kubejs/startup_scripts/blocks.js"
+
+[[files]]
 file = "kubejs/startup_scripts/config.js"
 
 [[files]]
@@ -318,6 +321,10 @@ metafile = true
 
 [[files]]
 file = "mods/geckolib.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/globalpacks.pw.toml"
 metafile = true
 
 [[files]]
