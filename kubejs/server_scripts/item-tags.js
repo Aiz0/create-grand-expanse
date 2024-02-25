@@ -29,6 +29,7 @@ ServerEvents.tags("item", (event) => {
     tool(global.items.copper_hoe, "copper", "hoes");
 
     forgeCategory(global.items.iron_tool_part, "tool_parts", "iron");
+    forgeCategory(global.items.iron_armor_plate, "armor_plates", "iron");
 
     // Create crushed raw materials
     event

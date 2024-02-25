@@ -171,6 +171,12 @@ ServerEvents.recipes((event) => {
         "minecraft:iron_ingot",
         global.items.iron_tool_part,
     );
+    // Aromor plates for iron armor
+    event.replaceInput(
+        { output: "#forge:armor/iron" },
+        "minecraft:iron_ingot",
+        global.items.iron_armor_plate,
+    );
 
     function SmeltAndBlast(output, input) {
         event.smelting(output, input);
