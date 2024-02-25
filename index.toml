@@ -37,6 +37,9 @@ file = "config/zume.json5"
 file = "kubejs/README.txt"
 
 [[files]]
+file = "kubejs/assets/grand_expanse/textures/block/copper_coil_block.png"
+
+[[files]]
 file = "kubejs/assets/grand_expanse/textures/item/copper_axe.png"
 
 [[files]]
