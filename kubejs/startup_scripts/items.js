@@ -9,6 +9,6 @@ StartupEvents.registry("item", (event) => {
     event.create(global.items.copper_axe, "axe").tier("copper");
     event.create(global.items.copper_hoe, "hoe").tier("copper");
 
-    event.create(global.items.tool_mold);
-    event.create(global.items.iron_tool_plate);
+    event.create(global.items.tool_part_mold);
+    event.create(global.items.iron_tool_part);
 });
