@@ -560,6 +560,10 @@ file = "mods/no-mo-portals.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/oculus.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/persistent-ores.pw.toml"
 metafile = true
 
@@ -757,4 +761,8 @@ metafile = true
 
 [[files]]
 file = "resourcepacks/toms-create-storage.pw.toml"
+metafile = true
+
+[[files]]
+file = "shaderpacks/complementary-reimagined.pw.toml"
 metafile = true
