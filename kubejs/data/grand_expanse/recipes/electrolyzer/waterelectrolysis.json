@@ -6,29 +6,14 @@
         {
             "type": "custommachinery:structure",
             "keys": {
-                "t": "create:fluid_tank"
+                "t": "create:fluid_tank",
                 "b": "create:copper_casing",
                 "c": "grand_expanse:copper_coil_block"
             },
             "pattern": [
-                [
-                    "bbb",
-                    "ccc",
-                    "bbb",
-                    "tmt"
-                ],
-                [
-                    "bbb",
-                    "c c",
-                    "bbb"
-                    "t t"
-                ],
-                [
-                    "bbb",
-                    "ccc",
-                    "bbb"
-                    "t t"
-                ]
+                ["bbb", "ccc", "bbb", "tmt"],
+                ["bbb", "c c", "bbb", "t t"],
+                ["bbb", "ccc", "bbb", "t t"]
             ]
         },
         {
