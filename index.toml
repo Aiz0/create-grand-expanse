@@ -13,6 +13,9 @@ file = "config/ae2/common.json"
 file = "config/almostunified/unify.json"
 
 [[files]]
+file = "config/flopper-common.toml"
+
+[[files]]
 file = "config/forgery/features.ini"
 
 [[files]]
