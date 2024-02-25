@@ -1,0 +1,53 @@
+{
+    "type": "custommachinery:custom_machine",
+    "machine": "grand_expanse:electrolyzer",
+    "time": 20,
+    "requirements": [
+        {
+            "type": "custommachinery:structure",
+            "keys": {
+                "t": "create:fluid_tank"
+                "b": "create:copper_casing",
+                "c": "grand_expanse:copper_coil_block"
+            },
+            "pattern": [
+                [
+                    "bbb",
+                    "ccc",
+                    "bbb",
+                    "tmt"
+                ],
+                [
+                    "bbb",
+                    "c c",
+                    "bbb"
+                    "t t"
+                ],
+                [
+                    "bbb",
+                    "ccc",
+                    "bbb"
+                    "t t"
+                ]
+            ]
+        },
+        {
+            "type": "custommachinery:fluid",
+            "fluid": "minecraft:water",
+            "amount": 8100,
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:fluid",
+            "fluid": "mekanism:oxygen",
+            "amount": 860,
+            "mode": "output"
+        },
+        {
+            "type": "custommachinery:fluid",
+            "fluid": "mekanism:hydrogen",
+            "amount": 1720,
+            "mode": "output"
+        }
+    ]
+}
