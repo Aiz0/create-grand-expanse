@@ -8,8 +8,8 @@ global.items = {
     copper_shovel: null,
     copper_sword: null,
     copper_hoe: null,
-    tool_mold: null,
-    iron_tool_plate: null,
+    tool_part_mold: null,
+    iron_tool_part: null,
 };
 defineNames(global.items);
 
@@ -101,8 +101,8 @@ global.config = {
                 time: 20,
             },
             tool_plate: {
-                mold: global.items.tool_mold,
-                resultTag: "forge:tool_plates",
+                mold: global.items.tool_part_mold,
+                resultTag: "forge:tool_parts",
                 amount: FluidAmounts.INGOT,
                 time: 80,
             },

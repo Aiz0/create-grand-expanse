@@ -33,7 +33,7 @@
         "forge:storage_blocks/raw_{material}",
         "forge:rope",
         "forge:dirty_dusts/{material}",
-        "forge:tool_plates/{material}"
+        "forge:tool_parts/{material}"
     ],
     "materials": [
         "aeternium",

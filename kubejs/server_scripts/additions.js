@@ -165,10 +165,11 @@ ServerEvents.recipes((event) => {
         "#forge:plates/copper",
     );
 
+    // Tool parts for iron tools
     event.replaceInput(
         { output: "#forge:tools/iron" },
         "minecraft:iron_ingot",
-        global.items.iron_tool_plate,
+        global.items.iron_tool_part,
     );
 
     function SmeltAndBlast(output, input) {
