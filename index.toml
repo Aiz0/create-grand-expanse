@@ -37,6 +37,9 @@ file = "config/zume.json5"
 file = "kubejs/README.txt"
 
 [[files]]
+file = "kubejs/assets/grand_expanse/models/block/copper_coil_block.json"
+
+[[files]]
 file = "kubejs/assets/grand_expanse/models/machine/electrolyzer.json"
 
 [[files]]
@@ -47,6 +50,9 @@ file = "kubejs/assets/grand_expanse/models/machine/electrolyzer_shaftless_runnin
 
 [[files]]
 file = "kubejs/assets/grand_expanse/textures/block/copper_coil_block.png"
+
+[[files]]
+file = "kubejs/assets/grand_expanse/textures/block/copper_coil_block.png.mcmeta"
 
 [[files]]
 file = "kubejs/assets/grand_expanse/textures/block/electrolyzer/axis.png"
