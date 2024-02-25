@@ -40,6 +40,18 @@ file = "config/zume.json5"
 file = "kubejs/README.txt"
 
 [[files]]
+file = "kubejs/assets/flopper/textures/blocks/flopper_inside.png"
+
+[[files]]
+file = "kubejs/assets/flopper/textures/blocks/flopper_outside.png"
+
+[[files]]
+file = "kubejs/assets/flopper/textures/blocks/flopper_top.png"
+
+[[files]]
+file = "kubejs/assets/flopper/textures/items/flopper.png"
+
+[[files]]
 file = "kubejs/assets/grand_expanse/textures/item/copper_axe.png"
 
 [[files]]
