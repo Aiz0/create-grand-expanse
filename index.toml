@@ -34,6 +34,12 @@ file = "config/quark-common.toml"
 file = "config/resourcepackoverrides.json"
 
 [[files]]
+file = "config/splasher.toml"
+
+[[files]]
+file = "config/splasher/en_us.txt"
+
+[[files]]
 file = "config/zume.json5"
 
 [[files]]
@@ -611,6 +617,10 @@ metafile = true
 
 [[files]]
 file = "mods/spark.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/splasher.pw.toml"
 metafile = true
 
 [[files]]
