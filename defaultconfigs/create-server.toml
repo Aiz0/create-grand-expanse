@@ -8,10 +8,6 @@
 	maxRotationSpeedTier1 = 128
 	maxRotationSpeedTier2 = 256
 	maxRotationSpeedTier3 = 512
-
-	#Amount of sail-type blocks required for a windmill to assemble successfully. 
-	#We set this lower to allow for when easier setup when you only need a tiny amount of stress and speed.
-	minimumWindmillSails = 2
 	
 	#.
 	#Encased Fan
