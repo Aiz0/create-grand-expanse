@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"3": "grand_expanse:block/electrolyzer/coil",
-		"5": "grand_expanse:block/electrolyzer/tank",
+		"5": "grand_expanse:block/electrolyzer/tank_water",
 		"particle": "grand_expanse:block/electrolyzer/coil"
 	},
 	"elements": [

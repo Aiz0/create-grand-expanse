@@ -1,9 +1,9 @@
 {
     "name": "Kinetic Electrolyzer",
     "appearance": {
-        "block": "grand_expanse:machine/electrolyzer_shaftless",
+        "block": "grand_expanse:machine/electrolyzer",
         "running": {
-            "block": "grand_expanse:machine/electrolyzer_shaftless_running"
+            "block": "grand_expanse:machine/electrolyzer_running"
         },
         "item": "grand_expanse:machine/electrolyzer"
     },
@@ -12,13 +12,13 @@
             "type": "custommachinery:contraption",
             "config": {
                 "default": "none",
-                "south": "both"
+                "back": "input"
             },
             "stress_impact": 4
         },
         {
             "type": "custommachinery:fluid",
-            "capacity": 16000,
+            "capacity": 4000,
             "id": "watertank",
             "maxInput": 1000,
             "mode": "input",
@@ -27,7 +27,7 @@
         },
         {
             "type": "custommachinery:fluid",
-            "capacity": 16000,
+            "capacity": 4000,
             "id": "oxygentank",
             "maxOutput": 1000,
             "mode": "output",
@@ -41,7 +41,7 @@
         },
         {
             "type": "custommachinery:fluid",
-            "capacity": 16000,
+            "capacity": 4000,
             "id": "hydrogentank",
             "maxOutput": 1000,
             "mode": "output",
