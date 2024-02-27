@@ -165,6 +165,14 @@ ServerEvents.recipes((event) => {
         "#forge:plates/copper",
     );
 
+    // Flopper recipe
+    event
+        .shaped("flopper:flopper", ["A A", "ABA", " A "], {
+            A: "#forge:plates/copper",
+            B: "create:copper_casing",
+        })
+        .id("flopper:recipes/flopper");
+
     function SmeltAndBlast(output, input) {
         event.smelting(output, input);
         event.blasting(output, input);

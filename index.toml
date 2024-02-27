@@ -13,6 +13,9 @@ file = "config/ae2/common.json"
 file = "config/almostunified/unify.json"
 
 [[files]]
+file = "config/flopper-common.toml"
+
+[[files]]
 file = "config/forgery/features.ini"
 
 [[files]]
@@ -35,6 +38,18 @@ file = "config/zume.json5"
 
 [[files]]
 file = "kubejs/README.txt"
+
+[[files]]
+file = "kubejs/assets/flopper/textures/blocks/flopper_inside.png"
+
+[[files]]
+file = "kubejs/assets/flopper/textures/blocks/flopper_outside.png"
+
+[[files]]
+file = "kubejs/assets/flopper/textures/blocks/flopper_top.png"
+
+[[files]]
+file = "kubejs/assets/flopper/textures/items/flopper.png"
 
 [[files]]
 file = "kubejs/assets/grand_expanse/textures/item/copper_axe.png"
@@ -243,6 +258,10 @@ file = "mods/curios.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/cyclops-core.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/ears.pw.toml"
 metafile = true
 
@@ -284,6 +303,10 @@ metafile = true
 
 [[files]]
 file = "mods/ferrite-core.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/flopper.pw.toml"
 metafile = true
 
 [[files]]
