@@ -26,19 +26,19 @@
         {
             "type": "custommachinery:fluid",
             "fluid": "minecraft:water",
-            "amount": 810,
+            "amount": 100,
             "mode": "input"
         },
         {
             "type": "custommachinery:fluid",
             "fluid": "mekanism:oxygen",
-            "amount": 86,
+            "amount": 10,
             "mode": "output"
         },
         {
             "type": "custommachinery:fluid",
             "fluid": "mekanism:hydrogen",
-            "amount": 172,
+            "amount": 20,
             "mode": "output"
         }
     ]
