@@ -1,0 +1,43 @@
+
+#.
+#Parameters and abilities of Create's kinetic mechanisms
+[kinetics]
+	
+	#Maximum allowed rotation speed for each tier of kinetic blocks.
+	maxRotationSpeedTier0 = 64
+	maxRotationSpeedTier1 = 128
+	maxRotationSpeedTier2 = 256
+	maxRotationSpeedTier3 = 512
+
+	#Amount of sail-type blocks required for a windmill to assemble successfully. 
+	#We set this lower to allow for when easier setup when you only need a tiny amount of stress and speed.
+	minimumWindmillSails = 2
+	
+	#.
+	#Encased Fan
+	[kinetics.encasedFan]
+
+		# Double default because of increased max.
+		fanPushDistance = 40
+		fanPullDistance = 40
+		fanRotationArgmax = 512
+
+	#.
+	#Configure speed/capacity levels for requirements and indicators.
+	[kinetics.stats]
+		# tier 0 slow 
+		# tier 1 medium
+		# tier 2 fast
+
+		#Minimum speed of rotation to be considered 'medium'
+		mediumSpeed = 100
+		fastSpeed = 200
+
+#.
+#Equipment and gadgets added by Create
+[equipment]
+	
+	#The Maximum Distance at which a Toolbox can interact with Players' Inventories.
+	# Massively increased.
+	toolboxRange = 32
+

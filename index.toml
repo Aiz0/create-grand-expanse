@@ -37,6 +37,9 @@ file = "config/resourcepackoverrides.json"
 file = "config/zume.json5"
 
 [[files]]
+file = "defaultconfigs/create-server.toml"
+
+[[files]]
 file = "kubejs/README.txt"
 
 [[files]]
