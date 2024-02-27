@@ -13,6 +13,9 @@ file = "config/ae2/common.json"
 file = "config/almostunified/unify.json"
 
 [[files]]
+file = "config/flopper-common.toml"
+
+[[files]]
 file = "config/forgery/features.ini"
 
 [[files]]
@@ -35,6 +38,18 @@ file = "config/zume.json5"
 
 [[files]]
 file = "kubejs/README.txt"
+
+[[files]]
+file = "kubejs/assets/flopper/textures/blocks/flopper_inside.png"
+
+[[files]]
+file = "kubejs/assets/flopper/textures/blocks/flopper_outside.png"
+
+[[files]]
+file = "kubejs/assets/flopper/textures/blocks/flopper_top.png"
+
+[[files]]
+file = "kubejs/assets/flopper/textures/items/flopper.png"
 
 [[files]]
 file = "kubejs/assets/grand_expanse/models/block/copper_coil_block.json"
@@ -88,6 +103,9 @@ file = "kubejs/assets/grand_expanse/textures/item/copper_shovel.png"
 file = "kubejs/assets/grand_expanse/textures/item/copper_sword.png"
 
 [[files]]
+file = "kubejs/assets/kubejs/ponder/foundry_example.nbt"
+
+[[files]]
 file = "kubejs/assets/tinkers_construct/readme.txt"
 
 [[files]]
@@ -101,6 +119,9 @@ file = "kubejs/assets/tinkers_construct/textures/block/fluid/molten/still.png"
 
 [[files]]
 file = "kubejs/assets/tinkers_construct/textures/block/fluid/molten/still.png.mcmeta"
+
+[[files]]
+file = "kubejs/client_scripts/ponder.js"
 
 [[files]]
 file = "kubejs/client_scripts/rei.js"
@@ -274,6 +295,14 @@ file = "mods/createaddition.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/ct-overhaul-village.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/ctov-farmers-delight-compat.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/cupboard.pw.toml"
 metafile = true
 
@@ -287,6 +316,10 @@ metafile = true
 
 [[files]]
 file = "mods/custom-machinery.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/cyclops-core.pw.toml"
 metafile = true
 
 [[files]]
@@ -331,6 +364,10 @@ metafile = true
 
 [[files]]
 file = "mods/ferrite-core.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/flopper.pw.toml"
 metafile = true
 
 [[files]]
@@ -475,6 +512,10 @@ metafile = true
 
 [[files]]
 file = "mods/polymorph.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/ponder.pw.toml"
 metafile = true
 
 [[files]]
