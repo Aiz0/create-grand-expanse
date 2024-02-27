@@ -111,6 +111,26 @@ ServerEvents.recipes((event) => {
         "createdeco:cast_iron_ingot",
     );
 
+    // Electrolyzer
+    event.shaped(global.items.copper_coil_block, ["SSS", "SCS", "SSS"], {
+        S: "createaddition:copper_spool",
+        C: "create:copper_casing",
+    });
+
+    event.shaped(
+        Item.of(
+            "custommachinery:custom_machine_item",
+            '{machine:"grand_expanse:electrolyzer"}',
+        ),
+        ["IGI", "ICI", "IEI"],
+        {
+            I: "createaddition:iron_rod",
+            G: "create:gearbox_tier_0",
+            C: global.items.copper_coil_block,
+            E: "thermal:iron_gear",
+        },
+    );
+
     function SmeltAndBlast(output, input) {
         event.smelting(output, input);
         event.blasting(output, input);
