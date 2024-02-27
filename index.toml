@@ -250,6 +250,14 @@ file = "mods/createaddition.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/ct-overhaul-village.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/ctov-farmers-delight-compat.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/cupboard.pw.toml"
 metafile = true
 
