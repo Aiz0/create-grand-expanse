@@ -8,6 +8,7 @@ global.items = {
     copper_shovel: null,
     copper_sword: null,
     copper_hoe: null,
+    copper_coil_block: null,
 };
 defineNames(global.items);
 

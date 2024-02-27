@@ -15,6 +15,18 @@ Ponder.tags((event) => {
             "createmetallurgy:foundry_mixer",
         ],
     );
+    event.createTag(
+        `${global.packName}:custommachinery`,
+        global.items.copper_coil_block,
+        "Custom Machinery",
+        "bloblablewylewyl",
+        [
+            Item.of(
+                "custommachinery:custom_machine_item",
+                '{machine:"grand_expanse:electrolyzer"}',
+            ),
+        ],
+    );
 });
 
 // Create scenes

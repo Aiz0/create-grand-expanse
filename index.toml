@@ -52,6 +52,42 @@ file = "kubejs/assets/flopper/textures/blocks/flopper_top.png"
 file = "kubejs/assets/flopper/textures/items/flopper.png"
 
 [[files]]
+file = "kubejs/assets/grand_expanse/models/block/copper_coil_block.json"
+
+[[files]]
+file = "kubejs/assets/grand_expanse/models/machine/electrolyzer.json"
+
+[[files]]
+file = "kubejs/assets/grand_expanse/models/machine/electrolyzer_running.json"
+
+[[files]]
+file = "kubejs/assets/grand_expanse/textures/block/copper_coil_block.png"
+
+[[files]]
+file = "kubejs/assets/grand_expanse/textures/block/copper_coil_block.png.mcmeta"
+
+[[files]]
+file = "kubejs/assets/grand_expanse/textures/block/electrolyzer/axis.png"
+
+[[files]]
+file = "kubejs/assets/grand_expanse/textures/block/electrolyzer/axis_top.png"
+
+[[files]]
+file = "kubejs/assets/grand_expanse/textures/block/electrolyzer/coil.png"
+
+[[files]]
+file = "kubejs/assets/grand_expanse/textures/block/electrolyzer/frame.png"
+
+[[files]]
+file = "kubejs/assets/grand_expanse/textures/block/electrolyzer/front.png"
+
+[[files]]
+file = "kubejs/assets/grand_expanse/textures/block/electrolyzer/tank.png"
+
+[[files]]
+file = "kubejs/assets/grand_expanse/textures/block/electrolyzer/tank_water.png"
+
+[[files]]
 file = "kubejs/assets/grand_expanse/textures/item/copper_axe.png"
 
 [[files]]
@@ -91,6 +127,12 @@ file = "kubejs/client_scripts/ponder.js"
 file = "kubejs/client_scripts/rei.js"
 
 [[files]]
+file = "kubejs/data/grand_expanse/machines/electrolyzer.json"
+
+[[files]]
+file = "kubejs/data/grand_expanse/recipes/electrolyzer/waterelectrolysis.json"
+
+[[files]]
 file = "kubejs/server_scripts/additions.js"
 
 [[files]]
@@ -116,6 +158,9 @@ file = "kubejs/server_scripts/replacements.js"
 
 [[files]]
 file = "kubejs/server_scripts/sifter.js"
+
+[[files]]
+file = "kubejs/startup_scripts/blocks.js"
 
 [[files]]
 file = "kubejs/startup_scripts/config.js"
@@ -263,6 +308,14 @@ metafile = true
 
 [[files]]
 file = "mods/curios.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/custom-machinery-create.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/custom-machinery.pw.toml"
 metafile = true
 
 [[files]]

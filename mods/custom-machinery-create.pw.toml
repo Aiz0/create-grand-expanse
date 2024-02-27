@@ -1,0 +1,13 @@
+name = "Custom Machinery Create"
+filename = "CustomMachineryCreate-forge-1.19.2-1.1.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/NHh2cWu8/versions/Be3dj6FF/CustomMachineryCreate-forge-1.19.2-1.1.1.jar"
+hash-format = "sha1"
+hash = "c012bd6d32466650cf3f07115130aa4759ae1dde"
+
+[update]
+[update.modrinth]
+mod-id = "NHh2cWu8"
+version = "Be3dj6FF"
