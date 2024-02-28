@@ -133,19 +133,22 @@ file = "kubejs/client_scripts/rei.js"
 file = "kubejs/data/grand_expanse/machines/electrolyzer.json"
 
 [[files]]
-file = "kubejs/data/grand_expanse/recipes/electrolyzer/waterelectrolysis.json"
-
-[[files]]
-file = "kubejs/server_scripts/additions.js"
+file = "kubejs/server_scripts/crafting.js"
 
 [[files]]
 file = "kubejs/server_scripts/create-recipes.js"
+
+[[files]]
+file = "kubejs/server_scripts/custom_machine.js"
 
 [[files]]
 file = "kubejs/server_scripts/extruder.js"
 
 [[files]]
 file = "kubejs/server_scripts/fluid-tags.js"
+
+[[files]]
+file = "kubejs/server_scripts/furnace.js"
 
 [[files]]
 file = "kubejs/server_scripts/item-tags.js"
@@ -155,9 +158,6 @@ file = "kubejs/server_scripts/metallurgy.js"
 
 [[files]]
 file = "kubejs/server_scripts/removals.js"
-
-[[files]]
-file = "kubejs/server_scripts/replacements.js"
 
 [[files]]
 file = "kubejs/server_scripts/sifter.js"
