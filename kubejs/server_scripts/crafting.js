@@ -169,19 +169,12 @@ ServerEvents.recipes((event) => {
         C: "create:copper_casing",
     });
 
-    event.shaped(
-        Item.of(
-            "custommachinery:custom_machine_item",
-            '{machine:"grand_expanse:electrolyzer"}',
-        ),
-        ["IGI", "ICI", "IEI"],
-        {
-            I: "createaddition:iron_rod",
-            G: "create:gearbox_tier_0",
-            C: global.items.copper_coil_block,
-            E: "thermal:iron_gear",
-        },
-    );
+    event.shaped(global.items.electrolyzer, ["IGI", "ICI", "IEI"], {
+        I: "createaddition:iron_rod",
+        G: "create:gearbox_tier_0",
+        C: global.items.copper_coil_block,
+        E: "thermal:iron_gear",
+    });
 
     // Early Game Ad Astra
     event.replaceInput(

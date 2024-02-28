@@ -1,6 +1,6 @@
 ServerEvents.recipes((event) => {
     event.recipes.custommachinery
-        .custom_machine(`${global.packName}:electrolyzer`, 20)
+        .custom_machine(global.items.electrolyzer, 20)
         .requireStructure(
             [
                 ["bbb", "ccc", "bbb", "t t"],

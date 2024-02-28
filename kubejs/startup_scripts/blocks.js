@@ -7,4 +7,7 @@ StartupEvents.registry("block", (event) => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock("minecraft:needs_stone_tool");
+
+    // Electorlyzer is a custom machinery block.
+    event.create(global.items.electrolyzer, "custommachinery");
 });
