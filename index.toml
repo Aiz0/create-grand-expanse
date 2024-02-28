@@ -526,6 +526,10 @@ file = "mods/quark.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/rainbow-lamp.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/rechiseled-create.pw.toml"
 metafile = true
 
