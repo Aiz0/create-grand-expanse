@@ -133,13 +133,13 @@ file = "kubejs/client_scripts/rei.js"
 file = "kubejs/data/grand_expanse/machines/electrolyzer.json"
 
 [[files]]
-file = "kubejs/data/grand_expanse/recipes/electrolyzer/waterelectrolysis.json"
-
-[[files]]
 file = "kubejs/server_scripts/crafting.js"
 
 [[files]]
 file = "kubejs/server_scripts/create-recipes.js"
+
+[[files]]
+file = "kubejs/server_scripts/custom_machine.js"
 
 [[files]]
 file = "kubejs/server_scripts/extruder.js"
