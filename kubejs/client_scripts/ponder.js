@@ -17,15 +17,10 @@ Ponder.tags((event) => {
     );
     event.createTag(
         `${global.packName}:custommachinery`,
-        global.items.copper_coil_block,
+        global.items.electrolyzer,
         "Custom Machinery",
         "bloblablewylewyl",
-        [
-            Item.of(
-                "custommachinery:custom_machine_item",
-                '{machine:"grand_expanse:electrolyzer"}',
-            ),
-        ],
+        [global.items.electrolyzer],
     );
 });
 
@@ -72,6 +67,19 @@ Ponder.registry((event) => {
                     "Items need to be inserted from the side when a foundry top is used.",
                     [1, 2.5, 2],
                 );
+            },
+        );
+
+    event
+        .create(global.items.electrolyzer)
+        .scene(
+            "kinetic_electrolyzer",
+            "How to make a kinectic electrolyzer",
+            (scene, util) => {
+                scene.showBasePlate();
+                scene
+                    .text(100, "WIP", [2, 2.5, 2.5])
+                    .colored(PonderPalette.RED);
             },
         );
 });
