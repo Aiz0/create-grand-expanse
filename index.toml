@@ -136,7 +136,7 @@ file = "kubejs/data/grand_expanse/machines/electrolyzer.json"
 file = "kubejs/data/grand_expanse/recipes/electrolyzer/waterelectrolysis.json"
 
 [[files]]
-file = "kubejs/server_scripts/additions.js"
+file = "kubejs/server_scripts/crafting.js"
 
 [[files]]
 file = "kubejs/server_scripts/create-recipes.js"
