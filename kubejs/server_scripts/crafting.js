@@ -88,6 +88,12 @@ ServerEvents.recipes((event) => {
         },
     );
 
+    event.replaceInput(
+        { output: "create:fluid_pipe" },
+        "#forge:ingots/copper",
+        "thermal:cured_rubber",
+    );
+
     // Mechanical Extruder recipes
     // Press recipe surrounded by glass and andesite alloy
     event.shaped(
@@ -169,11 +175,12 @@ ServerEvents.recipes((event) => {
         C: "create:copper_casing",
     });
 
-    event.shaped(global.items.electrolyzer, ["IGI", "ICI", "IEI"], {
-        I: "createaddition:iron_rod",
-        G: "create:gearbox_tier_0",
+    event.shaped(global.items.electrolyzer, ["ISI", "TCT", "IEI"], {
+        I: "#forge:plates/cast_iron",
+        S: "create:shaft_tier_0",
+        T: "create:electron_tube",
         C: global.items.copper_coil_block,
-        E: "thermal:iron_gear",
+        E: "thermal:copper_gear",
     });
 
     // Early Game Ad Astra
