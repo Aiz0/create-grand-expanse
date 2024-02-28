@@ -88,11 +88,20 @@ ServerEvents.recipes((event) => {
         },
     );
 
+    // Fluid pipe needs rubber obviously
     event.replaceInput(
         { output: "create:fluid_pipe" },
         "#forge:ingots/copper",
         "thermal:cured_rubber",
     );
+
+    // belts use rubber tooo
+    event
+        .shaped("create:belt_connector", ["KRK", "KRK"], {
+            K: "minecraft:dried_kelp",
+            R: "thermal:cured_rubber",
+        })
+        .id("create:crafting/kinetics/belt_connector");
 
     // Mechanical Extruder recipes
     // Press recipe surrounded by glass and andesite alloy
