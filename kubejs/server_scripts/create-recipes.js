@@ -16,6 +16,21 @@ ServerEvents.recipes((event) => {
             },
         ],
     );
+    event.recipes.create
+        .mixing(
+            Fluid.of(global.fluids.molten_bronze, FluidAmounts.NUGGET * 1.5),
+            [
+                {
+                    fluid: global.fluids.molten_tin,
+                    amount: FluidAmounts.NUGGET,
+                },
+                {
+                    fluid: "createmetallurgy:molten_copper",
+                    amount: FluidAmounts.NUGGET * 2,
+                },
+            ],
+        )
+        .heated();
 
     // rubber from latex via mixing gives 1 extra rubber compared to handcrafting
     event.recipes.create.mixing(
