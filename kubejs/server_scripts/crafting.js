@@ -246,6 +246,17 @@ ServerEvents.recipes((event) => {
         "#forge:plates/copper",
     );
 
+    // oxygen loader
+    event
+        .shaped("ad_astra:oxygen_loader", ["IFI", "OTO", "IRI"], {
+            I: "#forge:plates/cast_iron",
+            F: "create:propeller",
+            O: "ad_astra:oxygen_tank",
+            T: "create:electron_tube",
+            R: "minecraft:redstone_block",
+        })
+        .id("ad_astra:recipes/oxygen_loader");
+
     // Flopper recipe
     event
         .shaped("flopper:flopper", ["A A", "ABA", " A "], {
