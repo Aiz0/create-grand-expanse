@@ -1,0 +1,4 @@
+[oxygenLoader]
+	maxEnergy = 0
+	energyPerTick = 0
+	tankSize = 3000
