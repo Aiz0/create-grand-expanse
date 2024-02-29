@@ -215,27 +215,31 @@ ServerEvents.recipes((event) => {
 
     // Space Suit
     event
-        .shaped("ad_astra:space_helmet", ["AAA", "ABA"], {
-            A: "#forge:ingots/nickel",
-            B: "create:copper_diving_helmet",
+        .shaped("ad_astra:space_helmet", ["WRW", "RDR", "WRW"], {
+            W: "minecraft:white_wool",
+            R: "thermal:cured_rubber",
+            D: "create:copper_diving_helmet",
         })
         .id("ad_astra:recipes/space_helmet");
     event
-        .shaped("ad_astra:space_suit", ["A A", "BCB", "AAA"], {
-            A: "#forge:ingots/nickel",
-            B: "ad_astra:oxygen_tank",
+        .shaped("ad_astra:space_suit", ["WRW", "TCT", "WRW"], {
+            W: "minecraft:white_wool",
+            R: "thermal:cured_rubber",
+            T: "ad_astra:oxygen_tank",
             C: "create:copper_backtank",
         })
         .id("ad_astra:recipes/space_suit");
     event
-        .shaped("ad_astra:space_pants", ["AAA", "A A", "A A"], {
-            A: "#forge:ingots/nickel",
+        .shaped("ad_astra:space_pants", ["WRW", "R R", "W W"], {
+            W: "minecraft:white_wool",
+            R: "thermal:cured_rubber",
         })
         .id("ad_astra:recipes/space_pants");
     event
-        .shaped("ad_astra:space_boots", ["ABA", "A A"], {
-            A: "#forge:ingots/nickel",
-            B: "create:copper_diving_boots",
+        .shaped("ad_astra:space_boots", ["WRW", "RDR", "WRW"], {
+            W: "minecraft:white_wool",
+            R: "thermal:cured_rubber",
+            D: "create:copper_diving_boots",
         })
         .id("ad_astra:recipes/space_boots");
 
