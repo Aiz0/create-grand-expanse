@@ -149,6 +149,20 @@ ServerEvents.recipes((event) => {
         B: "minecraft:stick",
     });
 
+    // Create sifter Meshes
+    sifterMesh("createsifter:andesite_mesh", "createdeco:andesite_mesh_fence");
+    sifterMesh("createsifter:zinc_mesh", "createdeco:zinc_mesh_fence");
+    sifterMesh("createsifter:brass_mesh", "createdeco:brass_mesh_fence");
+
+    function sifterMesh(mesh, input) {
+        event
+            .shaped(mesh, ["SMS", "MMM", "SMS"], {
+                S: "minecraft:stick",
+                M: input,
+            })
+            .id(mesh);
+    }
+
     // metallurgy
     event
         .shaped("createmetallurgy:casting_basin", ["A A", "A A", "AAA"], {
