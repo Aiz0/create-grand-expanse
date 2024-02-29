@@ -59,6 +59,11 @@ ServerEvents.recipes((event) => {
         ["create:powdered_obsidian"],
         "minecraft:obsidian",
     );
+    // early game quartz
+    event.recipes.create.milling(
+        [Item.of("minecraft:quartz").withChance(0.1)],
+        "minecraft:diorite",
+    );
     // Mill ore to dust for chance for extra
     Ingredient.of("#forge:raw_materials").itemIds.forEach((item) => {
         const material = item.split("_").pop();
