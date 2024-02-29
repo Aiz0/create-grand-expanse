@@ -208,7 +208,11 @@ ServerEvents.recipes((event) => {
 
     // Early Game Ad Astra
     event.replaceInput(
-        { output: "ad_astra:launch_pad" },
+        [
+            { output: "ad_astra:launch_pad" },
+            { output: "ad_astra:rocket_fin" },
+            { output: "ad_astra:rocket_nose_cone" },
+        ],
         "ad_astra:steel_plate",
         "create:sturdy_sheet",
     );
