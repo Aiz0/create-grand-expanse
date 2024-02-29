@@ -35,6 +35,7 @@ ServerEvents.recipes((event) => {
         // We don't want this sheet/plate recipe.
         { id: "ad_astra:recipes/hammer" },
         { input: "ad_astra:hammer" },
+        { id: "ad_astra:conversion/oxygen_from_water" },
     ]);
 
     // get all blocks compressed blocks that shouldn't be removed

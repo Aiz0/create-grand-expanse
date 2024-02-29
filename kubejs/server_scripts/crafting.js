@@ -88,6 +88,21 @@ ServerEvents.recipes((event) => {
         },
     );
 
+    // Fluid pipe needs rubber obviously
+    event.replaceInput(
+        { output: "create:fluid_pipe" },
+        "#forge:ingots/copper",
+        "thermal:cured_rubber",
+    );
+
+    // belts use rubber tooo
+    event
+        .shaped("create:belt_connector", ["KRK", "KRK"], {
+            K: "minecraft:dried_kelp",
+            R: "thermal:cured_rubber",
+        })
+        .id("create:crafting/kinetics/belt_connector");
+
     // Mechanical Extruder recipes
     // Press recipe surrounded by glass and andesite alloy
     event.shaped(
@@ -134,6 +149,20 @@ ServerEvents.recipes((event) => {
         B: "minecraft:stick",
     });
 
+    // Create sifter Meshes
+    sifterMesh("createsifter:andesite_mesh", "createdeco:andesite_mesh_fence");
+    sifterMesh("createsifter:zinc_mesh", "createdeco:zinc_mesh_fence");
+    sifterMesh("createsifter:brass_mesh", "createdeco:brass_mesh_fence");
+
+    function sifterMesh(mesh, input) {
+        event
+            .shaped(mesh, ["SMS", "MMM", "SMS"], {
+                S: "minecraft:stick",
+                M: input,
+            })
+            .id(mesh);
+    }
+
     // metallurgy
     event
         .shaped("createmetallurgy:casting_basin", ["A A", "A A", "AAA"], {
@@ -169,11 +198,12 @@ ServerEvents.recipes((event) => {
         C: "create:copper_casing",
     });
 
-    event.shaped(global.items.electrolyzer, ["IGI", "ICI", "IEI"], {
-        I: "createaddition:iron_rod",
-        G: "create:gearbox_tier_0",
+    event.shaped(global.items.electrolyzer, ["ISI", "TCT", "IEI"], {
+        I: "#forge:plates/cast_iron",
+        S: "create:shaft_tier_0",
+        T: "create:electron_tube",
         C: global.items.copper_coil_block,
-        E: "thermal:iron_gear",
+        E: "thermal:copper_gear",
     });
 
     // Early Game Ad Astra
@@ -185,27 +215,31 @@ ServerEvents.recipes((event) => {
 
     // Space Suit
     event
-        .shaped("ad_astra:space_helmet", ["AAA", "ABA"], {
-            A: "#forge:ingots/nickel",
-            B: "create:copper_diving_helmet",
+        .shaped("ad_astra:space_helmet", ["WRW", "RDR", "WRW"], {
+            W: "minecraft:white_wool",
+            R: "thermal:cured_rubber",
+            D: "create:copper_diving_helmet",
         })
         .id("ad_astra:recipes/space_helmet");
     event
-        .shaped("ad_astra:space_suit", ["A A", "BCB", "AAA"], {
-            A: "#forge:ingots/nickel",
-            B: "ad_astra:oxygen_tank",
+        .shaped("ad_astra:space_suit", ["WRW", "TCT", "WRW"], {
+            W: "minecraft:white_wool",
+            R: "thermal:cured_rubber",
+            T: "ad_astra:oxygen_tank",
             C: "create:copper_backtank",
         })
         .id("ad_astra:recipes/space_suit");
     event
-        .shaped("ad_astra:space_pants", ["AAA", "A A", "A A"], {
-            A: "#forge:ingots/nickel",
+        .shaped("ad_astra:space_pants", ["WRW", "R R", "W W"], {
+            W: "minecraft:white_wool",
+            R: "thermal:cured_rubber",
         })
         .id("ad_astra:recipes/space_pants");
     event
-        .shaped("ad_astra:space_boots", ["ABA", "A A"], {
-            A: "#forge:ingots/nickel",
-            B: "create:copper_diving_boots",
+        .shaped("ad_astra:space_boots", ["WRW", "RDR", "WRW"], {
+            W: "minecraft:white_wool",
+            R: "thermal:cured_rubber",
+            D: "create:copper_diving_boots",
         })
         .id("ad_astra:recipes/space_boots");
 
@@ -229,6 +263,17 @@ ServerEvents.recipes((event) => {
         "ad_astra:steel_plate",
         "#forge:plates/copper",
     );
+
+    // oxygen loader
+    event
+        .shaped("ad_astra:oxygen_loader", ["IFI", "OTO", "IRI"], {
+            I: "#forge:plates/cast_iron",
+            F: "create:propeller",
+            O: "ad_astra:oxygen_tank",
+            T: "create:electron_tube",
+            R: "minecraft:redstone_block",
+        })
+        .id("ad_astra:recipes/oxygen_loader");
 
     // Flopper recipe
     event

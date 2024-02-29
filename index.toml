@@ -7,6 +7,9 @@ file = "LICENSE"
 file = "config/Mekanism/world.toml"
 
 [[files]]
+file = "config/ad_astra.toml"
+
+[[files]]
 file = "config/ae2/common.json"
 
 [[files]]

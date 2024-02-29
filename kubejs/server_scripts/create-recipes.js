@@ -16,6 +16,21 @@ ServerEvents.recipes((event) => {
             },
         ],
     );
+    event.recipes.create
+        .mixing(
+            Fluid.of(global.fluids.molten_bronze, FluidAmounts.NUGGET * 1.5),
+            [
+                {
+                    fluid: global.fluids.molten_tin,
+                    amount: FluidAmounts.NUGGET,
+                },
+                {
+                    fluid: "createmetallurgy:molten_copper",
+                    amount: FluidAmounts.NUGGET * 2,
+                },
+            ],
+        )
+        .heated();
 
     // rubber from latex via mixing gives 1 extra rubber compared to handcrafting
     event.recipes.create.mixing(
@@ -43,6 +58,11 @@ ServerEvents.recipes((event) => {
     event.recipes.create.milling(
         ["create:powdered_obsidian"],
         "minecraft:obsidian",
+    );
+    // early game quartz
+    event.recipes.create.milling(
+        [Item.of("minecraft:quartz").withChance(0.1)],
+        "minecraft:diorite",
     );
     // Mill ore to dust for chance for extra
     Ingredient.of("#forge:raw_materials").itemIds.forEach((item) => {
