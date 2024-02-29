@@ -1,0 +1,57 @@
+{
+    "name": "Kinetic Electrolyzer",
+    "appearance": {
+        "block": "grand_expanse:machine/electrolyzer",
+        "running": {
+            "block": "grand_expanse:machine/electrolyzer_running"
+        },
+        "item": "grand_expanse:machine/electrolyzer"
+    },
+    "components": [
+        {
+            "type": "custommachinery:contraption",
+            "config": {
+                "default": "none",
+                "back": "input"
+            },
+            "stress_impact": 4
+        },
+        {
+            "type": "custommachinery:fluid",
+            "capacity": 4000,
+            "id": "watertank",
+            "maxInput": 1000,
+            "mode": "input",
+            "filter": ["minecraft:water"],
+            "whitelist": true
+        },
+        {
+            "type": "custommachinery:fluid",
+            "capacity": 4000,
+            "id": "oxygentank",
+            "maxOutput": 1000,
+            "mode": "output",
+            "filter": ["mekanism:oxygen"],
+            "whitelist": true,
+            "config": {
+                "default": "none",
+                "right": "output",
+                "output": true
+            }
+        },
+        {
+            "type": "custommachinery:fluid",
+            "capacity": 4000,
+            "id": "hydrogentank",
+            "maxOutput": 1000,
+            "mode": "output",
+            "filter": ["mekanism:hydrogen"],
+            "whitelist": true,
+            "config": {
+                "default": "none",
+                "left": "output",
+                "output": true
+            }
+        }
+    ]
+}

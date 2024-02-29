@@ -15,6 +15,13 @@ Ponder.tags((event) => {
             "createmetallurgy:foundry_mixer",
         ],
     );
+    event.createTag(
+        `${global.packName}:custommachinery`,
+        global.items.electrolyzer,
+        "Custom Machinery",
+        "bloblablewylewyl",
+        [global.items.electrolyzer],
+    );
 });
 
 // Create scenes
@@ -60,6 +67,19 @@ Ponder.registry((event) => {
                     "Items need to be inserted from the side when a foundry top is used.",
                     [1, 2.5, 2],
                 );
+            },
+        );
+
+    event
+        .create(global.items.electrolyzer)
+        .scene(
+            "kinetic_electrolyzer",
+            "How to make a kinectic electrolyzer",
+            (scene, util) => {
+                scene.showBasePlate();
+                scene
+                    .text(100, "WIP", [2, 2.5, 2.5])
+                    .colored(PonderPalette.RED);
             },
         );
 });

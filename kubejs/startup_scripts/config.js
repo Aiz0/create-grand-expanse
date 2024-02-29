@@ -12,6 +12,8 @@ global.items = {
     armor_plate_mold: null,
     iron_tool_part: null,
     iron_armor_plate: null,
+    copper_coil_block: null,
+    electrolyzer: null,
 };
 defineNames(global.items);
 
@@ -25,6 +27,7 @@ global.fluids = {
     molten_silver: null,
     molten_lead: null,
     molten_rose_gold: null,
+    molten_bronze: null,
 };
 // define names from keys
 defineNames(global.fluids);
@@ -61,6 +64,7 @@ global.config = {
             { name: "nickel", fluid: global.fluids.molten_nickel },
             { name: "silver", fluid: global.fluids.molten_silver },
             { name: "lead", fluid: global.fluids.molten_lead },
+            { name: "bronze", fluid: global.fluids.molten_bronze },
         ],
         // types of items that can be melted of above materials
         // nuggets defaults to 9

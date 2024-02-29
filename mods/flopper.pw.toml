@@ -1,0 +1,13 @@
+name = "Flopper"
+filename = "Flopper-1.19.2-1.1.5.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/aTMAqQMY/versions/3j5oNzc2/Flopper-1.19.2-1.1.5.jar"
+hash-format = "sha1"
+hash = "3035ef36f816666058f28fd2722f649c3d51cc5d"
+
+[update]
+[update.modrinth]
+mod-id = "aTMAqQMY"
+version = "3j5oNzc2"

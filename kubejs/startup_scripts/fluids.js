@@ -9,12 +9,13 @@ StartupEvents.registry("fluid", (event) => {
     molten_metal(global.fluids.molten_silver, 0xb4c0db);
     molten_metal(global.fluids.molten_lead, 0x312d43);
     molten_metal(global.fluids.molten_rose_gold, 0xf4af94);
+    molten_metal(global.fluids.molten_bronze, 0xe59831);
 
     function molten_metal(fluid, color) {
         event
             .create(fluid)
             .stillTexture("tinkers_construct:block/fluid/molten/still")
-            .flowingTexture("tinkers_contruct:block/fluid/molten/flowing")
+            .flowingTexture("tinkers_construct:block/fluid/molten/flowing")
             .color(color);
     }
 });
