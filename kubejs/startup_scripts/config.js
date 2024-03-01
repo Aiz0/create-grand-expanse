@@ -11,6 +11,7 @@ global.items = {
     tool_part_mold: null,
     armor_plate_mold: null,
     gear_mold: null,
+    copper_tool_part: null,
     iron_tool_part: null,
     iron_armor_plate: null,
     copper_coil_block: null,

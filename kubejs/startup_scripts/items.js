@@ -12,6 +12,7 @@ StartupEvents.registry("item", (event) => {
     event.create(global.items.tool_part_mold);
     event.create(global.items.armor_plate_mold);
     event.create(global.items.gear_mold);
+    event.create(global.items.copper_tool_part);
     event.create(global.items.iron_tool_part);
     event.create(global.items.iron_armor_plate);
 });
