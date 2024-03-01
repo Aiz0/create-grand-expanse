@@ -109,6 +109,12 @@ file = "kubejs/assets/grand_expanse/textures/item/copper_shovel.png"
 file = "kubejs/assets/grand_expanse/textures/item/copper_sword.png"
 
 [[files]]
+file = "kubejs/assets/grand_expanse/textures/item/gear_mold.png"
+
+[[files]]
+file = "kubejs/assets/grand_expanse/textures/item/iron_tool_part.png"
+
+[[files]]
 file = "kubejs/assets/kubejs/ponder/foundry_example.nbt"
 
 [[files]]
