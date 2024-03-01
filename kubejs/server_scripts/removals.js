@@ -35,6 +35,9 @@ ServerEvents.recipes((event) => {
         { id: "ad_astra:recipes/hammer" },
         { input: "ad_astra:hammer" },
         { id: "ad_astra:conversion/oxygen_from_water" },
+
+        // Thermal
+        { output: "#forge:gears" },
     ]);
 
     // get all blocks compressed blocks that shouldn't be removed

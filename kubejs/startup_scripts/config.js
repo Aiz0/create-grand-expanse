@@ -10,6 +10,7 @@ global.items = {
     copper_hoe: null,
     tool_part_mold: null,
     armor_plate_mold: null,
+    gear_mold: null,
     iron_tool_part: null,
     iron_armor_plate: null,
     copper_coil_block: null,
@@ -115,6 +116,12 @@ global.config = {
             tool_part: {
                 mold: global.items.armor_plate_mold,
                 resultTag: "forge:armor_plates",
+                amount: FluidAmounts.INGOT,
+                time: 80,
+            },
+            gear: {
+                mold: global.items.gear_mold,
+                resultTag: "forge:gears",
                 amount: FluidAmounts.INGOT,
                 time: 80,
             },
