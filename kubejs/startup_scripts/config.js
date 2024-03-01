@@ -71,6 +71,10 @@ global.config = {
         // nuggets defaults to 9
         items: [
             { tag: "forge:ingots/" },
+            { tag: "forge:plates/" },
+            { tag: "forge:gears/" },
+            { tag: "forge:tool_parts/" },
+            { tag: "forge:armor_plates" },
             { tag: "forge:raw_materials/" },
             { tag: "forge:crushed_raw_materials/" },
             { tag: "forge:dusts/" },
