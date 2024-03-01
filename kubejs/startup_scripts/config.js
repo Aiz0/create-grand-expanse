@@ -117,7 +117,7 @@ global.config = {
                 amount: FluidAmounts.INGOT,
                 time: 80,
             },
-            tool_part: {
+            armor_part: {
                 mold: global.items.armor_plate_mold,
                 resultTag: "forge:armor_plates",
                 amount: FluidAmounts.INGOT,
