@@ -1,6 +1,7 @@
 {
     "modPriorities": [
         "minecraft",
+        "grand_expanse",
         "kubejs",
         "crafttweaker",
         "create",

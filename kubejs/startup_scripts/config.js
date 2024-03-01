@@ -74,7 +74,7 @@ global.config = {
             { tag: "forge:plates/" },
             { tag: "forge:gears/" },
             { tag: "forge:tool_parts/" },
-            { tag: "forge:armor_plates" },
+            { tag: "forge:armor_plates/" },
             { tag: "forge:raw_materials/" },
             { tag: "forge:crushed_raw_materials/" },
             { tag: "forge:dusts/" },
@@ -117,7 +117,7 @@ global.config = {
                 amount: FluidAmounts.INGOT,
                 time: 80,
             },
-            armor_part: {
+            armor_plate: {
                 mold: global.items.armor_plate_mold,
                 resultTag: "forge:armor_plates",
                 amount: FluidAmounts.INGOT,
