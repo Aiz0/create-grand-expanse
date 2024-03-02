@@ -21,6 +21,7 @@ ServerEvents.recipes((event) => {
         { type: "createmetallurgy:melting" },
         { type: "createmetallurgy:casting_in_basin" },
         { type: "createmetallurgy:casting_in_table" },
+        { output: "#forge:graphite_molds" },
 
         // Create mechanical extruder
         { id: "create_mechanical_extruder:mechanical_extruder" },

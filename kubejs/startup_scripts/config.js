@@ -30,6 +30,7 @@ global.fluids = {
     molten_lead: null,
     molten_rose_gold: null,
     molten_bronze: null,
+    molten_cast_iron: null,
 };
 // define names from keys
 defineNames(global.fluids);
@@ -67,6 +68,7 @@ global.config = {
             { name: "silver", fluid: global.fluids.molten_silver },
             { name: "lead", fluid: global.fluids.molten_lead },
             { name: "bronze", fluid: global.fluids.molten_bronze },
+            { name: "cast_iron", fluid: global.fluids.molten_cast_iron },
         ],
         // types of items that can be melted of above materials
         // nuggets defaults to 9

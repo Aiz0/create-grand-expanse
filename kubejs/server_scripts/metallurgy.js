@@ -9,6 +9,17 @@ ServerEvents.recipes((event) => {
         heatRequirement: "heated",
     });
 
+    // Cast Iron to make all types of molds/casts.
+    for (const [name, obj] of Object.entries(global.config.casting.table)) {
+        castMold(
+            Item.of(obj.mold),
+            Ingredient.of(`#${obj.resultTag}`),
+            global.fluids.molten_cast_iron,
+            FluidAmounts.INGOT,
+            80,
+        );
+    }
+
     // Adds melting and casting to the meltable materials
     global.config.melting.materials.forEach((material) => {
         castFluid(material.name, material.fluid);
@@ -63,7 +74,7 @@ ServerEvents.recipes((event) => {
                 AlmostUnified.getPreferredItemForTag(
                     `${obj.resultTag}/${material}`,
                 ),
-                obj.mold,
+                { item: obj.mold },
                 fluid,
                 obj.amount,
                 obj.time,
@@ -84,9 +95,7 @@ ServerEvents.recipes((event) => {
         event.custom({
             type: "createmetallurgy:casting_in_table",
             ingredients: [
-                {
-                    item: mold,
-                },
+                mold,
                 {
                     fluid: fluid,
                     amount: fluidAmount,
