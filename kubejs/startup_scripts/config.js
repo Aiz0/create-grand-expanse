@@ -18,6 +18,7 @@ global.items = {
     bronze_rod: null,
     copper_coil_block: null,
     electrolyzer: null,
+    sturdy_hull: null,
 };
 defineNames(global.items);
 

@@ -54,6 +54,11 @@ ServerEvents.recipes((event) => {
         .heated()
         .id("minecraft:compacting/cast_iron_ingot");
 
+    // Sturdy hull
+    event.recipes.create.compacting(global.items.sturdy_hull, [
+        Item.of("create:sturdy_sheet", 4),
+    ]);
+
     // early game obsidian dust recipe
     event.recipes.create.milling(
         ["create:powdered_obsidian"],
