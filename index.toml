@@ -94,6 +94,15 @@ file = "kubejs/assets/grand_expanse/textures/block/electrolyzer/tank.png"
 file = "kubejs/assets/grand_expanse/textures/block/electrolyzer/tank_water.png"
 
 [[files]]
+file = "kubejs/assets/grand_expanse/textures/item/armor_plate_mold.png"
+
+[[files]]
+file = "kubejs/assets/grand_expanse/textures/item/bronze_rod.png"
+
+[[files]]
+file = "kubejs/assets/grand_expanse/textures/item/copper_armor_plate.png"
+
+[[files]]
 file = "kubejs/assets/grand_expanse/textures/item/copper_axe.png"
 
 [[files]]
@@ -113,6 +122,9 @@ file = "kubejs/assets/grand_expanse/textures/item/copper_tool_part.png"
 
 [[files]]
 file = "kubejs/assets/grand_expanse/textures/item/gear_mold.png"
+
+[[files]]
+file = "kubejs/assets/grand_expanse/textures/item/iron_armor_plate.png"
 
 [[files]]
 file = "kubejs/assets/grand_expanse/textures/item/iron_tool_part.png"
