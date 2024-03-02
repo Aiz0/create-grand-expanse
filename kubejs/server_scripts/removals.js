@@ -7,7 +7,6 @@ ServerEvents.recipes((event) => {
         { type: "minecraft:smelting", output: "#forge:ingots" },
         { type: "minecraft:blasting", output: "#forge:ingots" },
         // Remove iron and gold tools
-        { output: "#forge:tools/iron" },
         { output: "#forge:tools/gold" },
 
         // Create
@@ -22,6 +21,7 @@ ServerEvents.recipes((event) => {
         { type: "createmetallurgy:melting" },
         { type: "createmetallurgy:casting_in_basin" },
         { type: "createmetallurgy:casting_in_table" },
+        { output: "#forge:graphite_molds" },
 
         // Create mechanical extruder
         { id: "create_mechanical_extruder:mechanical_extruder" },
@@ -36,6 +36,9 @@ ServerEvents.recipes((event) => {
         { id: "ad_astra:recipes/hammer" },
         { input: "ad_astra:hammer" },
         { id: "ad_astra:conversion/oxygen_from_water" },
+
+        // Thermal
+        { output: "#forge:gears", not: { output: "#forge:gears/copper" } },
     ]);
 
     // get all blocks compressed blocks that shouldn't be removed

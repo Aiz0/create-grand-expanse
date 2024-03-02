@@ -54,6 +54,11 @@ ServerEvents.recipes((event) => {
         .heated()
         .id("minecraft:compacting/cast_iron_ingot");
 
+    // Sturdy hull
+    event.recipes.create.compacting(global.items.sturdy_hull, [
+        Item.of("create:sturdy_sheet", 4),
+    ]);
+
     // early game obsidian dust recipe
     event.recipes.create.milling(
         ["create:powdered_obsidian"],
@@ -87,11 +92,23 @@ ServerEvents.recipes((event) => {
         const amount = item.includes("shaft")
             ? FluidAmounts.INGOT / 2
             : item.includes("large_cogwheel")
-            ? FluidAmounts.INGOT * 2
-            : FluidAmounts.INGOT;
+              ? FluidAmounts.INGOT * 2
+              : FluidAmounts.INGOT;
         event.recipes.create.filling(output, [
             Fluid.of("createmetallurgy:molten_copper", amount),
             item,
         ]);
+    });
+
+    // Rolling
+    event.custom({
+        type: "createaddition:rolling",
+        input: {
+            tag: "forge:ingots/bronze",
+        },
+        result: {
+            item: global.items.bronze_rod,
+            count: 2,
+        },
     });
 });

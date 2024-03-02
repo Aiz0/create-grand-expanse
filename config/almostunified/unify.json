@@ -1,6 +1,7 @@
 {
     "modPriorities": [
         "minecraft",
+        "grand_expanse",
         "kubejs",
         "crafttweaker",
         "create",
@@ -32,7 +33,10 @@
         "forge:storage_blocks/{material}",
         "forge:storage_blocks/raw_{material}",
         "forge:rope",
-        "forge:dirty_dusts/{material}"
+        "forge:dirty_dusts/{material}",
+        "forge:tool_parts/{material}",
+        "forge:armor_plates/{material}",
+        "forge:gears/{material}"
     ],
     "materials": [
         "aeternium",

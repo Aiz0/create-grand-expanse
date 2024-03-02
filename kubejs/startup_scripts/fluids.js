@@ -10,6 +10,7 @@ StartupEvents.registry("fluid", (event) => {
     molten_metal(global.fluids.molten_lead, 0x312d43);
     molten_metal(global.fluids.molten_rose_gold, 0xf4af94);
     molten_metal(global.fluids.molten_bronze, 0xe59831);
+    molten_metal(global.fluids.molten_cast_iron, 0x313131);
 
     function molten_metal(fluid, color) {
         event
