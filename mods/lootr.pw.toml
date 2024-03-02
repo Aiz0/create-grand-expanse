@@ -1,13 +1,13 @@
 name = "Lootr"
-filename = "lootr-1.19-0.4.25.65.jar"
+filename = "lootr-1.19-0.4.25.67.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/EltpO5cN/versions/YJpiKNBl/lootr-1.19-0.4.25.65.jar"
+url = "https://cdn.modrinth.com/data/EltpO5cN/versions/WgGe8bIQ/lootr-1.19-0.4.25.67.jar"
 hash-format = "sha1"
-hash = "e225e903d2e1e2bb26a1da41f2f6ad830838ee5c"
+hash = "aae14d952b6d336534151569221835dca61b07f6"
 
 [update]
 [update.modrinth]
 mod-id = "EltpO5cN"
-version = "YJpiKNBl"
+version = "WgGe8bIQ"

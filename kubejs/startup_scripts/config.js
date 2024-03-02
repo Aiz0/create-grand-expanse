@@ -8,8 +8,17 @@ global.items = {
     copper_shovel: null,
     copper_sword: null,
     copper_hoe: null,
+    tool_part_mold: null,
+    armor_plate_mold: null,
+    gear_mold: null,
+    copper_tool_part: null,
+    copper_armor_plate: null,
+    iron_tool_part: null,
+    iron_armor_plate: null,
+    bronze_rod: null,
     copper_coil_block: null,
     electrolyzer: null,
+    sturdy_hull: null,
 };
 defineNames(global.items);
 
@@ -24,6 +33,7 @@ global.fluids = {
     molten_lead: null,
     molten_rose_gold: null,
     molten_bronze: null,
+    molten_cast_iron: null,
 };
 // define names from keys
 defineNames(global.fluids);
@@ -61,11 +71,16 @@ global.config = {
             { name: "silver", fluid: global.fluids.molten_silver },
             { name: "lead", fluid: global.fluids.molten_lead },
             { name: "bronze", fluid: global.fluids.molten_bronze },
+            { name: "cast_iron", fluid: global.fluids.molten_cast_iron },
         ],
         // types of items that can be melted of above materials
         // nuggets defaults to 9
         items: [
             { tag: "forge:ingots/" },
+            { tag: "forge:plates/" },
+            { tag: "forge:gears/" },
+            { tag: "forge:tool_parts/" },
+            { tag: "forge:armor_plates/" },
             { tag: "forge:raw_materials/" },
             { tag: "forge:crushed_raw_materials/" },
             { tag: "forge:dusts/" },
@@ -101,6 +116,24 @@ global.config = {
                 resultTag: "forge:nuggets",
                 amount: FluidAmounts.NUGGET,
                 time: 20,
+            },
+            tool_part: {
+                mold: global.items.tool_part_mold,
+                resultTag: "forge:tool_parts",
+                amount: FluidAmounts.INGOT * 2,
+                time: 80,
+            },
+            armor_plate: {
+                mold: global.items.armor_plate_mold,
+                resultTag: "forge:armor_plates",
+                amount: FluidAmounts.INGOT * 2,
+                time: 80,
+            },
+            gear: {
+                mold: global.items.gear_mold,
+                resultTag: "forge:gears",
+                amount: FluidAmounts.INGOT * 4,
+                time: 80,
             },
         },
     },
