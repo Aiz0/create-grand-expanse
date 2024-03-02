@@ -235,7 +235,7 @@ ServerEvents.recipes((event) => {
     event
         .shaped("ad_astra:steel_engine", ["SPS", "SPS", "BVB"], {
             S: "create:sturdy_sheet",
-            T: "create:fluid_pipe",
+            P: "create:fluid_pipe",
             B: "thermal:bronze_gear",
             V: "create:fluid_valve",
         })
