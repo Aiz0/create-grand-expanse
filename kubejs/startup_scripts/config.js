@@ -3,6 +3,7 @@ global.packName = "grand_expanse";
 // Define items here
 global.items = {
     andesite_compound: null,
+    rocket_hull: null,
     copper_pickaxe: null,
     copper_axe: null,
     copper_shovel: null,

@@ -136,6 +136,9 @@ file = "kubejs/assets/grand_expanse/textures/item/iron_armor_plate.png"
 file = "kubejs/assets/grand_expanse/textures/item/iron_tool_part.png"
 
 [[files]]
+file = "kubejs/assets/grand_expanse/textures/item/rocket_hull.png"
+
+[[files]]
 file = "kubejs/assets/grand_expanse/textures/item/tool_part_mold.png"
 
 [[files]]

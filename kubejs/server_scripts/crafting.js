@@ -217,6 +217,38 @@ ServerEvents.recipes((event) => {
         "create:sturdy_sheet",
     );
 
+    event.remove({ output: "ad_astra:steel_tank" });
+    event.remove({ output: "ad_astra:steel_engine" });
+    event.remove({ output: "ad_astra:tier_1_rocket" });
+
+    event.shaped("ad_astra:steel_tank", ["SSG", "STP", "SSG"], {
+        S: "create:sturdy_sheet",
+        G: "thermal:bronze_gear",
+        T: "create:fluid_tank",
+        P: "create:mechanical_pump",
+    });
+
+    event.shaped("grand_expanse:rocket_hull", ["HSH", "HGH", "HSH"], {
+        H: "grand_expanse:sturdy_hull",
+        S: "create:sturdy_sheet",
+        G: "#forge:glass",
+    });
+
+    event.shaped("ad_astra:steel_engine", ["SPS", "SPS", "BVB"], {
+        S: "create:sturdy_sheet",
+        T: "create:fluid_pipe",
+        B: "thermal:bronze_gear",
+        V: "create:fluid_valve",
+    });
+
+    event.shaped("ad_astra:tier_1_rocket", [" T ", "SHS", "FEF"], {
+        T: "ad_astra:rocket_nose_cone",
+        S: "create:sturdy_sheet",
+        H: "grand_expanse:rocket_hull",
+        F: "ad_astra:rocket_fin",
+        E: "ad_astra:steel_engine",
+    });
+
     // Space Suit
     event
         .shaped("ad_astra:space_helmet", ["WRW", "RDR", "WRW"], {
@@ -308,4 +340,6 @@ ServerEvents.recipes((event) => {
             B: "create:copper_casing",
         })
         .id("flopper:recipes/flopper");
+
+    //
 });
