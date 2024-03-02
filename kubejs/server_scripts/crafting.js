@@ -412,4 +412,41 @@ ServerEvents.recipes((event) => {
         W: "#minecraft:wool",
         O: "minecraft:obsidian",
     });
+
+    // Backpacks
+
+    backpack(
+        "sophisticatedbackpacks:copper_backpack",
+        "sophisticatedbackpacks:backpack",
+        "#forge:plates/copper",
+    );
+    backpack(
+        "sophisticatedbackpacks:iron_backpack",
+        "sophisticatedbackpacks:copper_backpack",
+        "#forge:gears/iron",
+    );
+
+    /*
+    backpack(
+        "sophisticatedbackpacks:gold_backpack",
+        "sophisticatedbackpacks:copper_backpack",
+        global.fluids.molten_rose_gold,
+    );*/
+
+    function backpack(outputBackpack, inputBackpack, inputItem) {
+        event
+            .shaped(outputBackpack, ["III", "IBI", "III"], {
+                I: inputItem,
+                B: inputBackpack,
+            })
+            .id(outputBackpack)
+            .modifyResult((inventory, itemstack) => {
+                let item = inventory.find(Item.of(inputBackpack));
+                if (item.getNbt() === null) {
+                    return itemstack;
+                }
+                let nbt = { contentsUuid: item.getNbt().contentsUuid };
+                return itemstack.withNBT(nbt);
+            });
+    }
 });
