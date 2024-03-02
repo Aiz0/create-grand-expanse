@@ -208,10 +208,48 @@ ServerEvents.recipes((event) => {
 
     // Early Game Ad Astra
     event.replaceInput(
-        { output: "ad_astra:launch_pad" },
+        [
+            { output: "ad_astra:launch_pad" },
+            { output: "ad_astra:rocket_fin" },
+            { output: "ad_astra:rocket_nose_cone" },
+        ],
         "ad_astra:steel_plate",
         "create:sturdy_sheet",
     );
+
+    event
+        .shaped("ad_astra:steel_tank", ["SSG", "STP", "SSG"], {
+            S: "create:sturdy_sheet",
+            G: "thermal:bronze_gear",
+            T: "create:fluid_tank",
+            P: "create:mechanical_pump",
+        })
+        .id("ad_astra:recipes/steel_tank");
+
+    event.shaped(global.items.rocket_hull, ["HSH", "HGH", "HSH"], {
+        H: global.items.sturdy_hull,
+        S: "create:sturdy_sheet",
+        G: "#forge:glass",
+    });
+
+    event
+        .shaped("ad_astra:steel_engine", ["SPS", "SPS", "BVB"], {
+            S: "create:sturdy_sheet",
+            P: "create:fluid_pipe",
+            B: "thermal:bronze_gear",
+            V: "create:fluid_valve",
+        })
+        .id("ad_astra:recipes/steel_engine");
+
+    event
+        .shaped("ad_astra:tier_1_rocket", [" T ", "SHS", "FEF"], {
+            T: "ad_astra:rocket_nose_cone",
+            S: "create:sturdy_sheet",
+            H: global.items.rocket_hull,
+            F: "ad_astra:rocket_fin",
+            E: "ad_astra:steel_engine",
+        })
+        .id("ad_astra:nasa_workbench/tier_1_rocket");
 
     // Space Suit
     event

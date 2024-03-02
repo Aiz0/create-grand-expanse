@@ -92,8 +92,8 @@ ServerEvents.recipes((event) => {
         const amount = item.includes("shaft")
             ? FluidAmounts.INGOT / 2
             : item.includes("large_cogwheel")
-              ? FluidAmounts.INGOT * 2
-              : FluidAmounts.INGOT;
+            ? FluidAmounts.INGOT * 2
+            : FluidAmounts.INGOT;
         event.recipes.create.filling(output, [
             Fluid.of("createmetallurgy:molten_copper", amount),
             item,
