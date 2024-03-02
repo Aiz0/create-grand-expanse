@@ -94,6 +94,9 @@ file = "kubejs/assets/grand_expanse/textures/block/electrolyzer/tank.png"
 file = "kubejs/assets/grand_expanse/textures/block/electrolyzer/tank_water.png"
 
 [[files]]
+file = "kubejs/assets/grand_expanse/textures/item/andesite_compound.png"
+
+[[files]]
 file = "kubejs/assets/grand_expanse/textures/item/copper_axe.png"
 
 [[files]]
