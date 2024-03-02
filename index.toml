@@ -434,6 +434,10 @@ file = "mods/ftb-xmod-compat.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/fumo.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/fusion-connected-textures.pw.toml"
 metafile = true
 
