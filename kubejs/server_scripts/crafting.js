@@ -263,6 +263,15 @@ ServerEvents.recipes((event) => {
         "ad_astra:steel_plate",
         "#forge:plates/copper",
     );
+    // Tool Parts
+    event.shaped(global.items.copper_tool_part, ["R  ", " I ", "  R"], {
+        R: "#forge:rods/copper",
+        I: "#forge:ingots/copper",
+    });
+    event.shaped(global.items.copper_armor_plate, [" S ", "NNN", " S "], {
+        N: "#forge:nuggets/copper",
+        S: "#forge:plates/copper",
+    });
 
     // Tool parts for iron tools
     event.replaceInput(

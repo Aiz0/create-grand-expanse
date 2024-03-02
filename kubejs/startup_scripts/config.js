@@ -12,8 +12,10 @@ global.items = {
     armor_plate_mold: null,
     gear_mold: null,
     copper_tool_part: null,
+    copper_armor_plate: null,
     iron_tool_part: null,
     iron_armor_plate: null,
+    bronze_rod: null,
     copper_coil_block: null,
     electrolyzer: null,
 };
@@ -117,19 +119,19 @@ global.config = {
             tool_part: {
                 mold: global.items.tool_part_mold,
                 resultTag: "forge:tool_parts",
-                amount: FluidAmounts.INGOT,
+                amount: FluidAmounts.INGOT * 2,
                 time: 80,
             },
             armor_plate: {
                 mold: global.items.armor_plate_mold,
                 resultTag: "forge:armor_plates",
-                amount: FluidAmounts.INGOT,
+                amount: FluidAmounts.INGOT * 2,
                 time: 80,
             },
             gear: {
                 mold: global.items.gear_mold,
                 resultTag: "forge:gears",
-                amount: FluidAmounts.INGOT,
+                amount: FluidAmounts.INGOT * 4,
                 time: 80,
             },
         },
