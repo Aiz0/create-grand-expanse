@@ -94,4 +94,10 @@ ServerEvents.recipes((event) => {
             item,
         ]);
     });
+
+    // Rocket Parts
+    event.recipes.create.compacting("grand_expanse:sturdy_hull",
+        Item.of("create:sturdy_sheet", 4));
+
+    
 });
