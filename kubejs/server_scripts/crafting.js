@@ -342,4 +342,43 @@ ServerEvents.recipes((event) => {
             B: "create:copper_casing",
         })
         .id("flopper:recipes/flopper");
+
+    // Tom's Storage
+    event.shaped("toms_storage:ts.storage_terminal", ["SRS", "CGC", "SOS"], {
+        S: "create:golden_sheet",
+        R: "minecraft:redstone_block",
+        C: "createaddition:copper_spool",
+        G: "#forge:glass",
+        O: "toms_storage:ts.open_crate"
+    })
+    .id("toms_storage:storage_terminal");
+
+    event.shaped("toms_storage:ts.inventory_cable", [" R ", "TTT", " R "], {
+        R: "thermal:cured_rubber",
+        T: "thermal:tin_ingot"
+    })
+    .id("toms_storage:inventory_cable");
+
+    event.shaped("toms_storage:ts.inventory_cable_connector", ["RP ", "OTT", "RP "], {
+        R: "thermal:cured_rubber",
+        P: "thermal:tin_plate",
+        O: "toms_storage:ts.open_crate",
+        T: "thermal:tin_ingot"
+    })
+    .id("toms_storage:inventory_cable_connector");
+
+    event.shaped("toms_storage:ts.inventory_connector", ["TST", "SRS", "TST"], {
+        T: "thermal:tin_ingot",
+        S: "create:golden_sheet",
+        R: "minecraft:redstone_block"
+    })
+    .id("toms_storage:inventory_connector");
+
+    event.shaped("toms_storage:ts.crafting_terminal", ["PCP", "ETE", "PCP"], {
+        P: "thermal:tin_plate",
+        C: "createaddition:copper_spool",
+        E: "create:electron_tube",
+        T: "toms_storage:ts.storage_terminal"
+    })
+    .id("toms_storage:crafting_terminal");
 });
