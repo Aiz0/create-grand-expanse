@@ -4,6 +4,7 @@ global.packName = "grand_expanse";
 global.items = {
     andesite_compound: null,
     rocket_hull: null,
+    incomplete_electron_tube: null,
     copper_pickaxe: null,
     copper_axe: null,
     copper_shovel: null,
