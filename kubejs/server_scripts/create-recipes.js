@@ -92,8 +92,8 @@ ServerEvents.recipes((event) => {
         const amount = item.includes("shaft")
             ? FluidAmounts.INGOT / 2
             : item.includes("large_cogwheel")
-            ? FluidAmounts.INGOT * 2
-            : FluidAmounts.INGOT;
+              ? FluidAmounts.INGOT * 2
+              : FluidAmounts.INGOT;
         event.recipes.create.filling(output, [
             Fluid.of("createmetallurgy:molten_copper", amount),
             item,
@@ -114,15 +114,24 @@ ServerEvents.recipes((event) => {
 
     //Chapter 2 Sequenced Assemblies
 
-    event.remove({id: "create:crafting/materials/electron_tube"});
+    event.remove({ id: "create:crafting/materials/electron_tube" });
 
-    let electron_tube_inter = 'grand_expanse:incomplete_electron_tube';
-    event.recipes.create.sequenced_assembly(["create:electron_tube"], "create:iron_sheet",
-    [
-        event.recipes.createDeploying(electron_tube_inter, [electron_tube_inter, "#forge:glass"]),
-        event.recipes.createDeploying(electron_tube_inter, [electron_tube_inter, "create:polished_rose_quartz"]),
-        event.recipes.createFilling(electron_tube_inter, [electron_tube_inter, Fluid.of(global.fluids.molten_rose_gold, global.INGOT)])
-    ])
-    .transitionalItem(electron_tube_inter).loops(1);
-    
+    let electron_tube_inter = "grand_expanse:incomplete_electron_tube";
+    event.recipes.create
+        .sequenced_assembly(["create:electron_tube"], "create:iron_sheet", [
+            event.recipes.createDeploying(electron_tube_inter, [
+                electron_tube_inter,
+                "#forge:glass",
+            ]),
+            event.recipes.createDeploying(electron_tube_inter, [
+                electron_tube_inter,
+                "create:polished_rose_quartz",
+            ]),
+            event.recipes.createFilling(electron_tube_inter, [
+                electron_tube_inter,
+                Fluid.of(global.fluids.molten_rose_gold, global.INGOT),
+            ]),
+        ])
+        .transitionalItem(electron_tube_inter)
+        .loops(1);
 });
