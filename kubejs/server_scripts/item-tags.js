@@ -3,6 +3,8 @@ ServerEvents.tags("item", (event) => {
     event.add("forge:rope", "farmersdelight:rope");
     event.add("forge:rope", "quark:rope");
 
+    // Fix andesite
+    event.add("forge:ingots/andesite_alloy", "create:andesite_alloy");
     // Fix Wolframite/Tungsten Tags
     //TODO clean this up...
     event.add(
