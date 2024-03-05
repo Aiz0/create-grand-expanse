@@ -342,11 +342,4 @@ ServerEvents.recipes((event) => {
             B: "create:copper_casing",
         })
         .id("flopper:recipes/flopper");
-
-    // Bronze hand
-    event.replaceInput(
-        { output: "create:brass_hand" },
-        "create:brass_sheet",
-        "#forge:plates/bronze",
-    );
 });

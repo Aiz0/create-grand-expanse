@@ -46,9 +46,6 @@ file = "defaultconfigs/create-server.toml"
 file = "kubejs/README.txt"
 
 [[files]]
-file = "kubejs/assets/create/lang/en_us.json"
-
-[[files]]
 file = "kubejs/assets/flopper/textures/blocks/flopper_inside.png"
 
 [[files]]
