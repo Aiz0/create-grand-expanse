@@ -47,8 +47,8 @@ global.config = {
         // Ores that can be smelted.
         // Anything not here can't be smelted in a furnace
         ores: ["iron", "copper", "gold", "zinc", "tin"],
-        smelting_nuggets: 3,
-        blasting_nuggets: 4,
+        smelting_nuggets: 4,
+        blasting_nuggets: 6,
     },
     melting: {
         amount: FluidAmounts.INGOT,
