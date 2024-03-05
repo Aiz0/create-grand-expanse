@@ -342,4 +342,17 @@ ServerEvents.recipes((event) => {
             B: "create:copper_casing",
         })
         .id("flopper:recipes/flopper");
+
+    // Bronze hand
+    event.replaceInput(
+        { output: "create:brass_hand" },
+        "create:brass_sheet",
+        "#forge:plates/bronze",
+    );
+    // electron tube can only be crafted by deployer. that would be dependancy loop
+    event.replaceInput(
+        { output: "create:deployer" },
+        "create:electron_tube",
+        "create:shaft_tier_0",
+    );
 });
