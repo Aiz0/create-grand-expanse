@@ -5,8 +5,13 @@ ServerEvents.tags("item", (event) => {
 
     // Fix andesite
     event.add("forge:ingots/andesite_alloy", "create:andesite_alloy");
+    // Fix cast iron
+    event.add("forge:ingots", "createdeco:cast_iron_ingot");
+    event.add("forge:nuggets", "createdeco:cast_iron_nugget");
+    event.add("forge:plates", "createdeco:cast_iron_sheet");
+
     // Fix Wolframite/Tungsten Tags
-    //TODO clean this up...
+    //TODO clean this up... when more stuff like this needs to be done.
     event.add(
         "forge:raw_materials/tungsten",
         "createmetallurgy:raw_wolframite",
