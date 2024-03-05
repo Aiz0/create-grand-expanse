@@ -114,8 +114,6 @@ ServerEvents.recipes((event) => {
 
     //Chapter 2 Sequenced Assemblies
 
-    event.remove({ id: "create:crafting/materials/electron_tube" });
-
     event.recipes.create
         .sequenced_assembly(["create:electron_tube"], "create:iron_sheet", [
             event.recipes.createDeploying(
@@ -134,5 +132,6 @@ ServerEvents.recipes((event) => {
                 Fluid.of(global.fluids.molten_rose_gold, FluidAmounts.INGOT),
             ]),
         ])
-        .transitionalItem(global.items.incomplete_electron_tube);
+        .transitionalItem(global.items.incomplete_electron_tube)
+        .id("create:crafting/materials/electron_tube");
 });
