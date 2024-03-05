@@ -92,8 +92,8 @@ ServerEvents.recipes((event) => {
         const amount = item.includes("shaft")
             ? FluidAmounts.INGOT / 2
             : item.includes("large_cogwheel")
-            ? FluidAmounts.INGOT * 2
-            : FluidAmounts.INGOT;
+              ? FluidAmounts.INGOT * 2
+              : FluidAmounts.INGOT;
         event.recipes.create.filling(output, [
             Fluid.of("createmetallurgy:molten_copper", amount),
             item,
@@ -111,4 +111,27 @@ ServerEvents.recipes((event) => {
             count: 2,
         },
     });
+
+    //Chapter 2 Sequenced Assemblies
+
+    event.recipes.create
+        .sequenced_assembly(["create:electron_tube"], "create:iron_sheet", [
+            event.recipes.createDeploying(
+                global.items.incomplete_electron_tube,
+                [global.items.incomplete_electron_tube, "#forge:glass"],
+            ),
+            event.recipes.createDeploying(
+                global.items.incomplete_electron_tube,
+                [
+                    global.items.incomplete_electron_tube,
+                    "create:polished_rose_quartz",
+                ],
+            ),
+            event.recipes.createFilling(global.items.incomplete_electron_tube, [
+                global.items.incomplete_electron_tube,
+                Fluid.of(global.fluids.molten_rose_gold, FluidAmounts.INGOT),
+            ]),
+        ])
+        .transitionalItem(global.items.incomplete_electron_tube)
+        .id("create:crafting/materials/electron_tube");
 });

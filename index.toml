@@ -49,6 +49,9 @@ file = "kubejs/README.txt"
 file = "kubejs/assets/create/lang/en_us.json"
 
 [[files]]
+file = "kubejs/assets/create/textures/item/brass_hand.png"
+
+[[files]]
 file = "kubejs/assets/flopper/textures/blocks/flopper_inside.png"
 
 [[files]]
@@ -131,6 +134,9 @@ file = "kubejs/assets/grand_expanse/textures/item/copper_tool_part.png"
 
 [[files]]
 file = "kubejs/assets/grand_expanse/textures/item/gear_mold.png"
+
+[[files]]
+file = "kubejs/assets/grand_expanse/textures/item/incomplete_electron_tube.png"
 
 [[files]]
 file = "kubejs/assets/grand_expanse/textures/item/iron_armor_plate.png"
