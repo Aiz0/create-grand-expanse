@@ -69,6 +69,12 @@ ServerEvents.recipes((event) => {
         [Item.of("minecraft:quartz").withChance(0.1)],
         "minecraft:diorite",
     );
+
+    // Replaces milling gravel for milling into sand.
+    event.recipes.create
+        .milling(["minecraft:sand"], "minecraft:gravel")
+        .id("create:milling/gravel");
+
     // Mill ore to dust for chance for extra
     Ingredient.of("#forge:raw_materials").itemIds.forEach((item) => {
         const material = item.split("_").pop();
@@ -83,22 +89,16 @@ ServerEvents.recipes((event) => {
     });
 
     //Tier 1 create stuff
-    [
-        "create:shaft_tier_0",
-        "create:cogwheel_tier_0",
-        "create:large_cogwheel_tier_0",
-    ].forEach((item) => {
-        const output = item.substring(0, item.length - 1) + "1";
-        const amount = item.includes("shaft")
-            ? FluidAmounts.INGOT / 2
-            : item.includes("large_cogwheel")
-              ? FluidAmounts.INGOT * 2
-              : FluidAmounts.INGOT;
+    upgradeTier0("create:shaft_tier_0", FluidAmounts.INGOT / 2);
+    upgradeTier0("create:cogwheel_tier_0", FluidAmounts.INGOT);
+    upgradeTier0("create:large_cogwheel_tier_0", FluidAmounts.INGOT * 2);
+    function upgradeTier0(input, amount) {
+        const output = input.substring(0, input.length - 1) + "1";
         event.recipes.create.filling(output, [
             Fluid.of("createmetallurgy:molten_copper", amount),
-            item,
+            input,
         ]);
-    });
+    }
 
     // Rolling
     event.custom({
@@ -133,5 +133,6 @@ ServerEvents.recipes((event) => {
             ]),
         ])
         .transitionalItem(global.items.incomplete_electron_tube)
+        .loops(1)
         .id("create:crafting/materials/electron_tube");
 });

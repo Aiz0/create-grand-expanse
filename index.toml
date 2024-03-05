@@ -37,6 +37,9 @@ file = "config/quark-common.toml"
 file = "config/resourcepackoverrides.json"
 
 [[files]]
+file = "config/thermal-common.toml"
+
+[[files]]
 file = "config/zume.json5"
 
 [[files]]

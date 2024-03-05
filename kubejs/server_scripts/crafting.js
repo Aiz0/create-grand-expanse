@@ -313,7 +313,7 @@ ServerEvents.recipes((event) => {
 
     // Tool parts for iron tools
     event.replaceInput(
-        { output: "#forge:tools/iron" },
+        { output: "#forge:tools/iron", not: { output: "minecraft:shears" } },
         "minecraft:iron_ingot",
         global.items.iron_tool_part,
     );
