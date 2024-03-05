@@ -133,5 +133,6 @@ ServerEvents.recipes((event) => {
             ]),
         ])
         .transitionalItem(global.items.incomplete_electron_tube)
+        .loops(1)
         .id("create:crafting/materials/electron_tube");
 });
