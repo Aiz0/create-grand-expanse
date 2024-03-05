@@ -69,6 +69,12 @@ ServerEvents.recipes((event) => {
         [Item.of("minecraft:quartz").withChance(0.1)],
         "minecraft:diorite",
     );
+
+    // Replaces milling gravel for milling into sand.
+    event.recipes.create
+        .milling(["minecraft:sand"], "minecraft:gravel")
+        .id("create:milling/gravel");
+
     // Mill ore to dust for chance for extra
     Ingredient.of("#forge:raw_materials").itemIds.forEach((item) => {
         const material = item.split("_").pop();
