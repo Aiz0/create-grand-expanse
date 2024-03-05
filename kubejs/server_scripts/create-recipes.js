@@ -134,6 +134,5 @@ ServerEvents.recipes((event) => {
                 Fluid.of(global.fluids.molten_rose_gold, FluidAmounts.INGOT),
             ]),
         ])
-        .transitionalItem(global.items.incomplete_electron_tube)
-        .loops(1);
+        .transitionalItem(global.items.incomplete_electron_tube);
 });
