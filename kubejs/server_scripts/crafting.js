@@ -349,10 +349,4 @@ ServerEvents.recipes((event) => {
         "create:brass_sheet",
         "#forge:plates/bronze",
     );
-    // electron tube can only be crafted by deployer. that would be dependancy loop
-    event.replaceInput(
-        { output: "create:deployer" },
-        "create:electron_tube",
-        "create:shaft_tier_0",
-    );
 });
