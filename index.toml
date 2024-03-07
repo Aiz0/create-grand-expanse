@@ -470,6 +470,18 @@ file = "mods/jade.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/journeymap-integration.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/journeymap-teams.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/journeymap.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/konkrete.pw.toml"
 metafile = true
 
