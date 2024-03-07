@@ -714,6 +714,10 @@ file = "mods/zume.pw.toml"
 metafile = true
 
 [[files]]
+file = "resourcepacks/create-darkmode.pw.toml"
+metafile = true
+
+[[files]]
 file = "resourcepacks/cubic-sun-moon.pw.toml"
 metafile = true
 
@@ -735,6 +739,10 @@ metafile = true
 
 [[files]]
 file = "resourcepacks/smart-chutes-curvified.pw.toml"
+metafile = true
+
+[[files]]
+file = "resourcepacks/storage-drawers-darkmode.pw.toml"
 metafile = true
 
 [[files]]

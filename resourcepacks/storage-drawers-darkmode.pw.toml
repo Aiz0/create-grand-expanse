@@ -1,0 +1,13 @@
+name = "Storage Drawers Darkmode"
+filename = "Storage_Drawers_Darkmode_v0.0.1.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/ML88zX31/versions/cF3pRcT8/Storage_Drawers_Darkmode_v0.0.1.zip"
+hash-format = "sha1"
+hash = "d8bfb628e7e22e9c4ebd0feb65de16920f1d4f74"
+
+[update]
+[update.modrinth]
+mod-id = "ML88zX31"
+version = "cF3pRcT8"
