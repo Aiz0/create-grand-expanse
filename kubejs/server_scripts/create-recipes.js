@@ -135,4 +135,11 @@ ServerEvents.recipes((event) => {
         .transitionalItem(global.items.incomplete_electron_tube)
         .loops(1)
         .id("create:crafting/materials/electron_tube");
+
+    // Bioefuel
+    event.replaceInput(
+        { id: "createaddition:mixing/bioethanol" },
+        "create:cinder_flour",
+        "create:wheat_flour",
+    );
 });
