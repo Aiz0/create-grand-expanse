@@ -160,5 +160,4 @@ ServerEvents.recipes((event) => {
         "create:cinder_flour",
         "create:wheat_flour",
     );
-
 });
