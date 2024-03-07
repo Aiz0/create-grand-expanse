@@ -14,6 +14,8 @@ ServerEvents.recipes((event) => {
             output: "create:andesite_alloy",
             input: "minecraft:andesite",
         },
+        // using sequence for these.
+        { output: "create:copper_casing" },
 
         // Create Metallurgy
         // Remove existing metallurgy smelting recipe
