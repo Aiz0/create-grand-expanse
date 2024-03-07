@@ -136,10 +136,29 @@ ServerEvents.recipes((event) => {
         .loops(1)
         .id("create:crafting/materials/electron_tube");
 
+    event.recipes.create
+        .sequenced_assembly(
+            ["create:copper_casing"],
+            "create:andesite_casing",
+            [
+                event.recipes.createDeploying("create:andesite_casing", [
+                    "create:andesite_casing",
+                    "#forge:plates/copper",
+                ]),
+                event.recipes.createDeploying("create:andesite_casing", [
+                    "create:andesite_casing",
+                    "thermal:cured_rubber",
+                ]),
+            ],
+        )
+        .transitionalItem("create:andesite_casing")
+        .loops(3);
+
     // Bioefuel
     event.replaceInput(
         { id: "createaddition:mixing/bioethanol" },
         "create:cinder_flour",
         "create:wheat_flour",
     );
+
 });
