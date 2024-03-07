@@ -153,4 +153,11 @@ ServerEvents.recipes((event) => {
         )
         .transitionalItem("create:andesite_casing")
         .loops(3);
+
+    // Bioefuel
+    event.replaceInput(
+        { id: "createaddition:mixing/bioethanol" },
+        "create:cinder_flour",
+        "create:wheat_flour",
+    );
 });
