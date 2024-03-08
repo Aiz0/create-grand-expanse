@@ -616,6 +616,10 @@ file = "mods/rei.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/remove-terralith-intro-message.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/resource-pack-overrides.pw.toml"
 metafile = true
 
