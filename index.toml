@@ -136,6 +136,9 @@ file = "kubejs/assets/grand_expanse/textures/item/copper_sword.png"
 file = "kubejs/assets/grand_expanse/textures/item/copper_tool_part.png"
 
 [[files]]
+file = "kubejs/assets/grand_expanse/textures/item/fumo_base.png"
+
+[[files]]
 file = "kubejs/assets/grand_expanse/textures/item/gear_mold.png"
 
 [[files]]
@@ -194,6 +197,9 @@ file = "kubejs/server_scripts/extruder.js"
 
 [[files]]
 file = "kubejs/server_scripts/fluid-tags.js"
+
+[[files]]
+file = "kubejs/server_scripts/fumo.js"
 
 [[files]]
 file = "kubejs/server_scripts/furnace.js"
@@ -431,6 +437,10 @@ metafile = true
 
 [[files]]
 file = "mods/ftb-xmod-compat.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/fumo.pw.toml"
 metafile = true
 
 [[files]]

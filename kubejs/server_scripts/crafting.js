@@ -355,4 +355,9 @@ ServerEvents.recipes((event) => {
         "create:electron_tube",
         "create:shaft_tier_0",
     );
+    // Fumo
+    event.shaped(global.items.fumo_base, ["WWW", "WOW", "WWW"], {
+        W: "#minecraft:wool",
+        O: "minecraft:obsidian",
+    });
 });

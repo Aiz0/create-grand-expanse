@@ -3,6 +3,7 @@ StartupEvents.registry("item", (event) => {
     event.create(global.items.andesite_compound);
     event.create(global.items.rocket_hull);
     event.create(global.items.incomplete_electron_tube);
+    event.create(global.items.fumo_base);
 
     // created in same order as tools are ordered in rei
     event.create(global.items.copper_sword, "sword").tier("copper");

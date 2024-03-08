@@ -21,6 +21,7 @@ global.items = {
     copper_coil_block: null,
     electrolyzer: null,
     sturdy_hull: null,
+    fumo_base: null,
 };
 defineNames(global.items);
 
