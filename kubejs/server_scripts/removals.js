@@ -43,6 +43,10 @@ ServerEvents.recipes((event) => {
         { output: "#forge:gears", not: { output: "#forge:gears/copper" } },
     ]);
 
+    Ingredient.of(/^fumo:/).itemIds.forEach((item) => {
+        event.remove({ output: item });
+    });
+
     // get all blocks compressed blocks that shouldn't be removed
     const keep_regex = new RegExp(
         `^createcompression:compressed_(${global.config.compressed.join(
