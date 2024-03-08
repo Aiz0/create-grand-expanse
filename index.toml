@@ -748,6 +748,10 @@ file = "resourcepacks/fresh-animations.pw.toml"
 metafile = true
 
 [[files]]
+file = "resourcepacks/shables-create-scannable.pw.toml"
+metafile = true
+
+[[files]]
 file = "resourcepacks/sick-compass.pw.toml"
 metafile = true
 
