@@ -35,10 +35,10 @@ ServerEvents.recipes((event) => {
 
     // Mechanical Drill now uses thermal drill head
     event
-        .shaped(Item.of("create:mechanical_drill", 1), ["A", "B", "C"], {
-            A: "thermal:drill_head",
-            B: "create:andesite_casing",
-            C: "create:shaft_tier_0",
+        .shaped(Item.of("create:mechanical_drill", 1), ["G", "D", "C"], {
+            G: "minecraft:diamond",
+            D: "thermal:drill_head",
+            C: "create:andesite_casing",
         })
         .id("create:crafting/kinetics/mechanical_drill");
 
