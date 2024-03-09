@@ -1,25 +1,49 @@
 const tierData = [
     //Tier 0
-    {affix: "_tier_0", casing: "create:andesite_casing", material: "minecraft:planks", fluid: global.fluids.andesite_mixture, RPM: 64},
+    {
+        affix: "_tier_0",
+        casing: "create:andesite_casing",
+        material: "minecraft:planks",
+        fluid: global.fluids.andesite_mixture,
+        RPM: 64,
+    },
     //Tier 1
-    {affix: "_tier_1", casing: "create:copper_casing", material: "create:copper_sheet", fluid: "createmetallurgy:molten_copper", RPM: 128},
+    {
+        affix: "_tier_1",
+        casing: "create:copper_casing",
+        material: "create:copper_sheet",
+        fluid: "createmetallurgy:molten_copper",
+        RPM: 128,
+    },
     //Tier 2
-    {affix: "_tier_2", casing: "create:brass_casing", material: "create:brass_sheet", fluid: "createmetallurgy:molten_brass", RPM: 256},
+    {
+        affix: "_tier_2",
+        casing: "create:brass_casing",
+        material: "create:brass_sheet",
+        fluid: "createmetallurgy:molten_brass",
+        RPM: 256,
+    },
     //Tier 3
-    {affix: "_tier_3", casing: "mekanism:steel_casing" /*TODO need steel casing (create)*/, material: "ad_astra:steel_plate" /*TODO need steel sheet instead*/, fluid: "createmetallurgy:molten_steel", RPM: 512}
-]
+    {
+        affix: "_tier_3",
+        casing: "mekanism:steel_casing" /*TODO need steel casing (create)*/,
+        material: "ad_astra:steel_plate" /*TODO need steel sheet instead*/,
+        fluid: "createmetallurgy:molten_steel",
+        RPM: 512,
+    },
+];
 
 const kinetics = {
-    shaft:                      "create:shaft",
-    cogwheel:                   "create:cogwheel",
-    large_cogwheel:             "create:large_cogwheel",
-    gearbox:                    "create:gearbox",
-    vertical_gearbox:           "create:vertical_gearbox",
-    gearshift:                  "create:gearshift",
-    encased_chain_drive:        "create:encased_chain_drive",
-    clutch:                     "create:clutch",
-    adjustable_chain_gearshift: "create:adjustable_chain_gearshift"
-}
+    shaft: "create:shaft",
+    cogwheel: "create:cogwheel",
+    large_cogwheel: "create:large_cogwheel",
+    gearbox: "create:gearbox",
+    vertical_gearbox: "create:vertical_gearbox",
+    gearshift: "create:gearshift",
+    encased_chain_drive: "create:encased_chain_drive",
+    clutch: "create:clutch",
+    adjustable_chain_gearshift: "create:adjustable_chain_gearshift",
+};
 
 ServerEvents.recipes((event) => {
     // All recipes using create should be done in here.
@@ -116,46 +140,56 @@ ServerEvents.recipes((event) => {
         let upperData = tierData[tier];
         let lowerData = tierData[tier - 1];
 
+        event.recipes.create.filling(kinetics.shaft + upperData.affix, [
+            kinetics.shaft + lowerData.affix,
+            Fluid.of(upperData.fluid, FluidAmounts.INGOT / 2),
+        ]);
+        event.recipes.create.filling(kinetics.cogwheel + upperData.affix, [
+            kinetics.cogwheel + lowerData.affix,
+            Fluid.of(upperData.fluid, FluidAmounts.INGOT),
+        ]);
         event.recipes.create.filling(
-            kinetics.shaft + upperData.affix,
-            [kinetics.shaft + lowerData.affix, Fluid.of(upperData.fluid, FluidAmounts.INGOT / 2)]);
-        event.recipes.create.filling(
-            kinetics.cogwheel + upperData.affix, 
-            [kinetics.cogwheel + lowerData.affix, Fluid.of(upperData.fluid, FluidAmounts.INGOT)]);
-        event.recipes.create.filling(
-            kinetics.large_cogwheel + upperData.affix, 
-            [kinetics.large_cogwheel + lowerData.affix, Fluid.of(upperData.fluid, FluidAmounts.INGOT * 2)]);
+            kinetics.large_cogwheel + upperData.affix,
+            [
+                kinetics.large_cogwheel + lowerData.affix,
+                Fluid.of(upperData.fluid, FluidAmounts.INGOT * 2),
+            ],
+        );
 
         event.shaped(kinetics.gearbox + upperData.affix, ["WKW", "WCW"], {
-                W: kinetics.cogwheel + upperData.affix,
-                K: kinetics.gearbox + lowerData.affix,
-                C: upperData.casing
-            });
-        event.shaped(kinetics.encased_chain_drive + upperData.affix, [" C ", "MKM", " M "], {
+            W: kinetics.cogwheel + upperData.affix,
+            K: kinetics.gearbox + lowerData.affix,
+            C: upperData.casing,
+        });
+        event.shaped(
+            kinetics.encased_chain_drive + upperData.affix,
+            [" C ", "MKM", " M "],
+            {
                 M: upperData.material,
                 K: kinetics.encased_chain_drive + lowerData.affix,
-                C: upperData.casing
-            });
-        
+                C: upperData.casing,
+            },
+        );
+
         event.shapeless(kinetics.clutch + upperData.affix, [
-                kinetics.clutch + lowerData.affix,
-                kinetics.shaft + upperData.affix,
-                upperData.casing,
-        ]);        
+            kinetics.clutch + lowerData.affix,
+            kinetics.shaft + upperData.affix,
+            upperData.casing,
+        ]);
         event.shapeless(kinetics.gearshift + upperData.affix, [
-                kinetics.gearshift + lowerData.affix,
-                kinetics.cogwheel + upperData.affix,
-                upperData.casing,
-        ]);        
+            kinetics.gearshift + lowerData.affix,
+            kinetics.cogwheel + upperData.affix,
+            upperData.casing,
+        ]);
         event.shapeless(kinetics.vertical_gearbox + upperData.affix, [
-                kinetics.gearbox + upperData.affix,
-        ]);        
+            kinetics.gearbox + upperData.affix,
+        ]);
         event.shapeless(kinetics.gearbox + upperData.affix, [
-                kinetics.vertical_gearbox + upperData.affix,
-        ]);        
+            kinetics.vertical_gearbox + upperData.affix,
+        ]);
         event.shapeless(kinetics.adjustable_chain_gearshift + upperData.affix, [
-                kinetics.adjustable_chain_gearshift + upperData.affix,
-                "create:electron_tube"
+            kinetics.adjustable_chain_gearshift + upperData.affix,
+            "create:electron_tube",
         ]);
     }
 

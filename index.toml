@@ -175,6 +175,96 @@ file = "kubejs/assets/tinkers_construct/textures/block/fluid/molten/still.png"
 file = "kubejs/assets/tinkers_construct/textures/block/fluid/molten/still.png.mcmeta"
 
 [[files]]
+file = "kubejs/assets/toms_storage/models/block/cable_connector/base.json"
+
+[[files]]
+file = "kubejs/assets/toms_storage/models/block/cable_connector/item.json"
+
+[[files]]
+file = "kubejs/assets/toms_storage/models/block/crafting_terminal.json"
+
+[[files]]
+file = "kubejs/assets/toms_storage/models/block/inventory_connector.json"
+
+[[files]]
+file = "kubejs/assets/toms_storage/models/block/inventory_hopper_basic.json"
+
+[[files]]
+file = "kubejs/assets/toms_storage/models/block/inventory_proxy.json"
+
+[[files]]
+file = "kubejs/assets/toms_storage/models/block/level_emitter_off.json"
+
+[[files]]
+file = "kubejs/assets/toms_storage/models/block/level_emitter_on.json"
+
+[[files]]
+file = "kubejs/assets/toms_storage/models/block/storage_terminal.json"
+
+[[files]]
+file = "kubejs/assets/toms_storage/models/block/trim.json"
+
+[[files]]
+file = "kubejs/assets/toms_storage/textures/block/crafting_link.png"
+
+[[files]]
+file = "kubejs/assets/toms_storage/textures/block/hopper.png"
+
+[[files]]
+file = "kubejs/assets/toms_storage/textures/block/inv_tin.png"
+
+[[files]]
+file = "kubejs/assets/toms_storage/textures/block/inventory_cable.png"
+
+[[files]]
+file = "kubejs/assets/toms_storage/textures/block/keyboard.png"
+
+[[files]]
+file = "kubejs/assets/toms_storage/textures/block/opencrate_bottom.png"
+
+[[files]]
+file = "kubejs/assets/toms_storage/textures/block/opencrate_side.png"
+
+[[files]]
+file = "kubejs/assets/toms_storage/textures/block/opencrate_top.png"
+
+[[files]]
+file = "kubejs/assets/toms_storage/textures/block/proxy_side.png"
+
+[[files]]
+file = "kubejs/assets/toms_storage/textures/block/proxy_top.png"
+
+[[files]]
+file = "kubejs/assets/toms_storage/textures/block/terminal_link.png"
+
+[[files]]
+file = "kubejs/assets/toms_storage/textures/block/trim.png"
+
+[[files]]
+file = "kubejs/assets/toms_storage/textures/gui/crafting_terminal.png"
+
+[[files]]
+file = "kubejs/assets/toms_storage/textures/gui/storage_terminal.png"
+
+[[files]]
+file = "kubejs/assets/toms_storage/textures/item/adv_wireless_terminal.png"
+
+[[files]]
+file = "kubejs/assets/toms_storage/textures/item/item_filter.png"
+
+[[files]]
+file = "kubejs/assets/toms_storage/textures/item/paint_kit.png"
+
+[[files]]
+file = "kubejs/assets/toms_storage/textures/item/poly_item_filter.png"
+
+[[files]]
+file = "kubejs/assets/toms_storage/textures/item/tag_item_filter.png"
+
+[[files]]
+file = "kubejs/assets/toms_storage/textures/item/wireless_terminal.png"
+
+[[files]]
 file = "kubejs/client_scripts/ponder.js"
 
 [[files]]

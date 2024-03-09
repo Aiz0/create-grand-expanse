@@ -1,0 +1,9 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/cube",
+	"textures": {
+		"down": "toms_storage:block/proxy_top",
+		"particle": "toms_storage:block/proxy_side",
+		"west": "toms_storage:block/proxy_side"
+	}
+}
