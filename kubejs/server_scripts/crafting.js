@@ -210,12 +210,16 @@ ServerEvents.recipes((event) => {
     event.replaceInput(
         [
             { output: "ad_astra:launch_pad" },
-            { output: "ad_astra:rocket_fin" },
             { output: "ad_astra:rocket_nose_cone" },
         ],
         "ad_astra:steel_plate",
         "create:sturdy_sheet",
     );
+
+    event.shaped("ad_astra:rocket_fin", [" S ", "SSS", "S S"], { 
+        S: "create:sturdy_sheet",
+    })
+    .id("ad_astra:recipes/rocket_fin")
 
     event
         .shaped("ad_astra:steel_tank", ["SSG", "STP", "SSG"], {
@@ -244,7 +248,7 @@ ServerEvents.recipes((event) => {
     event
         .shaped("ad_astra:tier_1_rocket", [" T ", "SHS", "FEF"], {
             T: "ad_astra:rocket_nose_cone",
-            S: "create:sturdy_sheet",
+            S: "ad_astra:steel_tank",
             H: global.items.rocket_hull,
             F: "ad_astra:rocket_fin",
             E: "ad_astra:steel_engine",

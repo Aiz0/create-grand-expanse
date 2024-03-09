@@ -46,6 +46,39 @@ file = "config/zume.json5"
 file = "defaultconfigs/create-server.toml"
 
 [[files]]
+file = "kubejs/.vscode/fluid-attributes.json"
+
+[[files]]
+file = "kubejs/.vscode/item-attributes.json"
+
+[[files]]
+file = "kubejs/.vscode/item-tag-attributes.json"
+
+[[files]]
+file = "kubejs/.vscode/lang-keys.json"
+
+[[files]]
+file = "kubejs/.vscode/probe.class-definitions.json"
+
+[[files]]
+file = "kubejs/.vscode/probe.code-snippets"
+
+[[files]]
+file = "kubejs/.vscode/probe.doc-schema.json"
+
+[[files]]
+file = "kubejs/.vscode/probe.lang-schema.json"
+
+[[files]]
+file = "kubejs/.vscode/probe.lang_key-definitions.json"
+
+[[files]]
+file = "kubejs/.vscode/probe.registry-definitions.json"
+
+[[files]]
+file = "kubejs/.vscode/settings.json"
+
+[[files]]
 file = "kubejs/README.txt"
 
 [[files]]
@@ -67,6 +100,9 @@ file = "kubejs/assets/ad_astra/textures/item/rocket_fin.png"
 file = "kubejs/assets/ad_astra/textures/item/rocket_nose_cone.png"
 
 [[files]]
+file = "kubejs/assets/ad_astra/textures/item/steel_tank.png"
+
+[[files]]
 file = "kubejs/assets/ad_astra/textures/vehicles/tier_1_rocket.png"
 
 [[files]]
@@ -77,6 +113,9 @@ file = "kubejs/assets/create/models/block/mechanical_drill/head.json"
 
 [[files]]
 file = "kubejs/assets/create/textures/item/brass_hand.png"
+
+[[files]]
+file = "kubejs/assets/createmetallurgy/lang/en_us.json"
 
 [[files]]
 file = "kubejs/assets/flopper/textures/blocks/flopper_inside.png"
@@ -855,6 +894,12 @@ file = "mods/zume.pw.toml"
 metafile = true
 
 [[files]]
+file = "refresh.bat"
+
+[[files]]
+file = "reload.bat"
+
+[[files]]
 file = "resourcepacks/create-darkmode.pw.toml"
 metafile = true
 
@@ -893,3 +938,9 @@ metafile = true
 [[files]]
 file = "resourcepacks/toms-create-storage.pw.toml"
 metafile = true
+
+[[files]]
+file = "serve.bat"
+
+[[files]]
+file = "update-fork.bat"
