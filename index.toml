@@ -764,5 +764,8 @@ file = "resourcepacks/toms-create-storage.pw.toml"
 metafile = true
 
 [[files]]
+file = "shaderpacks/ComplementaryReimagined_r5.1.1.zip.txt"
+
+[[files]]
 file = "shaderpacks/complementary-reimagined.pw.toml"
 metafile = true
