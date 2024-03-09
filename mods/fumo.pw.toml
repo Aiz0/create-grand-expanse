@@ -1,0 +1,13 @@
+name = "Fumo"
+filename = "Fumo 14.0.1 1.19.2 Forge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/Abkqr1E0/versions/t7D24ocU/Fumo%2014.0.1%201.19.2%20Forge.jar"
+hash-format = "sha1"
+hash = "82b6410e4d32692f126a4176c3100b52a60f905e"
+
+[update]
+[update.modrinth]
+mod-id = "Abkqr1E0"
+version = "t7D24ocU"

@@ -46,4 +46,7 @@ REIEvents.groupEntries((event) => {
 
 REIEvents.hide("item", (event) => {
     event.hide(global.compressed_blocks_to_remove);
+
+    event.hide(Ingredient.of(/^fumo:.*icon/).itemIds);
+    event.hide("fumo:fumoitem");
 });

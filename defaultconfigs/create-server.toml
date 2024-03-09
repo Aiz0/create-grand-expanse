@@ -26,8 +26,9 @@
 		# tier 2 fast
 
 		#Minimum speed of rotation to be considered 'medium'
-		mediumSpeed = 100
-		fastSpeed = 200
+		#Mixer uses medium to determine when it will work
+		mediumSpeed = 60
+		fastSpeed = 100
 
 #.
 #Equipment and gadgets added by Create

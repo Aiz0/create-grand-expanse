@@ -37,16 +37,85 @@ file = "config/quark-common.toml"
 file = "config/resourcepackoverrides.json"
 
 [[files]]
+file = "config/thermal-common.toml"
+
+[[files]]
 file = "config/zume.json5"
 
 [[files]]
 file = "defaultconfigs/create-server.toml"
 
 [[files]]
+file = "kubejs/.vscode/fluid-attributes.json"
+
+[[files]]
+file = "kubejs/.vscode/item-attributes.json"
+
+[[files]]
+file = "kubejs/.vscode/item-tag-attributes.json"
+
+[[files]]
+file = "kubejs/.vscode/lang-keys.json"
+
+[[files]]
+file = "kubejs/.vscode/probe.class-definitions.json"
+
+[[files]]
+file = "kubejs/.vscode/probe.code-snippets"
+
+[[files]]
+file = "kubejs/.vscode/probe.doc-schema.json"
+
+[[files]]
+file = "kubejs/.vscode/probe.lang-schema.json"
+
+[[files]]
+file = "kubejs/.vscode/probe.lang_key-definitions.json"
+
+[[files]]
+file = "kubejs/.vscode/probe.registry-definitions.json"
+
+[[files]]
+file = "kubejs/.vscode/settings.json"
+
+[[files]]
 file = "kubejs/README.txt"
 
 [[files]]
+file = "kubejs/assets/ad_astra/lang/en_us.json"
+
+[[files]]
+file = "kubejs/assets/ad_astra/textures/item/engine_steel.png"
+
+[[files]]
+file = "kubejs/assets/ad_astra/textures/item/oxygen_gear.png"
+
+[[files]]
+file = "kubejs/assets/ad_astra/textures/item/oxygen_tank.png"
+
+[[files]]
+file = "kubejs/assets/ad_astra/textures/item/rocket_fin.png"
+
+[[files]]
+file = "kubejs/assets/ad_astra/textures/item/rocket_nose_cone.png"
+
+[[files]]
+file = "kubejs/assets/ad_astra/textures/item/steel_tank.png"
+
+[[files]]
+file = "kubejs/assets/ad_astra/textures/vehicles/tier_1_rocket.png"
+
+[[files]]
 file = "kubejs/assets/create/lang/en_us.json"
+
+[[files]]
+file = "kubejs/assets/create/models/block/mechanical_drill/head.json"
+
+[[files]]
+file = "kubejs/assets/create/textures/item/brass_hand.png"
+
+[[files]]
+file = "kubejs/assets/createmetallurgy/lang/en_us.json"
 
 [[files]]
 file = "kubejs/assets/flopper/textures/blocks/flopper_inside.png"
@@ -74,6 +143,9 @@ file = "kubejs/assets/grand_expanse/textures/block/copper_coil_block.png"
 
 [[files]]
 file = "kubejs/assets/grand_expanse/textures/block/copper_coil_block.png.mcmeta"
+
+[[files]]
+file = "kubejs/assets/grand_expanse/textures/block/diamond_head.png"
 
 [[files]]
 file = "kubejs/assets/grand_expanse/textures/block/electrolyzer/axis.png"
@@ -130,7 +202,13 @@ file = "kubejs/assets/grand_expanse/textures/item/copper_sword.png"
 file = "kubejs/assets/grand_expanse/textures/item/copper_tool_part.png"
 
 [[files]]
+file = "kubejs/assets/grand_expanse/textures/item/fumo_base.png"
+
+[[files]]
 file = "kubejs/assets/grand_expanse/textures/item/gear_mold.png"
+
+[[files]]
+file = "kubejs/assets/grand_expanse/textures/item/incomplete_electron_tube.png"
 
 [[files]]
 file = "kubejs/assets/grand_expanse/textures/item/iron_armor_plate.png"
@@ -163,6 +241,96 @@ file = "kubejs/assets/tinkers_construct/textures/block/fluid/molten/still.png"
 file = "kubejs/assets/tinkers_construct/textures/block/fluid/molten/still.png.mcmeta"
 
 [[files]]
+file = "kubejs/assets/toms_storage/models/block/cable_connector/base.json"
+
+[[files]]
+file = "kubejs/assets/toms_storage/models/block/cable_connector/item.json"
+
+[[files]]
+file = "kubejs/assets/toms_storage/models/block/crafting_terminal.json"
+
+[[files]]
+file = "kubejs/assets/toms_storage/models/block/inventory_connector.json"
+
+[[files]]
+file = "kubejs/assets/toms_storage/models/block/inventory_hopper_basic.json"
+
+[[files]]
+file = "kubejs/assets/toms_storage/models/block/inventory_proxy.json"
+
+[[files]]
+file = "kubejs/assets/toms_storage/models/block/level_emitter_off.json"
+
+[[files]]
+file = "kubejs/assets/toms_storage/models/block/level_emitter_on.json"
+
+[[files]]
+file = "kubejs/assets/toms_storage/models/block/storage_terminal.json"
+
+[[files]]
+file = "kubejs/assets/toms_storage/models/block/trim.json"
+
+[[files]]
+file = "kubejs/assets/toms_storage/textures/block/crafting_link.png"
+
+[[files]]
+file = "kubejs/assets/toms_storage/textures/block/hopper.png"
+
+[[files]]
+file = "kubejs/assets/toms_storage/textures/block/inv_tin.png"
+
+[[files]]
+file = "kubejs/assets/toms_storage/textures/block/inventory_cable.png"
+
+[[files]]
+file = "kubejs/assets/toms_storage/textures/block/keyboard.png"
+
+[[files]]
+file = "kubejs/assets/toms_storage/textures/block/opencrate_bottom.png"
+
+[[files]]
+file = "kubejs/assets/toms_storage/textures/block/opencrate_side.png"
+
+[[files]]
+file = "kubejs/assets/toms_storage/textures/block/opencrate_top.png"
+
+[[files]]
+file = "kubejs/assets/toms_storage/textures/block/proxy_side.png"
+
+[[files]]
+file = "kubejs/assets/toms_storage/textures/block/proxy_top.png"
+
+[[files]]
+file = "kubejs/assets/toms_storage/textures/block/terminal_link.png"
+
+[[files]]
+file = "kubejs/assets/toms_storage/textures/block/trim.png"
+
+[[files]]
+file = "kubejs/assets/toms_storage/textures/gui/crafting_terminal.png"
+
+[[files]]
+file = "kubejs/assets/toms_storage/textures/gui/storage_terminal.png"
+
+[[files]]
+file = "kubejs/assets/toms_storage/textures/item/adv_wireless_terminal.png"
+
+[[files]]
+file = "kubejs/assets/toms_storage/textures/item/item_filter.png"
+
+[[files]]
+file = "kubejs/assets/toms_storage/textures/item/paint_kit.png"
+
+[[files]]
+file = "kubejs/assets/toms_storage/textures/item/poly_item_filter.png"
+
+[[files]]
+file = "kubejs/assets/toms_storage/textures/item/tag_item_filter.png"
+
+[[files]]
+file = "kubejs/assets/toms_storage/textures/item/wireless_terminal.png"
+
+[[files]]
 file = "kubejs/client_scripts/ponder.js"
 
 [[files]]
@@ -187,6 +355,9 @@ file = "kubejs/server_scripts/extruder.js"
 file = "kubejs/server_scripts/fluid-tags.js"
 
 [[files]]
+file = "kubejs/server_scripts/fumo.js"
+
+[[files]]
 file = "kubejs/server_scripts/furnace.js"
 
 [[files]]
@@ -199,6 +370,9 @@ file = "kubejs/server_scripts/metallurgy.js"
 file = "kubejs/server_scripts/removals.js"
 
 [[files]]
+file = "kubejs/server_scripts/server.js"
+
+[[files]]
 file = "kubejs/server_scripts/sifter.js"
 
 [[files]]
@@ -209,6 +383,9 @@ file = "kubejs/startup_scripts/config.js"
 
 [[files]]
 file = "kubejs/startup_scripts/fluids.js"
+
+[[files]]
+file = "kubejs/startup_scripts/item-events.js"
 
 [[files]]
 file = "kubejs/startup_scripts/items.js"
@@ -425,6 +602,10 @@ file = "mods/ftb-xmod-compat.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/fumo.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/fusion-connected-textures.pw.toml"
 metafile = true
 
@@ -458,6 +639,18 @@ metafile = true
 
 [[files]]
 file = "mods/jade.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/journeymap-integration.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/journeymap-teams.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/journeymap.pw.toml"
 metafile = true
 
 [[files]]
@@ -585,6 +778,10 @@ file = "mods/rei.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/remove-terralith-intro-message.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/resource-pack-overrides.pw.toml"
 metafile = true
 
@@ -610,6 +807,10 @@ metafile = true
 
 [[files]]
 file = "mods/saturn.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/scannable.pw.toml"
 metafile = true
 
 [[files]]
@@ -693,6 +894,16 @@ file = "mods/zume.pw.toml"
 metafile = true
 
 [[files]]
+file = "refresh.bat"
+
+[[files]]
+file = "reload.bat"
+
+[[files]]
+file = "resourcepacks/create-darkmode.pw.toml"
+metafile = true
+
+[[files]]
 file = "resourcepacks/cubic-sun-moon.pw.toml"
 metafile = true
 
@@ -709,6 +920,10 @@ file = "resourcepacks/fresh-animations.pw.toml"
 metafile = true
 
 [[files]]
+file = "resourcepacks/shables-create-scannable.pw.toml"
+metafile = true
+
+[[files]]
 file = "resourcepacks/sick-compass.pw.toml"
 metafile = true
 
@@ -717,5 +932,15 @@ file = "resourcepacks/smart-chutes-curvified.pw.toml"
 metafile = true
 
 [[files]]
+file = "resourcepacks/storage-drawers-darkmode.pw.toml"
+metafile = true
+
+[[files]]
 file = "resourcepacks/toms-create-storage.pw.toml"
 metafile = true
+
+[[files]]
+file = "serve.bat"
+
+[[files]]
+file = "update-fork.bat"

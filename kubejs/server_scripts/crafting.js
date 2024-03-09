@@ -29,16 +29,16 @@ ServerEvents.recipes((event) => {
         .shaped(Item.of("create:mechanical_saw", 1), ["A  ", "BC "], {
             A: "thermal:saw_blade",
             B: "create:andesite_casing",
-            C: "create:shaft",
+            C: "create:shaft_tier_0",
         })
         .id("create:crafting/kinetics/mechanical_saw");
 
     // Mechanical Drill now uses thermal drill head
     event
-        .shaped(Item.of("create:mechanical_drill", 1), ["A", "B", "C"], {
-            A: "thermal:drill_head",
-            B: "create:andesite_casing",
-            C: "create:shaft",
+        .shaped(Item.of("create:mechanical_drill", 1), ["G", "D", "C"], {
+            G: "minecraft:diamond",
+            D: "thermal:drill_head",
+            C: "create:andesite_casing",
         })
         .id("create:crafting/kinetics/mechanical_drill");
 
@@ -110,7 +110,7 @@ ServerEvents.recipes((event) => {
         ["ABA", "CDC", "AEA"],
         {
             A: "create:andesite_alloy",
-            B: "create:shaft",
+            B: "create:shaft_tier_0",
             C: "#forge:glass",
             D: "create:andesite_casing",
             E: "minecraft:iron_block",
@@ -210,12 +210,16 @@ ServerEvents.recipes((event) => {
     event.replaceInput(
         [
             { output: "ad_astra:launch_pad" },
-            { output: "ad_astra:rocket_fin" },
             { output: "ad_astra:rocket_nose_cone" },
         ],
         "ad_astra:steel_plate",
         "create:sturdy_sheet",
     );
+
+    event.shaped("ad_astra:rocket_fin", [" S ", "SSS", "S S"], { 
+        S: "create:sturdy_sheet",
+    })
+    .id("ad_astra:recipes/rocket_fin")
 
     event
         .shaped("ad_astra:steel_tank", ["SSG", "STP", "SSG"], {
@@ -244,7 +248,7 @@ ServerEvents.recipes((event) => {
     event
         .shaped("ad_astra:tier_1_rocket", [" T ", "SHS", "FEF"], {
             T: "ad_astra:rocket_nose_cone",
-            S: "create:sturdy_sheet",
+            S: "ad_astra:steel_tank",
             H: global.items.rocket_hull,
             F: "ad_astra:rocket_fin",
             E: "ad_astra:steel_engine",
@@ -313,7 +317,7 @@ ServerEvents.recipes((event) => {
 
     // Tool parts for iron tools
     event.replaceInput(
-        { output: "#forge:tools/iron" },
+        { output: "#forge:tools/iron", not: { output: "minecraft:shears" } },
         "minecraft:iron_ingot",
         global.items.iron_tool_part,
     );
@@ -342,6 +346,53 @@ ServerEvents.recipes((event) => {
             B: "create:copper_casing",
         })
         .id("flopper:recipes/flopper");
+    // Tom's Storage
+    event
+        .shaped("toms_storage:ts.storage_terminal", ["SRS", "CGC", "SOS"], {
+            S: "create:golden_sheet",
+            R: "minecraft:redstone_block",
+            C: "createaddition:copper_spool",
+            G: "#forge:glass",
+            O: "toms_storage:ts.open_crate",
+        })
+        .id("toms_storage:storage_terminal");
+
+    event
+        .shaped("toms_storage:ts.inventory_cable", [" R ", "TTT", " R "], {
+            R: "thermal:cured_rubber",
+            T: "thermal:tin_ingot",
+        })
+        .id("toms_storage:inventory_cable");
+
+    event
+        .shaped(
+            "toms_storage:ts.inventory_cable_connector",
+            ["RP ", "OTT", "RP "],
+            {
+                R: "thermal:cured_rubber",
+                P: "thermal:tin_plate",
+                O: "toms_storage:ts.open_crate",
+                T: "thermal:tin_ingot",
+            },
+        )
+        .id("toms_storage:inventory_cable_connector");
+
+    event
+        .shaped("toms_storage:ts.inventory_connector", ["TST", "SRS", "TST"], {
+            T: "thermal:tin_ingot",
+            S: "create:golden_sheet",
+            R: "minecraft:redstone_block",
+        })
+        .id("toms_storage:inventory_connector");
+
+    event
+        .shaped("toms_storage:ts.crafting_terminal", ["PCP", "ETE", "PCP"], {
+            P: "thermal:tin_plate",
+            C: "createaddition:copper_spool",
+            E: "create:electron_tube",
+            T: "toms_storage:ts.storage_terminal",
+        })
+        .id("toms_storage:crafting_terminal");
 
     // Bronze hand
     event.replaceInput(
@@ -355,4 +406,9 @@ ServerEvents.recipes((event) => {
         "create:electron_tube",
         "create:shaft_tier_0",
     );
+    // Fumo
+    event.shaped(global.items.fumo_base, ["WWW", "WOW", "WWW"], {
+        W: "#minecraft:wool",
+        O: "minecraft:obsidian",
+    });
 });

@@ -1,0 +1,13 @@
+name = "Shable's Create Scannable"
+filename = "Create Scannable 1.19.X.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/jd1aibcM/versions/KEWTBRl1/Create%20Scannable%201.19.X.zip"
+hash-format = "sha1"
+hash = "8121827097ea2e03a59bc4583b3d496c3f0237fb"
+
+[update]
+[update.modrinth]
+mod-id = "jd1aibcM"
+version = "KEWTBRl1"

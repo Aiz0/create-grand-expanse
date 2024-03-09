@@ -1,6 +1,21 @@
 [world_generation]
 	#Generation Settings for tin ore.
 	[world_generation.tin]
-		#Determines if tin ore should be added to world generation.
-        # We use thermal tin so this should be false
+        # We use thermal tin so this should not generate
+		shouldGenerate = false
+	[world_generation.lead]
+        # We use thermal lead so this should at the very least not generate
+		shouldGenerate = false
+	[world_generation.osmium]
+        # osmium should not generate in overworld
+		shouldGenerate = false
+	[world_generation.uranium]
+        # uranium should not generate in overworld
+		shouldGenerate = false
+	[world_generation.fluorite]
+		# we might not want this to generate in the overworld
+		shouldGenerate = false
+	[world_generation.salt]
+		# salt is not gonna be used for the chemical injector.
+		# If we use gaseous brine it's probably not gonna be made from salt.
 		shouldGenerate = false
