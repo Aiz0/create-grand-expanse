@@ -216,10 +216,11 @@ ServerEvents.recipes((event) => {
         "create:sturdy_sheet",
     );
 
-    event.shaped("ad_astra:rocket_fin", [" S ", "SSS", "S S"], { 
-        S: "create:sturdy_sheet",
-    })
-    .id("ad_astra:recipes/rocket_fin")
+    event
+        .shaped("ad_astra:rocket_fin", [" S ", "SSS", "S S"], {
+            S: "create:sturdy_sheet",
+        })
+        .id("ad_astra:recipes/rocket_fin");
 
     event
         .shaped("ad_astra:steel_tank", ["SSG", "STP", "SSG"], {
