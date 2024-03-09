@@ -119,7 +119,10 @@ ServerEvents.recipes((event) => {
 
     // Replaces milling gravel for milling into sand.
     event.recipes.create
-        .milling(["minecraft:sand"], "minecraft:gravel")
+        .milling(
+            [Item.of("minecraft:sand").withChance(0.5)],
+            "minecraft:gravel",
+        )
         .id("create:milling/gravel");
 
     // Mill ore to dust for chance for extra
