@@ -644,6 +644,10 @@ file = "mods/saturn.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/scannable.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/sidekick.pw.toml"
 metafile = true
 
@@ -741,6 +745,10 @@ metafile = true
 
 [[files]]
 file = "resourcepacks/fresh-animations.pw.toml"
+metafile = true
+
+[[files]]
+file = "resourcepacks/shables-create-scannable.pw.toml"
 metafile = true
 
 [[files]]
