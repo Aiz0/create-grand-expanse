@@ -214,6 +214,9 @@ file = "kubejs/server_scripts/metallurgy.js"
 file = "kubejs/server_scripts/removals.js"
 
 [[files]]
+file = "kubejs/server_scripts/server.js"
+
+[[files]]
 file = "kubejs/server_scripts/sifter.js"
 
 [[files]]
