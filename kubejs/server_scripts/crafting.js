@@ -29,16 +29,16 @@ ServerEvents.recipes((event) => {
         .shaped(Item.of("create:mechanical_saw", 1), ["A  ", "BC "], {
             A: "thermal:saw_blade",
             B: "create:andesite_casing",
-            C: "create:shaft",
+            C: "create:shaft_tier_0",
         })
         .id("create:crafting/kinetics/mechanical_saw");
 
     // Mechanical Drill now uses thermal drill head
     event
-        .shaped(Item.of("create:mechanical_drill", 1), ["A", "B", "C"], {
-            A: "thermal:drill_head",
-            B: "create:andesite_casing",
-            C: "create:shaft",
+        .shaped(Item.of("create:mechanical_drill", 1), ["G", "D", "C"], {
+            G: "minecraft:diamond",
+            D: "thermal:drill_head",
+            C: "create:andesite_casing",
         })
         .id("create:crafting/kinetics/mechanical_drill");
 
@@ -110,7 +110,7 @@ ServerEvents.recipes((event) => {
         ["ABA", "CDC", "AEA"],
         {
             A: "create:andesite_alloy",
-            B: "create:shaft",
+            B: "create:shaft_tier_0",
             C: "#forge:glass",
             D: "create:andesite_casing",
             E: "minecraft:iron_block",

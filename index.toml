@@ -616,6 +616,10 @@ file = "mods/rei.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/remove-terralith-intro-message.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/resource-pack-overrides.pw.toml"
 metafile = true
 
@@ -641,6 +645,10 @@ metafile = true
 
 [[files]]
 file = "mods/saturn.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/scannable.pw.toml"
 metafile = true
 
 [[files]]
@@ -741,6 +749,10 @@ metafile = true
 
 [[files]]
 file = "resourcepacks/fresh-animations.pw.toml"
+metafile = true
+
+[[files]]
+file = "resourcepacks/shables-create-scannable.pw.toml"
 metafile = true
 
 [[files]]
