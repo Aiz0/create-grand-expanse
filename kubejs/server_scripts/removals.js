@@ -14,6 +14,8 @@ ServerEvents.recipes((event) => {
             output: "create:andesite_alloy",
             input: "minecraft:andesite",
         },
+        // using sequence for these.
+        { output: "create:copper_casing" },
 
         // Create Metallurgy
         // Remove existing metallurgy smelting recipe
@@ -39,7 +41,12 @@ ServerEvents.recipes((event) => {
 
         // Thermal
         { output: "#forge:gears", not: { output: "#forge:gears/copper" } },
+        { id: "thermal:fire_charge/bronze_ingot_4" },
     ]);
+
+    Ingredient.of(/^fumo:/).itemIds.forEach((item) => {
+        event.remove({ output: item });
+    });
 
     // get all blocks compressed blocks that shouldn't be removed
     const keep_regex = new RegExp(

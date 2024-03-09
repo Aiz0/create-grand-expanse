@@ -4,6 +4,7 @@ global.packName = "grand_expanse";
 global.items = {
     andesite_compound: null,
     rocket_hull: null,
+    incomplete_electron_tube: null,
     copper_pickaxe: null,
     copper_axe: null,
     copper_shovel: null,
@@ -20,6 +21,7 @@ global.items = {
     copper_coil_block: null,
     electrolyzer: null,
     sturdy_hull: null,
+    fumo_base: null,
 };
 defineNames(global.items);
 
@@ -46,8 +48,8 @@ global.config = {
         // Ores that can be smelted.
         // Anything not here can't be smelted in a furnace
         ores: ["iron", "copper", "gold", "zinc", "tin"],
-        smelting_nuggets: 3,
-        blasting_nuggets: 4,
+        smelting_nuggets: 4,
+        blasting_nuggets: 6,
     },
     melting: {
         amount: FluidAmounts.INGOT,

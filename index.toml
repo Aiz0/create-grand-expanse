@@ -37,6 +37,9 @@ file = "config/quark-common.toml"
 file = "config/resourcepackoverrides.json"
 
 [[files]]
+file = "config/thermal-common.toml"
+
+[[files]]
 file = "config/zume.json5"
 
 [[files]]
@@ -44,6 +47,12 @@ file = "defaultconfigs/create-server.toml"
 
 [[files]]
 file = "kubejs/README.txt"
+
+[[files]]
+file = "kubejs/assets/create/lang/en_us.json"
+
+[[files]]
+file = "kubejs/assets/create/textures/item/brass_hand.png"
 
 [[files]]
 file = "kubejs/assets/flopper/textures/blocks/flopper_inside.png"
@@ -127,7 +136,13 @@ file = "kubejs/assets/grand_expanse/textures/item/copper_sword.png"
 file = "kubejs/assets/grand_expanse/textures/item/copper_tool_part.png"
 
 [[files]]
+file = "kubejs/assets/grand_expanse/textures/item/fumo_base.png"
+
+[[files]]
 file = "kubejs/assets/grand_expanse/textures/item/gear_mold.png"
+
+[[files]]
+file = "kubejs/assets/grand_expanse/textures/item/incomplete_electron_tube.png"
 
 [[files]]
 file = "kubejs/assets/grand_expanse/textures/item/iron_armor_plate.png"
@@ -274,6 +289,9 @@ file = "kubejs/server_scripts/extruder.js"
 file = "kubejs/server_scripts/fluid-tags.js"
 
 [[files]]
+file = "kubejs/server_scripts/fumo.js"
+
+[[files]]
 file = "kubejs/server_scripts/furnace.js"
 
 [[files]]
@@ -284,6 +302,9 @@ file = "kubejs/server_scripts/metallurgy.js"
 
 [[files]]
 file = "kubejs/server_scripts/removals.js"
+
+[[files]]
+file = "kubejs/server_scripts/server.js"
 
 [[files]]
 file = "kubejs/server_scripts/sifter.js"
@@ -512,6 +533,10 @@ file = "mods/ftb-xmod-compat.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/fumo.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/fusion-connected-textures.pw.toml"
 metafile = true
 
@@ -545,6 +570,18 @@ metafile = true
 
 [[files]]
 file = "mods/jade.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/journeymap-integration.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/journeymap-teams.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/journeymap.pw.toml"
 metafile = true
 
 [[files]]
@@ -672,6 +709,10 @@ file = "mods/rei.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/remove-terralith-intro-message.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/resource-pack-overrides.pw.toml"
 metafile = true
 
@@ -697,6 +738,10 @@ metafile = true
 
 [[files]]
 file = "mods/saturn.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/scannable.pw.toml"
 metafile = true
 
 [[files]]
@@ -780,6 +825,10 @@ file = "mods/zume.pw.toml"
 metafile = true
 
 [[files]]
+file = "resourcepacks/create-darkmode.pw.toml"
+metafile = true
+
+[[files]]
 file = "resourcepacks/cubic-sun-moon.pw.toml"
 metafile = true
 
@@ -796,11 +845,19 @@ file = "resourcepacks/fresh-animations.pw.toml"
 metafile = true
 
 [[files]]
+file = "resourcepacks/shables-create-scannable.pw.toml"
+metafile = true
+
+[[files]]
 file = "resourcepacks/sick-compass.pw.toml"
 metafile = true
 
 [[files]]
 file = "resourcepacks/smart-chutes-curvified.pw.toml"
+metafile = true
+
+[[files]]
+file = "resourcepacks/storage-drawers-darkmode.pw.toml"
 metafile = true
 
 [[files]]

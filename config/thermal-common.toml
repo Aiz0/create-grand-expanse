@@ -1,0 +1,21 @@
+
+[World]
+
+	[World.Ores]
+
+		[World.Ores.Silver]
+			#Whether this ore should spawn in the world.
+			Enable = false
+
+		[World.Ores.Lead]
+			#Whether this ore should spawn in the world.
+			Enable = false
+
+		[World.Ores.Sulfur]
+			#Whether this ore should spawn in the world.
+			Enable = false
+            
+		[World.Ores.Niter]
+			#Whether this ore should spawn in the world.
+			Enable = false
+

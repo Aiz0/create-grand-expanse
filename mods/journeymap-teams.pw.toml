@@ -1,0 +1,13 @@
+name = "JourneyMap Teams"
+filename = "JourneyMap-Teams-forge-1.19.2-1.0.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/EV5wjtvP/versions/xl4bszuY/JourneyMap-Teams-forge-1.19.2-1.0.2.jar"
+hash-format = "sha1"
+hash = "183c1d18a86214b0758e1210c5dc0cab2b798488"
+
+[update]
+[update.modrinth]
+mod-id = "EV5wjtvP"
+version = "xl4bszuY"

@@ -85,7 +85,8 @@
         "tin",
         "tungsten",
         "uranium",
-        "zinc"
+        "zinc",
+        "andesite_alloy"
     ],
     "priorityOverrides": {},
     "customTags": {},
