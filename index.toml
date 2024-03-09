@@ -49,7 +49,31 @@ file = "defaultconfigs/create-server.toml"
 file = "kubejs/README.txt"
 
 [[files]]
+file = "kubejs/assets/ad_astra/lang/en_us.json"
+
+[[files]]
+file = "kubejs/assets/ad_astra/textures/item/engine_steel.png"
+
+[[files]]
+file = "kubejs/assets/ad_astra/textures/item/oxygen_gear.png"
+
+[[files]]
+file = "kubejs/assets/ad_astra/textures/item/oxygen_tank.png"
+
+[[files]]
+file = "kubejs/assets/ad_astra/textures/item/rocket_fin.png"
+
+[[files]]
+file = "kubejs/assets/ad_astra/textures/item/rocket_nose_cone.png"
+
+[[files]]
+file = "kubejs/assets/ad_astra/textures/vehicles/tier_1_rocket.png"
+
+[[files]]
 file = "kubejs/assets/create/lang/en_us.json"
+
+[[files]]
+file = "kubejs/assets/create/models/block/mechanical_drill/head.json"
 
 [[files]]
 file = "kubejs/assets/create/textures/item/brass_hand.png"
@@ -80,6 +104,9 @@ file = "kubejs/assets/grand_expanse/textures/block/copper_coil_block.png"
 
 [[files]]
 file = "kubejs/assets/grand_expanse/textures/block/copper_coil_block.png.mcmeta"
+
+[[files]]
+file = "kubejs/assets/grand_expanse/textures/block/diamond_head.png"
 
 [[files]]
 file = "kubejs/assets/grand_expanse/textures/block/electrolyzer/axis.png"
@@ -317,6 +344,9 @@ file = "kubejs/startup_scripts/config.js"
 
 [[files]]
 file = "kubejs/startup_scripts/fluids.js"
+
+[[files]]
+file = "kubejs/startup_scripts/item-events.js"
 
 [[files]]
 file = "kubejs/startup_scripts/items.js"

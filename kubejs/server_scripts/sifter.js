@@ -11,4 +11,15 @@ ServerEvents.recipes((event) => {
             ["minecraft:dirt", "createsifter:string_mesh"],
         )
         .waterlogged();
+
+    // sifting gravel to coal??
+    event.recipes.createsifterSifting(
+        [Item.of("minecraft:coal").withChance(0.1)],
+        ["minecraft:gravel", "createsifter:andesite_mesh"],
+    );
+    // sifting sand to gunpowa
+    event.recipes.createsifterSifting(
+        [Item.of("minecraft:gunpowder").withChance(0.1)],
+        ["minecraft:sand", "createsifter:andesite_mesh"],
+    );
 });
