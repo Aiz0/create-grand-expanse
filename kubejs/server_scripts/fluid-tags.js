@@ -12,4 +12,6 @@ ServerEvents.tags("fluid", (event) => {
         event.add("minecraft:lava", id);
         event.add("minecraft:lava", flowingFluid);
     }
+    // Adds biofuel as a possible rocket fuel
+    event.add("ad_astra:fuel", "createaddition:bioethanol");
 });
