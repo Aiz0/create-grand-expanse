@@ -46,39 +46,6 @@ file = "config/zume.json5"
 file = "defaultconfigs/create-server.toml"
 
 [[files]]
-file = "kubejs/.vscode/fluid-attributes.json"
-
-[[files]]
-file = "kubejs/.vscode/item-attributes.json"
-
-[[files]]
-file = "kubejs/.vscode/item-tag-attributes.json"
-
-[[files]]
-file = "kubejs/.vscode/lang-keys.json"
-
-[[files]]
-file = "kubejs/.vscode/probe.class-definitions.json"
-
-[[files]]
-file = "kubejs/.vscode/probe.code-snippets"
-
-[[files]]
-file = "kubejs/.vscode/probe.doc-schema.json"
-
-[[files]]
-file = "kubejs/.vscode/probe.lang-schema.json"
-
-[[files]]
-file = "kubejs/.vscode/probe.lang_key-definitions.json"
-
-[[files]]
-file = "kubejs/.vscode/probe.registry-definitions.json"
-
-[[files]]
-file = "kubejs/.vscode/settings.json"
-
-[[files]]
 file = "kubejs/README.txt"
 
 [[files]]
@@ -110,6 +77,9 @@ file = "kubejs/assets/create/lang/en_us.json"
 
 [[files]]
 file = "kubejs/assets/create/models/block/mechanical_drill/head.json"
+
+[[files]]
+file = "kubejs/assets/create/textures/block/deployer.png"
 
 [[files]]
 file = "kubejs/assets/create/textures/item/brass_hand.png"
@@ -898,12 +868,6 @@ file = "mods/zume.pw.toml"
 metafile = true
 
 [[files]]
-file = "refresh.bat"
-
-[[files]]
-file = "reload.bat"
-
-[[files]]
 file = "resourcepacks/create-darkmode.pw.toml"
 metafile = true
 
@@ -942,9 +906,3 @@ metafile = true
 [[files]]
 file = "resourcepacks/toms-create-storage.pw.toml"
 metafile = true
-
-[[files]]
-file = "serve.bat"
-
-[[files]]
-file = "update-fork.bat"
