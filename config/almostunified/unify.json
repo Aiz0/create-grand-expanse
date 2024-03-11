@@ -86,7 +86,8 @@
         "tungsten",
         "uranium",
         "zinc",
-        "andesite_alloy"
+        "andesite_alloy",
+        "redstone"
     ],
     "priorityOverrides": {},
     "customTags": {},

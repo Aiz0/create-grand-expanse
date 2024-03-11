@@ -75,6 +75,7 @@ global.config = {
             { name: "lead", fluid: global.fluids.molten_lead },
             { name: "bronze", fluid: global.fluids.molten_bronze },
             { name: "cast_iron", fluid: global.fluids.molten_cast_iron },
+            { name: "redstone", fluid: "thermal:redstone" },
         ],
         // types of items that can be melted of above materials
         // nuggets defaults to 9
