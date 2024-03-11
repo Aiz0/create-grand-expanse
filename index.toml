@@ -199,6 +199,18 @@ file = "kubejs/assets/kubejs/ponder/foundry_example.nbt"
 file = "kubejs/assets/tinkers_construct/readme.txt"
 
 [[files]]
+file = "kubejs/assets/tinkers_construct/textures/block/fluid/crystal/flowing.png"
+
+[[files]]
+file = "kubejs/assets/tinkers_construct/textures/block/fluid/crystal/flowing.png.mcmeta"
+
+[[files]]
+file = "kubejs/assets/tinkers_construct/textures/block/fluid/crystal/still.png"
+
+[[files]]
+file = "kubejs/assets/tinkers_construct/textures/block/fluid/crystal/still.png.mcmeta"
+
+[[files]]
 file = "kubejs/assets/tinkers_construct/textures/block/fluid/molten/flowing.png"
 
 [[files]]
