@@ -93,6 +93,21 @@ ServerEvents.recipes((event) => {
         ["minecraft:andesite", "create:zinc_nugget", "minecraft:clay_ball"],
     );
 
+    event.recipes.create.mixing(
+        Fluid.of(global.fluids.fluix, FluidAmounts.NUGGET),
+        [
+            Fluid.of(global.fluids.crystal, FluidAmounts.NUGGET),
+            Fluid.of("thermal:redstone", FluidAmounts.NUGGET),
+        ],
+    );
+
+    // Filling
+
+    event.recipes.create.filling("ae2:fluix_crystal", [
+        "ae2:charged_certus_quartz_crystal",
+        Fluid.of(global.fluids.fluix, FluidAmounts.INGOT),
+    ]);
+
     event.recipes.create
         .compacting("createdeco:cast_iron_ingot", [
             "minecraft:iron_ingot",
@@ -105,6 +120,14 @@ ServerEvents.recipes((event) => {
     event.recipes.create.compacting(global.items.sturdy_hull, [
         Item.of("create:sturdy_sheet", 4),
     ]);
+
+    event.recipes.create
+        .compacting(Fluid.of(global.fluids.crystal, FluidAmounts.INGOT), [
+            "minecraft:glow_ink_sac",
+            "minecraft:amethyst_shard",
+            Fluid.of(global.fluids.molten_diamond, FluidAmounts.INGOT),
+        ])
+        .heated();
 
     // early game obsidian dust recipe
     event.recipes.create.milling(
