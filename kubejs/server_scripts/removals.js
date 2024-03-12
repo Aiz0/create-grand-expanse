@@ -42,6 +42,9 @@ ServerEvents.recipes((event) => {
         // Thermal
         { output: "#forge:gears", not: { output: "#forge:gears/copper" } },
         { id: "thermal:fire_charge/bronze_ingot_4" },
+
+        // Backpacks
+        { id: "sophisticatedbackpacks:iron_backpack_from_copper" },
     ]);
 
     Ingredient.of(/^fumo:/).itemIds.forEach((item) => {
