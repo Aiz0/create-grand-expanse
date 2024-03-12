@@ -37,6 +37,12 @@ file = "config/quark-common.toml"
 file = "config/resourcepackoverrides.json"
 
 [[files]]
+file = "config/sophisticatedbackpacks-common.toml"
+
+[[files]]
+file = "config/sophisticatedcore-common.toml"
+
+[[files]]
 file = "config/thermal-common.toml"
 
 [[files]]
