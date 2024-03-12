@@ -439,7 +439,6 @@ ServerEvents.recipes((event) => {
                 I: inputItem,
                 B: inputBackpack,
             })
-            .id(outputBackpack)
             .modifyResult((inventory, itemstack) => {
                 let item = inventory.find(Item.of(inputBackpack));
                 if (item.getNbt() === null) {
