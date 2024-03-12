@@ -414,24 +414,24 @@ ServerEvents.recipes((event) => {
     });
 
     // Backpacks
-
-    backpack(
-        "sophisticatedbackpacks:copper_backpack",
-        "sophisticatedbackpacks:backpack",
-        "#forge:plates/copper",
-    );
+    // First upgrade when you get plates
     backpack(
         "sophisticatedbackpacks:iron_backpack",
-        "sophisticatedbackpacks:copper_backpack",
-        "#forge:gears/iron",
+        "sophisticatedbackpacks:backpack",
+        "#forge:plates/iron",
     );
-
-    /*
+    // Second upgrade when you get molten metals.
     backpack(
         "sophisticatedbackpacks:gold_backpack",
-        "sophisticatedbackpacks:copper_backpack",
-        global.fluids.molten_rose_gold,
-    );*/
+        "sophisticatedbackpacks:iron_backpack",
+        "#forge:ingots/rose_gold",
+    );
+    // Third upgrade when you get alloying/brass
+    backpack(
+        "sophisticatedbackpacks:diamond_backpack",
+        "sophisticatedbackpacks:gold_backpack",
+        "#forge:plates/brass",
+    );
 
     function backpack(outputBackpack, inputBackpack, inputItem) {
         event
