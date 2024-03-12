@@ -1,5 +1,17 @@
 ServerEvents.recipes((event) => {
     // Backpacks
+    event.shaped(
+        Item.of("sophisticatedbackpacks:backpack", 1),
+        ["ABA", "CDC", "EBE"],
+        {
+            A: "minecraft:leather",
+            B: "farmersdelight:canvas",
+            C: "#forge:rope",
+            D: "minecraft:barrel",
+            E: "minecraft:bundle",
+        },
+    );
+
     // First upgrade when you get plates
     backpack(
         "sophisticatedbackpacks:iron_backpack",
