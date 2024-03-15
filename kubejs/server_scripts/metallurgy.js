@@ -37,6 +37,21 @@ ServerEvents.recipes((event) => {
         });
     });
 
+    alloy(
+        "createmetallurgy:molten_brass",
+        "createmetallurgy:molten_copper",
+        "createmetallurgy:molten_zinc",
+        40,
+        "heated",
+    );
+    alloy(
+        global.fluids.molten_bronze,
+        global.fluids.molten_tin,
+        "createmetallurgy:molten_copper",
+        40,
+        "heated",
+    );
+
     // Helper Functions
     function melting(inputTag, fluid, fluidAmount, heatRequirement) {
         // Resolve optional parameters
@@ -119,6 +134,30 @@ ServerEvents.recipes((event) => {
             ],
             processingTime: 150,
             results: [item],
+        });
+    }
+
+    function alloy(output, fluid1, fluid2, processingTime, heatRequirement) {
+        event.custom({
+            type: "createmetallurgy:alloying",
+            ingredients: [
+                {
+                    fluid: fluid1,
+                    amount: 10,
+                },
+                {
+                    fluid: fluid2,
+                    amount: 10,
+                },
+            ],
+            processingTime: processingTime,
+            results: [
+                {
+                    fluid: output,
+                    amount: 20,
+                },
+            ],
+            heatRequirement: heatRequirement,
         });
     }
 });
