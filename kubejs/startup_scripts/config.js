@@ -20,6 +20,7 @@ global.items = {
     bronze_rod: null,
     copper_coil_block: null,
     electrolyzer: null,
+    fluix_generator: null,
     sturdy_hull: null,
     fumo_base: null,
 };
