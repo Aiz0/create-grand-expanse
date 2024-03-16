@@ -14,6 +14,7 @@ ServerEvents.recipes((event) => {
             output: "create:andesite_alloy",
             input: "minecraft:andesite",
         },
+        { id: "create:mixing/brass_ingot" },
         // using sequence for these.
         { output: "create:copper_casing" },
 
