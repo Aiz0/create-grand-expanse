@@ -2,6 +2,6 @@ name = "create-fork"
 filename = "create-1.19.2-0.5.1.f.jar"
 
 [download]
-url = "https://github.com/NotStargazer/Create_GE/releases/download/Grand-Expanse-0.1.1/create-1.19.2-0.5.1.f.jar"
+url = "https://github.com/NotStargazer/Create_GE/releases/download/Grand-Expanse-0.2/create-1.19.2-0.5.1.f.jar"
 hash-format = "sha256"
-hash = "42a93f9905323f04d6c4ae3e99bcd0c1375c3b5b9f45d5628e669f053bdf20fe"
+hash = "8e8290d5a5e522710e2565f150d785a0a9fadd8a28df3249087c1eef6fa28c95"
