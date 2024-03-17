@@ -42,6 +42,12 @@ ServerEvents.recipes((event) => {
         // Thermal
         { output: "#forge:gears", not: { output: "#forge:gears/copper" } },
         { id: "thermal:fire_charge/bronze_ingot_4" },
+
+        // AE2
+        {
+            output: "ae2:fluix_crystal",
+            not: { id: "ae2:misc/deconstruction_fluix_block" },
+        },
     ]);
 
     Ingredient.of(/^fumo:/).itemIds.forEach((item) => {
