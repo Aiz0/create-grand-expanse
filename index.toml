@@ -199,6 +199,18 @@ file = "kubejs/assets/kubejs/ponder/foundry_example.nbt"
 file = "kubejs/assets/tinkers_construct/readme.txt"
 
 [[files]]
+file = "kubejs/assets/tinkers_construct/textures/block/fluid/crystal/flowing.png"
+
+[[files]]
+file = "kubejs/assets/tinkers_construct/textures/block/fluid/crystal/flowing.png.mcmeta"
+
+[[files]]
+file = "kubejs/assets/tinkers_construct/textures/block/fluid/crystal/still.png"
+
+[[files]]
+file = "kubejs/assets/tinkers_construct/textures/block/fluid/crystal/still.png.mcmeta"
+
+[[files]]
 file = "kubejs/assets/tinkers_construct/textures/block/fluid/molten/flowing.png"
 
 [[files]]
@@ -308,6 +320,9 @@ file = "kubejs/client_scripts/rei.js"
 
 [[files]]
 file = "kubejs/data/grand_expanse/machines/electrolyzer.json"
+
+[[files]]
+file = "kubejs/data/grand_expanse/machines/fluix_generator.json"
 
 [[files]]
 file = "kubejs/server_scripts/crafting.js"

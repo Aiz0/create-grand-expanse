@@ -20,6 +20,7 @@ global.items = {
     bronze_rod: null,
     copper_coil_block: null,
     electrolyzer: null,
+    fluix_generator: null,
     sturdy_hull: null,
     fumo_base: null,
 };
@@ -29,6 +30,8 @@ defineNames(global.items);
 // Fluids beginning with molten will hava the lava tag.
 global.fluids = {
     andesite_mixture: null,
+    crystal: null,
+    fluix: null,
     molten_tin: null,
     molten_nickel: null,
     molten_desh: null,
@@ -37,6 +40,7 @@ global.fluids = {
     molten_rose_gold: null,
     molten_bronze: null,
     molten_cast_iron: null,
+    molten_diamond: null,
 };
 // define names from keys
 defineNames(global.fluids);
@@ -75,6 +79,8 @@ global.config = {
             { name: "lead", fluid: global.fluids.molten_lead },
             { name: "bronze", fluid: global.fluids.molten_bronze },
             { name: "cast_iron", fluid: global.fluids.molten_cast_iron },
+            { name: "redstone", fluid: "thermal:redstone" },
+            { name: "diamond", fluid: global.fluids.molten_diamond },
         ],
         // types of items that can be melted of above materials
         // nuggets defaults to 9
@@ -88,6 +94,7 @@ global.config = {
             { tag: "forge:crushed_raw_materials/" },
             { tag: "forge:dusts/" },
             { tag: "forge:dirty_dusts/" },
+            { tag: "forge:gems/" },
             { tag: "forge:nuggets/", fluidAmount: FluidAmounts.NUGGET },
             { tag: "forge:tools/", fluidAmount: FluidAmounts.NUGGET },
             {

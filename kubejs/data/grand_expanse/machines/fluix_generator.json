@@ -1,0 +1,28 @@
+{
+    "name": "Fluix generator",
+    "components": [
+        {
+            "type": "custommachinery:fluid",
+            "capacity": 4000,
+            "id": "crystal_tank",
+            "maxInput": 1000,
+            "mode": "input",
+            "filter": ["grand_expanse:crystal"],
+            "whitelist": true
+        },
+        {
+            "type": "custommachinery:fluid",
+            "capacity": 4000,
+            "id": "fluix_tank",
+            "maxOutput": 1000,
+            "mode": "output",
+            "filter": ["grand_expanse:fluix"],
+            "whitelist": true,
+            "config": {
+                "default": "none",
+                "right": "output",
+                "output": true
+            }
+        }
+    ]
+}

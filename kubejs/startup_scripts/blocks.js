@@ -18,4 +18,5 @@ StartupEvents.registry("block", (event) => {
         .tagBlock("minecraft:needs_iron_tool");
     // Electorlyzer is a custom machinery block.
     event.create(global.items.electrolyzer, "custommachinery");
+    event.create(global.items.fluix_generator, "custommachinery");
 });

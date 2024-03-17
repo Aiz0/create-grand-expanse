@@ -18,4 +18,11 @@ ServerEvents.recipes((event) => {
         .requireFluid(Fluid.of("minecraft:water", 100))
         .produceFluid(Fluid.of("mekanism:oxygen", 10))
         .produceFluid(Fluid.of("mekanism:hydrogen", 20));
+
+    event.recipes.custommachinery
+        .custom_machine(global.items.fluix_generator, 20)
+        .biomeWhitelist("ad_astra:lunar_wastelands")
+        .requireSU(64)
+        .requireFluid(Fluid.of(global.fluids.crystal, 100))
+        .produceFluid(Fluid.of(global.fluids.fluix, 20));
 });

@@ -2,6 +2,12 @@ StartupEvents.registry("fluid", (event) => {
     //create fluids here
 
     event.create(global.fluids.andesite_mixture).thinTexture(0x808582);
+    event.create(global.fluids.fluix).thinTexture(0x4d3b93);
+    event
+        .create(global.fluids.crystal)
+        .stillTexture("tinkers_construct:block/fluid/crystal/still")
+        .flowingTexture("tinkers_construct:block/fluid/crystal/flowing");
+
     // Molten stuff
     molten_metal(global.fluids.molten_tin, 0x7ea0b5);
     molten_metal(global.fluids.molten_nickel, 0xbdac78);
@@ -11,6 +17,7 @@ StartupEvents.registry("fluid", (event) => {
     molten_metal(global.fluids.molten_rose_gold, 0xf4af94);
     molten_metal(global.fluids.molten_bronze, 0xe59831);
     molten_metal(global.fluids.molten_cast_iron, 0x313131);
+    molten_metal(global.fluids.molten_diamond, 0x49ead6);
 
     function molten_metal(fluid, color) {
         event
