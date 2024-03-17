@@ -100,12 +100,9 @@ ServerEvents.recipes((event) => {
             Fluid.of("thermal:redstone", FluidAmounts.NUGGET),
         ],
     );
-
-    // Filling
-
-    event.recipes.create.filling("ae2:fluix_crystal", [
-        "ae2:charged_certus_quartz_crystal",
+    event.recipes.create.mixing("ae2:fluix_dust", [
         Fluid.of(global.fluids.fluix, FluidAmounts.INGOT),
+        "ae2:certus_quartz_dust",
     ]);
 
     event.recipes.create
