@@ -38,17 +38,25 @@ ServerEvents.recipes((event) => {
     });
 
     // Alloying
+    // early game alloys can be mixed as well
+    mixAndAlloy(
+        global.fluids.molten_rose_gold,
+        "createmetallurgy:molten_gold",
+        "createmetallurgy:molten_copper",
+        40,
+    );
+    mixAndAlloy(
+        global.fluids.molten_bronze,
+        global.fluids.molten_tin,
+        "createmetallurgy:molten_copper",
+        40,
+    );
+
+    //alloy mixer only
     alloy(
         "createmetallurgy:molten_brass",
         "createmetallurgy:molten_copper",
         "createmetallurgy:molten_zinc",
-        40,
-        "heated",
-    );
-    alloy(
-        global.fluids.molten_bronze,
-        global.fluids.molten_tin,
-        "createmetallurgy:molten_copper",
         40,
         "heated",
     );
@@ -181,5 +189,15 @@ ServerEvents.recipes((event) => {
             ],
             heatRequirement: heatRequirement,
         });
+    }
+
+    function mixAndAlloy(output, fluid1, fluid2, processingTime) {
+        alloy(output, fluid1, fluid2, processingTime, "heated");
+        event.recipes.create
+            .mixing(Fluid.of(output, FluidAmounts.NUGGET), [
+                Fluid.of(fluid1, FluidAmounts.NUGGET),
+                Fluid.of(fluid2, FluidAmounts.NUGGET),
+            ])
+            .heated();
     }
 });
