@@ -14,6 +14,7 @@ ServerEvents.recipes((event) => {
             output: "create:andesite_alloy",
             input: "minecraft:andesite",
         },
+        { id: "create:mixing/brass_ingot" },
         // using sequence for these.
         { output: "create:copper_casing" },
 
@@ -23,6 +24,7 @@ ServerEvents.recipes((event) => {
         { type: "createmetallurgy:melting" },
         { type: "createmetallurgy:casting_in_basin" },
         { type: "createmetallurgy:casting_in_table" },
+        { type: "createmetallurgy:alloying" },
         { output: "#forge:graphite_molds" },
 
         // Create mechanical extruder
@@ -41,7 +43,7 @@ ServerEvents.recipes((event) => {
 
         // Thermal
         { output: "#forge:gears", not: { output: "#forge:gears/copper" } },
-        { id: "thermal:fire_charge/bronze_ingot_4" },
+        { output: "#forge:ingots", input: "minecraft:fire_charge" },
     ]);
 
     Ingredient.of(/^fumo:/).itemIds.forEach((item) => {
