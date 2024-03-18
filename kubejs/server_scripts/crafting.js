@@ -398,4 +398,22 @@ ServerEvents.recipes((event) => {
         W: "#minecraft:wool",
         O: "minecraft:obsidian",
     });
+
+    //Scanner
+    event
+        .shaped("scannable:scanner", [" BL", "BCS", " BR"], {
+            B: "create:brass_sheet",
+            L: "create:redstone_link",
+            C: "createaddition:connector",
+            S: "createaddition:copper_spool",
+            R: "thermal:cured_rubber",
+        })
+        .id("scannable:scanner");
+    event
+        .shaped("scannable:blank_module", ["RBR", "RDR", " B "], {
+            B: "create:brass_sheet",
+            R: "thermal:cured_rubber",
+            D: "minecraft:redstone",
+        })
+        .id("scannable:blank_module");
 });
