@@ -37,6 +37,12 @@ file = "config/quark-common.toml"
 file = "config/resourcepackoverrides.json"
 
 [[files]]
+file = "config/sophisticatedbackpacks-common.toml"
+
+[[files]]
+file = "config/sophisticatedcore-common.toml"
+
+[[files]]
 file = "config/thermal-common.toml"
 
 [[files]]
@@ -196,6 +202,15 @@ file = "kubejs/assets/grand_expanse/textures/item/tool_part_mold.png"
 file = "kubejs/assets/kubejs/ponder/foundry_example.nbt"
 
 [[files]]
+file = "kubejs/assets/sophisticatedbackpacks/lang/en_us.json"
+
+[[files]]
+file = "kubejs/assets/sophisticatedbackpacks/textures/block/diamond_clips.png"
+
+[[files]]
+file = "kubejs/assets/sophisticatedbackpacks/textures/block/gold_clips.png"
+
+[[files]]
 file = "kubejs/assets/tinkers_construct/readme.txt"
 
 [[files]]
@@ -209,6 +224,9 @@ file = "kubejs/assets/tinkers_construct/textures/block/fluid/molten/still.png"
 
 [[files]]
 file = "kubejs/assets/tinkers_construct/textures/block/fluid/molten/still.png.mcmeta"
+
+[[files]]
+file = "kubejs/assets/tinkers_construct/textures/item/rose_gold_ingot.png"
 
 [[files]]
 file = "kubejs/assets/toms_storage/models/block/cable_connector/base.json"
@@ -308,6 +326,9 @@ file = "kubejs/client_scripts/rei.js"
 
 [[files]]
 file = "kubejs/data/grand_expanse/machines/electrolyzer.json"
+
+[[files]]
+file = "kubejs/server_scripts/backpacks.js"
 
 [[files]]
 file = "kubejs/server_scripts/crafting.js"

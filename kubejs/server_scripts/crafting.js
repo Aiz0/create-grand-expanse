@@ -10,20 +10,6 @@ ServerEvents.recipes((event) => {
         },
     );
 
-    event
-        .shaped(
-            Item.of("sophisticatedbackpacks:backpack", 1),
-            ["ABA", "CDC", "EBE"],
-            {
-                A: "minecraft:leather",
-                B: "farmersdelight:canvas",
-                C: "#forge:rope",
-                D: "minecraft:barrel",
-                E: "minecraft:bundle",
-            },
-        )
-        .id("sophisticatedbackpacks:backpack");
-
     // Mechanical Saw now uses thermal saw blade
     event
         .shaped(Item.of("create:mechanical_saw", 1), ["A  ", "BC "], {

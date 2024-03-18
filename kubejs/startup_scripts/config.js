@@ -22,6 +22,7 @@ global.items = {
     electrolyzer: null,
     sturdy_hull: null,
     fumo_base: null,
+    rose_gold_ingot: null,
 };
 defineNames(global.items);
 
