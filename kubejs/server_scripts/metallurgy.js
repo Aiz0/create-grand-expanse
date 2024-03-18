@@ -59,6 +59,13 @@ ServerEvents.recipes((event) => {
         40,
         "heated",
     );
+    alloy(
+        global.fluids.molten_constantan,
+        global.fluids.molten_nickel,
+        "createmetallurgy:molten_copper",
+        40,
+        "heated",
+    );
 
     // Helper Functions
     function melting(inputTag, fluid, fluidAmount, heatRequirement) {
