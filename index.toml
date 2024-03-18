@@ -385,6 +385,9 @@ file = "kubejs/startup_scripts/items.js"
 file = "kubejs/startup_scripts/tool-tiers.js"
 
 [[files]]
+file = "kubejs/startup_scripts/world-gen.js"
+
+[[files]]
 file = "mods/ad-astra.pw.toml"
 metafile = true
 
