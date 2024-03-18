@@ -66,6 +66,13 @@ ServerEvents.recipes((event) => {
         40,
         "heated",
     );
+    alloy(
+        global.fluids.molten_electrum,
+        global.fluids.molten_silver,
+        "createmetallurgy:molten_gold",
+        40,
+        "superheated",
+    );
 
     // Helper Functions
     function melting(inputTag, fluid, fluidAmount, heatRequirement) {

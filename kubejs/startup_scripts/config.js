@@ -39,6 +39,7 @@ global.fluids = {
     molten_cast_iron: null,
     molten_invar: null,
     molten_constantan: null,
+    molten_electrum: null,
 };
 // define names from keys
 defineNames(global.fluids);
@@ -79,6 +80,7 @@ global.config = {
             { name: "cast_iron", fluid: global.fluids.molten_cast_iron },
             { name: "invar", fluid: global.fluids.molten_invar },
             { name: "constantan", fluid: global.fluids.molten_constantan },
+            { name: "electrum", fluid: global.fluids.molten_electrum },
         ],
         // types of items that can be melted of above materials
         // nuggets defaults to 9
