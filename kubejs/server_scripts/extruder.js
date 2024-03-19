@@ -43,6 +43,16 @@ ServerEvents.recipes((event) => {
         2,
     );
 
+    // Moon stone
+    event.recipes
+        .createMechanicalExtruderExtruding("ad_astra:moon_cobblestone", [
+            "minecraft:blue_ice",
+            Fluid.of("minecraft:lava"),
+        ])
+        .withCatalyst("quark:stone_lamp")
+        .requiredBonks(global.config.extruder_bonks);
+    //.withBiomeCondition("ad_astra:lunar_wastelands");
+
     function extrude(output, catalyst, bonks) {
         bonks = typeof bonks !== "undefined" ? bonks : 1;
         event.recipes
