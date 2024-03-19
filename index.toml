@@ -199,6 +199,9 @@ file = "kubejs/assets/grand_expanse/textures/item/rocket_hull.png"
 file = "kubejs/assets/grand_expanse/textures/item/tool_part_mold.png"
 
 [[files]]
+file = "kubejs/assets/kubejs/ponder/electrolyzer.nbt"
+
+[[files]]
 file = "kubejs/assets/kubejs/ponder/foundry_example.nbt"
 
 [[files]]
