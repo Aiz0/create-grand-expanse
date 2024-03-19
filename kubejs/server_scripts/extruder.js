@@ -1,12 +1,5 @@
 ServerEvents.recipes((event) => {
     event.recipes
-        .createMechanicalExtruderExtruding("minecraft:cobblestone", [
-            Fluid.of("minecraft:water"),
-            Fluid.of("minecraft:lava"),
-        ])
-        .requiredBonks(global.config.extruder_bonks)
-        .id("create_mechanical_extruder:extruding/cobblestone");
-    event.recipes
         .createMechanicalExtruderExtruding("minecraft:basalt", [
             "minecraft:blue_ice",
             Fluid.of("minecraft:lava"),
@@ -16,14 +9,21 @@ ServerEvents.recipes((event) => {
         .id("create_mechanical_extruder:extruding/basalt");
 
     // Cobblestone
+    event.recipes
+        .createMechanicalExtruderExtruding("minecraft:cobblestone", [
+            Fluid.of("minecraft:water"),
+            Fluid.of("minecraft:lava"),
+        ])
+        .requiredBonks(global.config.extruder_bonks)
+        .id("create_mechanical_extruder:extruding/cobblestone");
+
     extrude(
         "minecraft:cobblestone",
-        "createcompression:compressed_cobblestone_4x",
-        2,
+        "createcompression:compressed_cobblestone_3x",
     );
     extrude(
-        "minecraft:cobblestone",
-        "createcompression:compressed_cobblestone_6x",
+        "createcompression:compressed_cobblestone_1x",
+        "createcompression:compressed_cobblestone_5x",
     );
 
     // Andesite
@@ -37,18 +37,10 @@ ServerEvents.recipes((event) => {
         "createcompression:compressed_andesite_3x",
         10,
     );
-    extrude("minecraft:andesite", "createcompression:compressed_andesite_4x");
     extrude(
         "createcompression:compressed_andesite_1x",
         "createcompression:compressed_andesite_5x",
-    );
-    extrude(
-        "createcompression:compressed_andesite_2x",
-        "createcompression:compressed_andesite_6x",
-    );
-    extrude(
-        "createcompression:compressed_andesite_3x",
-        "createcompression:compressed_andesite_7x",
+        2,
     );
 
     function extrude(output, catalyst, bonks) {
