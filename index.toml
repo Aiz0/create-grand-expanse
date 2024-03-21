@@ -16,6 +16,9 @@ file = "config/ae2/common.json"
 file = "config/almostunified/unify.json"
 
 [[files]]
+file = "config/createaddition-common.toml"
+
+[[files]]
 file = "config/flopper-common.toml"
 
 [[files]]
