@@ -42,6 +42,13 @@ ServerEvents.recipes((event) => {
                 "minecraft:writable_book",
             ]),
             event.recipes.create.deploying(inter, [inter, "ftbquests:book"]),
+            event.recipes.create.deploying(inter, [
+                inter,
+                Item.of(
+                    "patchouli:guide_book",
+                    '{"patchouli:book":"thermal:guidebook"}',
+                ),
+            ]),
             event.recipes.create.deploying(inter, [inter, "ad_astra:astrodux"]),
             event.recipes.create.filling(inter, [
                 inter,
@@ -59,7 +66,7 @@ ServerEvents.recipes((event) => {
             ]),
         ])
         .transitionalItem(inter)
-        .loops(2);
+        .loops(10);
 
     // Tewi
     // bnuy
