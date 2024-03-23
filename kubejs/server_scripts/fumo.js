@@ -219,6 +219,20 @@ ServerEvents.recipes((event) => {
         .transitionalItem(inter)
         .loops(9);
 
+    // Tan Cirno
+    event.custom({
+        type: "createaddition:charging",
+        input: {
+            item: "fumo:cirno_item",
+            count: 1,
+        },
+        result: {
+            item: "fumo:tan_cirno_item",
+            count: 1,
+        },
+        energy: 10000,
+    });
+
     // Chen
     // orange cat
     event.recipes.create
