@@ -74,6 +74,11 @@ ServerEvents.recipes((event) => {
         Item.of("create:sturdy_sheet", 4),
     ]);
 
+    // Dense Tungsten hull
+    event.recipes.create.compacting(global.items.dense_tungsten_hull, [
+        Item.of(global.items.high_density_tungsten, 4),
+    ]);
+
     // early game obsidian dust recipe
     event.recipes.create.milling(
         ["create:powdered_obsidian"],
