@@ -218,6 +218,44 @@ ServerEvents.recipes((event) => {
         .transitionalItem("create:andesite_casing")
         .loops(3);
 
+    const brass_casing_inter = "create:copper_casing";
+    event.recipes.create
+        .sequenced_assembly(["create:brass_casing"], brass_casing_inter, [
+            event.recipes.create.filling(brass_casing_inter, [
+                brass_casing_inter,
+                Fluid.of("createmetallurgy:molten_brass", FluidAmounts.INGOT),
+            ]),
+            event.recipes.create.pressing(
+                brass_casing_inter,
+                brass_casing_inter,
+            ),
+        ])
+        .transitionalItem(brass_casing_inter)
+        .loops(3);
+
+    const train_casing_inter = "create:brass_casing";
+    event.recipes.create
+        .sequenced_assembly(["create:railway_casing"], train_casing_inter, [
+            event.recipes.create.deploying(train_casing_inter, [
+                train_casing_inter,
+                "create:sturdy_sheet",
+            ]),
+            event.recipes.create.pressing(
+                train_casing_inter,
+                train_casing_inter,
+            ),
+            event.recipes.create.deploying(train_casing_inter, [
+                train_casing_inter,
+                "create:iron_sheet",
+            ]),
+            event.recipes.create.pressing(
+                train_casing_inter,
+                train_casing_inter,
+            ),
+        ])
+        .transitionalItem(train_casing_inter)
+        .loops(2);
+
     // Bioefuel
     event.replaceInput(
         { id: "createaddition:mixing/bioethanol" },
