@@ -17,6 +17,8 @@ ServerEvents.recipes((event) => {
         { id: "create:mixing/brass_ingot" },
         // using sequence for these.
         { output: "create:copper_casing" },
+        { output: "create:brass_casing" },
+        { output: "create:railway_casing" },
 
         // Create Metallurgy
         // Remove existing metallurgy smelting recipe
