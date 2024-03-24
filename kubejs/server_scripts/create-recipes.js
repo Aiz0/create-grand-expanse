@@ -256,6 +256,37 @@ ServerEvents.recipes((event) => {
         .transitionalItem(train_casing_inter)
         .loops(2);
 
+    const precision_mechanism_inter = "create:incomplete_precision_mechanism";
+    event.recipes.create
+        .sequenced_assembly(
+            [
+                Item.of("create:precision_mechanism").withChance(0.8),
+                Item.of("#forge:plates/constantan").withChance(0.09),
+                Item.of("create:andesite_alloy").withChance(0.05),
+                Item.of("create:cogwheel_tier_2").withChance(0.03),
+                Item.of("create:shaft_tier_2").withChance(0.02),
+                Item.of("minecraft:clock").withChance(0.01),
+            ],
+            "#forge:plates/constantan",
+            [
+                event.recipes.create.deploying(precision_mechanism_inter, [
+                    precision_mechanism_inter,
+                    "create:cogwheel_tier_2",
+                ]),
+                event.recipes.create.deploying(precision_mechanism_inter, [
+                    precision_mechanism_inter,
+                    "create:cogwheel_tier_2",
+                ]),
+                event.recipes.create.deploying(precision_mechanism_inter, [
+                    precision_mechanism_inter,
+                    "#forge:gears/invar",
+                ]),
+            ],
+        )
+        .transitionalItem(precision_mechanism_inter)
+        .loops(5)
+        .id("create:sequenced_assembly/precision_mechanism");
+
     // Bioefuel
     event.replaceInput(
         { id: "createaddition:mixing/bioethanol" },
