@@ -43,6 +43,7 @@ global.fluids = {
     molten_invar: null,
     molten_constantan: null,
     molten_electrum: null,
+    molten_dense_tungsten: null,
 };
 // define names from keys
 defineNames(global.fluids);

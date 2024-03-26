@@ -14,6 +14,7 @@ StartupEvents.registry("fluid", (event) => {
     molten_metal(global.fluids.molten_invar, 0x567473);
     molten_metal(global.fluids.molten_constantan, 0xb6883e);
     molten_metal(global.fluids.molten_electrum, 0xe7e68c);
+    molten_metal(global.fluids.molten_dense_tungsten, 0x9ba35c);
 
     function molten_metal(fluid, color) {
         event

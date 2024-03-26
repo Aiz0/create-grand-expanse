@@ -1,7 +1,7 @@
 StartupEvents.registry("block", (event) => {
     event
         .create(global.items.copper_coil_block)
-        .material("heavy_metal")
+        .soundType("copper")
         .hardness(3)
         .resistance(6)
         .requiresTool(true)
@@ -10,7 +10,7 @@ StartupEvents.registry("block", (event) => {
 
     event
         .create(global.items.sturdy_hull)
-        .material("heavy_metal")
+        .soundType("lantern")
         .hardness(5)
         .resistance(9)
         .requiresTool(true)
@@ -18,7 +18,8 @@ StartupEvents.registry("block", (event) => {
         .tagBlock("minecraft:needs_iron_tool");
     event
         .create(global.items.dense_tungsten_hull)
-        .material('heavy_metal')
+        .soundType("metal")
+        .slipperiness(0.98)
         .hardness(7)
         .resistance(10)
         .requiresTool(true)
