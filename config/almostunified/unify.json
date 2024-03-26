@@ -87,7 +87,8 @@
         "uranium",
         "zinc",
         "andesite_alloy",
-        "rose_gold"
+        "rose_gold",
+        "high_density_tungsten",
     ],
     "priorityOverrides": {},
     "customTags": {},

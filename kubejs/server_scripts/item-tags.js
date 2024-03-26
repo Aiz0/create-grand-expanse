@@ -42,6 +42,7 @@ ServerEvents.tags("item", (event) => {
 
     forgeCategory(global.items.bronze_rod, "rods", "bronze");
     forgeCategory(global.items.rose_gold_ingot, "ingots", "rose_gold");
+    forgeCategory(global.items.high_density_tungsten, "ingots", "high_density_tungsten")
 
     // Create crushed raw materials
     event
