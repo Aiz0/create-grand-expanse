@@ -19,6 +19,7 @@ ServerEvents.recipes((event) => {
         { output: "create:copper_casing" },
         { output: "create:brass_casing" },
         { output: "create:railway_casing" },
+        { type: "create:crushing", input: "#forge:raw_materials" },
 
         // Create Metallurgy
         // Remove existing metallurgy smelting recipe

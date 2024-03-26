@@ -100,17 +100,62 @@ ServerEvents.recipes((event) => {
         )
         .id("create:milling/gravel");
 
-    // Mill ore to dust for chance for extra
+    // Handle raw materials
     Ingredient.of("#forge:raw_materials").itemIds.forEach((item) => {
         const material = item.split("_").pop();
-        const output = AlmostUnified.getPreferredItemForTag(
+        const input_block = AlmostUnified.getPreferredItemForTag(
+            `forge:storage_blocks/raw_${material}`,
+        );
+        const output_dust = AlmostUnified.getPreferredItemForTag(
             `forge:dusts/${material}`,
         );
-        if (output.isEmpty()) {
-            return;
+        if (!output_dust.isEmpty()) {
+            // Mill ore to dust for chance for extra
+            event.recipes.create.milling(
+                [output_dust, output_dust.withChance(0.2)],
+                item,
+            );
+            event.recipes.create.milling(
+                [
+                    output_dust.withCount(9),
+                    output_dust.withCount(9).withChance(0.2),
+                ],
+                input_block,
+            );
         }
-        //TODO NO MAGIC number move to config or something jeeeeez
-        event.recipes.create.milling([output, output.withChance(0.2)], item);
+
+        const output_crushed = AlmostUnified.getPreferredItemForTag(
+            `forge:crushed_raw_materials/${material}`,
+        );
+
+        const output_dirty_dust = AlmostUnified.getPreferredItemForTag(
+            `forge:dirty_dusts/${material}`,
+        );
+
+        // Crush for crushed ores and dirty dust
+        event.recipes.create.crushing(
+            [
+                output_crushed,
+                output_dirty_dust.withChance(0.5),
+                Item.of("create:experience_nugget").withChance(0.8),
+            ],
+            item,
+        );
+        event.recipes.create.crushing(
+            [
+                output_crushed.withCount(9),
+                output_dirty_dust.withCount(9).withChance(0.5),
+                Item.of("create:experience_nugget", 9).withChance(0.8),
+            ],
+            input_block,
+        );
+        event.recipes.create.crushing(
+            [
+                output_dirty_dust.withChance(0.5),
+                Item.of("create:experience_nugget").withChance(0.1),
+            ],
+            Item.of(`persistent_ores:${material}_cluster`),
+        );
     });
 
     //Tiered create stuff
