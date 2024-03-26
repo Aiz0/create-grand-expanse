@@ -17,6 +17,7 @@ ServerEvents.recipes((event) => {
         { id: "create:mixing/brass_ingot" },
         // using sequence for these.
         { output: "create:copper_casing" },
+        { type: "create:crushing", input: "#forge:raw_materials" },
 
         // Create Metallurgy
         // Remove existing metallurgy smelting recipe
