@@ -5,7 +5,6 @@ global.items = {
     andesite_compound: null,
     rocket_hull: null,
     incomplete_electron_tube: null,
-    high_density_tungsten: null,
     copper_pickaxe: null,
     copper_axe: null,
     copper_shovel: null,
@@ -25,6 +24,8 @@ global.items = {
     dense_tungsten_hull: null,
     fumo_base: null,
     rose_gold_ingot: null,
+    high_density_tungsten: null,
+    high_density_tungsten_sheet: null,
 };
 defineNames(global.items);
 

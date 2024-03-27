@@ -5,6 +5,7 @@ StartupEvents.registry("item", (event) => {
     event.create(global.items.incomplete_electron_tube);
     event.create(global.items.fumo_base);
     event.create(global.items.high_density_tungsten);
+    event.create(global.items.high_density_tungsten_sheet);
     event
         .create(global.items.rose_gold_ingot)
         .texture("tinkers_construct:item/rose_gold_ingot");

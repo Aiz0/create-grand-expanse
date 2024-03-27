@@ -26,7 +26,7 @@ const tierData = [
     //Tier 3
     {
         affix: "_tier_3",
-        casing: "mekanism:steel_casing" /*TODO need steel casing (create)*/,
+        casing: "create:steel_casing" /*TODO need steel casing (create)*/,
         material: "ad_astra:steel_plate" /*TODO need steel sheet instead*/,
         fluid: "createmetallurgy:molten_steel",
         RPM: 512,
@@ -75,10 +75,11 @@ ServerEvents.recipes((event) => {
     ]);
 
     // Dense Tungsten hull
-    event.recipes.create.compacting(global.items.dense_tungsten_hull, [
-        Item.of(global.items.high_density_tungsten, 4),
-    ])
-    .heated();
+    event.recipes.create
+        .compacting(global.items.dense_tungsten_hull, [
+            Item.of(global.items.high_density_tungsten, 4),
+        ])
+        .heated();
 
     // early game obsidian dust recipe
     event.recipes.create.milling(
@@ -292,6 +293,26 @@ ServerEvents.recipes((event) => {
         .transitionalItem(precision_mechanism_inter)
         .loops(5)
         .id("create:sequenced_assembly/precision_mechanism");
+    event.recipes.create
+        .sequenced_assembly(
+            [global.items.high_density_tungsten_sheet],
+            global.items.high_density_tungsten,
+            [
+                event.recipes.createFilling(
+                    global.items.high_density_tungsten,
+                    [global.items.high_density_tungsten, Fluid.lava(100)],
+                ),
+                event.recipes.createPressing(
+                    global.items.high_density_tungsten,
+                    global.items.high_density_tungsten,
+                ),
+                event.recipes.createPressing(
+                    global.items.high_density_tungsten,
+                    global.items.high_density_tungsten,
+                ),
+            ],
+        )
+        .transitionalItem(global.items.high_density_tungsten);
 
     // Bioefuel
     event.replaceInput(
