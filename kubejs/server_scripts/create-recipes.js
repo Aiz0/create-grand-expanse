@@ -293,4 +293,28 @@ ServerEvents.recipes((event) => {
         "create:cinder_flour",
         "create:wheat_flour",
     );
+
+    //Mechanical Crafting
+    event.recipes.create.mechanical_crafting(
+        "persistent_ores:persistent_drill_block",
+        [
+            // prettier-ignore
+            "  S  ",
+            "  S  ",
+            " BBB ",
+            " EAE ",
+            "IPPPI",
+            "I D I",
+            "I   I",
+        ],
+        {
+            S: "create:shaft_tier_2",
+            B: "create:brass_casing",
+            E: "create:electron_tube",
+            A: "createaddition:modular_accumulator",
+            P: "create:precision_mechanism",
+            I: "#forge:plates/invar",
+            D: "create:mechanical_drill",
+        },
+    );
 });
