@@ -312,7 +312,8 @@ ServerEvents.recipes((event) => {
                 ),
             ],
         )
-        .transitionalItem(global.items.high_density_tungsten);
+        .transitionalItem(global.items.high_density_tungsten)
+        .loops(1);
 
     // Bioefuel
     event.replaceInput(
