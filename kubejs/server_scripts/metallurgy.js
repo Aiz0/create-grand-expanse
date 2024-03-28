@@ -55,38 +55,38 @@ ServerEvents.recipes((event) => {
     //alloy mixer only
     alloy(
         "createmetallurgy:molten_brass",
-        ["createmetallurgy:molten_copper",
-        "createmetallurgy:molten_zinc"],
+        ["createmetallurgy:molten_copper", "createmetallurgy:molten_zinc"],
         40,
         "heated",
     );
     alloy(
         global.fluids.molten_invar,
-        [global.fluids.molten_nickel,
-        "createmetallurgy:molten_iron"],
+        [global.fluids.molten_nickel, "createmetallurgy:molten_iron"],
         40,
         "heated",
     );
     alloy(
         global.fluids.molten_constantan,
-        [global.fluids.molten_nickel,
-        "createmetallurgy:molten_copper"],
+        [global.fluids.molten_nickel, "createmetallurgy:molten_copper"],
         40,
         "heated",
     );
     alloy(
         global.fluids.molten_electrum,
-        [global.fluids.molten_silver,
-        "createmetallurgy:molten_gold"],
+        [global.fluids.molten_silver, "createmetallurgy:molten_gold"],
         40,
         "heated",
     );
     alloy(
         global.fluids.molten_dense_tungsten,
-        ["createmetallurgy:molten_tungsten", global.fluids.molten_nickel, "createmetallurgy:molten_iron"],
+        [
+            "createmetallurgy:molten_tungsten",
+            global.fluids.molten_nickel,
+            "createmetallurgy:molten_iron",
+        ],
         60,
         "heated",
-    )
+    );
 
     // Helper Functions
     function melting(inputTag, fluid, fluidAmount, heatRequirement) {
@@ -174,12 +174,10 @@ ServerEvents.recipes((event) => {
     }
 
     function alloy(output, fluids, processingTime, heatRequirement) {
-        
-        let fluidIngredients = [fluids.amount];
-
-        for (let f = 0; f < fluids.length; f++) {
-            fluidIngredients[f] = { fluid: fluids[f], amount: 10 };
-        }
+        const fluidIngredients = fluids.reduce((result, fluid) => {
+            result.push({ fluid: fluid, amount: FluidAmounts.NUGGET });
+            return result;
+        }, []);
 
         event.custom({
             type: "createmetallurgy:alloying",
@@ -188,7 +186,7 @@ ServerEvents.recipes((event) => {
             results: [
                 {
                     fluid: output,
-                    amount: fluidIngredients.length * 10,
+                    amount: FluidAmounts.NUGGET * fluidIngredients.length,
                 },
             ],
             heatRequirement: heatRequirement,
