@@ -21,8 +21,11 @@ global.items = {
     copper_coil_block: null,
     electrolyzer: null,
     sturdy_hull: null,
+    dense_tungsten_hull: null,
     fumo_base: null,
     rose_gold_ingot: null,
+    high_density_tungsten: null,
+    high_density_tungsten_sheet: null,
 };
 defineNames(global.items);
 
@@ -41,6 +44,7 @@ global.fluids = {
     molten_invar: null,
     molten_constantan: null,
     molten_electrum: null,
+    molten_dense_tungsten: null,
 };
 // define names from keys
 defineNames(global.fluids);
@@ -82,6 +86,7 @@ global.config = {
             { name: "invar", fluid: global.fluids.molten_invar },
             { name: "constantan", fluid: global.fluids.molten_constantan },
             { name: "electrum", fluid: global.fluids.molten_electrum },
+            { name: "high_density_tungsten", fluid: global.fluids.molten_dense_tungsten },
         ],
         // types of items that can be melted of above materials
         // nuggets defaults to 9

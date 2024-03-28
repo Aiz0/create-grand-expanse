@@ -61,6 +61,12 @@ file = "kubejs/README.txt"
 file = "kubejs/assets/ad_astra/lang/en_us.json"
 
 [[files]]
+file = "kubejs/assets/ad_astra/textures/item/desh_tank.png"
+
+[[files]]
+file = "kubejs/assets/ad_astra/textures/item/engine_desh.png"
+
+[[files]]
 file = "kubejs/assets/ad_astra/textures/item/engine_steel.png"
 
 [[files]]
@@ -80,6 +86,9 @@ file = "kubejs/assets/ad_astra/textures/item/steel_tank.png"
 
 [[files]]
 file = "kubejs/assets/ad_astra/textures/vehicles/tier_1_rocket.png"
+
+[[files]]
+file = "kubejs/assets/ad_astra/textures/vehicles/tier_2_rocket.png"
 
 [[files]]
 file = "kubejs/assets/create/lang/en_us.json"
@@ -124,6 +133,9 @@ file = "kubejs/assets/grand_expanse/textures/block/copper_coil_block.png"
 file = "kubejs/assets/grand_expanse/textures/block/copper_coil_block.png.mcmeta"
 
 [[files]]
+file = "kubejs/assets/grand_expanse/textures/block/dense_tungsten_hull.png"
+
+[[files]]
 file = "kubejs/assets/grand_expanse/textures/block/diamond_head.png"
 
 [[files]]
@@ -146,6 +158,9 @@ file = "kubejs/assets/grand_expanse/textures/block/electrolyzer/tank.png"
 
 [[files]]
 file = "kubejs/assets/grand_expanse/textures/block/electrolyzer/tank_water.png"
+
+[[files]]
+file = "kubejs/assets/grand_expanse/textures/block/high_density_tungsten_block.png"
 
 [[files]]
 file = "kubejs/assets/grand_expanse/textures/block/sturdy_hull.png"
@@ -185,6 +200,12 @@ file = "kubejs/assets/grand_expanse/textures/item/fumo_base.png"
 
 [[files]]
 file = "kubejs/assets/grand_expanse/textures/item/gear_mold.png"
+
+[[files]]
+file = "kubejs/assets/grand_expanse/textures/item/high_density_tungsten.png"
+
+[[files]]
+file = "kubejs/assets/grand_expanse/textures/item/high_density_tungsten_sheet.png"
 
 [[files]]
 file = "kubejs/assets/grand_expanse/textures/item/incomplete_electron_tube.png"

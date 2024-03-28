@@ -192,7 +192,19 @@ ServerEvents.recipes((event) => {
         E: "thermal:copper_gear",
     });
 
-    // Early Game Ad Astra
+    // Ad Astra Common
+
+    event.shaped("ad_astra:rocket_fin", [" S ", "SSS", "S S"], {
+            S: "create:sturdy_sheet",
+        })
+        .id("ad_astra:recipes/rocket_fin");
+
+    event.shaped(global.items.rocket_hull, ["HSH", "HGH", "HSH"], {
+            H: global.items.sturdy_hull,
+            S: "create:sturdy_sheet",
+            G: "#forge:glass",
+        });
+
     event.replaceInput(
         [
             { output: "ad_astra:launch_pad" },
@@ -202,26 +214,7 @@ ServerEvents.recipes((event) => {
         "create:sturdy_sheet",
     );
 
-    event
-        .shaped("ad_astra:rocket_fin", [" S ", "SSS", "S S"], {
-            S: "create:sturdy_sheet",
-        })
-        .id("ad_astra:recipes/rocket_fin");
-
-    event
-        .shaped("ad_astra:steel_tank", ["SSG", "STP", "SSG"], {
-            S: "create:sturdy_sheet",
-            G: "thermal:bronze_gear",
-            T: "create:fluid_tank",
-            P: "create:mechanical_pump",
-        })
-        .id("ad_astra:recipes/steel_tank");
-
-    event.shaped(global.items.rocket_hull, ["HSH", "HGH", "HSH"], {
-        H: global.items.sturdy_hull,
-        S: "create:sturdy_sheet",
-        G: "#forge:glass",
-    });
+    // Ad Astra Tier 1
 
     event
         .shaped("ad_astra:steel_engine", ["SPS", "SPS", "BVB"], {
@@ -233,14 +226,61 @@ ServerEvents.recipes((event) => {
         .id("ad_astra:recipes/steel_engine");
 
     event
-        .shaped("ad_astra:tier_1_rocket", [" T ", "SHS", "FEF"], {
-            T: "ad_astra:rocket_nose_cone",
-            S: "ad_astra:steel_tank",
+        .shaped("ad_astra:steel_tank", ["SSG", "STP", "SSG"], {
+            S: "create:sturdy_sheet",
+            G: "thermal:bronze_gear",
+            T: "create:fluid_tank",
+            P: "create:mechanical_pump",
+        })
+        .id("ad_astra:recipes/steel_tank");
+
+    event
+        .shaped("ad_astra:tier_1_rocket", [" C ", "THT", "FEF"], {
+            C: "ad_astra:rocket_nose_cone",
+            T: "ad_astra:steel_tank",
             H: global.items.rocket_hull,
             F: "ad_astra:rocket_fin",
             E: "ad_astra:steel_engine",
         })
         .id("ad_astra:nasa_workbench/tier_1_rocket");
+
+    // Ad Astra Tier 2
+
+    event
+        .shaped("ad_astra:desh_engine", ["SPS", "SPS", "BVB"], {
+            S: global.items.high_density_tungsten_sheet,
+            P: "create:fluid_pipe",
+            B: "thermal:constantan_gear",
+            V: "create:smart_fluid_pipe",
+        })
+        .id("ad_astra:recipes/desh_engine");
+    
+    event
+        .shaped("ad_astra:desh_tank", ["SSG", "STP", "SSG"], {
+            S: global.items.high_density_tungsten_sheet,
+            G: "thermal:constantan_gear",
+            T: "create:fluid_tank",
+            P: "create:mechanical_pump",
+        })
+        .id("ad_astra:recipes/desh_tank");
+
+    event.recipes.create.mechanical_crafting("ad_astra:tier_2_rocket", [
+        "  C  ",
+        " HRH ",
+        " HRH ",
+        " HAH ",
+        "HTLTH",
+        "FFEFF"], {
+        C: "ad_astra:rocket_nose_cone",
+        H: global.items.dense_tungsten_hull,
+        R: global.items.rocket_hull,
+        A: "createaddition:modular_accumulator",
+        T: "ad_astra:desh_tank",
+        L: "thermal:fluid_cell_frame",
+        F: "ad_astra:rocket_fin",
+        E: "ad_astra:desh_engine",
+     })
+    .id("ad_astra:nasa_workbench/tier_2_rocket");
 
     // Space Suit
     event
