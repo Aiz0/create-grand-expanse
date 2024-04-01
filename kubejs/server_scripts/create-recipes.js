@@ -131,6 +131,9 @@ ServerEvents.recipes((event) => {
         const output_dirty_dust = AlmostUnified.getPreferredItemForTag(
             `forge:dirty_dusts/${material}`,
         );
+        const output_nugget = AlmostUnified.getPreferredItemForTag(
+            `forge:nuggets/${material}`,
+        );
 
         // Crush for crushed ores and dirty dust
         event.recipes.create.crushing(
@@ -151,7 +154,7 @@ ServerEvents.recipes((event) => {
         );
         event.recipes.create.crushing(
             [
-                output_dirty_dust.withChance(0.5),
+                output_nugget.withCount(6).withChance(0.5),
                 Item.of("create:experience_nugget").withChance(0.1),
             ],
             Item.of(`persistent_ores:${material}_cluster`),
