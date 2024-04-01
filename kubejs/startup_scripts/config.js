@@ -102,6 +102,7 @@ global.config = {
             { tag: "forge:raw_materials/" },
             { tag: "forge:crushed_raw_materials/" },
             { tag: "forge:dusts/" },
+            { tag: "forge:dirty_dusts/", fluidAmount: FluidAmounts.NUGGET },
             { tag: "forge:nuggets/", fluidAmount: FluidAmounts.NUGGET },
             { tag: "forge:tools/", fluidAmount: FluidAmounts.NUGGET },
             {
