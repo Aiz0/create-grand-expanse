@@ -159,6 +159,7 @@ ServerEvents.recipes((event) => {
             ],
             Item.of(`persistent_ores:${material}_cluster`),
         );
+        event.recipes.create.splashing([output_dust], output_dirty_dust);
     });
 
     //Tiered create stuff
