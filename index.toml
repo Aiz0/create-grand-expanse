@@ -708,6 +708,10 @@ file = "mods/mekanism.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/modelfix.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/modernfix.pw.toml"
 metafile = true
 
