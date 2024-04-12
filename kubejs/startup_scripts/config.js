@@ -86,7 +86,10 @@ global.config = {
             { name: "invar", fluid: global.fluids.molten_invar },
             { name: "constantan", fluid: global.fluids.molten_constantan },
             { name: "electrum", fluid: global.fluids.molten_electrum },
-            { name: "high_density_tungsten", fluid: global.fluids.molten_dense_tungsten },
+            {
+                name: "high_density_tungsten",
+                fluid: global.fluids.molten_dense_tungsten,
+            },
         ],
         // types of items that can be melted of above materials
         // nuggets defaults to 9
