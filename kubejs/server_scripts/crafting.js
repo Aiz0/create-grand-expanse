@@ -151,16 +151,16 @@ ServerEvents.recipes((event) => {
 
     // metallurgy
     event
-        .shaped("createmetallurgy:casting_basin", ["A A", "A A", "AAA"], {
+        .shaped("tconstruct:seared_basin", ["A A", "A A", "AAA"], {
             A: "createdeco:cast_iron_ingot",
         })
-        .id("createmetallurgy:casting_basin");
+        .id("tconstruct:smeltery/seared/basin");
     event
-        .shaped("createmetallurgy:casting_table", ["AAA", "B B", "B B"], {
+        .shaped("tconstruct:seared_table", ["AAA", "B B", "B B"], {
             A: "createdeco:cast_iron_sheet",
             B: "createdeco:cast_iron_ingot",
         })
-        .id("createmetallurgy:casting_table");
+        .id("tconstruct:smeltery/seared/table");
 
     event.replaceInput(
         [
