@@ -12,7 +12,7 @@ const tierData = [
         affix: "_tier_1",
         casing: "create:copper_casing",
         material: "create:copper_sheet",
-        fluid: "createmetallurgy:molten_copper",
+        fluid: "tconstruct:molten_copper",
         RPM: 128,
     },
     //Tier 2
@@ -20,7 +20,7 @@ const tierData = [
         affix: "_tier_2",
         casing: "create:brass_casing",
         material: "create:brass_sheet",
-        fluid: "createmetallurgy:molten_brass",
+        fluid: "tconstruct:molten_brass",
         RPM: 256,
     },
     //Tier 3
@@ -28,7 +28,7 @@ const tierData = [
         affix: "_tier_3",
         casing: "create:steel_casing" /*TODO need steel casing (create)*/,
         material: "ad_astra:steel_plate" /*TODO need steel sheet instead*/,
-        fluid: "createmetallurgy:molten_steel",
+        fluid: "tconstruct:molten_steel",
         RPM: 512,
     },
 ];
@@ -118,20 +118,23 @@ ServerEvents.recipes((event) => {
         let upperData = tierData[tier];
         let lowerData = tierData[tier - 1];
 
-        event.recipes.create.filling(kinetics.shaft + upperData.affix, [
+        cast(
+            kinetics.shaft + upperData.affix,
             kinetics.shaft + lowerData.affix,
-            Fluid.of(upperData.fluid, FluidAmounts.INGOT / 2),
-        ]);
-        event.recipes.create.filling(kinetics.cogwheel + upperData.affix, [
+            upperData.fluid,
+            FluidAmounts.INGOT / 2,
+        );
+        cast(
+            kinetics.cogwheel + upperData.affix,
             kinetics.cogwheel + lowerData.affix,
-            Fluid.of(upperData.fluid, FluidAmounts.INGOT),
-        ]);
-        event.recipes.create.filling(
+            upperData.fluid,
+            FluidAmounts.INGOT,
+        );
+        cast(
             kinetics.large_cogwheel + upperData.affix,
-            [
-                kinetics.large_cogwheel + lowerData.affix,
-                Fluid.of(upperData.fluid, FluidAmounts.INGOT * 2),
-            ],
+            kinetics.large_cogwheel + lowerData.affix,
+            upperData.fluid,
+            FluidAmounts.INGOT * 2,
         );
 
         event.shaped(kinetics.gearbox + upperData.affix, ["WKW", "WCW"], {
@@ -148,7 +151,6 @@ ServerEvents.recipes((event) => {
                 C: upperData.casing,
             },
         );
-
         event.shapeless(kinetics.clutch + upperData.affix, [
             kinetics.clutch + lowerData.affix,
             kinetics.shaft + upperData.affix,
@@ -169,6 +171,21 @@ ServerEvents.recipes((event) => {
             kinetics.adjustable_chain_gearshift + upperData.affix,
             "create:electron_tube",
         ]);
+    }
+    function cast(result, input, fluid, amount) {
+        event.custom({
+            type: "tconstruct:casting_table",
+            cast: {
+                item: input,
+            },
+            fluid: {
+                tag: fluid,
+                amount: amount,
+            },
+            result: result,
+            cast_consumed: true,
+            cooling_time: 120,
+        });
     }
 
     // Rolling
