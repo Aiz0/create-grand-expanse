@@ -235,6 +235,21 @@ file = "kubejs/assets/sophisticatedbackpacks/textures/block/diamond_clips.png"
 file = "kubejs/assets/sophisticatedbackpacks/textures/block/gold_clips.png"
 
 [[files]]
+file = "kubejs/assets/tconstruct/lang/en_us.json"
+
+[[files]]
+file = "kubejs/assets/tconstruct/models/block/smeltery/basin.json"
+
+[[files]]
+file = "kubejs/assets/tconstruct/models/block/smeltery/table.json"
+
+[[files]]
+file = "kubejs/assets/tconstruct/textures/block/casting_basin.png"
+
+[[files]]
+file = "kubejs/assets/tconstruct/textures/block/casting_table.png"
+
+[[files]]
 file = "kubejs/assets/tinkers_construct/readme.txt"
 
 [[files]]
@@ -700,6 +715,10 @@ file = "mods/lootr.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/mantle.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/mekanism-generators.pw.toml"
 metafile = true
 
@@ -889,6 +908,10 @@ metafile = true
 
 [[files]]
 file = "mods/thermal-foundation.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/tinkers-construct.pw.toml"
 metafile = true
 
 [[files]]
