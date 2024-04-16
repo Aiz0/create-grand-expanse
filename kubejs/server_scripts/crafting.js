@@ -194,16 +194,17 @@ ServerEvents.recipes((event) => {
 
     // Ad Astra Common
 
-    event.shaped("ad_astra:rocket_fin", [" S ", "SSS", "S S"], {
+    event
+        .shaped("ad_astra:rocket_fin", [" S ", "SSS", "S S"], {
             S: "create:sturdy_sheet",
         })
         .id("ad_astra:recipes/rocket_fin");
 
     event.shaped(global.items.rocket_hull, ["HSH", "HGH", "HSH"], {
-            H: global.items.sturdy_hull,
-            S: "create:sturdy_sheet",
-            G: "#forge:glass",
-        });
+        H: global.items.sturdy_hull,
+        S: "create:sturdy_sheet",
+        G: "#forge:glass",
+    });
 
     event.replaceInput(
         [
@@ -254,7 +255,7 @@ ServerEvents.recipes((event) => {
             V: "create:smart_fluid_pipe",
         })
         .id("ad_astra:recipes/desh_engine");
-    
+
     event
         .shaped("ad_astra:desh_tank", ["SSG", "STP", "SSG"], {
             S: global.items.high_density_tungsten_sheet,
@@ -264,23 +265,31 @@ ServerEvents.recipes((event) => {
         })
         .id("ad_astra:recipes/desh_tank");
 
-    event.recipes.create.mechanical_crafting("ad_astra:tier_2_rocket", [
-        "  C  ",
-        " HRH ",
-        " HRH ",
-        " HAH ",
-        "HTLTH",
-        "FFEFF"], {
-        C: "ad_astra:rocket_nose_cone",
-        H: global.items.dense_tungsten_hull,
-        R: global.items.rocket_hull,
-        A: "createaddition:modular_accumulator",
-        T: "ad_astra:desh_tank",
-        L: "thermal:fluid_cell_frame",
-        F: "ad_astra:rocket_fin",
-        E: "ad_astra:desh_engine",
-     })
-    .id("ad_astra:nasa_workbench/tier_2_rocket");
+    event.recipes.create
+        .mechanical_crafting(
+            "ad_astra:tier_2_rocket",
+            [
+                // prettier-ignore
+
+                "  C  ",
+                " HRH ",
+                " HRH ",
+                " HAH ",
+                "HTLTH",
+                "FFEFF",
+            ],
+            {
+                C: "ad_astra:rocket_nose_cone",
+                H: global.items.dense_tungsten_hull,
+                R: global.items.rocket_hull,
+                A: "createaddition:modular_accumulator",
+                T: "ad_astra:desh_tank",
+                L: "thermal:fluid_cell_frame",
+                F: "ad_astra:rocket_fin",
+                E: "ad_astra:desh_engine",
+            },
+        )
+        .id("ad_astra:nasa_workbench/tier_2_rocket");
 
     // Space Suit
     event

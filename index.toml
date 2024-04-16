@@ -500,10 +500,6 @@ file = "mods/create-mechanical-extruder.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/create-mechanical-spawner.pw.toml"
-metafile = true
-
-[[files]]
 file = "mods/create-metallurgy.pw.toml"
 metafile = true
 
@@ -513,10 +509,6 @@ metafile = true
 
 [[files]]
 file = "mods/create-sifting.pw.toml"
-metafile = true
-
-[[files]]
-file = "mods/create-teleporters.pw.toml"
 metafile = true
 
 [[files]]
@@ -713,6 +705,10 @@ metafile = true
 
 [[files]]
 file = "mods/mekanism.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/modelfix.pw.toml"
 metafile = true
 
 [[files]]
