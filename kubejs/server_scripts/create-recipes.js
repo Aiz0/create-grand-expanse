@@ -200,7 +200,7 @@ ServerEvents.recipes((event) => {
             ),
             event.recipes.createFilling(global.items.incomplete_electron_tube, [
                 global.items.incomplete_electron_tube,
-                Fluid.of(global.fluids.molten_rose_gold, FluidAmounts.INGOT),
+                Fluid.of("tconstruct:molten_rose_gold", FluidAmounts.INGOT),
             ]),
         ])
         .transitionalItem(global.items.incomplete_electron_tube)

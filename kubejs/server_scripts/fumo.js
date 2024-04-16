@@ -15,7 +15,7 @@ ServerEvents.recipes((event) => {
             ]),
             event.recipes.create.filling(inter, [
                 inter,
-                Fluid.of(global.fluids.molten_rose_gold, FluidAmounts.BUCKET),
+                Fluid.of("tconstruct:molten_rose_gold", FluidAmounts.BUCKET),
             ]),
             event.recipes.create.filling(inter, [
                 inter,
