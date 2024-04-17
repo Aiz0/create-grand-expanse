@@ -20,15 +20,6 @@ ServerEvents.recipes((event) => {
         { output: "create:brass_casing" },
         { output: "create:railway_casing" },
 
-        // Create Metallurgy
-        // Remove existing metallurgy smelting recipe
-        // It uses superheated blazeburners and we don't want that
-        { type: "createmetallurgy:melting" },
-        { type: "createmetallurgy:casting_in_basin" },
-        { type: "createmetallurgy:casting_in_table" },
-        { type: "createmetallurgy:alloying" },
-        { output: "#forge:graphite_molds" },
-
         // Create mechanical extruder
         { id: "create_mechanical_extruder:mechanical_extruder" },
         { id: "create_mechanical_extruder:extruding/stone" },
