@@ -515,10 +515,6 @@ file = "mods/create-mechanical-extruder.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/create-metallurgy.pw.toml"
-metafile = true
-
-[[files]]
 file = "mods/create-power-loader.pw.toml"
 metafile = true
 
