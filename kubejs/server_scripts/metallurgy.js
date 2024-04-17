@@ -2,6 +2,16 @@ ServerEvents.recipes((event) => {
     // Alloying
     // early game alloys can be mixed as well
 
+    mix(
+        "tconstruct:molten_rose_gold",
+        "tconstruct:molten_gold",
+        "tconstruct:molten_copper",
+    );
+    mix(
+        "tconstruct:molten_bronze",
+        "tconstruct:molten_tin",
+        "tconstruct:molten_copper",
+    );
     alloy(
         global.fluids.molten_dense_tungsten,
         [
@@ -30,8 +40,7 @@ ServerEvents.recipes((event) => {
         });
     }
 
-    function mixAndAlloy(output, fluid1, fluid2, processingTime) {
-        alloy(output, [fluid1, fluid2], processingTime, "heated");
+    function mix(output, fluid1, fluid2) {
         event.recipes.create
             .mixing(Fluid.of(output, FluidAmounts.NUGGET), [
                 Fluid.of(fluid1, FluidAmounts.NUGGET),
