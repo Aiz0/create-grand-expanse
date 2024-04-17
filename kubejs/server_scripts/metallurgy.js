@@ -21,13 +21,11 @@ ServerEvents.recipes((event) => {
 
         event.custom({
             type: "tconstruct:alloy",
-            input: fluidIngredients,
-            results: [
-                {
-                    fluid: output,
-                    amount: FluidAmounts.NUGGET * fluidIngredients.length,
-                },
-            ],
+            inputs: fluidIngredients,
+            result: {
+                fluid: output,
+                amount: FluidAmounts.NUGGET * fluidIngredients.length,
+            },
             temperature: 700,
         });
     }
