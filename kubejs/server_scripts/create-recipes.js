@@ -64,7 +64,7 @@ ServerEvents.recipes((event) => {
     event.recipes.create
         .compacting("createdeco:cast_iron_ingot", [
             "minecraft:iron_ingot",
-            "createmetallurgy:graphite",
+            "#forge:dusts/coal",
         ])
         .heated()
         .id("minecraft:compacting/cast_iron_ingot");
