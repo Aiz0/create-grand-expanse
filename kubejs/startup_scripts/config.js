@@ -50,32 +50,9 @@ global.config = {
         blasting_nuggets: 6,
     },
     melting: {
-        amount: FluidAmounts.INGOT,
-        heatRequirement: "heated", // Default heat should be heated not blazing.
-        time: 0.4, // time per millibucket
-        minTime: 20, // shortest melting time.
-        // materials that can be melted
-        // Can also have optional heatRequirement
-        // TODO ADD melting time to materials.
         materials: [
             { name: "andesite_alloy", fluid: global.fluids.andesite_mixture },
-            { name: "iron", fluid: "createmetallurgy:molten_iron" },
-            { name: "copper", fluid: "createmetallurgy:molten_copper" },
-            { name: "gold", fluid: "createmetallurgy:molten_gold" },
-            { name: "zinc", fluid: "createmetallurgy:molten_zinc" },
-            { name: "tin", fluid: "tconstruct:molten_tin" },
-            { name: "rose_gold", fluid: "tconstruct:molten_rose_gold" },
-            { name: "steel", fluid: "createmetallurgy:molten_steel" },
-            { name: "tungsten", fluid: "createmetallurgy:molten_tungsten" },
-            { name: "brass", fluid: "createmetallurgy:molten_brass" },
-            { name: "nickel", fluid: "tconstruct:molten_nickel" },
-            { name: "silver", fluid: "tconstruct:molten_silver" },
-            { name: "lead", fluid: "tconstruct:molten_lead" },
-            { name: "bronze", fluid: "tconstruct:molten_bronze" },
             { name: "cast_iron", fluid: global.fluids.molten_cast_iron },
-            { name: "invar", fluid: "tconstruct:molten_invar" },
-            { name: "constantan", fluid: "tconstruct:molten_constantan" },
-            { name: "electrum", fluid: "tconstruct:molten_electrum" },
             {
                 name: "high_density_tungsten",
                 fluid: global.fluids.molten_dense_tungsten,
@@ -104,46 +81,6 @@ global.config = {
                 fluidAmount: FluidAmounts.METAL_BLOCK,
             },
         ],
-    },
-    casting: {
-        table: {
-            ingot: {
-                mold: "createmetallurgy:graphite_ingot_mold",
-                resultTag: "forge:ingots",
-                amount: FluidAmounts.INGOT,
-                time: 80,
-            },
-            sheet: {
-                mold: "createmetallurgy:graphite_plate_mold",
-                resultTag: "forge:plates",
-                amount: FluidAmounts.INGOT,
-                time: 80,
-            },
-            nugget: {
-                mold: "createmetallurgy:graphite_nugget_mold",
-                resultTag: "forge:nuggets",
-                amount: FluidAmounts.NUGGET,
-                time: 20,
-            },
-            tool_part: {
-                mold: global.items.tool_part_mold,
-                resultTag: "forge:tool_parts",
-                amount: FluidAmounts.INGOT * 2,
-                time: 80,
-            },
-            armor_plate: {
-                mold: global.items.armor_plate_mold,
-                resultTag: "forge:armor_plates",
-                amount: FluidAmounts.INGOT * 2,
-                time: 80,
-            },
-            gear: {
-                mold: global.items.gear_mold,
-                resultTag: "forge:gears",
-                amount: FluidAmounts.INGOT * 4,
-                time: 80,
-            },
-        },
     },
     // compressed blocks to keep from create compression
     compressed: ["cobblestone", "andesite"],
