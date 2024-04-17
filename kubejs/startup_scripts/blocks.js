@@ -16,10 +16,10 @@ StartupEvents.registry("block", (event) => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock("minecraft:needs_iron_tool");
+
     event
         .create(global.items.dense_tungsten_hull)
         .soundType("metal")
-        .slipperiness(0.98)
         .hardness(7)
         .resistance(10)
         .requiresTool(true)

@@ -33,7 +33,7 @@ ServerEvents.recipes((event) => {
 
     // Upgrades
     const upgrade_base = "sophisticatedbackpacks:upgrade_base";
-    event.recipes.shaped(upgrade_base, ["SPS", "ICI", "SPS"], {
+    event.recipes.shaped(upgrade_base, ["SIS", "ICI", "SIS"], {
         S: "minecraft:string",
         I: "#forge:plates/iron",
         C: "farmersdelight:canvas",
@@ -45,7 +45,7 @@ ServerEvents.recipes((event) => {
         [" I ", "FBF", " I "],
         {
             B: upgrade_base,
-            P: "create:funnel",
+            F: "create:funnel",
             I: "#forge:plates/iron",
         },
     );
@@ -116,7 +116,7 @@ ServerEvents.recipes((event) => {
     // Restock
     event.recipes.shaped(
         "sophisticatedbackpacks:restock_upgrade",
-        [" I ", "FBF", " I "],
+        [" I ", "PBP", " I "],
         {
             B: upgrade_base,
             P: "minecraft:sticky_piston",
@@ -183,7 +183,7 @@ ServerEvents.recipes((event) => {
     // Tank
     event.recipes.shaped(
         "sophisticatedbackpacks:tank_upgrade",
-        [" P ", "TBT", " P"],
+        [" P ", "TBT", " P "],
         {
             B: upgrade_base,
             T: "create:fluid_tank",

@@ -40,14 +40,14 @@ ServerEvents.recipes((event) => {
     // Alloying
     // early game alloys can be mixed as well
     mixAndAlloy(
-        global.fluids.molten_rose_gold,
+        "tconstruct:molten_rose_gold",
         "createmetallurgy:molten_gold",
         "createmetallurgy:molten_copper",
         40,
     );
     mixAndAlloy(
-        global.fluids.molten_bronze,
-        global.fluids.molten_tin,
+        "tconstruct:molten_bronze",
+        "tconstruct:molten_tin",
         "createmetallurgy:molten_copper",
         40,
     );
@@ -60,20 +60,20 @@ ServerEvents.recipes((event) => {
         "heated",
     );
     alloy(
-        global.fluids.molten_invar,
-        [global.fluids.molten_nickel, "createmetallurgy:molten_iron"],
+        "tconstruct:molten_invar",
+        ["tconstruct:molten_nickel", "createmetallurgy:molten_iron"],
         40,
         "heated",
     );
     alloy(
-        global.fluids.molten_constantan,
-        [global.fluids.molten_nickel, "createmetallurgy:molten_copper"],
+        "tconstruct:molten_constantan",
+        ["tconstruct:molten_nickel", "createmetallurgy:molten_copper"],
         40,
         "heated",
     );
     alloy(
-        global.fluids.molten_electrum,
-        [global.fluids.molten_silver, "createmetallurgy:molten_gold"],
+        "tconstruct:molten_electrum",
+        ["tconstruct:molten_silver", "createmetallurgy:molten_gold"],
         40,
         "heated",
     );
@@ -81,7 +81,7 @@ ServerEvents.recipes((event) => {
         global.fluids.molten_dense_tungsten,
         [
             "createmetallurgy:molten_tungsten",
-            global.fluids.molten_nickel,
+            "tconstruct:molten_nickel",
             "createmetallurgy:molten_iron",
         ],
         60,

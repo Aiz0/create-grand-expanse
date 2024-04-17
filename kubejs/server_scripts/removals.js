@@ -44,7 +44,12 @@ ServerEvents.recipes((event) => {
         { id: "ad_astra:conversion/oxygen_from_water" },
 
         // Thermal
-        { output: "#forge:gears", not: { output: "#forge:gears/copper" } },
+        {
+            output: "#forge:gears",
+            not: {
+                type: "tconstruct:casting_table",
+            },
+        },
         { output: "#forge:ingots", input: "minecraft:fire_charge" },
     ]);
 
