@@ -247,7 +247,7 @@ ServerEvents.recipes((event) => {
         .sequenced_assembly(["create:brass_casing"], brass_casing_inter, [
             event.recipes.create.filling(brass_casing_inter, [
                 brass_casing_inter,
-                Fluid.of("createmetallurgy:molten_brass", FluidAmounts.INGOT),
+                Fluid.of("tconstruct:molten_brass", FluidAmounts.INGOT),
             ]),
             event.recipes.create.pressing(
                 brass_casing_inter,

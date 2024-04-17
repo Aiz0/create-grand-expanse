@@ -5,7 +5,7 @@ ServerEvents.recipes((event) => {
     alloy(
         global.fluids.molten_dense_tungsten,
         [
-            "createmetallurgy:molten_tungsten",
+            "tconstruct:molten_tungsten",
             "tconstruct:molten_nickel",
             "tconstruct:molten_iron",
         ],
