@@ -162,22 +162,6 @@ ServerEvents.recipes((event) => {
         })
         .id("tconstruct:smeltery/seared/table");
 
-    event.replaceInput(
-        [
-            {
-                output: "createmetallurgy:foundry_top",
-            },
-            {
-                output: "createmetallurgy:foundry_basin",
-            },
-            {
-                output: "createmetallurgy:glassed_alloyer_top",
-            },
-        ],
-        "create:andesite_alloy",
-        "createdeco:cast_iron_ingot",
-    );
-
     // Electrolyzer
     event.shaped(global.items.copper_coil_block, ["SSS", "SCS", "SSS"], {
         S: "createaddition:copper_spool",
