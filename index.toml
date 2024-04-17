@@ -103,9 +103,6 @@ file = "kubejs/assets/create/textures/block/deployer.png"
 file = "kubejs/assets/create/textures/item/brass_hand.png"
 
 [[files]]
-file = "kubejs/assets/createmetallurgy/lang/en_us.json"
-
-[[files]]
 file = "kubejs/assets/flopper/textures/blocks/flopper_inside.png"
 
 [[files]]
