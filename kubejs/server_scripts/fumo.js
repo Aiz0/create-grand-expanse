@@ -182,7 +182,7 @@ ServerEvents.recipes((event) => {
             event.recipes.create.deploying(inter, [inter, "#quark:corundum"]),
             event.recipes.create.filling(inter, [
                 inter,
-                Fluid.of("createmetallurgy:molten_gold", FluidAmounts.BUCKET),
+                Fluid.of("tconstruct:molten_gold", FluidAmounts.BUCKET),
             ]),
         ])
         .transitionalItem(inter)
@@ -236,7 +236,7 @@ ServerEvents.recipes((event) => {
             ]),
             event.recipes.create.filling(inter, [
                 inter,
-                Fluid.of("createmetallurgy:molten_gold", FluidAmounts.BUCKET),
+                Fluid.of("tconstruct:molten_gold", FluidAmounts.BUCKET),
             ]),
         ])
         .transitionalItem(inter)
