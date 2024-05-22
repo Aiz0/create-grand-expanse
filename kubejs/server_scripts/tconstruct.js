@@ -19,11 +19,9 @@ ServerEvents.recipes((event) => {
             "tconstruct:molten_nickel",
             "tconstruct:molten_iron",
         ],
-        60,
-        "heated",
     );
 
-    function alloy(output, fluids, processingTime, heatRequirement) {
+    function alloy(output, fluids) {
         const fluidIngredients = fluids.reduce((result, fluid) => {
             result.push({ fluid: fluid, amount: FluidAmounts.NUGGET });
             return result;

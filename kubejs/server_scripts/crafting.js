@@ -113,28 +113,6 @@ ServerEvents.recipes((event) => {
         },
     );
 
-    // Copper tools
-    event.shaped(global.items.copper_pickaxe, ["AAA", " B ", " B "], {
-        A: "#forge:ingots/copper",
-        B: "minecraft:stick",
-    });
-    event.shaped(global.items.copper_axe, ["AA ", "AB ", " B "], {
-        A: "#forge:ingots/copper",
-        B: "minecraft:stick",
-    });
-    event.shaped(global.items.copper_shovel, [" A ", " B ", " B "], {
-        A: "#forge:ingots/copper",
-        B: "minecraft:stick",
-    });
-    event.shaped(global.items.copper_sword, [" A ", " A ", " B "], {
-        A: "#forge:ingots/copper",
-        B: "minecraft:stick",
-    });
-    event.shaped(global.items.copper_hoe, ["AA ", " B ", " B "], {
-        A: "#forge:ingots/copper",
-        B: "minecraft:stick",
-    });
-
     // Create sifter Meshes
     sifterMesh("createsifter:andesite_mesh", "createdeco:andesite_mesh_fence");
     sifterMesh("createsifter:zinc_mesh", "createdeco:zinc_mesh_fence");
@@ -149,7 +127,7 @@ ServerEvents.recipes((event) => {
             .id(mesh);
     }
 
-    // metallurgy
+    // tinkers construct
     event
         .shaped("tconstruct:seared_basin", ["A A", "A A", "AAA"], {
             A: "createdeco:cast_iron_ingot",
@@ -324,28 +302,6 @@ ServerEvents.recipes((event) => {
         ],
         "ad_astra:steel_plate",
         "#forge:plates/copper",
-    );
-    // Tool Parts
-    event.shaped(global.items.copper_tool_part, ["R  ", " I ", "  R"], {
-        R: "#forge:rods/copper",
-        I: "#forge:ingots/copper",
-    });
-    event.shaped(global.items.copper_armor_plate, [" S ", "NNN", " S "], {
-        N: "#forge:nuggets/copper",
-        S: "#forge:plates/copper",
-    });
-
-    // Tool parts for iron tools
-    event.replaceInput(
-        { output: "#forge:tools/iron", not: { output: "minecraft:shears" } },
-        "minecraft:iron_ingot",
-        global.items.iron_tool_part,
-    );
-    // Aromor plates for iron armor
-    event.replaceInput(
-        { output: "#forge:armor/iron" },
-        "minecraft:iron_ingot",
-        global.items.iron_armor_plate,
     );
 
     // oxygen loader
