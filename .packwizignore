@@ -9,3 +9,9 @@
 /kubejs/probe
 # Aiz reload script
 /reload.sh
+# Star's scripts
+kubejs/.idea
+refresh.bat
+reload.bat
+serve.bat
+update-fork.bat
