@@ -1,13 +1,13 @@
 name = "Redstone Pen"
-filename = "redstonepen-1.19.2-forge-1.2.19.jar"
+filename = "redstonepen-1.19.2-forge-1.2.32.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/DwE83ioX/versions/N6jVCv4R/redstonepen-1.19.2-forge-1.2.19.jar"
+url = "https://cdn.modrinth.com/data/DwE83ioX/versions/hxRxVDub/redstonepen-1.19.2-forge-1.2.32.jar"
 hash-format = "sha1"
-hash = "3de1dbe3d1db8049af3c15a92f79216ff15077d7"
+hash = "0816517f71eda0dd4cd0d8e86ed5b26d37f3e27b"
 
 [update]
 [update.modrinth]
 mod-id = "DwE83ioX"
-version = "N6jVCv4R"
+version = "hxRxVDub"

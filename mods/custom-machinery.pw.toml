@@ -1,13 +1,13 @@
 name = "Custom Machinery"
-filename = "CustomMachinery-forge-1.19.2-0.9.12.jar"
+filename = "CustomMachinery-forge-1.19.2-0.9.21.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/OrB5XFtI/versions/KGTV90x1/CustomMachinery-forge-1.19.2-0.9.12.jar"
+url = "https://cdn.modrinth.com/data/OrB5XFtI/versions/PTxtHIuZ/CustomMachinery-forge-1.19.2-0.9.21.jar"
 hash-format = "sha1"
-hash = "6188ffa0c7d28a26876fd48dd076aa1df636832b"
+hash = "aceffcde8a263338cb2acafb7ca35264a41835bf"
 
 [update]
 [update.modrinth]
 mod-id = "OrB5XFtI"
-version = "KGTV90x1"
+version = "PTxtHIuZ"

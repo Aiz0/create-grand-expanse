@@ -64,6 +64,17 @@ global.config = {
     compressed: ["cobblestone", "andesite"],
 };
 
+global.casts = {
+    ingot: "ingot",
+    nugget: "nugget",
+    gem: "gem",
+    rod: "rod",
+    plate: "plate",
+    gear: "gear",
+    coin: "coin",
+    wire: "wire",
+}
+
 function defineNames(object) {
     Object.keys(object).forEach((key) => {
         object[key] = `${global.packName}:${key}`;

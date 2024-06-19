@@ -12,14 +12,16 @@ ServerEvents.recipes((event) => {
         "tconstruct:molten_tin",
         "tconstruct:molten_copper",
     );
-    alloy(
-        global.fluids.molten_dense_tungsten,
-        [
-            "tconstruct:molten_tungsten",
-            "tconstruct:molten_nickel",
-            "tconstruct:molten_iron",
-        ],
-    );
+    
+    //Andesite
+    melt(global.items.andesite_compound,
+        global.fluids.andesite_mixture, FluidAmounts.INGOT,
+        20, 500);
+    melt("create:andesite_alloy",
+        global.fluids.andesite_mixture, FluidAmounts.INGOT, 
+        20, 500);
+    cast_type(global.fluids.andesite_mixture, FluidAmounts.INGOT, 
+        "create:andesite_alloy", global.casts.ingot, 10);
 
     function alloy(output, fluids) {
         const fluidIngredients = fluids.reduce((result, fluid) => {
@@ -38,24 +40,56 @@ ServerEvents.recipes((event) => {
         });
     }
     
-    function cast(fluid, amount, output, catalyst, cooling_time, consume, basin) {
+    function cast(fluid, amount, output, catalyst, cooling_ticks, consume, basin) {
         event.custom({
             type: "tconstruct:casting_" + basin ? "basin" : "table",
             cast: { item: catalyst },
             cast_consumed: consume,
-            cooling_time: cooling_time,
+            cooling_time: cooling_ticks,
             fluid: { amount: amount, tag: fluid },
             result: { tag: output },
-        })
+        });
     }
 
-    function pour(fluid, amount, output, cooling_time, consume, basin) {
+    function cast_type(fluid, amount, output, type, cooling_ticks) {
+        event.custom({
+            type: "tconstruct:casting_table",
+            cast: { tag: "tconstruct:casts/multi_use/" + type },
+            cast_consumed: false,
+            cooling_time: cooling_ticks,
+            fluid: { amount: amount, tag: fluid },
+            result: { tag: output },
+        });
+        event.custom({
+            type: "tconstruct:casting_table",
+            cast: { tag: "tconstruct:casts/single_use/" + type },
+            cast_consumed: true,
+            cooling_time: cooling_ticks,
+            fluid: { amount: amount, tag: fluid },
+            result: { tag: output },
+        });
+    }
+
+    function pour(fluid, amount, output, cooling_ticks, consume, basin) {
         event.custom({
             type: "tconstruct:casting_" + basin ? "basin" : "table",
             cast_consumed: consume,
-            cooling_time: cooling_time,
+            cooling_time: cooling_ticks,
             fluid: { amount: amount, tag: fluid },
             result: { tag: output },
+        });
+    }
+    
+    //temperature guide: 
+    // lava = 1000°C
+    // blazing blood = 1500°C
+    function melt(item, output, amount, ticks, temperature) {
+        event.custom({
+            type: "tconstruct:melting",
+            ingredient: { item: item },
+            result: { amount: amount, fluid: output },
+            temperature: temperature,
+            time: ticks
         })
     }
 

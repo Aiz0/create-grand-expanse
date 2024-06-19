@@ -1,13 +1,13 @@
 name = "Suggestion Tweaker"
-filename = "suggestion-tweaker-1.19.1-1.5.1-forge.jar"
+filename = "suggestion-tweaker-1.19.1-1.5.2-forge.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/MBLj38R0/versions/qq5DMRU2/suggestion-tweaker-1.19.1-1.5.1-forge.jar"
+url = "https://cdn.modrinth.com/data/MBLj38R0/versions/A4Yuj9M3/suggestion-tweaker-1.19.1-1.5.2-forge.jar"
 hash-format = "sha1"
-hash = "4ffcdb600e32cdf933fb6c86eb6a1d42cf569a98"
+hash = "82dd4f5b5175f1d71a65267bc64e97a60ec4fe0b"
 
 [update]
 [update.modrinth]
 mod-id = "MBLj38R0"
-version = "qq5DMRU2"
+version = "A4Yuj9M3"
