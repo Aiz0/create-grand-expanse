@@ -211,7 +211,7 @@ ServerEvents.recipes((event) => {
 
     event
         .shaped("ad_astra:desh_engine", ["SPS", "SPS", "BVB"], {
-            S: global.items.high_density_tungsten_sheet,
+            S: global.items.low_density_structure,
             P: "create:fluid_pipe",
             B: "thermal:constantan_gear",
             V: "create:smart_fluid_pipe",
@@ -220,7 +220,7 @@ ServerEvents.recipes((event) => {
 
     event
         .shaped("ad_astra:desh_tank", ["SSG", "STP", "SSG"], {
-            S: global.items.high_density_tungsten_sheet,
+            S: global.items.low_density_structure,
             G: "thermal:constantan_gear",
             T: "create:fluid_tank",
             P: "create:mechanical_pump",
@@ -242,7 +242,7 @@ ServerEvents.recipes((event) => {
             ],
             {
                 C: "ad_astra:rocket_nose_cone",
-                H: global.items.dense_tungsten_hull,
+                H: global.items.low_density_structure,
                 R: global.items.rocket_hull,
                 A: "createaddition:modular_accumulator",
                 T: "ad_astra:desh_tank",

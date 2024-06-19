@@ -9,10 +9,8 @@ global.items = {
     copper_coil_block: null,
     electrolyzer: null,
     sturdy_hull: null,
-    dense_tungsten_hull: null,
     fumo_base: null,
-    high_density_tungsten: null,
-    high_density_tungsten_sheet: null,
+    low_density_structure: null,
 };
 defineNames(global.items);
 
@@ -21,7 +19,6 @@ defineNames(global.items);
 global.fluids = {
     andesite_mixture: null,
     molten_cast_iron: null,
-    molten_dense_tungsten: null,
 };
 // define names from keys
 defineNames(global.fluids);
@@ -40,10 +37,6 @@ global.config = {
         materials: [
             { name: "andesite_alloy", fluid: global.fluids.andesite_mixture },
             { name: "cast_iron", fluid: global.fluids.molten_cast_iron },
-            {
-                name: "high_density_tungsten",
-                fluid: global.fluids.molten_dense_tungsten,
-            },
         ],
         // types of items that can be melted of above materials
         // nuggets defaults to 9
@@ -51,8 +44,6 @@ global.config = {
             { tag: "forge:ingots/" },
             { tag: "forge:plates/" },
             { tag: "forge:gears/" },
-            { tag: "forge:tool_parts/" },
-            { tag: "forge:armor_plates/" },
             { tag: "forge:raw_materials/" },
             { tag: "forge:crushed_raw_materials/" },
             { tag: "forge:dusts/" },

@@ -74,13 +74,6 @@ ServerEvents.recipes((event) => {
         Item.of("create:sturdy_sheet", 4),
     ]);
 
-    // Dense Tungsten hull
-    event.recipes.create
-        .compacting(Item.of(global.items.dense_tungsten_hull), [
-            Item.of(global.items.high_density_tungsten, 4),
-        ])
-        .heated();
-
     // early game obsidian dust recipe
     event.recipes.create.milling(
         ["create:powdered_obsidian"],
@@ -310,27 +303,6 @@ ServerEvents.recipes((event) => {
         .transitionalItem(precision_mechanism_inter)
         .loops(5)
         .id("create:sequenced_assembly/precision_mechanism");
-    event.recipes.create
-        .sequenced_assembly(
-            [global.items.high_density_tungsten_sheet],
-            global.items.high_density_tungsten,
-            [
-                event.recipes.createFilling(
-                    global.items.high_density_tungsten,
-                    [global.items.high_density_tungsten, Fluid.lava(100)],
-                ),
-                event.recipes.createPressing(
-                    global.items.high_density_tungsten,
-                    global.items.high_density_tungsten,
-                ),
-                event.recipes.createPressing(
-                    global.items.high_density_tungsten,
-                    global.items.high_density_tungsten,
-                ),
-            ],
-        )
-        .transitionalItem(global.items.high_density_tungsten)
-        .loops(1);
 
     // Bioefuel
     event.replaceInput(
