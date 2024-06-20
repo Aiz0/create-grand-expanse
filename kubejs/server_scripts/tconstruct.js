@@ -34,7 +34,7 @@ ServerEvents.recipes((event) => {
             inputs: fluidIngredients,
             result: {
                 fluid: output,
-                amount: FluidAmounts.NUGGET * fluidIngredients.length,
+                amount: FluidAmounts.INGOT * fluidIngredients.length,
             },
             temperature: 700,
         });
@@ -46,8 +46,8 @@ ServerEvents.recipes((event) => {
             cast: { item: catalyst },
             cast_consumed: consume,
             cooling_time: cooling_ticks,
-            fluid: { amount: amount, tag: fluid },
-            result: { tag: output },
+            fluid: { amount: amount, fluid: fluid },
+            result: output,
         });
     }
 
@@ -57,16 +57,16 @@ ServerEvents.recipes((event) => {
             cast: { tag: "tconstruct:casts/multi_use/" + type },
             cast_consumed: false,
             cooling_time: cooling_ticks,
-            fluid: { amount: amount, tag: fluid },
-            result: { tag: output },
+            fluid: { amount: amount, fluid: fluid },
+            result: output,
         });
         event.custom({
             type: "tconstruct:casting_table",
             cast: { tag: "tconstruct:casts/single_use/" + type },
             cast_consumed: true,
             cooling_time: cooling_ticks,
-            fluid: { amount: amount, tag: fluid },
-            result: { tag: output },
+            fluid: { amount: amount, fluid: fluid },
+            result: output,
         });
     }
 
@@ -75,8 +75,8 @@ ServerEvents.recipes((event) => {
             type: "tconstruct:casting_" + basin ? "basin" : "table",
             cast_consumed: consume,
             cooling_time: cooling_ticks,
-            fluid: { amount: amount, tag: fluid },
-            result: { tag: output },
+            fluid: { amount: amount, fluid: fluid },
+            result: output,
         });
     }
     
