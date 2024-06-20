@@ -4,13 +4,11 @@ ServerEvents.recipes((event) => {
 
     mix(
         "tconstruct:molten_rose_gold",
-        "tconstruct:molten_gold",
-        "tconstruct:molten_copper",
+        ["tconstruct:molten_gold", "tconstruct:molten_copper"]
     );
     mix(
         "tconstruct:molten_bronze",
-        "tconstruct:molten_tin",
-        "tconstruct:molten_copper",
+        ["tconstruct:molten_tin", "tconstruct:molten_copper"]
     );
     
     //Andesite
@@ -93,12 +91,13 @@ ServerEvents.recipes((event) => {
         })
     }
 
-    function mix(output, fluid1, fluid2) {
+    function mix(output, ingredients) {
+        let ingMix = [];
+        ingredients.forEach(i => {
+            ingMix.push({ fluid: i, amount : 10 });
+        })
         event.recipes.create
-            .mixing(Fluid.of(output, FluidAmounts.NUGGET), [
-                Fluid.of(fluid1, FluidAmounts.NUGGET),
-                Fluid.of(fluid2, FluidAmounts.NUGGET),
-            ])
+            .mixing(Fluid.of(output, FluidAmounts.NUGGET), ingMix)
             .heated();
     }
 });
