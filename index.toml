@@ -55,6 +55,39 @@ file = "config/zume.json5"
 file = "defaultconfigs/create-server.toml"
 
 [[files]]
+file = "kubejs/.vscode/fluid-attributes.json"
+
+[[files]]
+file = "kubejs/.vscode/item-attributes.json"
+
+[[files]]
+file = "kubejs/.vscode/item-tag-attributes.json"
+
+[[files]]
+file = "kubejs/.vscode/lang-keys.json"
+
+[[files]]
+file = "kubejs/.vscode/probe.class-definitions.json"
+
+[[files]]
+file = "kubejs/.vscode/probe.code-snippets"
+
+[[files]]
+file = "kubejs/.vscode/probe.doc-schema.json"
+
+[[files]]
+file = "kubejs/.vscode/probe.lang-schema.json"
+
+[[files]]
+file = "kubejs/.vscode/probe.lang_key-definitions.json"
+
+[[files]]
+file = "kubejs/.vscode/probe.registry-definitions.json"
+
+[[files]]
+file = "kubejs/.vscode/settings.json"
+
+[[files]]
 file = "kubejs/README.txt"
 
 [[files]]
@@ -103,9 +136,6 @@ file = "kubejs/assets/create/textures/block/deployer.png"
 file = "kubejs/assets/create/textures/item/brass_hand.png"
 
 [[files]]
-file = "kubejs/assets/createmetallurgy/lang/en_us.json"
-
-[[files]]
 file = "kubejs/assets/flopper/textures/blocks/flopper_inside.png"
 
 [[files]]
@@ -133,9 +163,6 @@ file = "kubejs/assets/grand_expanse/textures/block/copper_coil_block.png"
 file = "kubejs/assets/grand_expanse/textures/block/copper_coil_block.png.mcmeta"
 
 [[files]]
-file = "kubejs/assets/grand_expanse/textures/block/dense_tungsten_hull.png"
-
-[[files]]
 file = "kubejs/assets/grand_expanse/textures/block/diamond_head.png"
 
 [[files]]
@@ -158,9 +185,6 @@ file = "kubejs/assets/grand_expanse/textures/block/electrolyzer/tank.png"
 
 [[files]]
 file = "kubejs/assets/grand_expanse/textures/block/electrolyzer/tank_water.png"
-
-[[files]]
-file = "kubejs/assets/grand_expanse/textures/block/high_density_tungsten_block.png"
 
 [[files]]
 file = "kubejs/assets/grand_expanse/textures/block/sturdy_hull.png"
@@ -200,12 +224,6 @@ file = "kubejs/assets/grand_expanse/textures/item/fumo_base.png"
 
 [[files]]
 file = "kubejs/assets/grand_expanse/textures/item/gear_mold.png"
-
-[[files]]
-file = "kubejs/assets/grand_expanse/textures/item/high_density_tungsten.png"
-
-[[files]]
-file = "kubejs/assets/grand_expanse/textures/item/high_density_tungsten_sheet.png"
 
 [[files]]
 file = "kubejs/assets/grand_expanse/textures/item/incomplete_electron_tube.png"
@@ -394,9 +412,6 @@ file = "kubejs/server_scripts/furnace.js"
 file = "kubejs/server_scripts/item-tags.js"
 
 [[files]]
-file = "kubejs/server_scripts/metallurgy.js"
-
-[[files]]
 file = "kubejs/server_scripts/removals.js"
 
 [[files]]
@@ -404,6 +419,9 @@ file = "kubejs/server_scripts/server.js"
 
 [[files]]
 file = "kubejs/server_scripts/sifter.js"
+
+[[files]]
+file = "kubejs/server_scripts/tconstruct.js"
 
 [[files]]
 file = "kubejs/startup_scripts/blocks.js"
@@ -419,9 +437,6 @@ file = "kubejs/startup_scripts/item-events.js"
 
 [[files]]
 file = "kubejs/startup_scripts/items.js"
-
-[[files]]
-file = "kubejs/startup_scripts/tool-tiers.js"
 
 [[files]]
 file = "kubejs/startup_scripts/world-gen.js"
@@ -512,10 +527,6 @@ metafile = true
 
 [[files]]
 file = "mods/create-mechanical-extruder.pw.toml"
-metafile = true
-
-[[files]]
-file = "mods/create-metallurgy.pw.toml"
 metafile = true
 
 [[files]]

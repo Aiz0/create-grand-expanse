@@ -64,7 +64,7 @@ ServerEvents.recipes((event) => {
     event.recipes.create
         .compacting("createdeco:cast_iron_ingot", [
             "minecraft:iron_ingot",
-            "createmetallurgy:graphite",
+            "#forge:dusts/coal",
         ])
         .heated()
         .id("minecraft:compacting/cast_iron_ingot");
@@ -73,13 +73,6 @@ ServerEvents.recipes((event) => {
     event.recipes.create.compacting(global.items.sturdy_hull, [
         Item.of("create:sturdy_sheet", 4),
     ]);
-
-    // Dense Tungsten hull
-    event.recipes.create
-        .compacting(Item.of(global.items.dense_tungsten_hull), [
-            Item.of(global.items.high_density_tungsten, 4),
-        ])
-        .heated();
 
     // early game obsidian dust recipe
     event.recipes.create.milling(
@@ -247,7 +240,7 @@ ServerEvents.recipes((event) => {
         .sequenced_assembly(["create:brass_casing"], brass_casing_inter, [
             event.recipes.create.filling(brass_casing_inter, [
                 brass_casing_inter,
-                Fluid.of("createmetallurgy:molten_brass", FluidAmounts.INGOT),
+                Fluid.of("tconstruct:molten_brass", FluidAmounts.INGOT),
             ]),
             event.recipes.create.pressing(
                 brass_casing_inter,
@@ -310,27 +303,6 @@ ServerEvents.recipes((event) => {
         .transitionalItem(precision_mechanism_inter)
         .loops(5)
         .id("create:sequenced_assembly/precision_mechanism");
-    event.recipes.create
-        .sequenced_assembly(
-            [global.items.high_density_tungsten_sheet],
-            global.items.high_density_tungsten,
-            [
-                event.recipes.createFilling(
-                    global.items.high_density_tungsten,
-                    [global.items.high_density_tungsten, Fluid.lava(100)],
-                ),
-                event.recipes.createPressing(
-                    global.items.high_density_tungsten,
-                    global.items.high_density_tungsten,
-                ),
-                event.recipes.createPressing(
-                    global.items.high_density_tungsten,
-                    global.items.high_density_tungsten,
-                ),
-            ],
-        )
-        .transitionalItem(global.items.high_density_tungsten)
-        .loops(1);
 
     // Bioefuel
     event.replaceInput(

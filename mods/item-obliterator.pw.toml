@@ -1,13 +1,13 @@
 name = "Item Obliterator"
-filename = "Item_Obliterator-FORGE-MC1.19.2-1.7.0.jar"
+filename = "Item-Obliterator-Forge-1.19.2-2.2.1.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/3ESR84kR/versions/3Da2NymJ/Item_Obliterator-FORGE-MC1.19.2-1.7.0.jar"
+url = "https://cdn.modrinth.com/data/3ESR84kR/versions/7wB98NiB/Item-Obliterator-Forge-1.19.2-2.2.1.jar"
 hash-format = "sha1"
-hash = "ff88076d5bcf40bad7a1bd8d1429c4f8f79be93f"
+hash = "afb3589590be38f112193de3019364d283772f50"
 
 [update]
 [update.modrinth]
 mod-id = "3ESR84kR"
-version = "3Da2NymJ"
+version = "7wB98NiB"

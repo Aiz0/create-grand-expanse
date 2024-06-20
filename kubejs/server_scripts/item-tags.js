@@ -10,21 +10,6 @@ ServerEvents.tags("item", (event) => {
     event.add("forge:nuggets", "createdeco:cast_iron_nugget");
     event.add("forge:plates", "createdeco:cast_iron_sheet");
 
-    // Fix Wolframite/Tungsten Tags
-    //TODO clean this up... when more stuff like this needs to be done.
-    event.add(
-        "forge:raw_materials/tungsten",
-        "createmetallurgy:raw_wolframite",
-    );
-    event.add(
-        "forge:crushed_raw_materials/tungsten",
-        "createmetallurgy:crushed_raw_wolframite",
-    );
-    event.add(
-        "forge:crushed_raw_materials/tungsten",
-        "createmetallurgy:crushed_raw_wolframite",
-    );
-
     // rosin is a alternative to slimeballs
     // not a replacement for the block though.
     event.add("forge:slimeballs", "thermal:rosin");
@@ -42,7 +27,11 @@ ServerEvents.tags("item", (event) => {
 
     forgeCategory(global.items.bronze_rod, "rods", "bronze");
     forgeCategory(global.items.rose_gold_ingot, "ingots", "rose_gold");
-    forgeCategory(global.items.high_density_tungsten, "ingots", "high_density_tungsten")
+    forgeCategory(
+        global.items.high_density_tungsten,
+        "ingots",
+        "high_density_tungsten",
+    );
 
     // Create crushed raw materials
     event
@@ -55,23 +44,6 @@ ServerEvents.tags("item", (event) => {
         .get("mekanism:dirty_dusts")
         .getObjectIds()
         .forEach((item) => forgeCategory(item, "dirty_dusts"));
-
-    // Metallurgy dirty dusts
-    Ingredient.of(/^createmetallurgy:dirty/).itemIds.forEach((item) => {
-        let material = item.split("_").slice(-2).reverse().pop();
-        if (material === "wolframite") {
-            material = "tungsten";
-        }
-        forgeCategory(item, "dirty_dusts", material);
-    });
-    // Get all metallurgy dusts that are non dirty and fix their tags
-    Ingredient.of(/^createmetallurgy:[^_]+_dust/).itemIds.forEach((item) => {
-        let material = item.split("_")[0].split(":").pop();
-        if (material === "wolframite") {
-            material = "tungsten";
-        }
-        forgeCategory(item, "dusts", material);
-    });
 
     function forgeCategory(item, category, material) {
         material =
