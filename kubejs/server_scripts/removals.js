@@ -20,15 +20,6 @@ ServerEvents.recipes((event) => {
         { output: "create:brass_casing" },
         { output: "create:railway_casing" },
 
-        // Create Metallurgy
-        // Remove existing metallurgy smelting recipe
-        // It uses superheated blazeburners and we don't want that
-        { type: "createmetallurgy:melting" },
-        { type: "createmetallurgy:casting_in_basin" },
-        { type: "createmetallurgy:casting_in_table" },
-        { type: "createmetallurgy:alloying" },
-        { output: "#forge:graphite_molds" },
-
         // Create mechanical extruder
         { id: "create_mechanical_extruder:mechanical_extruder" },
         { id: "create_mechanical_extruder:extruding/stone" },
@@ -44,7 +35,12 @@ ServerEvents.recipes((event) => {
         { id: "ad_astra:conversion/oxygen_from_water" },
 
         // Thermal
-        { output: "#forge:gears", not: { output: "#forge:gears/copper" } },
+        {
+            output: "#forge:gears",
+            not: {
+                type: "tconstruct:casting_table",
+            },
+        },
         { output: "#forge:ingots", input: "minecraft:fire_charge" },
     ]);
 

@@ -210,7 +210,7 @@ ServerEvents.recipes((event) => {
     function FillBrass(output, input) {
         event.recipes.create.filling(output, [
             input,
-            Fluid.of("createmetallurgy:molten_brass", FluidAmounts.INGOT * 5),
+            Fluid.of("tconstruct:molten_brass", FluidAmounts.INGOT * 5),
         ]);
     }
 });

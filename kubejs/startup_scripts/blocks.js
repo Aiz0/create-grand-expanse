@@ -17,14 +17,6 @@ StartupEvents.registry("block", (event) => {
         .tagBlock("mineable/pickaxe")
         .tagBlock("minecraft:needs_iron_tool");
 
-    event
-        .create(global.items.dense_tungsten_hull)
-        .soundType("metal")
-        .hardness(7)
-        .resistance(10)
-        .requiresTool(true)
-        .tagBlock("mineable/pickaxe")
-        .tagBlock("minecraft:needs_iron_tool");
     // Electorlyzer is a custom machinery block.
     event.create(global.items.electrolyzer, "custommachinery");
 });

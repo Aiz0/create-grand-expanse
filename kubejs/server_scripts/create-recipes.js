@@ -12,7 +12,7 @@ const tierData = [
         affix: "_tier_1",
         casing: "create:copper_casing",
         material: "create:copper_sheet",
-        fluid: "createmetallurgy:molten_copper",
+        fluid: "tconstruct:molten_copper",
         RPM: 128,
     },
     //Tier 2
@@ -20,7 +20,7 @@ const tierData = [
         affix: "_tier_2",
         casing: "create:brass_casing",
         material: "create:brass_sheet",
-        fluid: "createmetallurgy:molten_brass",
+        fluid: "tconstruct:molten_brass",
         RPM: 256,
     },
     //Tier 3
@@ -28,7 +28,7 @@ const tierData = [
         affix: "_tier_3",
         casing: "create:steel_casing" /*TODO need steel casing (create)*/,
         material: "ad_astra:steel_plate" /*TODO need steel sheet instead*/,
-        fluid: "createmetallurgy:molten_steel",
+        fluid: "tconstruct:molten_steel",
         RPM: 512,
     },
 ];
@@ -64,7 +64,7 @@ ServerEvents.recipes((event) => {
     event.recipes.create
         .compacting("createdeco:cast_iron_ingot", [
             "minecraft:iron_ingot",
-            "createmetallurgy:graphite",
+            "#forge:dusts/coal",
         ])
         .heated()
         .id("minecraft:compacting/cast_iron_ingot");
@@ -73,13 +73,6 @@ ServerEvents.recipes((event) => {
     event.recipes.create.compacting(global.items.sturdy_hull, [
         Item.of("create:sturdy_sheet", 4),
     ]);
-
-    // Dense Tungsten hull
-    event.recipes.create
-        .compacting(Item.of(global.items.dense_tungsten_hull), [
-            Item.of(global.items.high_density_tungsten, 4),
-        ])
-        .heated();
 
     // early game obsidian dust recipe
     event.recipes.create.milling(
@@ -118,20 +111,23 @@ ServerEvents.recipes((event) => {
         let upperData = tierData[tier];
         let lowerData = tierData[tier - 1];
 
-        event.recipes.create.filling(kinetics.shaft + upperData.affix, [
+        cast(
+            kinetics.shaft + upperData.affix,
             kinetics.shaft + lowerData.affix,
-            Fluid.of(upperData.fluid, FluidAmounts.INGOT / 2),
-        ]);
-        event.recipes.create.filling(kinetics.cogwheel + upperData.affix, [
+            upperData.fluid,
+            FluidAmounts.INGOT / 2,
+        );
+        cast(
+            kinetics.cogwheel + upperData.affix,
             kinetics.cogwheel + lowerData.affix,
-            Fluid.of(upperData.fluid, FluidAmounts.INGOT),
-        ]);
-        event.recipes.create.filling(
+            upperData.fluid,
+            FluidAmounts.INGOT,
+        );
+        cast(
             kinetics.large_cogwheel + upperData.affix,
-            [
-                kinetics.large_cogwheel + lowerData.affix,
-                Fluid.of(upperData.fluid, FluidAmounts.INGOT * 2),
-            ],
+            kinetics.large_cogwheel + lowerData.affix,
+            upperData.fluid,
+            FluidAmounts.INGOT * 2,
         );
 
         event.shaped(kinetics.gearbox + upperData.affix, ["WKW", "WCW"], {
@@ -148,7 +144,6 @@ ServerEvents.recipes((event) => {
                 C: upperData.casing,
             },
         );
-
         event.shapeless(kinetics.clutch + upperData.affix, [
             kinetics.clutch + lowerData.affix,
             kinetics.shaft + upperData.affix,
@@ -169,6 +164,21 @@ ServerEvents.recipes((event) => {
             kinetics.adjustable_chain_gearshift + upperData.affix,
             "create:electron_tube",
         ]);
+    }
+    function cast(result, input, fluid, amount) {
+        event.custom({
+            type: "tconstruct:casting_table",
+            cast: {
+                item: input,
+            },
+            fluid: {
+                tag: fluid,
+                amount: amount,
+            },
+            result: result,
+            cast_consumed: true,
+            cooling_time: 120,
+        });
     }
 
     // Rolling
@@ -200,7 +210,7 @@ ServerEvents.recipes((event) => {
             ),
             event.recipes.createFilling(global.items.incomplete_electron_tube, [
                 global.items.incomplete_electron_tube,
-                Fluid.of(global.fluids.molten_rose_gold, FluidAmounts.INGOT),
+                Fluid.of("tconstruct:molten_rose_gold", FluidAmounts.INGOT),
             ]),
         ])
         .transitionalItem(global.items.incomplete_electron_tube)
@@ -230,7 +240,7 @@ ServerEvents.recipes((event) => {
         .sequenced_assembly(["create:brass_casing"], brass_casing_inter, [
             event.recipes.create.filling(brass_casing_inter, [
                 brass_casing_inter,
-                Fluid.of("createmetallurgy:molten_brass", FluidAmounts.INGOT),
+                Fluid.of("tconstruct:molten_brass", FluidAmounts.INGOT),
             ]),
             event.recipes.create.pressing(
                 brass_casing_inter,
@@ -293,27 +303,6 @@ ServerEvents.recipes((event) => {
         .transitionalItem(precision_mechanism_inter)
         .loops(5)
         .id("create:sequenced_assembly/precision_mechanism");
-    event.recipes.create
-        .sequenced_assembly(
-            [global.items.high_density_tungsten_sheet],
-            global.items.high_density_tungsten,
-            [
-                event.recipes.createFilling(
-                    global.items.high_density_tungsten,
-                    [global.items.high_density_tungsten, Fluid.lava(100)],
-                ),
-                event.recipes.createPressing(
-                    global.items.high_density_tungsten,
-                    global.items.high_density_tungsten,
-                ),
-                event.recipes.createPressing(
-                    global.items.high_density_tungsten,
-                    global.items.high_density_tungsten,
-                ),
-            ],
-        )
-        .transitionalItem(global.items.high_density_tungsten)
-        .loops(1);
 
     // Bioefuel
     event.replaceInput(

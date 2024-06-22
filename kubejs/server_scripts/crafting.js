@@ -113,28 +113,6 @@ ServerEvents.recipes((event) => {
         },
     );
 
-    // Copper tools
-    event.shaped(global.items.copper_pickaxe, ["AAA", " B ", " B "], {
-        A: "#forge:ingots/copper",
-        B: "minecraft:stick",
-    });
-    event.shaped(global.items.copper_axe, ["AA ", "AB ", " B "], {
-        A: "#forge:ingots/copper",
-        B: "minecraft:stick",
-    });
-    event.shaped(global.items.copper_shovel, [" A ", " B ", " B "], {
-        A: "#forge:ingots/copper",
-        B: "minecraft:stick",
-    });
-    event.shaped(global.items.copper_sword, [" A ", " A ", " B "], {
-        A: "#forge:ingots/copper",
-        B: "minecraft:stick",
-    });
-    event.shaped(global.items.copper_hoe, ["AA ", " B ", " B "], {
-        A: "#forge:ingots/copper",
-        B: "minecraft:stick",
-    });
-
     // Create sifter Meshes
     sifterMesh("createsifter:andesite_mesh", "createdeco:andesite_mesh_fence");
     sifterMesh("createsifter:zinc_mesh", "createdeco:zinc_mesh_fence");
@@ -149,34 +127,18 @@ ServerEvents.recipes((event) => {
             .id(mesh);
     }
 
-    // metallurgy
+    // tinkers construct
     event
-        .shaped("createmetallurgy:casting_basin", ["A A", "A A", "AAA"], {
+        .shaped("tconstruct:seared_basin", ["A A", "A A", "AAA"], {
             A: "createdeco:cast_iron_ingot",
         })
-        .id("createmetallurgy:casting_basin");
+        .id("tconstruct:smeltery/seared/basin");
     event
-        .shaped("createmetallurgy:casting_table", ["AAA", "B B", "B B"], {
+        .shaped("tconstruct:seared_table", ["AAA", "B B", "B B"], {
             A: "createdeco:cast_iron_sheet",
             B: "createdeco:cast_iron_ingot",
         })
-        .id("createmetallurgy:casting_table");
-
-    event.replaceInput(
-        [
-            {
-                output: "createmetallurgy:foundry_top",
-            },
-            {
-                output: "createmetallurgy:foundry_basin",
-            },
-            {
-                output: "createmetallurgy:glassed_alloyer_top",
-            },
-        ],
-        "create:andesite_alloy",
-        "createdeco:cast_iron_ingot",
-    );
+        .id("tconstruct:smeltery/seared/table");
 
     // Electrolyzer
     event.shaped(global.items.copper_coil_block, ["SSS", "SCS", "SSS"], {
@@ -249,7 +211,7 @@ ServerEvents.recipes((event) => {
 
     event
         .shaped("ad_astra:desh_engine", ["SPS", "SPS", "BVB"], {
-            S: global.items.high_density_tungsten_sheet,
+            S: global.items.low_density_structure,
             P: "create:fluid_pipe",
             B: "thermal:constantan_gear",
             V: "create:smart_fluid_pipe",
@@ -258,7 +220,7 @@ ServerEvents.recipes((event) => {
 
     event
         .shaped("ad_astra:desh_tank", ["SSG", "STP", "SSG"], {
-            S: global.items.high_density_tungsten_sheet,
+            S: global.items.low_density_structure,
             G: "thermal:constantan_gear",
             T: "create:fluid_tank",
             P: "create:mechanical_pump",
@@ -280,7 +242,7 @@ ServerEvents.recipes((event) => {
             ],
             {
                 C: "ad_astra:rocket_nose_cone",
-                H: global.items.dense_tungsten_hull,
+                H: global.items.low_density_structure,
                 R: global.items.rocket_hull,
                 A: "createaddition:modular_accumulator",
                 T: "ad_astra:desh_tank",
@@ -340,28 +302,6 @@ ServerEvents.recipes((event) => {
         ],
         "ad_astra:steel_plate",
         "#forge:plates/copper",
-    );
-    // Tool Parts
-    event.shaped(global.items.copper_tool_part, ["R  ", " I ", "  R"], {
-        R: "#forge:rods/copper",
-        I: "#forge:ingots/copper",
-    });
-    event.shaped(global.items.copper_armor_plate, [" S ", "NNN", " S "], {
-        N: "#forge:nuggets/copper",
-        S: "#forge:plates/copper",
-    });
-
-    // Tool parts for iron tools
-    event.replaceInput(
-        { output: "#forge:tools/iron", not: { output: "minecraft:shears" } },
-        "minecraft:iron_ingot",
-        global.items.iron_tool_part,
-    );
-    // Aromor plates for iron armor
-    event.replaceInput(
-        { output: "#forge:armor/iron" },
-        "minecraft:iron_ingot",
-        global.items.iron_armor_plate,
     );
 
     // oxygen loader
