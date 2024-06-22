@@ -73,7 +73,7 @@ global.casts = {
     gear: "gear",
     coin: "coin",
     wire: "wire",
-}
+};
 
 function defineNames(object) {
     Object.keys(object).forEach((key) => {
