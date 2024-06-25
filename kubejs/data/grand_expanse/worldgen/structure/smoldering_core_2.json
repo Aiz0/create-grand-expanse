@@ -1,0 +1,6 @@
+{
+    "type": "grand_expanse:smoldering_core_2",
+    "biomes": "ad_astra:lunar_wastelands",
+    "step": "surface_structures",
+    "spawn_overrides": {}
+}
