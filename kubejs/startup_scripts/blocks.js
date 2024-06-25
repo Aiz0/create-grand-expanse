@@ -17,6 +17,18 @@ StartupEvents.registry("block", (event) => {
         .tagBlock("mineable/pickaxe")
         .tagBlock("minecraft:needs_iron_tool");
 
+    event
+        .create(global.items.low_density_structure)
+        .soundType("copper")
+        .hardness(4)
+        .resistance(7)
+        .requiresTool(true)
+        .model("grand_expanse:block/low_density_structure")
+        .defaultCutout()
+        .tagBlock("mineable/pickaxe")
+        .tagBlock("minecraft:needs_iron_tool");
+    
     // Electorlyzer is a custom machinery block.
     event.create(global.items.electrolyzer, "custommachinery");
+    
 });

@@ -161,7 +161,7 @@ ServerEvents.recipes((event) => {
             kinetics.vertical_gearbox + upperData.affix,
         ]);
         event.shapeless(kinetics.adjustable_chain_gearshift + upperData.affix, [
-            kinetics.adjustable_chain_gearshift + upperData.affix,
+            kinetics.encased_chain_drive + upperData.affix,
             "create:electron_tube",
         ]);
     }
@@ -303,8 +303,40 @@ ServerEvents.recipes((event) => {
         .transitionalItem(precision_mechanism_inter)
         .loops(5)
         .id("create:sequenced_assembly/precision_mechanism");
+    
+    //Chapter 3 Sequenced Assemblies
+    
+    event.recipes.create
+        .sequenced_assembly(
+            [Item.of("createaddition:capacitor")],
+            "create:electron_tube",
+            [
+                event.recipes.create.deploying("create:electron_tube", [
+                    "create:electron_tube",
+                    "#forge:plates/zinc"
+                ]),
+                event.recipes.create.deploying("create:electron_tube", [
+                    "create:electron_tube",
+                    "createaddition:electrum_spool"
+                ]),
+                event.recipes.create.deploying("create:electron_tube", [
+                    "create:electron_tube",
+                    "createaddition:electrum_wire"
+                ]),
+                event.recipes.create.deploying("create:electron_tube", [
+                    "create:electron_tube",
+                    "createaddition:electrum_wire"
+                ]),
+            ]
+        )
+        .transitionalItem("create:electron_tube")
+        .loops(1)
+        .id("createaddition:crafting/capacitor_1");
+    
+    //There's 2 for some reason, so I delete the other
+    event.remove({ id: "createaddition:crafting/capacitor_2" })
 
-    // Bioefuel
+    //Biofuel
     event.replaceInput(
         { id: "createaddition:mixing/bioethanol" },
         "create:cinder_flour",
