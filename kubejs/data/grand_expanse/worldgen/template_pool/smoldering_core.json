@@ -1,0 +1,15 @@
+{
+    "name": "grand_expanse:smoldering_core",
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "grand_expanse:smoldering_cor_1",
+                "processors": "minecraft:empty"
+            }
+        }
+    ]
+}

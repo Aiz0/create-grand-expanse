@@ -1,0 +1,14 @@
+{
+    "structures": [
+        {
+            "structure": "grand_expanse:smoldering_core",
+            "weight": 1
+        }
+    ],
+    "placement": {
+        "type": "minecraft:random_spread",
+        "salt": 1021164167,
+        "spacing": 10,
+        "separation": 5
+    }
+}
