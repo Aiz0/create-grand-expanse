@@ -7,7 +7,7 @@
             "element": {
                 "element_type": "minecraft:single_pool_element",
                 "projection": "rigid",
-                "location": "grand_expanse:smoldering_cor_1",
+                "location": "grand_expanse:smoldering_core_1",
                 "processors": "minecraft:empty"
             }
         }
