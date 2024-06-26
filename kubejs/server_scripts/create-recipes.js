@@ -366,4 +366,20 @@ ServerEvents.recipes((event) => {
             D: "create:mechanical_drill",
         },
     );
+    
+    event.recipes.create.mechanical_crafting(
+        global.items.low_density_structure,
+        [
+            // prettier-ignore
+            "SRRS",
+            "RI R",
+            "R IR",
+            "SRRS",
+        ],
+        {
+            S: "#forge:plates/copper",
+            R: "#forge:rods/brass",
+            I: "#forge:ingots/invar",
+        }
+    );
 });
