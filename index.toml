@@ -55,6 +55,9 @@ file = "config/zume.json5"
 file = "defaultconfigs/create-server.toml"
 
 [[files]]
+file = "icon.png"
+
+[[files]]
 file = "kubejs/README.txt"
 
 [[files]]
@@ -789,6 +792,10 @@ metafile = true
 
 [[files]]
 file = "mods/probejs.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/proper-ping.pw.toml"
 metafile = true
 
 [[files]]
