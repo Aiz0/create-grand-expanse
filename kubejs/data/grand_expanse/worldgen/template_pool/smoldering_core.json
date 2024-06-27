@@ -1,0 +1,39 @@
+{
+    "name": "grand_expanse:smoldering_core",
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "grand_expanse:smoldering_core_1",
+                "processors": "minecraft:empty"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "grand_expanse:smoldering_core_2",
+                "processors": "minecraft:empty"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:list_pool_element",
+                "projection": "rigid",
+                "elements": [
+                    {
+                        "element_type": "minecraft:single_pool_element",
+                        "projection": "rigid",
+                        "location": "grand_expanse:smoldering_core_3",
+                        "processors": "minecraft:empty"
+                    }
+                ]
+            }
+        }
+    ]
+}

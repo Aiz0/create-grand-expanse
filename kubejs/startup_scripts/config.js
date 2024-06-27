@@ -11,6 +11,7 @@ global.items = {
     sturdy_hull: null,
     fumo_base: null,
     low_density_structure: null,
+    smoldering_core: null,
 };
 defineNames(global.items);
 

@@ -213,15 +213,15 @@ ServerEvents.recipes((event) => {
         .shaped("ad_astra:desh_engine", ["SPS", "SPS", "BVB"], {
             S: global.items.low_density_structure,
             P: "create:fluid_pipe",
-            B: "thermal:constantan_gear",
+            B: "create:precision_mechanism",
             V: "create:smart_fluid_pipe",
         })
         .id("ad_astra:recipes/desh_engine");
 
     event
         .shaped("ad_astra:desh_tank", ["SSG", "STP", "SSG"], {
-            S: global.items.low_density_structure,
-            G: "thermal:constantan_gear",
+            S: "#forge:plates/brass",
+            G: "#forge:gears/constantan",
             T: "create:fluid_tank",
             P: "create:mechanical_pump",
         })
@@ -232,7 +232,6 @@ ServerEvents.recipes((event) => {
             "ad_astra:tier_2_rocket",
             [
                 // prettier-ignore
-
                 "  C  ",
                 " HRH ",
                 " HRH ",
