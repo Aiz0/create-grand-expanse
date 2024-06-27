@@ -55,37 +55,7 @@ file = "config/zume.json5"
 file = "defaultconfigs/create-server.toml"
 
 [[files]]
-file = "kubejs/.vscode/fluid-attributes.json"
-
-[[files]]
-file = "kubejs/.vscode/item-attributes.json"
-
-[[files]]
-file = "kubejs/.vscode/item-tag-attributes.json"
-
-[[files]]
-file = "kubejs/.vscode/lang-keys.json"
-
-[[files]]
-file = "kubejs/.vscode/probe.class-definitions.json"
-
-[[files]]
-file = "kubejs/.vscode/probe.code-snippets"
-
-[[files]]
-file = "kubejs/.vscode/probe.doc-schema.json"
-
-[[files]]
-file = "kubejs/.vscode/probe.lang-schema.json"
-
-[[files]]
-file = "kubejs/.vscode/probe.lang_key-definitions.json"
-
-[[files]]
-file = "kubejs/.vscode/probe.registry-definitions.json"
-
-[[files]]
-file = "kubejs/.vscode/settings.json"
+file = "icon.png"
 
 [[files]]
 file = "kubejs/README.txt"
@@ -187,6 +157,9 @@ file = "kubejs/assets/grand_expanse/textures/block/electrolyzer/tank.png"
 file = "kubejs/assets/grand_expanse/textures/block/electrolyzer/tank_water.png"
 
 [[files]]
+file = "kubejs/assets/grand_expanse/textures/block/smoldering_core.png"
+
+[[files]]
 file = "kubejs/assets/grand_expanse/textures/block/sturdy_hull.png"
 
 [[files]]
@@ -239,6 +212,12 @@ file = "kubejs/assets/grand_expanse/textures/item/rocket_hull.png"
 
 [[files]]
 file = "kubejs/assets/grand_expanse/textures/item/tool_part_mold.png"
+
+[[files]]
+file = "kubejs/assets/grand_expanse/textures/raw_tungsten.png"
+
+[[files]]
+file = "kubejs/assets/grand_expanse/textures/tungsten_ingot.png"
 
 [[files]]
 file = "kubejs/assets/kubejs/ponder/foundry_example.nbt"
@@ -383,6 +362,24 @@ file = "kubejs/client_scripts/rei.js"
 
 [[files]]
 file = "kubejs/data/grand_expanse/machines/electrolyzer.json"
+
+[[files]]
+file = "kubejs/data/grand_expanse/structures/smoldering_core_1.nbt"
+
+[[files]]
+file = "kubejs/data/grand_expanse/structures/smoldering_core_2.nbt"
+
+[[files]]
+file = "kubejs/data/grand_expanse/structures/smoldering_core_3.nbt"
+
+[[files]]
+file = "kubejs/data/grand_expanse/worldgen/structure/smoldering_core.json"
+
+[[files]]
+file = "kubejs/data/grand_expanse/worldgen/structure_set/smoldering_core.json"
+
+[[files]]
+file = "kubejs/data/grand_expanse/worldgen/template_pool/smoldering_core.json"
 
 [[files]]
 file = "kubejs/server_scripts/backpacks.js"
@@ -795,6 +792,10 @@ metafile = true
 
 [[files]]
 file = "mods/probejs.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/proper-ping.pw.toml"
 metafile = true
 
 [[files]]

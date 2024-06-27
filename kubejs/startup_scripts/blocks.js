@@ -16,6 +16,16 @@ StartupEvents.registry("block", (event) => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .tagBlock("minecraft:needs_iron_tool");
+    
+    event
+        .create(global.items.smoldering_core)
+        .item(i => { i.tooltip("Found on in craters on the moon") })
+        .soundType("metal")
+        .hardness(9)
+        .resistance(25)
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock("minecraft:needs_diamond_tool");
 
     event
         .create(global.items.low_density_structure)

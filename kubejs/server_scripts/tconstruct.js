@@ -20,6 +20,14 @@ ServerEvents.recipes((event) => {
         20, 500);
     cast_type(global.fluids.andesite_mixture, FluidAmounts.INGOT, 
         "create:andesite_alloy", global.casts.ingot, 10);
+    event.remove({id: "tconstruct:smeltery/casting/seared/smeltery_controller"});
+    event.shaped(
+        "tconstruct:smeltery_controller", ["BCB", "CSC", "BCB"],
+        {
+            B: "tconstruct:seared_brick",
+            S: "grand_expanse:smoldering_core",
+            C: "minecraft:copper_ingot",
+        })
 
     function alloy(output, fluids) {
         const fluidIngredients = fluids.reduce((result, fluid) => {
