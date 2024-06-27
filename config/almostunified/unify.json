@@ -3,14 +3,14 @@
         "minecraft",
         "grand_expanse",
         "kubejs",
-        "mmt",
         "crafttweaker",
         "farmersdelight",
         "create",
         "thermal",
         "immersiveengineering",
         "mekanism",
-        "quark"
+        "quark",
+        "mmt"
     ],
     "stoneStrata": [
         "stone",
