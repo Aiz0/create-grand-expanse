@@ -2,32 +2,45 @@ ServerEvents.recipes((event) => {
     // Alloying
     // early game alloys can be mixed as well
 
-    mix(
-        "tconstruct:molten_rose_gold",
-        ["tconstruct:molten_gold", "tconstruct:molten_copper"]
-    );
-    mix(
-        "tconstruct:molten_bronze",
-        ["tconstruct:molten_tin", "tconstruct:molten_copper"]
-    );
-    
+    mix("tconstruct:molten_rose_gold", [
+        "tconstruct:molten_gold",
+        "tconstruct:molten_copper",
+    ]);
+    mix("tconstruct:molten_bronze", [
+        "tconstruct:molten_tin",
+        "tconstruct:molten_copper",
+    ]);
+
     //Andesite
-    melt(global.items.andesite_compound,
-        global.fluids.andesite_mixture, FluidAmounts.INGOT,
-        20, 500);
-    melt("create:andesite_alloy",
-        global.fluids.andesite_mixture, FluidAmounts.INGOT, 
-        20, 500);
-    cast_type(global.fluids.andesite_mixture, FluidAmounts.INGOT, 
-        "create:andesite_alloy", global.casts.ingot, 10);
-    event.remove({id: "tconstruct:smeltery/casting/seared/smeltery_controller"});
-    event.shaped(
-        "tconstruct:smeltery_controller", ["BCB", "CSC", "BCB"],
-        {
-            B: "tconstruct:seared_brick",
-            S: "grand_expanse:smoldering_core",
-            C: "minecraft:copper_ingot",
-        })
+    melt(
+        global.items.andesite_compound,
+        global.fluids.andesite_mixture,
+        FluidAmounts.INGOT,
+        20,
+        500,
+    );
+    melt(
+        "create:andesite_alloy",
+        global.fluids.andesite_mixture,
+        FluidAmounts.INGOT,
+        20,
+        500,
+    );
+    cast_type(
+        global.fluids.andesite_mixture,
+        FluidAmounts.INGOT,
+        "create:andesite_alloy",
+        global.casts.ingot,
+        10,
+    );
+    event.remove({
+        id: "tconstruct:smeltery/casting/seared/smeltery_controller",
+    });
+    event.shaped("tconstruct:smeltery_controller", ["BCB", "CSC", "BCB"], {
+        B: "tconstruct:seared_brick",
+        S: "grand_expanse:smoldering_core",
+        C: "minecraft:copper_ingot",
+    });
 
     function alloy(output, fluids) {
         const fluidIngredients = fluids.reduce((result, fluid) => {
@@ -45,8 +58,16 @@ ServerEvents.recipes((event) => {
             temperature: 700,
         });
     }
-    
-    function cast(fluid, amount, output, catalyst, cooling_ticks, consume, basin) {
+
+    function cast(
+        fluid,
+        amount,
+        output,
+        catalyst,
+        cooling_ticks,
+        consume,
+        basin,
+    ) {
         event.custom({
             type: "tconstruct:casting_" + basin ? "basin" : "table",
             cast: { item: catalyst },
@@ -85,8 +106,8 @@ ServerEvents.recipes((event) => {
             result: output,
         });
     }
-    
-    //temperature guide: 
+
+    //temperature guide:
     // lava = 1000°C
     // blazing blood = 1500°C
     function melt(item, output, amount, ticks, temperature) {
@@ -95,15 +116,15 @@ ServerEvents.recipes((event) => {
             ingredient: { item: item },
             result: { amount: amount, fluid: output },
             temperature: temperature,
-            time: ticks
-        })
+            time: ticks,
+        });
     }
 
     function mix(output, ingredients) {
         let ingMix = [];
-        ingredients.forEach(i => {
-            ingMix.push({ fluid: i, amount : 10 });
-        })
+        ingredients.forEach((i) => {
+            ingMix.push({ fluid: i, amount: 10 });
+        });
         event.recipes.create
             .mixing(Fluid.of(output, FluidAmounts.NUGGET), ingMix)
             .heated();
