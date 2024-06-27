@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:jigsaw",
+    "biomes": "ad_astra:lunar_wastelands",
+    "step": "surface_structures",
+    "spawn_overrides": {},
+    "terrain_adaptation": "none",
+    "start_pool": "grand_expanse:smoldering_core",
+    "size": 1,
+    "project_start_to_heightmap": "WORLD_SURFACE_WG",
+    "start_height": {
+        "absolute": -2
+    },
+    "max_distance_from_center": 1,
+    "use_expansion_hack": false
+}

@@ -157,6 +157,9 @@ file = "kubejs/assets/grand_expanse/textures/block/electrolyzer/tank.png"
 file = "kubejs/assets/grand_expanse/textures/block/electrolyzer/tank_water.png"
 
 [[files]]
+file = "kubejs/assets/grand_expanse/textures/block/smoldering_core.png"
+
+[[files]]
 file = "kubejs/assets/grand_expanse/textures/block/sturdy_hull.png"
 
 [[files]]
@@ -359,6 +362,24 @@ file = "kubejs/client_scripts/rei.js"
 
 [[files]]
 file = "kubejs/data/grand_expanse/machines/electrolyzer.json"
+
+[[files]]
+file = "kubejs/data/grand_expanse/structures/smoldering_core_1.nbt"
+
+[[files]]
+file = "kubejs/data/grand_expanse/structures/smoldering_core_2.nbt"
+
+[[files]]
+file = "kubejs/data/grand_expanse/structures/smoldering_core_3.nbt"
+
+[[files]]
+file = "kubejs/data/grand_expanse/worldgen/structure/smoldering_core.json"
+
+[[files]]
+file = "kubejs/data/grand_expanse/worldgen/structure_set/smoldering_core.json"
+
+[[files]]
+file = "kubejs/data/grand_expanse/worldgen/template_pool/smoldering_core.json"
 
 [[files]]
 file = "kubejs/server_scripts/backpacks.js"
