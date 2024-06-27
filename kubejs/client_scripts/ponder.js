@@ -6,7 +6,7 @@ Ponder.tags((event) => {
         global.items.electrolyzer,
         "Custom Machinery",
         "bloblablewylewyl",
-        [global.items.electrolyzer],
+        [global.items.electrolyzer]
     );
 });
 
@@ -23,7 +23,7 @@ Ponder.registry((event) => {
                 scene
                     .text(100, "WIP", [2, 2.5, 2.5])
                     .colored(PonderPalette.RED);
-            },
+            }
         );
 });
 
