@@ -17,21 +17,21 @@ ServerEvents.recipes((event) => {
         global.fluids.andesite_mixture,
         FluidAmounts.INGOT,
         20,
-        500,
+        500
     );
     melt(
         "create:andesite_alloy",
         global.fluids.andesite_mixture,
         FluidAmounts.INGOT,
         20,
-        500,
+        500
     );
     cast_type(
         global.fluids.andesite_mixture,
         FluidAmounts.INGOT,
         "create:andesite_alloy",
         global.casts.ingot,
-        10,
+        10
     );
     event.remove({
         id: "tconstruct:smeltery/casting/seared/smeltery_controller",
@@ -66,7 +66,7 @@ ServerEvents.recipes((event) => {
         catalyst,
         cooling_ticks,
         consume,
-        basin,
+        basin
     ) {
         event.custom({
             type: "tconstruct:casting_" + basin ? "basin" : "table",

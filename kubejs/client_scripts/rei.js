@@ -8,8 +8,8 @@ REIEvents.groupEntries((event) => {
                 ![
                     "rechiseled:chisel",
                     "rechiseledcreate:mechanical_chisel",
-                ].includes(id),
-        ),
+                ].includes(id)
+        )
     );
 
     // Create Deco Bricks
@@ -17,8 +17,8 @@ REIEvents.groupEntries((event) => {
         "kubejs:rei_groups/createdeco_bricks",
         "Create Deco Bricks",
         Ingredient.of(/^createdeco:/).itemIds.filter((id) =>
-            id.includes("brick"),
-        ),
+            id.includes("brick")
+        )
     );
 
     const useNbt = [
@@ -35,7 +35,7 @@ REIEvents.groupEntries((event) => {
         event.groupSameItem(
             `kubejs:rei_groups/${namespace}/${path}`,
             item.name,
-            item,
+            item
         );
     });
 

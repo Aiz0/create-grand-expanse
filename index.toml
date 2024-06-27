@@ -121,6 +121,9 @@ file = "kubejs/assets/flopper/textures/items/flopper.png"
 file = "kubejs/assets/grand_expanse/models/block/copper_coil_block.json"
 
 [[files]]
+file = "kubejs/assets/grand_expanse/models/block/low_density_structure.json"
+
+[[files]]
 file = "kubejs/assets/grand_expanse/models/machine/electrolyzer.json"
 
 [[files]]
@@ -155,6 +158,9 @@ file = "kubejs/assets/grand_expanse/textures/block/electrolyzer/tank.png"
 
 [[files]]
 file = "kubejs/assets/grand_expanse/textures/block/electrolyzer/tank_water.png"
+
+[[files]]
+file = "kubejs/assets/grand_expanse/textures/block/low_density_structure.png"
 
 [[files]]
 file = "kubejs/assets/grand_expanse/textures/block/smoldering_core.png"
