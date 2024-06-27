@@ -973,6 +973,10 @@ file = "resourcepacks/fresh-animations.pw.toml"
 metafile = true
 
 [[files]]
+file = "resourcepacks/re-applied.pw.toml"
+metafile = true
+
+[[files]]
 file = "resourcepacks/shables-create-scannable.pw.toml"
 metafile = true
 
