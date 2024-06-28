@@ -749,6 +749,10 @@ file = "mods/modernfix.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/morematerials.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/mouse-tweaks.pw.toml"
 metafile = true
 
