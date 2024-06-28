@@ -20,6 +20,7 @@ defineNames(global.items);
 global.fluids = {
     andesite_mixture: null,
     molten_cast_iron: null,
+    fluix_shimmer: null,
 };
 // define names from keys
 defineNames(global.fluids);
