@@ -43,3 +43,11 @@ StartupEvents.registry("block", (event) => {
     // Electorlyzer is a custom machinery block.
     event.create(global.items.electrolyzer, "custommachinery");
 });
+
+// Modify Existing Blocks
+BlockEvents.modification((event) => {
+    event.modify("ae2:flawless_budding_quartz", (block) => {
+        block.destroySpeed = -1;
+        block.explosionResistance = Math.max;
+    });
+});
