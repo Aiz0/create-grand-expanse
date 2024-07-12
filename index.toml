@@ -376,6 +376,9 @@ file = "kubejs/client_scripts/rei.js"
 file = "kubejs/data/grand_expanse/machines/electrolyzer.json"
 
 [[files]]
+file = "kubejs/data/grand_expanse/structures/shimmering_lake.nbt"
+
+[[files]]
 file = "kubejs/data/grand_expanse/structures/smoldering_core_1.nbt"
 
 [[files]]
@@ -385,10 +388,19 @@ file = "kubejs/data/grand_expanse/structures/smoldering_core_2.nbt"
 file = "kubejs/data/grand_expanse/structures/smoldering_core_3.nbt"
 
 [[files]]
+file = "kubejs/data/grand_expanse/worldgen/structure/shimmer_lake.json"
+
+[[files]]
 file = "kubejs/data/grand_expanse/worldgen/structure/smoldering_core.json"
 
 [[files]]
+file = "kubejs/data/grand_expanse/worldgen/structure_set/shimmer_lake.json"
+
+[[files]]
 file = "kubejs/data/grand_expanse/worldgen/structure_set/smoldering_core.json"
+
+[[files]]
+file = "kubejs/data/grand_expanse/worldgen/template_pool/shimmer_lake.json"
 
 [[files]]
 file = "kubejs/data/grand_expanse/worldgen/template_pool/smoldering_core.json"
