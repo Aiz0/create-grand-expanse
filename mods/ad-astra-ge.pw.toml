@@ -1,0 +1,7 @@
+name = "ad-astra-ge"
+filename = "ad_astra-forge-1.19.2-1.12.7.jar"
+
+[download]
+url = "https://github.com/NotStargazer/Ad-Astra-CGE/releases/download/CreateGE/ad_astra-forge-1.19.2-1.12.7.jar"
+hash-format = "sha256"
+hash = "ec3c0cbb0034c1964fd13388d9ca342973407bbef45c5568adf55330980ff84c"
