@@ -229,6 +229,12 @@ file = "kubejs/assets/grand_expanse/textures/tungsten_ingot.png"
 file = "kubejs/assets/kubejs/ponder/foundry_example.nbt"
 
 [[files]]
+file = "kubejs/assets/mmt/textures/block/raw_platinum_block.png"
+
+[[files]]
+file = "kubejs/assets/mmt/textures/item/raw/platinum.png"
+
+[[files]]
 file = "kubejs/assets/sophisticatedbackpacks/lang/en_us.json"
 
 [[files]]
