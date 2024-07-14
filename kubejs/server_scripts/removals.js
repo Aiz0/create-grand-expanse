@@ -6,8 +6,19 @@ ServerEvents.recipes((event) => {
         // Minecraft
         { type: "minecraft:smelting", output: "#forge:ingots" },
         { type: "minecraft:blasting", output: "#forge:ingots" },
-        // Remove iron and gold tools
-        { output: "#forge:tools/gold" },
+
+        // Remove vanilla tools
+        { output: "#forge:tools/pickaxes" },
+        { output: "#forge:tools/axes" },
+        { output: "#forge:tools/shovels" },
+        { output: "#forge:tools/swords" },
+        { output: "#forge:tools/hoes" },
+        // Remove normal armors but keep leather and diving suit
+        {
+            output: "#forge:armors",
+            not: { input: "#forge:leather" },
+            not: { input: "#forge:ingots/copper" },
+        },
 
         // Create
         {
@@ -52,15 +63,15 @@ ServerEvents.recipes((event) => {
     // get all blocks compressed blocks that shouldn't be removed
     const keep_regex = new RegExp(
         `^createcompression:compressed_(${global.config.compressed.join(
-            "|",
-        )})_\\dx`,
+            "|"
+        )})_\\dx`
     );
     // Compressed Blocks
 
     const blocks_to_keep = Ingredient.of(keep_regex).itemIds;
     // The compressed blocks to remove are put into an array to be used later in client_scripts/rei.js
     global.compressed_blocks_to_remove = Ingredient.of(
-        /^createcompression:/,
+        /^createcompression:/
     ).itemIds.filter((id) => !blocks_to_keep.some((block) => id === block));
     // removes them
     global.compressed_blocks_to_remove.forEach((block) => {
