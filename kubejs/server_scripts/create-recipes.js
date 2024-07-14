@@ -62,6 +62,13 @@ ServerEvents.recipes((event) => {
     );
 
     event.recipes.create
+        .mixing("ae2:fluix_crystal",
+            [
+                Fluid.of("thermal:redstone", FluidAmounts.INGOT * 3),
+                Fluid.of(global.fluids.fluix_shimmer,FluidAmounts.INGOT * 4),
+                "ae2:charged_certus_quartz_crystal"]);
+
+    event.recipes.create
         .compacting("createdeco:cast_iron_ingot", [
             "minecraft:iron_ingot",
             "#forge:dusts/coal",
