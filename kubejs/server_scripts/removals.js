@@ -34,6 +34,13 @@ ServerEvents.recipes((event) => {
         { id: "ad_astra:recipes/hammer" },
         { input: "ad_astra:hammer" },
         { id: "ad_astra:conversion/oxygen_from_water" },
+        
+        //AE2 Fluix
+        { id: "create:compat/ae2/mixing/fluix_crystal" },
+        { id: "ae2:charger/charged_certus_quartz_crystal" },
+        { id: "ae2:transform/fluix_crystal" },
+        { id: "ae2:transform/fluix_crystals" },
+        { id: "ae2:inscriber/fluix_dust" },
 
         // Thermal
         {

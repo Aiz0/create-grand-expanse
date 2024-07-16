@@ -14,4 +14,5 @@ ServerEvents.tags("fluid", (event) => {
     }
     // Adds biofuel as a possible rocket fuel
     event.add("ad_astra:fuel", "createaddition:bioethanol");
+    event.add("forge:fuel_tier_1", "createaddition:bioethanol");
 });

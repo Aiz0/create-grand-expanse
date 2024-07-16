@@ -26,6 +26,20 @@ ServerEvents.recipes((event) => {
         20,
         500
     );
+    melt(
+        "minecraft:redstone_block",
+        "thermal:redstone",
+        FluidAmounts.METAL_BLOCK,
+        225,
+        750
+    );
+    melt(
+        "minecraft:redstone",
+        "thermal:redstone",
+        FluidAmounts.INGOT,
+        25,
+        750
+    )
     cast_type(
         global.fluids.andesite_mixture,
         FluidAmounts.INGOT,

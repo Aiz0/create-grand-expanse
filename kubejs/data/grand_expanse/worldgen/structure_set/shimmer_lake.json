@@ -1,0 +1,14 @@
+{
+    "structures": [
+        {
+            "structure": "grand_expanse:shimmer_lake",
+            "weight": 1
+        }
+    ],
+    "placement": {
+        "type": "minecraft:random_spread",
+        "salt": 1021164167,
+        "spacing": 500,
+        "separation": 250
+    }
+}
