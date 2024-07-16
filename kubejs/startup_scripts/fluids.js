@@ -1,12 +1,16 @@
 StartupEvents.registry("fluid", (event) => {
     //create fluids here
-    event.create(global.fluids.fluix_shimmer)
+    let shimmer = event.create(global.fluids.fluix_shimmer)
         .stillTexture("grand_expanse:block/fluid/fluix_still")
         .flowingTexture("grand_expanse:block/fluid/fluix_flowing")
         .density(71)
-        .block
+        .renderType("translucent")
+        .bucketColor(0x3400A8);
+    
+    shimmer.block
         .tagBlock("ad_astra:exclude_in_space")
-        .transparent(true);
+        .transparent(true)
+        .renderType("translucent");
     
     event.create(global.fluids.andesite_mixture).thinTexture(0x808582);
     // Molten stuff
