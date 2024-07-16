@@ -1,6 +1,6 @@
 StartupEvents.registry("fluid", (event) => {
     //create fluids here
-    let shimmer = event.create(global.fluids.fluix_shimmer)
+    const shimmer = event.create(global.fluids.fluix_shimmer)
         .stillTexture("grand_expanse:block/fluid/fluix_still")
         .flowingTexture("grand_expanse:block/fluid/fluix_flowing")
         .density(71)
