@@ -1,0 +1,13 @@
+name = "KubeJS Mekanism"
+filename = "kubejs-mekanism-1902.1.5-build.20.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/sY2Fy24K/versions/Bw3PyQrJ/kubejs-mekanism-1902.1.5-build.20.jar"
+hash-format = "sha1"
+hash = "b97dc005958154c87233f09d54de16433d83f3dd"
+
+[update]
+[update.modrinth]
+mod-id = "sY2Fy24K"
+version = "Bw3PyQrJ"
