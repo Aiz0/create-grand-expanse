@@ -50,7 +50,7 @@ ServerEvents.recipes((event) => {
     // rubber from latex via mixing gives 1 extra rubber compared to handcrafting
     event.recipes.create.mixing(
         "thermal:rubber",
-        Fluid.of("thermal:latex", FluidAmounts.BOTTLE),
+        Fluid.of("thermal:latex", FluidAmounts.BOTTLE)
     );
     event.recipes.create
         .mixing("thermal:rosin", Fluid.of("thermal:resin", FluidAmounts.BOTTLE))
@@ -58,15 +58,14 @@ ServerEvents.recipes((event) => {
 
     event.recipes.create.mixing(
         Fluid.of(global.fluids.andesite_mixture, FluidAmounts.INGOT),
-        ["minecraft:andesite", "create:zinc_nugget", "minecraft:clay_ball"],
+        ["minecraft:andesite", "create:zinc_nugget", "minecraft:clay_ball"]
     );
 
-    event.recipes.create
-        .mixing("ae2:fluix_crystal",
-            [
-                Fluid.of("thermal:redstone", FluidAmounts.INGOT * 3),
-                Fluid.of(global.fluids.fluix_shimmer,FluidAmounts.INGOT * 4),
-                "ae2:charged_certus_quartz_crystal"]);
+    event.recipes.create.mixing("ae2:fluix_crystal", [
+        Fluid.of("thermal:redstone", FluidAmounts.INGOT * 3),
+        Fluid.of(global.fluids.fluix_shimmer, FluidAmounts.INGOT * 4),
+        "ae2:charged_certus_quartz_crystal",
+    ]);
 
     event.recipes.create
         .compacting("createdeco:cast_iron_ingot", [
@@ -84,19 +83,19 @@ ServerEvents.recipes((event) => {
     // early game obsidian dust recipe
     event.recipes.create.milling(
         ["create:powdered_obsidian"],
-        "minecraft:obsidian",
+        "minecraft:obsidian"
     );
     // early game quartz
     event.recipes.create.milling(
         [Item.of("minecraft:quartz").withChance(0.1)],
-        "minecraft:diorite",
+        "minecraft:diorite"
     );
 
     // Replaces milling gravel for milling into sand.
     event.recipes.create
         .milling(
             [Item.of("minecraft:sand").withChance(0.5)],
-            "minecraft:gravel",
+            "minecraft:gravel"
         )
         .id("create:milling/gravel");
 
@@ -104,7 +103,7 @@ ServerEvents.recipes((event) => {
     Ingredient.of("#forge:raw_materials").itemIds.forEach((item) => {
         const material = item.split("_").pop();
         const output = AlmostUnified.getPreferredItemForTag(
-            `forge:dusts/${material}`,
+            `forge:dusts/${material}`
         );
         if (output.isEmpty()) {
             return;
@@ -122,19 +121,19 @@ ServerEvents.recipes((event) => {
             kinetics.shaft + upperData.affix,
             kinetics.shaft + lowerData.affix,
             upperData.fluid,
-            FluidAmounts.INGOT / 2,
+            FluidAmounts.INGOT / 2
         );
         cast(
             kinetics.cogwheel + upperData.affix,
             kinetics.cogwheel + lowerData.affix,
             upperData.fluid,
-            FluidAmounts.INGOT,
+            FluidAmounts.INGOT
         );
         cast(
             kinetics.large_cogwheel + upperData.affix,
             kinetics.large_cogwheel + lowerData.affix,
             upperData.fluid,
-            FluidAmounts.INGOT * 2,
+            FluidAmounts.INGOT * 2
         );
 
         event.shaped(kinetics.gearbox + upperData.affix, ["WKW", "WCW"], {
@@ -149,7 +148,7 @@ ServerEvents.recipes((event) => {
                 M: upperData.material,
                 K: kinetics.encased_chain_drive + lowerData.affix,
                 C: upperData.casing,
-            },
+            }
         );
         event.shapeless(kinetics.clutch + upperData.affix, [
             kinetics.clutch + lowerData.affix,
@@ -206,14 +205,14 @@ ServerEvents.recipes((event) => {
         .sequenced_assembly(["create:electron_tube"], "create:iron_sheet", [
             event.recipes.createDeploying(
                 global.items.incomplete_electron_tube,
-                [global.items.incomplete_electron_tube, "#forge:glass"],
+                [global.items.incomplete_electron_tube, "#forge:glass"]
             ),
             event.recipes.createDeploying(
                 global.items.incomplete_electron_tube,
                 [
                     global.items.incomplete_electron_tube,
                     "create:polished_rose_quartz",
-                ],
+                ]
             ),
             event.recipes.createFilling(global.items.incomplete_electron_tube, [
                 global.items.incomplete_electron_tube,
@@ -237,7 +236,7 @@ ServerEvents.recipes((event) => {
                     "create:andesite_casing",
                     "thermal:cured_rubber",
                 ]),
-            ],
+            ]
         )
         .transitionalItem("create:andesite_casing")
         .loops(3);
@@ -251,7 +250,7 @@ ServerEvents.recipes((event) => {
             ]),
             event.recipes.create.pressing(
                 brass_casing_inter,
-                brass_casing_inter,
+                brass_casing_inter
             ),
         ])
         .transitionalItem(brass_casing_inter)
@@ -266,7 +265,7 @@ ServerEvents.recipes((event) => {
             ]),
             event.recipes.create.pressing(
                 train_casing_inter,
-                train_casing_inter,
+                train_casing_inter
             ),
             event.recipes.create.deploying(train_casing_inter, [
                 train_casing_inter,
@@ -274,7 +273,7 @@ ServerEvents.recipes((event) => {
             ]),
             event.recipes.create.pressing(
                 train_casing_inter,
-                train_casing_inter,
+                train_casing_inter
             ),
         ])
         .transitionalItem(train_casing_inter)
@@ -305,14 +304,14 @@ ServerEvents.recipes((event) => {
                     precision_mechanism_inter,
                     "#forge:gears/invar",
                 ]),
-            ],
+            ]
         )
         .transitionalItem(precision_mechanism_inter)
         .loops(5)
         .id("create:sequenced_assembly/precision_mechanism");
-    
+
     //Chapter 3 Sequenced Assemblies
-    
+
     event.recipes.create
         .sequenced_assembly(
             [Item.of("createaddition:capacitor")],
@@ -320,34 +319,34 @@ ServerEvents.recipes((event) => {
             [
                 event.recipes.create.deploying("create:electron_tube", [
                     "create:electron_tube",
-                    "#forge:plates/zinc"
+                    "#forge:plates/zinc",
                 ]),
                 event.recipes.create.deploying("create:electron_tube", [
                     "create:electron_tube",
-                    "createaddition:electrum_spool"
+                    "createaddition:electrum_spool",
                 ]),
                 event.recipes.create.deploying("create:electron_tube", [
                     "create:electron_tube",
-                    "createaddition:electrum_wire"
+                    "createaddition:electrum_wire",
                 ]),
                 event.recipes.create.deploying("create:electron_tube", [
                     "create:electron_tube",
-                    "createaddition:electrum_wire"
+                    "createaddition:electrum_wire",
                 ]),
             ]
         )
         .transitionalItem("create:electron_tube")
         .loops(1)
         .id("createaddition:crafting/capacitor_1");
-    
+
     //There's 2 for some reason, so I delete the other
-    event.remove({ id: "createaddition:crafting/capacitor_2" })
+    event.remove({ id: "createaddition:crafting/capacitor_2" });
 
     //Biofuel
     event.replaceInput(
         { id: "createaddition:mixing/bioethanol" },
         "create:cinder_flour",
-        "create:wheat_flour",
+        "create:wheat_flour"
     );
 
     //Mechanical Crafting
@@ -371,9 +370,9 @@ ServerEvents.recipes((event) => {
             P: "create:precision_mechanism",
             I: "#forge:plates/invar",
             D: "create:mechanical_drill",
-        },
+        }
     );
-    
+
     event.recipes.create.mechanical_crafting(
         global.items.low_density_structure,
         [
