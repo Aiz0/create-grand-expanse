@@ -417,9 +417,9 @@ ServerEvents.recipes((event) => {
         energy: 1000,
     });
 
-    event.blasting(
-        "tconstruct:copper_can",
-        '{fluid:"grand_expanse:cryo_solution"}',
-        global.items.crystalized_cryo_fuel
-    );
+    // event.blasting(
+    //     "tconstruct:copper_can",
+    //     '{fluid:"grand_expanse:cryo_solution"}',
+    //     global.items.crystalized_cryo_fuel
+    // );
 });
