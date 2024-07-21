@@ -12,6 +12,7 @@ global.items = {
     fumo_base: null,
     low_density_structure: null,
     smoldering_core: null,
+    crystalized_cryo_fuel: null,
 };
 defineNames(global.items);
 
@@ -21,6 +22,7 @@ global.fluids = {
     andesite_mixture: null,
     molten_cast_iron: null,
     fluix_shimmer: null,
+    cryo_solution: null,
 };
 // define names from keys
 defineNames(global.fluids);
