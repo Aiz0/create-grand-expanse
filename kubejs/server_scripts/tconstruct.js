@@ -54,9 +54,9 @@ ServerEvents.recipes((event) => {
         global.fluids.cryo_solution,
         FluidAmounts.INGOT,
         global.items.cryo_crystal,
-        "tconstruct:gem_cast",
-        40,
-        false,
+        "mmt:lunium_nova_dust",
+        200,
+        true,
         false
     );
 
