@@ -389,6 +389,27 @@ ServerEvents.recipes((event) => {
         }
     );
 
+    event.recipes.create
+        .mechanical_crafting(
+            "ad_astra:cryo_freezer",
+            [
+                // prettier-ignore
+                " C ",
+                " C ",
+                "CRC",
+                "AIT",
+                "CRC",
+            ],
+            {
+                A: "createaddition:modular_accumulator",
+                T: "ad_astra:desh_tank",
+                C: "#forge:storage_blocks/constantan",
+                R: "#forge:rods/lunium_nova",
+                I: "thermal:ice_charge",
+            }
+        )
+        .id("ad_astra:recipes/cryo_freezer");
+
     // cry fuel recipe for tier 2 rockets
     //
     event.recipes.create
