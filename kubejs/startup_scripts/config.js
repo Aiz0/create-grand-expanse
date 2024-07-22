@@ -12,7 +12,9 @@ global.items = {
     fumo_base: null,
     low_density_structure: null,
     smoldering_core: null,
-    crystalized_cryo_fuel: null,
+    compressed_cryo_solution: null,
+    cryo_crystal: null,
+    charged_cryo_crystal: null,
 };
 defineNames(global.items);
 

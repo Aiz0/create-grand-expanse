@@ -5,5 +5,6 @@ StartupEvents.registry("item", (event) => {
     event.create(global.items.incomplete_electron_tube);
     event.create(global.items.fumo_base);
     event.create(global.items.bronze_rod);
-    event.create(global.items.crystalized_cryo_fuel);
+    event.create(global.items.cryo_crystal);
+    event.create(global.items.charged_cryo_crystal);
 });

@@ -390,36 +390,38 @@ ServerEvents.recipes((event) => {
     );
 
     // cry fuel recipe for tier 2 rockets
-    // Mix toghether our batiful fuel
-    event.recipes.create.mixing(
-        Fluid.of(global.fluids.cryo_solution, FluidAmounts.NUGGET * 2),
-        [
-            Fluid.of("mekanism:oxygen"),
-            Fluid.of("mekanism:hydrogen"),
-            Item.of("ad_astra:ice_shard"),
-        ]
-    );
+    //
+    event.recipes.create
+        .mixing(
+            Fluid.of(global.fluids.cryo_solution, FluidAmounts.NUGGET * 2),
+            [
+                Fluid.of("mekanism:oxygen", FluidAmounts.NUGGET),
+                Fluid.of("mekanism:hydrogen", FluidAmounts.NUGGET),
+                Item.of("ad_astra:ice_shard"),
+            ]
+        )
+        .superheated();
 
-    // can it and then tesla coil it
+    // then tesla coil it
     event.custom({
         type: "createaddition:charging",
         input: {
-            item: Item.of(
-                "tconstruct:copper_can",
-                '{fluid:"grand_expanse:cryo_solution"}'
-            ),
+            item: global.items.cryo_crystal,
             count: 1,
         },
         result: {
-            item: global.items.crystalized_cryo_fuel,
+            item: global.items.charged_cryo_crystal,
             count: 1,
         },
         energy: 1000,
     });
 
-    event.blasting(
-        "tconstruct:copper_can",
-        '{fluid:"grand_expanse:cryo_solution"}',
-        global.items.crystalized_cryo_fuel
-    );
+    event.custom({
+        type: "ad_astra:cryo_fuel_conversion",
+        input: {
+            item: global.items.charged_cryo_crystal,
+        },
+        output: "ad_astra:cryo_fuel",
+        conversion_ratio: 0.025,
+    });
 });
