@@ -3,10 +3,7 @@ StartupEvents.registry("fluid", (event) => {
     const shimmer = event
         .create(global.fluids.fluix_shimmer)
         .stillTexture("grand_expanse:block/fluid/fluix_still")
-        .flowingTexture("grand_expanse:block/fluid/fluix_flowing")
-        .density(71)
-        .renderType("translucent")
-        .bucketColor(0x3400a8);
+        .flowingTexture("grand_expanse:block/fluid/fluix_flowing");
 
     shimmer.block
         .tagBlock("ad_astra:exclude_in_space")

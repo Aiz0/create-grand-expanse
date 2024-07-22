@@ -127,6 +127,9 @@ file = "kubejs/assets/grand_expanse/models/block/copper_coil_block.json"
 file = "kubejs/assets/grand_expanse/models/block/low_density_structure.json"
 
 [[files]]
+file = "kubejs/assets/grand_expanse/models/item/fluix_shimmer_bucket.json"
+
+[[files]]
 file = "kubejs/assets/grand_expanse/models/machine/electrolyzer.json"
 
 [[files]]
@@ -277,6 +280,15 @@ file = "kubejs/assets/tconstruct/textures/block/casting_basin.png"
 file = "kubejs/assets/tconstruct/textures/block/casting_table.png"
 
 [[files]]
+file = "kubejs/assets/tconstruct/textures/item/copper_can.png"
+
+[[files]]
+file = "kubejs/assets/tconstruct/textures/item/copper_can_fluid.png"
+
+[[files]]
+file = "kubejs/assets/tconstruct/textures/item/rose_gold_ingot.png"
+
+[[files]]
 file = "kubejs/assets/tinkers_construct/readme.txt"
 
 [[files]]
@@ -290,15 +302,6 @@ file = "kubejs/assets/tinkers_construct/textures/block/fluid/molten/still.png"
 
 [[files]]
 file = "kubejs/assets/tinkers_construct/textures/block/fluid/molten/still.png.mcmeta"
-
-[[files]]
-file = "kubejs/assets/tinkers_construct/textures/item/copper_can.png"
-
-[[files]]
-file = "kubejs/assets/tinkers_construct/textures/item/copper_can_fluid.png"
-
-[[files]]
-file = "kubejs/assets/tinkers_construct/textures/item/rose_gold_ingot.png"
 
 [[files]]
 file = "kubejs/assets/toms_storage/models/block/cable_connector/base.json"
