@@ -421,7 +421,7 @@ ServerEvents.recipes((event) => {
                 Item.of("thermal:blizz_powder"),
             ]
         )
-        .superheated();
+        .heated();
 
     // then tesla coil it
     event.custom({
