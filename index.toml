@@ -118,6 +118,9 @@ file = "kubejs/assets/flopper/textures/blocks/flopper_top.png"
 file = "kubejs/assets/flopper/textures/items/flopper.png"
 
 [[files]]
+file = "kubejs/assets/grand_expanse/lang/en_us.json"
+
+[[files]]
 file = "kubejs/assets/grand_expanse/models/block/copper_coil_block.json"
 
 [[files]]
@@ -287,6 +290,12 @@ file = "kubejs/assets/tinkers_construct/textures/block/fluid/molten/still.png"
 
 [[files]]
 file = "kubejs/assets/tinkers_construct/textures/block/fluid/molten/still.png.mcmeta"
+
+[[files]]
+file = "kubejs/assets/tinkers_construct/textures/item/copper_can.png"
+
+[[files]]
+file = "kubejs/assets/tinkers_construct/textures/item/copper_can_fluid.png"
 
 [[files]]
 file = "kubejs/assets/tinkers_construct/textures/item/rose_gold_ingot.png"
