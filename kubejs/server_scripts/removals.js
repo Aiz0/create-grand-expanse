@@ -34,7 +34,8 @@ ServerEvents.recipes((event) => {
         { id: "ad_astra:recipes/hammer" },
         { input: "ad_astra:hammer" },
         { id: "ad_astra:conversion/oxygen_from_water" },
-        
+        { type: "ad_astra:cryo_fuel_conversion" },
+
         //AE2 Fluix
         { id: "create:compat/ae2/mixing/fluix_crystal" },
         { id: "ae2:charger/charged_certus_quartz_crystal" },
@@ -59,15 +60,15 @@ ServerEvents.recipes((event) => {
     // get all blocks compressed blocks that shouldn't be removed
     const keep_regex = new RegExp(
         `^createcompression:compressed_(${global.config.compressed.join(
-            "|",
-        )})_\\dx`,
+            "|"
+        )})_\\dx`
     );
     // Compressed Blocks
 
     const blocks_to_keep = Ingredient.of(keep_regex).itemIds;
     // The compressed blocks to remove are put into an array to be used later in client_scripts/rei.js
     global.compressed_blocks_to_remove = Ingredient.of(
-        /^createcompression:/,
+        /^createcompression:/
     ).itemIds.filter((id) => !blocks_to_keep.some((block) => id === block));
     // removes them
     global.compressed_blocks_to_remove.forEach((block) => {
