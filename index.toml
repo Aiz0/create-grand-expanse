@@ -64,6 +64,15 @@ file = "kubejs/README.txt"
 file = "kubejs/assets/ad_astra/lang/en_us.json"
 
 [[files]]
+file = "kubejs/assets/ad_astra/textures/block/cryo_freezer.png"
+
+[[files]]
+file = "kubejs/assets/ad_astra/textures/block/cryo_freezer_active.png"
+
+[[files]]
+file = "kubejs/assets/ad_astra/textures/block/cryo_freezer_active.png.mcmeta"
+
+[[files]]
 file = "kubejs/assets/ad_astra/textures/item/desh_tank.png"
 
 [[files]]
