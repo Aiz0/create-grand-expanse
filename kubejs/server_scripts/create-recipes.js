@@ -414,11 +414,11 @@ ServerEvents.recipes((event) => {
     //
     event.recipes.create
         .mixing(
-            Fluid.of(global.fluids.cryo_solution, FluidAmounts.NUGGET * 2),
+            Fluid.of(global.fluids.cryo_solution, FluidAmounts.NUGGET * 3),
             [
-                Fluid.of("mekanism:oxygen", FluidAmounts.NUGGET),
-                Fluid.of("mekanism:hydrogen", FluidAmounts.NUGGET),
-                Item.of("ad_astra:ice_shard"),
+                Fluid.of("mekanism:oxygen", FluidAmounts.NUGGET * 3),
+                Fluid.of("mekanism:hydrogen", FluidAmounts.NUGGET * 3),
+                Item.of("thermal:blizz_powder"),
             ]
         )
         .superheated();
