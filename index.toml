@@ -31,7 +31,7 @@ file = "config/incontrol/spawn.json"
 file = "config/incontrol/spawner.json"
 
 [[files]]
-file = "config/item_obliterator.json"
+file = "config/item_obliterator.json5"
 
 [[files]]
 file = "config/quark-common.toml"
