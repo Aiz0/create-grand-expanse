@@ -39,6 +39,15 @@ StartupEvents.registry("block", (event) => {
         .defaultCutout()
         .tagBlock("mineable/pickaxe")
         .tagBlock("minecraft:needs_iron_tool");
+    
+    event
+        .create(global.items.lunium_nova_ore)
+        .soundType("stone")
+        .hardness(7)
+        .resistance(12)
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock("minecraft:needs_diamond_tool");
 
     // Electorlyzer is a custom machinery block.
     event.create(global.items.electrolyzer, "custommachinery");

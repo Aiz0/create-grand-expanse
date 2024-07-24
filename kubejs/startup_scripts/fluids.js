@@ -13,8 +13,11 @@ StartupEvents.registry("fluid", (event) => {
         .renderType("translucent");
     
     event.create(global.fluids.andesite_mixture).thinTexture(0x808582);
+    event.create(global.fluids.molten_lunium_nova).thickTexture(0x8affd8);
+    
     // Molten stuff
     molten_metal(global.fluids.molten_cast_iron, 0x313131);
+    
 
     function molten_metal(fluid, color) {
         event
