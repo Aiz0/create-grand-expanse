@@ -31,7 +31,7 @@ file = "config/incontrol/spawn.json"
 file = "config/incontrol/spawner.json"
 
 [[files]]
-file = "config/item_obliterator.json"
+file = "config/item_obliterator.json5"
 
 [[files]]
 file = "config/quark-common.toml"
@@ -160,6 +160,18 @@ file = "kubejs/assets/grand_expanse/textures/block/electrolyzer/tank.png"
 file = "kubejs/assets/grand_expanse/textures/block/electrolyzer/tank_water.png"
 
 [[files]]
+file = "kubejs/assets/grand_expanse/textures/block/fluid/fluix_flowing.png"
+
+[[files]]
+file = "kubejs/assets/grand_expanse/textures/block/fluid/fluix_flowing.png.mcmeta"
+
+[[files]]
+file = "kubejs/assets/grand_expanse/textures/block/fluid/fluix_still.png"
+
+[[files]]
+file = "kubejs/assets/grand_expanse/textures/block/fluid/fluix_still.png.mcmeta"
+
+[[files]]
 file = "kubejs/assets/grand_expanse/textures/block/low_density_structure.png"
 
 [[files]]
@@ -197,6 +209,9 @@ file = "kubejs/assets/grand_expanse/textures/item/copper_sword.png"
 
 [[files]]
 file = "kubejs/assets/grand_expanse/textures/item/copper_tool_part.png"
+
+[[files]]
+file = "kubejs/assets/grand_expanse/textures/item/fluix_shimmer_bucket.png"
 
 [[files]]
 file = "kubejs/assets/grand_expanse/textures/item/fumo_base.png"
@@ -463,7 +478,7 @@ file = "kubejs/startup_scripts/items.js"
 file = "kubejs/startup_scripts/world-gen.js"
 
 [[files]]
-file = "mods/ad-astra.pw.toml"
+file = "mods/ad-astra-ge.pw.toml"
 metafile = true
 
 [[files]]
@@ -544,6 +559,10 @@ metafile = true
 
 [[files]]
 file = "mods/create-fork.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/create-heat-js.pw.toml"
 metafile = true
 
 [[files]]
@@ -720,6 +739,10 @@ metafile = true
 
 [[files]]
 file = "mods/kubejs-create.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/kubejs-mekanism.pw.toml"
 metafile = true
 
 [[files]]
