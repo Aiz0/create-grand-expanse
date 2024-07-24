@@ -5,3 +5,4 @@ refresh.bat
 reload.bat
 serve.bat
 update-fork.bat
+index.toml
