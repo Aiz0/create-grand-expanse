@@ -1,7 +1,7 @@
 ServerEvents.recipes((event) => {
 
     //More Materials
-    addMMT("lunium_nova", 2400, 600, 1200)
+    addMMT("lunium_nova", 120, 60, 1200, 1)
     
     // Alloying
     // early game alloys can be mixed as well
@@ -148,7 +148,7 @@ ServerEvents.recipes((event) => {
             .heated();
     }
     
-    function addMMT(material_name, ingot_melt_ticks, ingot_cool_ticks, temperature) {
+    function addMMT(material_name, ingot_melt_ticks, ingot_cool_ticks, temperature, crushing_nuggets) {
         let nugget_melt_ticks = ingot_melt_ticks / 9;
         let block_melt_ticks = ingot_melt_ticks * 9;
         let nugget_cool_ticks = ingot_cool_ticks / 9;
@@ -170,22 +170,29 @@ ServerEvents.recipes((event) => {
         
         let ingot = "mmt:" + material_name + "_ingot";
         melt(ingot, liquid, FluidAmounts.INGOT, ingot_melt_ticks, temperature);
-        cast_type(liquid, FluidAmounts.INGOT, ingot, "ingot", ingot_melt_ticks);
+        cast_type(liquid, FluidAmounts.INGOT, ingot, "ingot", ingot_cool_ticks);      
+        
+        let plate = "mmt:" + material_name + "_plate";
+        melt(plate, liquid, FluidAmounts.INGOT, ingot_melt_ticks, temperature);
+        cast_type(liquid, FluidAmounts.INGOT, plate, "plate", ingot_cool_ticks);
 
         let block = "mmt:" + material_name + "_block";
         melt(block, liquid, FluidAmounts.METAL_BLOCK, block_melt_ticks, temperature);
         pour(liquid, FluidAmounts.METAL_BLOCK, block, block_cool_ticks, true);
         
         let gear = "mmt:" + material_name + "_gear";
-        melt(gear, liquid, FluidAmounts.INGOT * 4, block_melt_ticks, temperature);
-        cast_type(liquid, FluidAmounts.INGOT * 4, gear, "gear", ingot_melt_ticks);
+        melt(gear, liquid, FluidAmounts.INGOT * 4, ingot_melt_ticks * 4, temperature);
+        cast_type(liquid, FluidAmounts.INGOT * 4, gear, "gear", ingot_cool_ticks * 4);
                 
         let rod = "mmt:" + material_name + "_rod";
-        melt(rod, liquid, FluidAmounts.INGOT / 2, block_melt_ticks, temperature);
-        cast_type(liquid, FluidAmounts.INGOT / 2, rod, "rod", ingot_melt_ticks);
+        melt(rod, liquid, FluidAmounts.INGOT / 2, ingot_melt_ticks / 2, temperature);
+        cast_type(liquid, FluidAmounts.INGOT / 2, rod, "rod", ingot_cool_ticks / 2);
 
         let wire = "mmt:" + material_name + "_wire";
-        melt(wire, liquid, FluidAmounts.INGOT / 2, block_melt_ticks, temperature);
-        cast_type(liquid, FluidAmounts.INGOT / 2, wire, "wire", ingot_melt_ticks);
+        melt(wire, liquid, FluidAmounts.INGOT / 2, ingot_melt_ticks / 2, temperature);
+        cast_type(liquid, FluidAmounts.INGOT / 2, wire, "wire", ingot_cool_ticks / 2);
+        
+        event.recipes.create.crushing(dust, ingot);
+        event.recipes.create.crushing([dust, Item.of(nugget, crushing_nuggets)], raw);
     }
 });
