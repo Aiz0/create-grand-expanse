@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "grand_expanse:item/fluix_shimmer_bucket"
+  }
+}
