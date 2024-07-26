@@ -405,11 +405,12 @@ ServerEvents.recipes((event) => {
         })
         .id("scannable:scanner");
     event
-        .shaped("scannable:blank_module", ["RBR", "RDR", "WBW"], {
+        .shaped("scannable:blank_module", ["RLR", "RWR", " B "], {
             B: "create:brass_sheet",
             R: "thermal:cured_rubber",
             D: "minecraft:redstone",
             W: "mmt:lunium_nova_wire",
+            L: "mmt:lunium_nova_plate",
         })
         .id("scannable:blank_module");
 
