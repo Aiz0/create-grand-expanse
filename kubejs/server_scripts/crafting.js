@@ -417,6 +417,14 @@ ServerEvents.recipes((event) => {
         .id("create:crafting/logistics/redstone_link");
 
     event
+        .shaped("create:rotation_speed_controller", [" P ", "NBN", " N "], {
+            P: "create:precision_mechanism",
+            N: "mmt:lunium_nova_nugget",
+            B: "create:brass_casing",
+        })
+        .id("create:crafting/kinetics/rotation_speed_controller");
+    
+    event
         .shaped("create_power_loader:andesite_chunk_loader", ["GGG", "GLG", "ATA"], {
             G: "#forge:glass",
             L: "mmt:lunium_nova_ingot",
