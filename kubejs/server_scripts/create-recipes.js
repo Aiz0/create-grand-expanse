@@ -356,9 +356,9 @@ ServerEvents.recipes((event) => {
             // prettier-ignore
             "  S  ",
             "  S  ",
-            " BBB ",
+            " BLB ",
             " EAE ",
-            "IPPPI",
+            "IPGPI",
             "I D I",
             "I   I",
         ],
@@ -370,6 +370,8 @@ ServerEvents.recipes((event) => {
             P: "create:precision_mechanism",
             I: "#forge:plates/invar",
             D: "create:mechanical_drill",
+            L: "mmt:lunium_nova_plate",
+            G: "mmt:lunium_nova_gear",
         }
     );
 
