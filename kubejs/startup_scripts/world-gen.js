@@ -17,7 +17,7 @@ WorldgenEvents.add((event) => {
     event.addOre((ore) => {
         ore.id = global.packName + ":lunium_nova_moon";
         ore.addTarget("#ad_astra:moon_ore_replaceables", global.items.lunium_nova_ore);
-        ore.count([2, 10]).squared().triangleHeight(0, 50);
+        ore.count([2, 10]).squared().triangleHeight(-40, 20);
         ore.size = 3;
         ore.chance = 1.5;
     })
