@@ -37,13 +37,7 @@ ServerEvents.recipes((event) => {
         225,
         750
     );
-    melt(
-        "minecraft:redstone",
-        "thermal:redstone",
-        FluidAmounts.INGOT,
-        25,
-        750
-    )
+    melt("minecraft:redstone", "thermal:redstone", FluidAmounts.INGOT, 25, 750);
     cast_type(
         global.fluids.andesite_mixture,
         FluidAmounts.INGOT,
@@ -59,6 +53,16 @@ ServerEvents.recipes((event) => {
         S: "grand_expanse:smoldering_core",
         C: "minecraft:copper_ingot",
     });
+
+    cast(
+        global.fluids.cryo_solution,
+        FluidAmounts.INGOT,
+        global.items.cryo_crystal,
+        "mmt:lunium_nova_dust",
+        200,
+        true,
+        false
+    );
 
     function alloy(output, fluids) {
         const fluidIngredients = fluids.reduce((result, fluid) => {

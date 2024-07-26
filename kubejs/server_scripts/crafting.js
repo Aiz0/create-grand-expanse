@@ -7,7 +7,7 @@ ServerEvents.recipes((event) => {
             A: "minecraft:andesite",
             B: "create:zinc_nugget",
             C: "minecraft:clay_ball",
-        },
+        }
     );
 
     // Mechanical Saw now uses thermal saw blade
@@ -38,7 +38,7 @@ ServerEvents.recipes((event) => {
                 A: "#forge:rods/iron",
                 B: "minecraft:magma_block",
                 C: "create:iron_sheet",
-            },
+            }
         )
         .id("create:crafting/kinetics/empty_blaze_burner");
 
@@ -71,14 +71,14 @@ ServerEvents.recipes((event) => {
             B: "#minecraft:planks",
             C: "create:fluid_tank",
             D: "thermal:drill_head",
-        },
+        }
     );
 
     // Fluid pipe needs rubber obviously
     event.replaceInput(
         {output: "create:fluid_pipe"},
         "#forge:ingots/copper",
-        "thermal:cured_rubber",
+        "thermal:cured_rubber"
     );
 
     // belts use rubber tooo
@@ -100,7 +100,7 @@ ServerEvents.recipes((event) => {
             C: "#forge:glass",
             D: "create:andesite_casing",
             E: "minecraft:iron_block",
-        },
+        }
     );
     // Alt Recipe using press
     event.shaped(
@@ -110,7 +110,7 @@ ServerEvents.recipes((event) => {
             A: "create:andesite_alloy",
             B: "#forge:glass",
             C: "create:mechanical_press",
-        },
+        }
     );
 
     // Create sifter Meshes
@@ -139,6 +139,13 @@ ServerEvents.recipes((event) => {
             B: "createdeco:cast_iron_ingot",
         })
         .id("tconstruct:smeltery/seared/table");
+
+    // we don't want copper cans because tin can do better
+    event.replaceInput(
+        { output: "tconstruct:copper_can" },
+        "minecraft:copper_ingot",
+        "#forge:ingots/tin"
+    );
 
     // Electrolyzer
     event.shaped(global.items.copper_coil_block, ["SSS", "SCS", "SSS"], {
@@ -174,7 +181,7 @@ ServerEvents.recipes((event) => {
             {output: "ad_astra:rocket_nose_cone"},
         ],
         "ad_astra:steel_plate",
-        "create:sturdy_sheet",
+        "create:sturdy_sheet"
     );
 
     // Ad Astra Tier 1
@@ -248,7 +255,7 @@ ServerEvents.recipes((event) => {
                 L: "thermal:fluid_cell_frame",
                 F: "ad_astra:rocket_fin",
                 E: "ad_astra:desh_engine",
-            },
+            }
         )
         .id("ad_astra:nasa_workbench/tier_2_rocket");
 
@@ -300,7 +307,7 @@ ServerEvents.recipes((event) => {
             {output: "ad_astra:oxygen_gear"},
         ],
         "ad_astra:steel_plate",
-        "#forge:plates/copper",
+        "#forge:plates/copper"
     );
 
     // oxygen loader
@@ -348,7 +355,7 @@ ServerEvents.recipes((event) => {
                 P: "thermal:tin_plate",
                 O: "toms_storage:ts.open_crate",
                 T: "thermal:tin_ingot",
-            },
+            }
         )
         .id("toms_storage:inventory_cable_connector");
 
@@ -373,13 +380,13 @@ ServerEvents.recipes((event) => {
     event.replaceInput(
         {output: "create:brass_hand"},
         "create:brass_sheet",
-        "#forge:plates/bronze",
+        "#forge:plates/bronze"
     );
     // electron tube can only be crafted by deployer. that would be dependancy loop
     event.replaceInput(
         {output: "create:deployer"},
         "create:electron_tube",
-        "create:shaft_tier_0",
+        "create:shaft_tier_0"
     );
     // Fumo
     event.shaped(global.items.fumo_base, ["WWW", "WOW", "WWW"], {
