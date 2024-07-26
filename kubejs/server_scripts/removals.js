@@ -6,8 +6,19 @@ ServerEvents.recipes((event) => {
         // Minecraft
         { type: "minecraft:smelting", output: "#forge:ingots" },
         { type: "minecraft:blasting", output: "#forge:ingots" },
-        // Remove iron and gold tools
-        { output: "#forge:tools/gold" },
+
+        // Remove vanilla tools
+        { output: "#forge:tools/pickaxes" },
+        { output: "#forge:tools/axes" },
+        { output: "#forge:tools/shovels" },
+        { output: "#forge:tools/swords" },
+        { output: "#forge:tools/hoes" },
+        // Remove normal armors but keep leather and diving suit
+        {
+            output: "#forge:armors",
+            not: { input: "#forge:leather" },
+            not: { input: "#forge:ingots/copper" },
+        },
 
         // Create
         {
