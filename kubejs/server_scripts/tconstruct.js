@@ -153,46 +153,46 @@ ServerEvents.recipes((event) => {
     }
     
     function addMMT(material_name, ingot_melt_ticks, ingot_cool_ticks, temperature, crushing_nuggets) {
-        let nugget_melt_ticks = ingot_melt_ticks / 9;
-        let block_melt_ticks = ingot_melt_ticks * 9;
-        let nugget_cool_ticks = ingot_cool_ticks / 9;
-        let block_cool_ticks = ingot_cool_ticks * 9;
-        let liquid = "grand_expanse:molten_" + material_name;
+        const nugget_melt_ticks = ingot_melt_ticks / 9;
+        const block_melt_ticks = ingot_melt_ticks * 9;
+        const nugget_cool_ticks = ingot_cool_ticks / 9;
+        const block_cool_ticks = ingot_cool_ticks * 9;
+        const liquid = "grand_expanse:molten_" + material_name;
         
-        let raw = "mmt:raw_" + material_name;
+        const raw = "mmt:raw_" + material_name;
         melt(raw, liquid, FluidAmounts.INGOT, ingot_melt_ticks, temperature);
         
-        let dust = "mmt:" + material_name + "_dust";
+        const dust = "mmt:" + material_name + "_dust";
         melt(dust, liquid, FluidAmounts.INGOT, ingot_melt_ticks, temperature);
 
-        let rawBlock = "mmt:raw_" + material_name + "_block";
+        const rawBlock = "mmt:raw_" + material_name + "_block";
         melt(rawBlock, liquid, FluidAmounts.METAL_BLOCK, block_melt_ticks, temperature);
         
-        let nugget = "mmt:" + material_name + "_nugget";
+        const nugget = "mmt:" + material_name + "_nugget";
         melt(nugget, liquid, FluidAmounts.INGOT, nugget_melt_ticks, temperature);
         cast_type(liquid, FluidAmounts.INGOT, nugget, "nugget", nugget_cool_ticks);
         
-        let ingot = "mmt:" + material_name + "_ingot";
+        const ingot = "mmt:" + material_name + "_ingot";
         melt(ingot, liquid, FluidAmounts.INGOT, ingot_melt_ticks, temperature);
         cast_type(liquid, FluidAmounts.INGOT, ingot, "ingot", ingot_cool_ticks);      
         
-        let plate = "mmt:" + material_name + "_plate";
+        const plate = "mmt:" + material_name + "_plate";
         melt(plate, liquid, FluidAmounts.INGOT, ingot_melt_ticks, temperature);
         cast_type(liquid, FluidAmounts.INGOT, plate, "plate", ingot_cool_ticks);
 
-        let block = "mmt:" + material_name + "_block";
+        const block = "mmt:" + material_name + "_block";
         melt(block, liquid, FluidAmounts.METAL_BLOCK, block_melt_ticks, temperature);
         pour(liquid, FluidAmounts.METAL_BLOCK, block, block_cool_ticks, true);
         
-        let gear = "mmt:" + material_name + "_gear";
+        const gear = "mmt:" + material_name + "_gear";
         melt(gear, liquid, FluidAmounts.INGOT * 4, ingot_melt_ticks * 4, temperature);
         cast_type(liquid, FluidAmounts.INGOT * 4, gear, "gear", ingot_cool_ticks * 4);
                 
-        let rod = "mmt:" + material_name + "_rod";
+        const rod = "mmt:" + material_name + "_rod";
         melt(rod, liquid, FluidAmounts.INGOT / 2, ingot_melt_ticks / 2, temperature);
         cast_type(liquid, FluidAmounts.INGOT / 2, rod, "rod", ingot_cool_ticks / 2);
 
-        let wire = "mmt:" + material_name + "_wire";
+        const wire = "mmt:" + material_name + "_wire";
         melt(wire, liquid, FluidAmounts.INGOT / 2, ingot_melt_ticks / 2, temperature);
         cast_type(liquid, FluidAmounts.INGOT / 2, wire, "wire", ingot_cool_ticks / 2);
         
