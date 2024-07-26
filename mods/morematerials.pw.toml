@@ -1,0 +1,13 @@
+name = "Lopy's More Materials"
+filename = "mmt-UP0.3a-1.19.2-morematerials.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/ChTkZyTh/versions/vd1HG7u8/mmt-UP0.3a-1.19.2-morematerials.jar"
+hash-format = "sha1"
+hash = "ac9a756716f93e9f224be12d9391813e2f9a98c8"
+
+[update]
+[update.modrinth]
+mod-id = "ChTkZyTh"
+version = "vd1HG7u8"
