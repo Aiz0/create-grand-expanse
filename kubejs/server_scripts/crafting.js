@@ -408,7 +408,6 @@ ServerEvents.recipes((event) => {
         .shaped("scannable:blank_module", ["RLR", "RWR", " B "], {
             B: "create:brass_sheet",
             R: "thermal:cured_rubber",
-            D: "minecraft:redstone",
             W: "mmt:lunium_nova_wire",
             L: "mmt:lunium_nova_plate",
         })
@@ -433,13 +432,11 @@ ServerEvents.recipes((event) => {
         .id("create:crafting/kinetics/rotation_speed_controller");
     
     event
-        .shaped("create_power_loader:andesite_chunk_loader", ["GGG", "GLG", "ATA"], {
-            G: "#forge:glass",
-            L: "mmt:lunium_nova_ingot",
-            A: "create:andesite_casing",
-            T: "mmt:lunium_nova_gear",
+        .shaped("create:steam_engine", ["B", "P", "C"], {
+            B: "#forge:plates/brass",
+            P: "create:precision_mechanism",
+            C: "minecraft:copper_block",
         })
-        .id("create:conversion_0");
 
     //Thermal
     event.replaceInput(
