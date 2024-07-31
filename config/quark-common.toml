@@ -29,7 +29,6 @@
 
 [experimental]
 	"Game Nerfs" = true
-    "Adjustable Chat" = true
     [experimental.game_nerfs]
         # Things nerfed by default that we don't want to nerf.
 		"Nerf Mending" = false
@@ -40,10 +39,6 @@
 		#Disables mob griefing for only specific entities
 		"Enable Selective Mob Griefing" = true
 		"Non Griefing Entities" = ["minecraft:creeper", "minecraft:enderman"]
-    
-    [experimental.adjustable_chat]
-        # Move chat up a bit so its' not aligned with armor.
-		"Vertical Shift" = -10
 
 [tweaks]
 	[tweaks.emotes]
