@@ -1,0 +1,15 @@
+{
+    "name": "grand_expanse:persistent_ore_copper",
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "grand_expanse:persistent_ores/pst_copper_impure",
+                "processors": "minecraft:empty"
+            }
+        }
+    ]
+}
