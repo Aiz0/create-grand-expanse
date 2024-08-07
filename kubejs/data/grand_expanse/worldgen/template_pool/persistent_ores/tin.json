@@ -7,7 +7,7 @@
             "element": {
                 "element_type": "minecraft:single_pool_element",
                 "projection": "rigid",
-                "location": "grand_expanse:persistent_ores/pst_ore_3x3",
+                "location": "grand_expanse:persistent_ores/3x3",
                 "processors": [
                     {
                         "processor_type": "minecraft:block_rot",

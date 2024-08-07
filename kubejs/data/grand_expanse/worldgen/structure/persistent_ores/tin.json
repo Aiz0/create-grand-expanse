@@ -4,12 +4,12 @@
     "step": "underground_structures",
     "spawn_overrides": {},
     "terrain_adaptation": "bury",
-    "start_pool": "grand_expanse:persistent_ores_zinc",
+    "start_pool": "grand_expanse:persistent_ores/tin",
     "size": 1,
     "start_height": {
         "type": "minecraft:very_biased_to_bottom",
         "min_inclusive": {
-            "absolute": 10
+            "absolute": -54
         },
         "max_inclusive": {
             "absolute": 50

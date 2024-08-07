@@ -1,14 +1,14 @@
 {
     "structures": [
         {
-            "structure": "grand_expanse:persistent_ores_tin",
+            "structure": "grand_expanse:persistent_ores/copper",
             "weight": 1
         }
     ],
     "placement": {
         "type": "minecraft:random_spread",
-        "salt": 15111116,
-        "spacing": 2,
-        "separation": 1
+        "salt": 151116111116,
+        "spacing": 80,
+        "separation": 20
     }
 }

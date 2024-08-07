@@ -1,5 +1,5 @@
 {
-    "name": "grand_expanse:persistent_ore_copper",
+    "name": "grand_expanse:persistent_ore_zinc",
     "fallback": "minecraft:empty",
     "elements": [
         {
@@ -7,7 +7,7 @@
             "element": {
                 "element_type": "minecraft:single_pool_element",
                 "projection": "rigid",
-                "location": "grand_expanse:persistent_ores/pst_ore_3x3",
+                "location": "grand_expanse:persistent_ores/3x3",
                 "processors": [
                     {
                         "processor_type": "minecraft:block_rot",
@@ -26,7 +26,7 @@
                                     "block": "persistent_ores:persistent_copper_block"
                                 },
                                 "output_state": {
-                                    "Name": "persistent_ores:persistent_copper_block"
+                                    "Name": "persistent_ores:persistent_zinc_block"
                                 }
                             },
                             {
@@ -38,7 +38,7 @@
                                     "block": "minecraft:raw_copper_block"
                                 },
                                 "output_state": {
-                                    "Name": "minecraft:raw_copper_block"
+                                    "Name": "create:raw_zinc_block"
                                 }
                             }
                         ]

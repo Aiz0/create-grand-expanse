@@ -1,15 +1,15 @@
 {
     "type": "minecraft:jigsaw",
-    "biomes": "#minecraft:has_structure/mineshaft",
+    "biomes": "ad_astra:lunar_wastelands",
     "step": "underground_structures",
     "spawn_overrides": {},
     "terrain_adaptation": "bury",
-    "start_pool": "grand_expanse:persistent_ores_copper",
+    "start_pool": "grand_expanse:persistent_ores/zinc",
     "size": 1,
     "start_height": {
         "type": "minecraft:very_biased_to_bottom",
         "min_inclusive": {
-            "absolute": 10
+            "absolute": -54
         },
         "max_inclusive": {
             "absolute": 50
