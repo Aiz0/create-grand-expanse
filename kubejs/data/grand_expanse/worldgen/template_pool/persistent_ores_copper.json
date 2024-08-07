@@ -26,7 +26,7 @@
                                     "block": "persistent_ores:persistent_copper_block"
                                 },
                                 "output_state": {
-                                    "Name": "persistent_ores:persistent_iron_block"
+                                    "Name": "persistent_ores:persistent_copper_block"
                                 }
                             },
                             {
@@ -38,7 +38,7 @@
                                     "block": "minecraft:raw_copper_block"
                                 },
                                 "output_state": {
-                                    "Name": "minecraft:raw_iron_block"
+                                    "Name": "minecraft:raw_copper_block"
                                 }
                             }
                         ]
