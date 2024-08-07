@@ -7,8 +7,43 @@
             "element": {
                 "element_type": "minecraft:single_pool_element",
                 "projection": "rigid",
-                "location": "grand_expanse:persistent_ores/pst_copper_impure",
-                "processors": "minecraft:empty"
+                "location": "grand_expanse:persistent_ores/pst_ore_3x3",
+                "processors": [
+                    {
+                        "processor_type": "minecraft:block_rot",
+                        "integrity": 0.5,
+                        "rottable_blocks": "minecraft:raw_copper_block"
+                    },
+                    {
+                        "processor_type": "minecraft:rule",
+                        "rules": [
+                            {
+                                "location_predicate": {
+                                    "predicate_type": "minecraft:always_true"
+                                },
+                                "input_predicate": {
+                                    "predicate_type": "minecraft:block_match",
+                                    "block": "persistent_ores:persistent_copper_block"
+                                },
+                                "output_state": {
+                                    "Name": "persistent_ores:persistent_iron_block"
+                                }
+                            },
+                            {
+                                "location_predicate": {
+                                    "predicate_type": "minecraft:always_true"
+                                },
+                                "input_predicate": {
+                                    "predicate_type": "minecraft:block_match",
+                                    "block": "minecraft:raw_copper_block"
+                                },
+                                "output_state": {
+                                    "Name": "minecraft:raw_iron_block"
+                                }
+                            }
+                        ]
+                    }
+                ]
             }
         }
     ]
