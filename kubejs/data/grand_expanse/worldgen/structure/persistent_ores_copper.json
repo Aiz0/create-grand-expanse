@@ -3,7 +3,7 @@
     "biomes": "#minecraft:has_structure/mineshaft",
     "step": "underground_structures",
     "spawn_overrides": {},
-    "terrain_adaptation": "none",
+    "terrain_adaptation": "bury",
     "start_pool": "grand_expanse:persistent_ores_copper",
     "size": 1,
     "start_height": {
