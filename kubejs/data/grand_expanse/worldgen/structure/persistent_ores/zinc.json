@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:jigsaw",
+    "biomes": "ad_astra:lunar_wastelands",
+    "step": "underground_structures",
+    "spawn_overrides": {},
+    "terrain_adaptation": "bury",
+    "start_pool": "grand_expanse:persistent_ores/zinc",
+    "size": 1,
+    "start_height": {
+        "type": "minecraft:very_biased_to_bottom",
+        "min_inclusive": {
+            "absolute": -54
+        },
+        "max_inclusive": {
+            "absolute": 50
+        }
+    },
+    "max_distance_from_center": 1,
+    "use_expansion_hack": false
+}
