@@ -22,7 +22,7 @@ ServerEvents.recipes((event) => {
                 Fluid.of(
                     "create:potion",
                     FluidAmounts.BOTTLE,
-                    '{Potion:"minecraft:slow_falling"}',
+                    '{Potion:"minecraft:slow_falling"}'
                 ),
             ]),
             event.recipes.create.deploying(inter, [
@@ -42,26 +42,43 @@ ServerEvents.recipes((event) => {
                 "minecraft:writable_book",
             ]),
             event.recipes.create.deploying(inter, [inter, "ftbquests:book"]),
+            event.recipes.create.deploying(inter, [inter, "ad_astra:astrodux"]),
             event.recipes.create.deploying(inter, [
                 inter,
-                Item.of(
-                    "patchouli:guide_book",
-                    '{"patchouli:book":"thermal:guidebook"}',
-                ),
+                "tconstruct:materials_and_you",
             ]),
-            event.recipes.create.deploying(inter, [inter, "ad_astra:astrodux"]),
+            event.recipes.create.deploying(inter, [
+                inter,
+                "tconstruct:puny_smelting",
+            ]),
+            event.recipes.create.deploying(inter, [
+                inter,
+                "tconstruct:mighty_smelting",
+            ]),
+            event.recipes.create.deploying(inter, [
+                inter,
+                "tconstruct:tinkers_gadgetry",
+            ]),
+            event.recipes.create.deploying(inter, [
+                inter,
+                "tconstruct:fantastic_foundry",
+            ]),
+            event.recipes.create.deploying(inter, [
+                inter,
+                "tconstruct:encyclopedia",
+            ]),
             event.recipes.create.filling(inter, [
                 inter,
                 Fluid.of(
                     "create_enchantment_industry:ink",
-                    FluidAmounts.BUCKET,
+                    FluidAmounts.BUCKET
                 ),
             ]),
             event.recipes.create.filling(inter, [
                 inter,
                 Fluid.of(
                     "create_enchantment_industry:hyper_experience",
-                    FluidAmounts.BOTTLE,
+                    FluidAmounts.BOTTLE
                 ),
             ]),
         ])
@@ -85,7 +102,7 @@ ServerEvents.recipes((event) => {
                 Fluid.of(
                     "create:potion",
                     FluidAmounts.BOTTLE,
-                    '{Potion:"minecraft:leaping"}',
+                    '{Potion:"minecraft:leaping"}'
                 ),
             ]),
         ])
@@ -167,7 +184,7 @@ ServerEvents.recipes((event) => {
                 Fluid.of(
                     "create:potion",
                     FluidAmounts.BOTTLE,
-                    '{Potion:"minecraft:swiftness"}',
+                    '{Potion:"minecraft:swiftness"}'
                 ),
             ]),
             event.recipes.create.filling(inter, [
@@ -246,7 +263,7 @@ ServerEvents.recipes((event) => {
                 Fluid.of(
                     "create:potion",
                     FluidAmounts.BOTTLE,
-                    '{Potion:"minecraft:swiftness"}',
+                    '{Potion:"minecraft:swiftness"}'
                 ),
             ]),
             event.recipes.create.deploying(inter, [inter, "minecraft:cod"]),
@@ -275,7 +292,7 @@ ServerEvents.recipes((event) => {
                 Fluid.of(
                     "create:potion",
                     FluidAmounts.BOTTLE,
-                    '{Potion:"minecraft:invisibility"}',
+                    '{Potion:"minecraft:invisibility"}'
                 ),
             ]),
             event.recipes.create.deploying(inter, [
