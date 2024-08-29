@@ -1,7 +1,9 @@
-﻿ServerEvents.blockLootTables(event => {
-    event.addBlock(global.items.lunium_nova_ore, block_table => {
-        block_table.addPool(pool => {
-            pool.addItem("mmt:raw_lunium_nova")
-        })
-    })
-})
+﻿LootJS.modifiers((event) => {
+    event
+        .addBlockLootModifier(global.items.lunium_nova_ore)
+        .removeLoot(Ingredient.all)
+        .pool((p) => {
+            p.addLoot("mmt:raw_lunium_nova");
+            p.applyOreBonus("minecraft:fortune");
+        });
+});
