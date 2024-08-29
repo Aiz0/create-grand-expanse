@@ -76,7 +76,7 @@ ServerEvents.recipes((event) => {
 
     // Fluid pipe needs rubber obviously
     event.replaceInput(
-        {output: "create:fluid_pipe"},
+        { output: "create:fluid_pipe" },
         "#forge:ingots/copper",
         "thermal:cured_rubber"
     );
@@ -177,8 +177,8 @@ ServerEvents.recipes((event) => {
 
     event.replaceInput(
         [
-            {output: "ad_astra:launch_pad"},
-            {output: "ad_astra:rocket_nose_cone"},
+            { output: "ad_astra:launch_pad" },
+            { output: "ad_astra:rocket_nose_cone" },
         ],
         "ad_astra:steel_plate",
         "create:sturdy_sheet"
@@ -303,8 +303,8 @@ ServerEvents.recipes((event) => {
     // Should be possible to craft early game.
     event.replaceInput(
         [
-            {output: "ad_astra:oxygen_tank"},
-            {output: "ad_astra:oxygen_gear"},
+            { output: "ad_astra:oxygen_tank" },
+            { output: "ad_astra:oxygen_gear" },
         ],
         "ad_astra:steel_plate",
         "#forge:plates/copper"
@@ -378,13 +378,13 @@ ServerEvents.recipes((event) => {
 
     // Bronze hand
     event.replaceInput(
-        {output: "create:brass_hand"},
+        { output: "create:brass_hand" },
         "create:brass_sheet",
         "#forge:plates/bronze"
     );
     // electron tube can only be crafted by deployer. that would be dependancy loop
     event.replaceInput(
-        {output: "create:deployer"},
+        { output: "create:deployer" },
         "create:electron_tube",
         "create:shaft_tier_0"
     );
@@ -408,7 +408,6 @@ ServerEvents.recipes((event) => {
         .shaped("scannable:blank_module", ["RLR", "RWR", " B "], {
             B: "create:brass_sheet",
             R: "thermal:cured_rubber",
-            D: "minecraft:redstone",
             W: "mmt:lunium_nova_wire",
             L: "mmt:lunium_nova_plate",
         })
@@ -431,19 +430,24 @@ ServerEvents.recipes((event) => {
             B: "create:brass_casing",
         })
         .id("create:crafting/kinetics/rotation_speed_controller");
-    
+
     event
-        .shaped("create_power_loader:andesite_chunk_loader", ["GGG", "GLG", "ATA"], {
-            G: "#forge:glass",
-            L: "mmt:lunium_nova_ingot",
-            A: "create:andesite_casing",
-            T: "mmt:lunium_nova_gear",
-        })
+        .shaped(
+            "create_power_loader:andesite_chunk_loader",
+            ["GGG", "GLG", "ATA"],
+            {
+                G: "#forge:glass",
+                L: "mmt:lunium_nova_ingot",
+                A: "create:andesite_casing",
+                T: "mmt:lunium_nova_gear",
+            }
+        )
         .id("create:conversion_0");
 
     //Thermal
     event.replaceInput(
-        {id: "thermal:charge_bench"},
-        {tag: "forge:ingots/lead"},
-        "mmt:lunium_nova_plate");
+        { id: "thermal:charge_bench" },
+        { tag: "forge:ingots/lead" },
+        "mmt:lunium_nova_plate"
+    );
 });
