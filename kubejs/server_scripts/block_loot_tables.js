@@ -2,8 +2,14 @@
     event
         .addBlockLootModifier(global.items.lunium_nova_ore)
         .removeLoot(Ingredient.all)
-        .pool((p) => {
-            p.addLoot("mmt:raw_lunium_nova");
-            p.applyOreBonus("minecraft:fortune");
-        });
+        .addAlternativesLoot(
+            LootEntry.of(global.items.lunium_nova_ore).when((c) =>
+                c.matchMainHand(
+                    ItemFilter.hasEnchantment("minecraft:silk_touch")
+                )
+            ),
+            LootEntry.of("mmt:raw_lunium_nova").applyOreBonus(
+                "minecraft:fortune"
+            )
+        );
 });
