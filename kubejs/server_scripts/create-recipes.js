@@ -128,7 +128,16 @@ ServerEvents.recipes((event) => {
                     Item.of("create:experience_nugget").withChance(0.1),
                 ],
                 Item.of(`persistent_ores:${material}_cluster`)
-            );
+            ).id(`grand_expanse:${material}_cluster_crushing`);
+            
+            const impureModule = `persistent_ores:${material}_module_impure`
+            event.recipes.create.sequenced_assembly([impureModule], "scannable:blank_module",
+                [
+                    event.recipes.create.deploying("scannable:blank_module",
+                        ["scannable:blank_module", "#forge:raw_materials/"+material]),
+                    event.recipes.create.filling("scannable:blank_module", 
+                        ["scannable:blank_module", Fluid.of(`tconstruct:molten_${material}`, FluidAmounts.INGOT)]),
+                ], "scannable:blank_module", 16).id(`grand_expanse:${material}_impure_module_assembly`);
         }
     });
 
