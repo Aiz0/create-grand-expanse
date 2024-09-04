@@ -1,0 +1,13 @@
+name = "Create: Unify"
+filename = "Create-Unify-1.19.2-0.1a.Beta.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/fmHq5iI6/versions/9exQteCV/Create-Unify-1.19.2-0.1a.Beta.jar"
+hash-format = "sha1"
+hash = "c2b19476115c6ddc4026d1d71b7d24938b2d5c15"
+
+[update]
+[update.modrinth]
+mod-id = "fmHq5iI6"
+version = "9exQteCV"
