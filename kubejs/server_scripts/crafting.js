@@ -76,7 +76,7 @@ ServerEvents.recipes((event) => {
 
     // Fluid pipe needs rubber obviously
     event.replaceInput(
-        {output: "create:fluid_pipe"},
+        { output: "create:fluid_pipe" },
         "#forge:ingots/copper",
         "thermal:cured_rubber"
     );
@@ -177,8 +177,8 @@ ServerEvents.recipes((event) => {
 
     event.replaceInput(
         [
-            {output: "ad_astra:launch_pad"},
-            {output: "ad_astra:rocket_nose_cone"},
+            { output: "ad_astra:launch_pad" },
+            { output: "ad_astra:rocket_nose_cone" },
         ],
         "ad_astra:steel_plate",
         "create:sturdy_sheet"
@@ -303,8 +303,8 @@ ServerEvents.recipes((event) => {
     // Should be possible to craft early game.
     event.replaceInput(
         [
-            {output: "ad_astra:oxygen_tank"},
-            {output: "ad_astra:oxygen_gear"},
+            { output: "ad_astra:oxygen_tank" },
+            { output: "ad_astra:oxygen_gear" },
         ],
         "ad_astra:steel_plate",
         "#forge:plates/copper"
@@ -378,13 +378,13 @@ ServerEvents.recipes((event) => {
 
     // Bronze hand
     event.replaceInput(
-        {output: "create:brass_hand"},
+        { output: "create:brass_hand" },
         "create:brass_sheet",
         "#forge:plates/bronze"
     );
     // electron tube can only be crafted by deployer. that would be dependancy loop
     event.replaceInput(
-        {output: "create:deployer"},
+        { output: "create:deployer" },
         "create:electron_tube",
         "create:shaft_tier_0"
     );
@@ -430,7 +430,7 @@ ServerEvents.recipes((event) => {
             B: "create:brass_casing",
         })
         .id("create:crafting/kinetics/rotation_speed_controller");
-    
+
     event
         .shaped("create:steam_engine", ["B", "P", "C"], {
             B: "#forge:plates/brass",
@@ -440,7 +440,8 @@ ServerEvents.recipes((event) => {
 
     //Thermal
     event.replaceInput(
-        {id: "thermal:charge_bench"},
-        {tag: "forge:ingots/lead"},
-        "mmt:lunium_nova_plate");
+        { id: "thermal:charge_bench" },
+        { tag: "forge:ingots/lead" },
+        "mmt:lunium_nova_plate"
+    );
 });

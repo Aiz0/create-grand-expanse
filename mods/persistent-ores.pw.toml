@@ -1,7 +1,7 @@
 name = "persistent-ores"
-filename = "persistent_ores-1.0.0.jar"
+filename = "persistent_ores-1.0.2.jar"
 
 [download]
-url = "https://github.com/NotStargazer/Persistent-Ores/releases/download/1.19.2/persistent_ores-1.0.0.jar"
+url = "https://github.com/NotStargazer/Persistent-Ores/releases/download/1.19.2-1.0.2/persistent_ores-1.0.2.jar"
 hash-format = "sha256"
-hash = "0396f55faba2fd360ad49ba4b373c90d3b7f8066c293fee0f9527b1451c3cb53"
+hash = "5899ad2f59640b1576853a9af5c43c516e52411803bc0e0b87c044d554518e68"

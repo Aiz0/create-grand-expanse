@@ -102,14 +102,34 @@ ServerEvents.recipes((event) => {
     // Mill ore to dust for chance for extra
     Ingredient.of("#forge:raw_materials").itemIds.forEach((item) => {
         const material = item.split("_").pop();
-        const output = AlmostUnified.getPreferredItemForTag(
-            `forge:dusts/${material}`
-        );
-        if (output.isEmpty()) {
-            return;
+        {
+            const output = AlmostUnified.getPreferredItemForTag(
+                `forge:dusts/${material}`
+            );
+            if (output.isEmpty()) {
+                return;
+            }
+            //TODO NO MAGIC number move to config or something jeeeeez
+            event.recipes.create.milling(
+                [output, output.withChance(0.2)],
+                item
+            );
         }
-        //TODO NO MAGIC number move to config or something jeeeeez
-        event.recipes.create.milling([output, output.withChance(0.2)], item);
+        {
+            const output = AlmostUnified.getPreferredItemForTag(
+                `forge:nuggets/${material}`
+            );
+            if (output.isEmpty()) {
+                return;
+            }
+            event.recipes.create.crushing(
+                [
+                    output.withCount(6).withChance(0.5),
+                    Item.of("create:experience_nugget").withChance(0.1),
+                ],
+                Item.of(`persistent_ores:${material}_cluster`)
+            );
+        }
     });
 
     //Tiered create stuff

@@ -1,0 +1,14 @@
+{
+    "structures": [
+        {
+            "structure": "grand_expanse:persistent_ores/tin",
+            "weight": 1
+        }
+    ],
+    "placement": {
+        "type": "minecraft:random_spread",
+        "salt": 15111116,
+        "spacing": 80,
+        "separation": 20
+    }
+}
