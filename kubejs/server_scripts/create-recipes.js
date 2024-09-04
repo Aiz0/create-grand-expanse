@@ -200,6 +200,7 @@ ServerEvents.recipes((event) => {
             "create:electron_tube",
         ]);
     }
+
     function cast(result, input, fluid, amount) {
         event.custom({
             type: "tconstruct:casting_table",
@@ -369,11 +370,11 @@ ServerEvents.recipes((event) => {
         .id("createaddition:crafting/capacitor_1");
 
     //There's 2 for some reason, so I delete the other
-    event.remove({ id: "createaddition:crafting/capacitor_2" });
+    event.remove({id: "createaddition:crafting/capacitor_2"});
 
     //Biofuel
     event.replaceInput(
-        { id: "createaddition:mixing/bioethanol" },
+        {id: "createaddition:mixing/bioethanol"},
         "create:cinder_flour",
         "create:wheat_flour"
     );
@@ -420,6 +421,74 @@ ServerEvents.recipes((event) => {
         }
     );
 
+    event
+        .recipes.create.mechanical_crafting("create_power_loader:andesite_chunk_loader",
+        [
+            // prettier-ignore
+            "GGGGG",
+            "GIIIG",
+            "GILIG",
+            "ANTNA"], 
+        {
+            G: "#forge:glass",
+            L: "mmt:lunium_nova_ingot",
+            A: "create:andesite_casing",
+            T: "mmt:lunium_nova_gear",
+            I: "minecraft:iron_ingot",
+            N: "create:andesite_alloy",
+        }
+    ).id("create:conversion_0");
+
+    //Brass tier stuff
+    event
+        .recipes.create.mechanical_crafting(Item.of("create:smart_chute"),
+        [" S ", "SLS", "ECE"],
+        {
+            S: "create:brass_sheet",
+            C: "create:electron_tube",
+            L: "create:chute",
+            E: "minecraft:redstone",
+        }
+    ).id("create:crafting/kinetics/smart_chute");
+    event
+        .recipes.create.mechanical_crafting(Item.of("create:brass_tunnel", 2),
+        [" S ", "BCB", "RER"],
+        {
+            S: "create:brass_sheet",
+            B: "create:brass_ingot",
+            C: "create:electron_tube",
+            R: "thermal:cured_rubber",
+            E: "minecraft:redstone",
+        }
+    ).id("create:crafting/logistics/brass_tunnel");
+    event
+        .recipes.create.mechanical_crafting(Item.of("create:brass_funnel", 2),
+        [" C ", "EBE", "SRS"],
+        {
+            S: "create:brass_sheet",
+            B: "create:brass_ingot",
+            C: "create:electron_tube",
+            R: "thermal:cured_rubber",
+            E: "minecraft:redstone",
+        }
+    ).id("create:crafting/logistics/brass_funnel");
+    event
+        .recipes.create.mechanical_crafting("createsifter:brass_sifter",
+        [
+            // prettier-ignore
+            "SSS",
+            "BAB",
+            "BGB",
+            "SCS"],
+        {
+            S: "create:brass_sheet",
+            B: "create:brass_ingot",
+            A: "createsifter:sifter",
+            G: "create:cogwheel_tier_2",
+            C: "create:brass_casing",
+        })
+        .id("createsifter:brass_sifter")
+    
     event.recipes.create
         .mechanical_crafting(
             "ad_astra:cryo_freezer",
@@ -427,9 +496,9 @@ ServerEvents.recipes((event) => {
                 // prettier-ignore
                 " C ",
                 " C ",
-                "CRC",
+                "LRL",
                 "AIT",
-                "CRC",
+                "LRL",
             ],
             {
                 A: "createaddition:modular_accumulator",
@@ -437,9 +506,9 @@ ServerEvents.recipes((event) => {
                 C: "#forge:storage_blocks/constantan",
                 R: "#forge:rods/lunium_nova",
                 I: "thermal:ice_charge",
+                L: global.items.low_density_structure,
             }
-        )
-        .id("ad_astra:recipes/cryo_freezer");
+        ).id("ad_astra:recipes/cryo_freezer");
 
     // cry fuel recipe for tier 2 rockets
     //
