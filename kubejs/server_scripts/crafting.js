@@ -432,17 +432,11 @@ ServerEvents.recipes((event) => {
         .id("create:crafting/kinetics/rotation_speed_controller");
 
     event
-        .shaped(
-            "create_power_loader:andesite_chunk_loader",
-            ["GGG", "GLG", "ATA"],
-            {
-                G: "#forge:glass",
-                L: "mmt:lunium_nova_ingot",
-                A: "create:andesite_casing",
-                T: "mmt:lunium_nova_gear",
-            }
-        )
-        .id("create:conversion_0");
+        .shaped("create:steam_engine", ["B", "P", "C"], {
+            B: "#forge:plates/brass",
+            P: "create:precision_mechanism",
+            C: "minecraft:copper_block",
+        })
 
     //Thermal
     event.replaceInput(
