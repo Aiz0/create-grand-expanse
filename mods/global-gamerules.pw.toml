@@ -1,6 +1,6 @@
 name = "Global GameRules"
 filename = "GlobalGameRules-1.19.2-7.0.1.7.jar"
-side = "server"
+side = "both"
 
 [download]
 url = "https://cdn.modrinth.com/data/PIJSp01k/versions/46YbcDPD/GlobalGameRules-1.19.2-7.0.1.7.jar"
