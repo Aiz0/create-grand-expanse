@@ -353,15 +353,19 @@ ServerEvents.recipes((event) => {
                 ]),
                 event.recipes.create.deploying("create:electron_tube", [
                     "create:electron_tube",
-                    "createaddition:electrum_spool",
+                    "#forge:wires/electrum",
                 ]),
                 event.recipes.create.deploying("create:electron_tube", [
                     "create:electron_tube",
-                    "createaddition:electrum_wire",
+                    "#forge:wires/electrum",
                 ]),
                 event.recipes.create.deploying("create:electron_tube", [
                     "create:electron_tube",
-                    "createaddition:electrum_wire",
+                    "minecraft:paper",
+                ]),
+                event.recipes.create.deploying("create:electron_tube", [
+                    "create:electron_tube",
+                    "createaddition:copper_spool",
                 ]),
             ]
         )
