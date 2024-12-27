@@ -1,0 +1,13 @@
+name = "Global GameRules"
+filename = "GlobalGameRules-1.19.2-7.0.1.7.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/PIJSp01k/versions/46YbcDPD/GlobalGameRules-1.19.2-7.0.1.7.jar"
+hash-format = "sha512"
+hash = "e61cb37eaf7fa88cb5af353af891d3e8efc882ae94618b9b2af1bea96ca8cccfa17fd29ba7f27f39a6cbdb727807e6f825b7a4dbfc8fc3fea28e187907d8749c"
+
+[update]
+[update.modrinth]
+mod-id = "PIJSp01k"
+version = "46YbcDPD"
