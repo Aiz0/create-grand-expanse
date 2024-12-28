@@ -26,6 +26,7 @@ global.fluids = {
     molten_cast_iron: null,
     fluix_shimmer: null,
     molten_lunium_nova: null,
+    molten_silicon : null,
     cryo_solution: null,
 };
 // define names from keys

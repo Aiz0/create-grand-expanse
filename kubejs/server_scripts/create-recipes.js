@@ -375,6 +375,132 @@ ServerEvents.recipes((event) => {
 
     //There's 2 for some reason, so I delete the other
     event.remove({id: "createaddition:crafting/capacitor_2"});
+    
+    //Applied Energistics
+    event.recipes.create
+        .sequenced_assembly(
+            [Item.of("ae2:printed_silicon")],
+            "#forge:plates/silicon",
+            [
+                event.recipes.create.cutting("ae2:printed_silicon", "ae2:printed_silicon"),
+                event.recipes.create.deploying("ae2:printed_silicon", [
+                    "ae2:printed_silicon",
+                    "ae2:silicon_press",
+                ]).keepHeldItem(),
+                event.recipes.create.pressing("ae2:printed_silicon", "ae2:printed_silicon"),
+            ]
+        )
+        .transitionalItem("mmt:silicon_plate")
+        .loops(1)
+        .id("ae2:inscriber/silicon_print");
+    
+    event.recipes.create
+        .sequenced_assembly(
+            [Item.of("ae2:printed_calculation_processor")],
+            "ae2:certus_quartz_crystal",
+            [
+                event.recipes.create.cutting("ae2:printed_calculation_processor", "ae2:printed_calculation_processor"),
+                event.recipes.create.deploying("ae2:printed_calculation_processor", [
+                    "ae2:printed_calculation_processor",
+                    "ae2:calculation_processor_press",
+                ]).keepHeldItem(),
+                event.recipes.create.pressing("ae2:printed_calculation_processor", "ae2:printed_calculation_processor"),
+            ]
+        )
+        .transitionalItem("ae2:certus_quartz_crystal")
+        .loops(1)
+        .id("ae2:inscriber/calculation_processor_print");
+
+    event.recipes.create
+        .sequenced_assembly(
+            [Item.of("ae2:printed_logic_processor")],
+            "#forge:plates/gold",
+            [
+                event.recipes.create.cutting("minecraft:gold_ingot", "minecraft:gold_ingot"),
+                event.recipes.create.deploying("minecraft:gold_ingot", [
+                    "minecraft:gold_ingot",
+                    "ae2:logic_processor_press",
+                ]).keepHeldItem(),
+                event.recipes.create.pressing("minecraft:gold_ingot", "minecraft:gold_ingot"),
+            ]
+        )
+        .transitionalItem("minecraft:gold_ingot")
+        .loops(1)
+        .id("ae2:inscriber/logic_processor_print");
+    
+    event.recipes.create
+        .sequenced_assembly(
+            [Item.of("ae2:printed_engineering_processor")],
+            "#forge:gems/diamond",
+            [
+                event.recipes.create.cutting("minecraft:diamond", "minecraft:diamond"),
+                event.recipes.create.deploying("minecraft:diamond", [
+                    "minecraft:diamond",
+                    "ae2:engineering_processor_press",
+                ]).keepHeldItem(),
+                event.recipes.create.pressing("minecraft:diamond", "minecraft:diamond"),
+            ]
+        )
+        .transitionalItem("minecraft:diamond")
+        .loops(1)
+        .id("ae2:inscriber/engineering_processor_print");
+    
+    event.recipes.create
+        .sequenced_assembly(
+            [Item.of("ae2:calculation_processor")],
+            "ae2:printed_silicon",
+            [
+                event.recipes.create.deploying("ae2:printed_calculation_processor", [
+                    "ae2:printed_calculation_processor",
+                    "ae2:printed_calculation_processor",
+                ]),                event.recipes.create.deploying("ae2:printed_calculation_processor", [
+                    "ae2:printed_calculation_processor",
+                    "minecraft:redstone",
+                ]),
+                event.recipes.create.pressing("ae2:printed_calculation_processor", "ae2:printed_calculation_processor"),
+            ]
+        )
+        .transitionalItem("printed_calculation_processor")
+        .loops(1)
+        .id("ae2:inscriber/calculation_processor");    
+    
+    event.recipes.create
+        .sequenced_assembly(
+            [Item.of("ae2:logic_processor")],
+            "ae2:printed_silicon",
+            [
+                event.recipes.create.deploying("ae2:printed_logic_processor", [
+                    "ae2:printed_logic_processor",
+                    "ae2:printed_logic_processor",
+                ]),                event.recipes.create.deploying("ae2:printed_logic_processor", [
+                    "ae2:printed_logic_processor",
+                    "minecraft:redstone",
+                ]),
+                event.recipes.create.pressing("ae2:printed_logic_processor", "ae2:printed_logic_processor"),
+            ]
+        )
+        .transitionalItem("printed_logic_processor")
+        .loops(1)
+        .id("ae2:inscriber/logic_processor");    
+    
+    event.recipes.create
+        .sequenced_assembly(
+            [Item.of("ae2:engineering_processor")],
+            "ae2:printed_silicon",
+            [
+                event.recipes.create.deploying("ae2:printed_engineering_processor", [
+                    "ae2:printed_engineering_processor",
+                    "ae2:printed_engineering_processor",
+                ]),                event.recipes.create.deploying("ae2:printed_engineering_processor", [
+                    "ae2:printed_engineering_processor",
+                    "minecraft:redstone",
+                ]),
+                event.recipes.create.pressing("ae2:printed_engineering_processor", "ae2:printed_engineering_processor"),
+            ]
+        )
+        .transitionalItem("printed_engineering_processor")
+        .loops(1)
+        .id("ae2:inscriber/engineering_processor");
 
     //Biofuel
     event.replaceInput(
