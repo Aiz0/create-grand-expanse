@@ -502,6 +502,27 @@ ServerEvents.recipes((event) => {
         .loops(1)
         .id("ae2:inscriber/engineering_processor");
 
+    event.recipes.create.mechanical_crafting(
+        "ae2:controller",
+        [
+            // prettier-ignore
+            " FGF ",
+            "FSQSF",
+            "GELCG",
+            "FSQSF",
+            " FGF ",
+        ],
+        {
+            F: "ae2:fluix_dust",
+            G: "#forge:glass",
+            Q: "ae2:certus_quartz_crystal",
+            S: "ae2:smooth_sky_stone_block",
+            E: "ae2:engineering_processor",
+            C: "ae2:calculation_processor",
+            L: "mmt:lunium_nova_ingot",
+        })
+        .id("ae2:network/blocks/controller");
+    
     //Biofuel
     event.replaceInput(
         {id: "createaddition:mixing/bioethanol"},

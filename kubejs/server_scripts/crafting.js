@@ -444,4 +444,41 @@ ServerEvents.recipes((event) => {
         { tag: "forge:ingots/lead" },
         "mmt:lunium_nova_plate"
     );
+    
+    //Applied Energistics
+    event
+        .shaped("ae2:meteorite_compass", [" Q ", "PGP", " P "], {
+            Q: "ae2:certus_quartz_crystal",
+            P: "#forge:plates/iron",
+            G: "#forge:gears/invar"
+        }).id("ae2:charger/meteorite_compass")
+    
+    event
+        .shaped("ae2:energy_acceptor", ["TIT", "CAC", "TIT"], {
+            T: "#forge:plates/tin",
+            I: "#forge:plates/iron",
+            C: "createaddition:connector",
+            A: "createaddition:modular_accumulator"
+        })
+        .id("ae2:network/blocks/energy_energy_acceptor");
+    
+    event
+        .shaped(Item.of("ae2:formation_core", 4), ["SPS", "CRL", "SPS"], {
+            S: "#forge:plates/silicon",
+            P: "#forge:plates/silver",
+            C: "ae2:charged_certus_quartz_crystal",
+            R: "#forge:rods/silver",
+            L: "ae2:logic_processor",
+        })
+        .id("ae2:materials/formationcore");
+    
+    event
+        .shaped(Item.of("ae2:annihilation_core", 4), ["SPS", "LRF", "SPS"], {
+            S: "#forge:plates/silicon",
+            P: "#forge:plates/silver",
+            F: "ae2:fluix_crystal",
+            R: "#forge:rods/silver",
+            L: "ae2:logic_processor",
+        })
+        .id("ae2:materials/annihilationcore");
 });
