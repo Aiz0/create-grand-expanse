@@ -1,6 +1,7 @@
 {
     "schema_version": 1,
     "default_packs": [
+        "file/grand_expanse",
         "file/Default-Dark-Mode-1.19.2-v1.4.0.zip",
         "file/Legacy_0.5_Create_Darkmode_v0.0.1.zip",
         "file/Storage_Drawers_Darkmode_v0.0.1.zip",
