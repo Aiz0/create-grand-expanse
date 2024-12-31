@@ -53,6 +53,7 @@ ServerEvents.recipes((event) => {
         { id: "ae2:transform/fluix_crystal" },
         { id: "ae2:transform/fluix_crystals" },
         { id: "ae2:inscriber/fluix_dust" },
+        { id: "ae2:blasting/silicon_from_certus_quartz_dust" },
 
         // Thermal
         {

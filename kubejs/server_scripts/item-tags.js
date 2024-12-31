@@ -25,7 +25,6 @@ ServerEvents.tags("item", (event) => {
     forgeCategory(global.items.iron_tool_part, "tool_parts", "iron");
     forgeCategory(global.items.iron_armor_plate, "armor_plates", "iron");
 
-    forgeCategory(global.items.bronze_rod, "rods", "bronze");
     forgeCategory(global.items.rose_gold_ingot, "ingots", "rose_gold");
     forgeCategory(
         global.items.high_density_tungsten,
