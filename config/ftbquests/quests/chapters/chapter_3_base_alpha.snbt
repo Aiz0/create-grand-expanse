@@ -1,0 +1,766 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_3_base_alpha"
+	group: ""
+	hide_quest_details_until_startable: true
+	hide_quest_until_deps_visible: true
+	icon: {
+		Count: 1b
+		id: "tconstruct:smeltery_controller"
+		tag: {
+			texture: "tconstruct:seared_bricks"
+		}
+	}
+	id: "0D66F3EE2A87B1DE"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "0ADE64AEB1A7FC45"
+			shape: "diamond"
+			size: 2.0d
+			subtitle: "Unlocks Chapter 4"
+			tasks: [{
+				dimension: "ad_astra:mars"
+				icon: "ad_astra:mars_globe"
+				id: "389434B724552CD6"
+				title: "Visit Mars"
+				type: "dimension"
+			}]
+			title: "You know, they call it the red planet but it's actually kinda like orange?"
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["4529442A7FEDBB89"]
+			description: [
+				"The moon has ores, liquids, and other things not native to earth that may be useful back on earth."
+				""
+				"But right now we need to get ourselves a smeltery!"
+				""
+				"On the moon you'll find metorite crash sites containing a smoldering core which can be used to construct your first smeltery."
+				""
+				"Using the smeltery you will be able to blend more metals into alloys and more effeciently."
+			]
+			icon: "ad_astra:moon_globe"
+			id: "6C9B3C974AFF296F"
+			tasks: [{
+				id: "1C38F7A49A78DCAC"
+				title: "Got it"
+				type: "checkmark"
+			}]
+			title: "Ores from above"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6C9B3C974AFF296F"]
+			description: [
+				"Word of advice:"
+				"The smeltery will always retain it's liquids as long as you don't break the controller."
+			]
+			icon: "tconstruct:smeltery_controller"
+			id: "7C88094CFE6B695B"
+			rewards: [{
+				id: "092263E083A47431"
+				item: "tconstruct:mighty_smelting"
+				type: "item"
+			}]
+			subtitle: "Bringer of Alloys."
+			tasks: [
+				{
+					id: "5624FA667EBD8E44"
+					item: "tconstruct:smeltery_controller"
+					type: "item"
+				}
+				{
+					id: "0D216FFBF6570E18"
+					item: "tconstruct:seared_fuel_tank"
+					type: "item"
+				}
+			]
+			title: "Smeltery"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6C9B3C974AFF296F"]
+			description: ["Maybe we can start making some industrial machines soon..."]
+			id: "5B31FFF75CC489D6"
+			tasks: [{
+				count: 8L
+				id: "7AD02CCA13ADCE8B"
+				item: "thermal:raw_nickel"
+				type: "item"
+			}]
+			title: "Nickel"
+			x: -1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["6C9B3C974AFF296F"]
+			description: ["A start to something significantly bigger."]
+			icon: "ae2:certus_quartz_crystal"
+			id: "52830CB28E6C300E"
+			tasks: [{
+				icon: "ae2:quartz_cluster"
+				id: "2C9FA0656123196D"
+				structure: "grand_expanse:shimmer_lake"
+				title: "Find a shimmering lake on the surface of the moon."
+				type: "structure"
+			}]
+			title: "Crystals on the Moon"
+			x: 1.0d
+			y: -5.5d
+		}
+		{
+			id: "04C2D26CEA6B9586"
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "1E0AAC801C708154"
+				item: {
+					Count: 1b
+					id: "ad_astra:tier_2_rocket"
+					tag: {
+						BotariumData: { }
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7C88094CFE6B695B"]
+			id: "6980E00048D1B154"
+			subtitle: "Time for some advanced create"
+			tasks: [{
+				id: "691A45DE74852AE2"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["44FF38E6A7A1D7F0"]
+			id: "5C288A00A25C8CDC"
+			tasks: [{
+				id: "67AAB8EF3026F57A"
+				item: "thermal:charge_bench"
+				type: "item"
+			}]
+			title: "Item Charging"
+			x: 6.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["66B09016D85B7F1E"]
+			id: "11CB78A3856AF146"
+			tasks: [{
+				id: "28184B4A14DDB311"
+				item: "createaddition:alternator"
+				type: "item"
+			}]
+			title: "Kinetic (Electric) Energy"
+			x: 4.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5C288A00A25C8CDC"]
+			id: "483BBC8CADB4E66D"
+			tasks: [{
+				id: "7EED4362DBBEF453"
+				item: "scannable:scanner"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["483BBC8CADB4E66D"]
+			id: "1DDFDA53F5B774BC"
+			tasks: [{
+				id: "1D6A6DFBC20B9527"
+				item: "scannable:blank_module"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["430A0FBD8EAEFDED"]
+			description: ["Get used to more complex crafts now too."]
+			id: "37D19D5422559A18"
+			subtitle: "Reaching beyond the limits of a crafting table"
+			tasks: [{
+				id: "6A8CED3850B4D7BF"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["260AB2182A58AEF5"]
+			description: ["Hardcore automation"]
+			id: "0EFB445BF13B526B"
+			tasks: [{
+				id: "3BD6A3B7F82E544D"
+				item: "create:mechanical_arm"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["430A0FBD8EAEFDED"]
+			description: ["Max speed is now &e256 RPM"]
+			icon: "create:large_cogwheel_tier_2"
+			id: "7AAFA6820E830D72"
+			subtitle: "Spin Faster!"
+			tasks: [
+				{
+					id: "36FF9F608734EBEF"
+					item: "create:large_cogwheel_tier_2"
+					type: "item"
+				}
+				{
+					id: "41A326C6A9E350AC"
+					item: "create:cogwheel_tier_2"
+					type: "item"
+				}
+				{
+					id: "7C488B06C1B5FE2D"
+					item: "create:shaft_tier_2"
+					type: "item"
+				}
+			]
+			title: "Better-er Kinetics"
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["44FF38E6A7A1D7F0"]
+			id: "5972E98FE15341CA"
+			tasks: [{
+				id: "612E7DCC515FFDF8"
+				item: "createaddition:tesla_coil"
+				type: "item"
+			}]
+			x: 5.25d
+			y: -3.25d
+		}
+		{
+			dependencies: ["1DDFDA53F5B774BC"]
+			id: "02C6C8AF8EBAE880"
+			tasks: [{
+				id: "793FE5FE4F942567"
+				item: "persistent_ores:persistent_drill_block"
+				type: "item"
+			}]
+			title: "Infinity, I tell ya."
+			x: 9.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["430A0FBD8EAEFDED"]
+			id: "0D3DCEA529D259D1"
+			tasks: [{
+				id: "49013AA3A8A0C157"
+				item: "create:railway_casing"
+				type: "item"
+			}]
+			title: "Long Distance Logistics"
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0D3DCEA529D259D1"]
+			id: "59AC7D9A2A09DDA1"
+			tasks: [{
+				id: "400B470B6C223920"
+				item: "create:track"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["59AC7D9A2A09DDA1"]
+			id: "3A7B9E4AE44B2213"
+			tasks: [{
+				id: "546C343318CBD840"
+				item: "create:track_station"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["37D19D5422559A18"]
+			description: [
+				"You'll now be able to get more then 1 ingot per raw material."
+				""
+				"Sand is also much easier to get a hold of."
+			]
+			id: "5ECC266500E20901"
+			subtitle: "Crush your ores (And more)"
+			tasks: [{
+				id: "05E2729803F54A15"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			title: "More then ore"
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["02C6C8AF8EBAE880"]
+			id: "21BD479F4E40EA7C"
+			shape: "hexagon"
+			subtitle: "Found on Earth"
+			tasks: [{
+				icon: "persistent_ores:persistent_copper_block"
+				id: "4945285496A81714"
+				observe_type: 0
+				timer: 0L
+				title: "Find an Impure Copper Vein"
+				to_observe: "persistent_ores:persistent_copper_block"
+				type: "observation"
+			}]
+			title: "Infinite Copper"
+			x: 10.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["37D19D5422559A18"]
+			description: ["Better materials from the very ground you stand on."]
+			id: "02EC06B95D57D1DC"
+			tasks: [{
+				id: "230BA89CC6F66A99"
+				item: "createsifter:brass_sifter"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["44FF38E6A7A1D7F0"]
+			id: "7E2E53C68B545A63"
+			tasks: [{
+				id: "5D784B215E9F9520"
+				item: "createaddition:modular_accumulator"
+				type: "item"
+			}]
+			title: "Power Storage"
+			x: 5.25d
+			y: -4.75d
+		}
+		{
+			dependencies: ["37D19D5422559A18"]
+			description: ["Mechanically, of course."]
+			id: "194AD2ECAF047325"
+			tasks: [{
+				id: "14DFF778BE51C68B"
+				item: "create_power_loader:andesite_chunk_loader"
+				title: "Chunk Loader"
+				type: "item"
+			}]
+			title: "Chunk Loading"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7AAFA6820E830D72"
+				"2BE66A7749410A4C"
+				"470B1FDA5C2B9174"
+			]
+			id: "260AB2182A58AEF5"
+			subtitle: "Key Component #1"
+			tasks: [{
+				id: "38906BC734134BCA"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6980E00048D1B154"]
+			id: "430A0FBD8EAEFDED"
+			tasks: [{
+				id: "1788395B3C88088B"
+				item: "create:brass_casing"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["260AB2182A58AEF5"]
+			description: ["No more cogwheel chaining"]
+			id: "04AEAD8B944736CF"
+			tasks: [{
+				id: "0323F45E6044900E"
+				item: "create:rotation_speed_controller"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["37D19D5422559A18"]
+			description: [
+				"Here's to making more effecient factories."
+				"{@pagebreak}"
+				"The brass funnel and smart chute will allow for filters and pulling a controlled amount of items at a time. They can also be toggled with redstone."
+				"{@pagebreak}"
+				"The brass tunnel will allow you to split item stacks evenly, randomly, or sequentially."
+			]
+			icon: "create:brass_tunnel"
+			id: "75F4A53FE67DD672"
+			rewards: [{
+				id: "36CD551454BB6685"
+				item: "farmersdelight:melon_juice"
+				type: "item"
+			}]
+			subtitle: "Confirgurable"
+			tasks: [
+				{
+					id: "30D17B74B355C43D"
+					item: "create:brass_funnel"
+					type: "item"
+				}
+				{
+					id: "3D779136FFA91B71"
+					item: "create:brass_tunnel"
+					type: "item"
+				}
+				{
+					id: "4E7701F16E8E0020"
+					item: "create:smart_chute"
+					type: "item"
+				}
+			]
+			title: "Advanced Logistics"
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["11CB78A3856AF146"]
+			icon: "createaddition:connector"
+			id: "44FF38E6A7A1D7F0"
+			tasks: [
+				{
+					count: 4L
+					id: "28A33AB2D923B379"
+					item: "createaddition:connector"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "5CB18F5929858C8E"
+					item: "createaddition:copper_spool"
+					type: "item"
+				}
+			]
+			title: "Power Transfer"
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["59AC7D9A2A09DDA1"]
+			id: "04A7F9E4B6797EF1"
+			tasks: [{
+				id: "2C9BB91F3EE7D584"
+				item: "create:track_signal"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["59AC7D9A2A09DDA1"]
+			id: "72AFBB57628F1F39"
+			tasks: [{
+				id: "2395981C20938FE0"
+				item: "create:track_observer"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3A7B9E4AE44B2213"]
+			description: ["Making an interconnected rail system is important for large scale material accusition. Use train signals to save on space and rails."]
+			id: "312CFD2A25126963"
+			shape: "gear"
+			tasks: [{
+				id: "6262BC301B002E0C"
+				title: "Train Connection"
+				type: "checkmark"
+			}]
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["260AB2182A58AEF5"]
+			description: [
+				"The highest form of rotational energy*"
+				""
+				""
+				"*In vanilla create"
+			]
+			id: "3B80EDA1AED48A36"
+			tasks: [{
+				id: "51872ACD21FB4AF0"
+				item: "create:steam_engine"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["02C6C8AF8EBAE880"]
+			id: "4E596BCA967473D4"
+			shape: "hexagon"
+			subtitle: "Found on The Moon"
+			tasks: [{
+				icon: "persistent_ores:persistent_tin_block"
+				id: "6BB91163166E69F6"
+				observe_type: 0
+				timer: 0L
+				title: "Find an Impure Tin Vein"
+				to_observe: "persistent_ores:persistent_tin_block"
+				type: "observation"
+			}]
+			title: "Infinite Tin"
+			x: 10.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["02C6C8AF8EBAE880"]
+			id: "45F9845D03EA3212"
+			shape: "hexagon"
+			subtitle: "Found on The Moon"
+			tasks: [{
+				icon: "persistent_ores:persistent_iron_block"
+				id: "3DEF1EDC0A9C1003"
+				observe_type: 0
+				timer: 0L
+				title: "Find an Impure Iron Vein"
+				to_observe: "persistent_ores:persistent_iron_block"
+				type: "observation"
+			}]
+			title: "Infinite Iron"
+			x: 10.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"4E596BCA967473D4"
+				"45F9845D03EA3212"
+				"21BD479F4E40EA7C"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Can be crushed into 0-6 nuggets."]
+			id: "6D33E73B43741E66"
+			tasks: [{
+				id: "52032E5DAF25F834"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "persistent_ores:copper_cluster"
+							}
+							{
+								Count: 1b
+								id: "persistent_ores:tin_cluster"
+							}
+							{
+								Count: 1b
+								id: "persistent_ores:iron_cluster"
+							}
+						]
+					}
+				}
+				title: "Clusters"
+				type: "item"
+			}]
+			title: "Clusters"
+			x: 12.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6C9B3C974AFF296F"]
+			description: ["Shines like the moon."]
+			id: "5D5B6F954D204830"
+			tasks: [{
+				count: 8L
+				id: "2EDBE2C3B18DBA39"
+				item: "thermal:raw_silver"
+				type: "item"
+			}]
+			title: "Silver"
+			x: -1.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["7C88094CFE6B695B"]
+			id: "2BE66A7749410A4C"
+			tasks: [{
+				id: "387D34C5D3E5DD5E"
+				item: "unify:constantan_ingot"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7C88094CFE6B695B"]
+			id: "5868655837A8C52A"
+			tasks: [{
+				id: "6EAD4DABA4781677"
+				item: "unify:electrum_ingot"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7C88094CFE6B695B"]
+			id: "470B1FDA5C2B9174"
+			tasks: [{
+				id: "36438F17F37C2327"
+				item: "thermal:invar_ingot"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5868655837A8C52A"]
+			id: "66B09016D85B7F1E"
+			subtitle: "Key Component #2"
+			tasks: [{
+				id: "36323E999771A116"
+				item: "createaddition:capacitor"
+				type: "item"
+			}]
+			title: "Capacitor"
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7938F86FCF9897C7"]
+			id: "39221B6DDEA1FFA7"
+			subtitle: "Strong and light!"
+			tasks: [{
+				id: "217D624194BE891E"
+				item: "grand_expanse:low_density_structure"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["37D19D5422559A18"]
+			description: [
+				"Some recipes have empty slots in them that may need to be filled for the recipe to fire automatically."
+				"With the crafter slot cover you can do just that!"
+			]
+			icon: "create:crafter_slot_cover"
+			id: "7938F86FCF9897C7"
+			rewards: [{
+				count: 2
+				id: "67148F39BF928EF3"
+				item: "create:crafter_slot_cover"
+				type: "item"
+			}]
+			tasks: [{
+				id: "24E4E4EEBF3015F8"
+				title: "Got it"
+				type: "checkmark"
+			}]
+			title: "A friendly reminder."
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6C9B3C974AFF296F"]
+			description: [
+				"Rare ore found only on the moon."
+				"Has the potential to manipulate waves of energy."
+				"May be useful in advanced kinetic applications."
+			]
+			hide_text_until_complete: true
+			id: "06B00207C65B9A94"
+			subtitle: "Come back once you've found some"
+			tasks: [{
+				id: "662908B1F905E126"
+				item: "mmt:raw_lunium_nova"
+				type: "item"
+			}]
+			title: "Lunium Nova"
+			x: 1.0d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"19BE0651B2B13F1F"
+				"39221B6DDEA1FFA7"
+			]
+			id: "677473B54EDE1503"
+			tasks: [{
+				id: "2B1DA4BA30F137C3"
+				item: "ad_astra:cryo_freezer"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7938F86FCF9897C7"]
+			id: "19BE0651B2B13F1F"
+			rewards: [{
+				id: "380F7F1E9725E107"
+				item: "thermal:blizz_rod"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "thermal:blizz"
+				icon: "thermal:blizz_rod"
+				id: "0766B2901CF255E1"
+				type: "kill"
+				value: 5L
+			}]
+			title: "It's cold out there."
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["677473B54EDE1503"]
+			description: [""]
+			id: "5B885196CE111459"
+			subtitle: "Cold as ice, but burns real nice."
+			tasks: [{
+				amount: 1000L
+				fluid: "ad_astra:cryo_fuel"
+				icon: "ad_astra:cryo_fuel_bucket"
+				id: "56B62F486A7C396A"
+				type: "fluid"
+			}]
+			title: "Cryo Fuel"
+			x: 0.0d
+			y: 5.0d
+		}
+	]
+	title: "Chapter 3: Base Alpha"
+}

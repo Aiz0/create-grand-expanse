@@ -1,0 +1,675 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_0_from_dust"
+	group: ""
+	hide_quest_details_until_startable: true
+	hide_quest_until_deps_visible: true
+	icon: "ae2:sky_dust"
+	id: "294D525C783840B7"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"18FAC2ECCAC90175"
+				"24D4A2C5C5BB1E80"
+			]
+			dependency_requirement: "all_started"
+			description: [
+				"Spin your nails in the golden ratio!... then you should have the ability to harness the power of infinity."
+				""
+			]
+			icon: "create:andesite_casing"
+			id: "6D4DF04150746D33"
+			shape: "diamond"
+			size: 2.0d
+			subtitle: "Unlocks Chapter 1"
+			tasks: [{
+				count: 8L
+				id: "0350874167B6E1BA"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			title: "Kenetic Foundation"
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["3892E323D13EE830"]
+			description: ["Right click a log with an axe!"]
+			id: "18FAC2ECCAC90175"
+			subtitle: "Not to be confused with Striped Logs"
+			tasks: [{
+				icon: "minecraft:stripped_oak_log"
+				id: "0DD508EFAD20DEC0"
+				observe_type: 1
+				timer: 0L
+				title: "Make a stripped log"
+				to_observe: "#forge:stripped_logs"
+				type: "observation"
+			}]
+			title: "Stripped Logs"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"43E0985858EE383D"
+				"327CC4AD596FC504"
+				"716C9D443ED4539C"
+			]
+			description: [
+				"You have to make a compound first and melt it in a furnace."
+				""
+				"Not the most effecient option, but it'll have to do for now."
+			]
+			id: "24D4A2C5C5BB1E80"
+			subtitle: "Somewhere inbetween rhyolite alloy and basalt alloy"
+			tasks: [{
+				count: 8L
+				id: "4E5E6710B709BB9E"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			title: "Durable Andesite"
+			x: -2.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["7013762E5C89BE35"]
+			description: [
+				"Andesite isn't as common as it used to be."
+				""
+				"You'll have to find andesite boulders scattered around the world that indicates where you will find andesite underground."
+			]
+			id: "43E0985858EE383D"
+			subtitle: "Somewhere inbetween rhyolite and basalt"
+			tasks: [{
+				count: 24L
+				id: "7ED96038ED5CF0E0"
+				item: "minecraft:andesite"
+				type: "item"
+			}]
+			title: "Andesite"
+			x: -2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7013762E5C89BE35"]
+			description: ["Keep digging that hole underground. You'll find it eventually."]
+			id: "716C9D443ED4539C"
+			subtitle: "Found in fortified breakfast cereals"
+			tasks: [{
+				count: 24L
+				id: "55D82AD598DAD2FC"
+				item: "create:zinc_nugget"
+				type: "item"
+			}]
+			title: "Zinc"
+			x: -1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7013762E5C89BE35"]
+			description: ["Clay can be found most commonly in rivers and lakes"]
+			id: "327CC4AD596FC504"
+			subtitle: "Hardens when fired"
+			tasks: [{
+				count: 24L
+				id: "486F7DE7A492E083"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			title: "Clay"
+			x: -3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"7D722C83CF88C890"
+				"33CCC7F268A13A04"
+			]
+			description: ["...Actually, I hope it is."]
+			id: "2B9CD2BF87525F82"
+			rewards: [{
+				count: 16
+				id: "732DBD2D93B6B7D2"
+				item: "minecraft:torch"
+				type: "item"
+			}]
+			subtitle: "I hope this isn't your first time playing Minecraft"
+			tasks: [{
+				id: "14C64D7C9EA30358"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["109CDDA211890014"]
+			description: ["This here knife can be used to get additional yields."]
+			id: "7C88F731E5C67726"
+			rewards: [{
+				count: 3
+				id: "45AFF76E59164EEE"
+				item: "minecraft:bread"
+				type: "item"
+			}]
+			tasks: [{
+				id: "70BD330B49B45136"
+				item: {
+					Count: 1b
+					id: "farmersdelight:flint_knife"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Stabbing Device"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"292EA43CEB4DE34B"
+				"4904D46DFFCAD4FE"
+				"65F1B3B7111E0D32"
+			]
+			description: ["Sophisticated backpacks are upgradable and highly modular. Useful to storing lots of items at a time as well as other utilities like compressing, crafting, fluid storage, and more!"]
+			id: "5F83FF2EF7CB1AD3"
+			subtitle: "Super Inventory"
+			tasks: [{
+				id: "2DFD8F3B532066A0"
+				item: "sophisticatedbackpacks:backpack"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["699823917F2E3AF6"]
+			description: ["You might notice a lack of ingots from melting your metals. Don't worry, it'll get better."]
+			id: "7013762E5C89BE35"
+			subtitle: "Wild how it's hot enough to melt metals AND not insinerate your food"
+			tasks: [{
+				id: "660705240CD6B635"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			title: "Burning Device"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7013762E5C89BE35"]
+			id: "6BB9DBAA8307942C"
+			tasks: [{
+				id: "7C84A925926D4C57"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6BB9DBAA8307942C"]
+			description: ["It's a slightly better result from your raw metals."]
+			id: "157FE81D3DC4E8C3"
+			subtitle: "Okay this one might actually insinerate your food"
+			tasks: [{
+				id: "1FE50D52DD8E295F"
+				item: "minecraft:blast_furnace"
+				type: "item"
+			}]
+			title: "Burning Device 2: Blastastic"
+			x: -5.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7C88F731E5C67726"]
+			description: ["Unfortunately cannot be used as a straw."]
+			id: "241C67A42929CB09"
+			subtitle: "Highly flexable"
+			tasks: [{
+				id: "46E11CDBD4D4CF02"
+				item: "farmersdelight:straw"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["241C67A42929CB09"]
+			description: [
+				"Caves are much bigger in this pack. So having rope will help you decend safely."
+				""
+				"Additionally you can craft the safety net to break your fall too, if you dare."
+			]
+			id: "65F1B3B7111E0D32"
+			rewards: [{
+				id: "75B755F9413896FF"
+				item: "farmersdelight:safety_net"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2C9042BA03969DEA"
+				item: "farmersdelight:rope"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["241C67A42929CB09"]
+			description: [
+				"A nice replacement for some of the vanilla Minecraft recipies."
+				""
+				"Also used in backpacks."
+			]
+			id: "4904D46DFFCAD4FE"
+			tasks: [{
+				count: 2L
+				id: "37A650A7C5D3AA5C"
+				item: "farmersdelight:canvas"
+				type: "item"
+			}]
+			title: "Canvas"
+			x: 3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7C88F731E5C67726"]
+			description: ["Killing cows with that new knife of yours grants more leather."]
+			id: "292EA43CEB4DE34B"
+			subtitle: "Those cows had it coming"
+			tasks: [{
+				count: 14L
+				id: "6C9E5DC174780C2F"
+				item: "minecraft:leather"
+				type: "item"
+			}]
+			title: "Moo Slayer"
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4904D46DFFCAD4FE"]
+			description: [
+				"Chest meets hopper."
+				""
+				"Can be placed facing any direction too."
+			]
+			id: "0BA62BE761FBF183"
+			subtitle: "Not the guilty gear character"
+			tasks: [{
+				id: "73C71429B751F73F"
+				item: "farmersdelight:basket"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0CA65275E3C7847D"]
+			id: "0808187E40BFDBD2"
+			tasks: [{
+				id: "19FD98201538A8B0"
+				item: {
+					Count: 1b
+					id: "farmersdelight:skillet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0CA65275E3C7847D"]
+			id: "0C1383B030FB703F"
+			tasks: [{
+				id: "0F1BD25011096FC3"
+				item: "farmersdelight:cooking_pot"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6BB9DBAA8307942C"]
+			id: "0CA65275E3C7847D"
+			tasks: [{
+				id: "59257A7AB0D7CCE3"
+				item: "farmersdelight:stove"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0C1383B030FB703F"
+				"0808187E40BFDBD2"
+			]
+			description: ["Prepare for an unforgettable luncheon!"]
+			icon: "farmersdelight:hamburger"
+			id: "36DB89B0A1A28DC5"
+			rewards: [{
+				auto: "invisible"
+				icon: "farmersdelight:beef_patty"
+				id: "79FF68ED45BB5D4D"
+				ignore_reward_blocking: true
+				stage: ""
+				title: "Farmers Delight"
+				type: "gamestage"
+			}]
+			shape: "pentagon"
+			size: 1.25d
+			subtitle: "Unlocks the Farmers Delight sub-chapter"
+			title: "Delightfully Devilish"
+			x: -8.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5678F1371DC0A1D6"]
+			description: [
+				"The world generation is a bit more flashy now."
+				""
+				"Terralith adds a plethra of new biomes and world gen to make exploring a bit more intresting, as well as making resources a bit harder to come across. Don't worry, you won't be searching for ages to find a biome with the Nature's Compass."
+				""
+				"It should be mentioned that &5The Nether&r and &eThe End&r have both been disabled. With most of thier content being through other means instead."
+			]
+			icon: "ad_astra:earth_globe"
+			id: "7D722C83CF88C890"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "749F62B23BF07D7F"
+				title: "The World"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: -5.0d
+		}
+		{
+			description: [
+				"Greetings travler..."
+				""
+				"Before we begin I hope you're not prone to getting dizzy. Because we're going to do a lot of rotating in this pack."
+				""
+				"Create: Grand Expanse will have you starting small and making huge processing and production lines both on and off worlds. Gradually granting you higher tiers of technology to make your life easier."
+			]
+			icon: "create:large_cogwheel_tier_0"
+			id: "5678F1371DC0A1D6"
+			rewards: [{
+				id: "311E9E33749BF757"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "We meet again. But this time, for the first time."
+			tasks: [{
+				id: "7FFF803969857AEA"
+				title: "Grand Expance"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["5678F1371DC0A1D6"]
+			description: [
+				"&lQuark&r"
+				"Allows you to place blocks normally out of reach and other neat quarks."
+				""
+				"{@pagebreak}"
+				"&lREI (Roughly Enough Items)&r"
+				"Our choice of recipe browser. Works very similarly to JEI."
+				""
+				"You can even click and drag entire recipes to the left of your screen to store them as a task."
+				""
+				"{@pagebreak}"
+				"&lJade&r"
+				"If you have a keypad, you can configure the block display tooltip at the top of your screen."
+				""
+				"&aKeypad 0&r Open configuration screen"
+				"&aKeypad 1&r Toggle overlay"
+				"&aKeypad 2&r Toggle liquid display"
+				"&aKeypad 3&r Show recipes"
+				"&aKeypad 4&r Show uses"
+				"&aKeypad 5&r Narrate target"
+				""
+				"{@pagebreak}"
+				"&lCorpse&r"
+				"You items will be safe in death."
+				""
+				"{@pagebreak}"
+				"&lPing Wheel&r"
+				"If you're playing multiplayer you can bind a ping tool to any button. Configure the ping channel in the mods configs so you only recive pings from your team."
+				""
+				"Type &b/pingwheel config&r to configure the chanel"
+				""
+				"{@pagebreak}"
+				"&lSidekick&r"
+				"This mod helps you in your creative worlds. Giving you more options such as insta kill and no clip."
+				""
+				"&4Don't open this in the Mods Browser, you will crash.&r"
+			]
+			icon: "farmersdelight:cake_slice"
+			id: "33CCC7F268A13A04"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "086E5F05EF46ADED"
+				type: "checkmark"
+			}]
+			title: "Quality of your life"
+			x: 1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["6D4DF04150746D33"]
+			description: [
+				"It can be easy to get sidetracked by quests. So don't forget to get yourself a nice comfortable base of operations before making too much progress."
+				""
+				"Unless you're speedrunning. Then move faster."
+			]
+			id: "41B9ABFF89E857BC"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "305F40BED21A5382"
+				table_id: 8723057154208160240L
+				type: "choice"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "57772DBF06DDD773"
+				title: "Friendly Reminder"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["2B9CD2BF87525F82"]
+			id: "5893ACCBED85CFD2"
+			subtitle: "Here's an early storage option."
+			tasks: [{
+				id: "048C1A38FEF64896"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "storagedrawers:drawers"
+					}
+				}
+				title: "Any Drawer"
+				type: "item"
+			}]
+			title: "Drawers"
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6BB9DBAA8307942C"]
+			id: "050697F340FA0A27"
+			subtitle: "Blocks for people who think vanilla is a bit too bland"
+			tasks: [{
+				id: "545259A570BC9943"
+				item: {
+					Count: 1b
+					id: "rechiseled:chisel"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2B9CD2BF87525F82"]
+			description: ["Hope this isn't your first time playing MODDED Minecraft."]
+			id: "2B599F056A9DF8CE"
+			subtitle: "Crafting table, but they retain their inventory."
+			tasks: [{
+				id: "6677323DC3C75B19"
+				item: "tconstruct:crafting_station"
+				title: "Crafting Station"
+				type: "item"
+			}]
+			title: "Crafting Table 2"
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2B9CD2BF87525F82"]
+			description: ["Vanilla tools are disabled. Entirely. You can find them in the world but they won't be too useful."]
+			id: "1C442027DCF04578"
+			rewards: [
+				{
+					id: "2F9AF9752C4527B0"
+					item: "tconstruct:materials_and_you"
+					type: "item"
+				}
+				{
+					id: "4CEAF61F521F260E"
+					item: "tconstruct:encyclopedia"
+					type: "item"
+				}
+			]
+			subtitle: "Vanilla tools are not an option"
+			tasks: [
+				{
+					id: "04DCAC5C844AF09D"
+					item: "tconstruct:tinker_station"
+					type: "item"
+				}
+				{
+					id: "29D1D6CE7178B4AA"
+					item: "tconstruct:part_builder"
+					type: "item"
+				}
+			]
+			title: "Tinkers' Construct"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1C442027DCF04578"]
+			description: [
+				"The modifier worktable gives you a more detailed explanation of modifiers to add to your gear."
+				"{@pagebreak}"
+				"You can store your patterns in the and access them in other stations in the part chest."
+			]
+			id: "507E1B49085AA82F"
+			tasks: [
+				{
+					id: "3F75CF4144E917B2"
+					item: "tconstruct:modifier_worktable"
+					type: "item"
+				}
+				{
+					id: "6EB9EF5713C4E0B0"
+					item: "tconstruct:part_chest"
+					type: "item"
+				}
+			]
+			title: "Optional Tinkers' Stuff"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1C442027DCF04578"]
+			description: ["Note that you'll need a higher mining level to get early metals going."]
+			id: "699823917F2E3AF6"
+			tasks: [{
+				id: "3CD1E9BD38D1AD0E"
+				item: {
+					Count: 1b
+					id: "tconstruct:pickaxe"
+					tag: {
+						Damage: 0
+						tic_broken: 0b
+					}
+				}
+				title: "Any Pickaxe will suffice"
+				type: "item"
+			}]
+			title: "Let's get cracking"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1C442027DCF04578"]
+			id: "3892E323D13EE830"
+			tasks: [{
+				id: "11FC7611F748B540"
+				item: {
+					Count: 1b
+					id: "tconstruct:hand_axe"
+					tag: {
+						Damage: 0
+						tic_broken: 0b
+					}
+				}
+				title: "Any Axe will suffice"
+				type: "item"
+			}]
+			title: "Chop Chop"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1C442027DCF04578"]
+			description: [
+				"Shovels may not exist in tinkers*. But I assure you this is a fine alternative."
+				""
+				"*Excavators do exist."
+			]
+			id: "109CDDA211890014"
+			tasks: [{
+				id: "217FC451ABEC0652"
+				item: {
+					Count: 1b
+					id: "tconstruct:pickadze"
+					tag: {
+						Damage: 0
+						tic_broken: 0b
+					}
+				}
+				title: "Any Pickadze will suffice."
+				type: "item"
+			}]
+			title: "Not quite a shovel"
+			x: 1.0d
+			y: 0.0d
+		}
+	]
+	title: "Chapter 0: From Dust"
+}

@@ -1,0 +1,811 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_1_to_rotation"
+	group: ""
+	hide_quest_details_until_startable: true
+	hide_quest_until_deps_visible: true
+	icon: "create:andesite_casing"
+	id: "4E09468766254F49"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["401D572A11DC166C"]
+			id: "40ABD03967244736"
+			tasks: [{
+				id: "6353C1E1C90D4D6F"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			title: "Sheets are everything"
+			x: 6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["591FAF4E45A1A2F6"]
+			dependency_requirement: "one_completed"
+			icon: "create:depot"
+			id: "401D572A11DC166C"
+			tasks: [{
+				id: "264B7BA4EC82E893"
+				item: "create:depot"
+				type: "item"
+			}]
+			title: "A place for your items"
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["591FAF4E45A1A2F6"]
+			description: ["Highly manual, but nice for getting started."]
+			id: "372BB54D83AB3197"
+			subtitle: "And by it, let's just say, my hand crank"
+			tasks: [{
+				id: "170D4EED70C4673C"
+				item: "create:hand_crank"
+				type: "item"
+			}]
+			title: "Cranking it"
+			x: -0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6C41095F5141898E"]
+			description: ["Change axis and speed up contraptions with cogs."]
+			icon: "create:large_cogwheel_tier_0"
+			id: "1F9D3C1F476D2010"
+			subtitle: "Expando Spin"
+			tasks: [
+				{
+					id: "68E3185F7733574A"
+					item: "create:cogwheel_tier_0"
+					type: "item"
+				}
+				{
+					id: "1C6BEEC8BF67DE3F"
+					item: "create:large_cogwheel_tier_0"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["6BCF288A844E90CE"]
+			id: "59680D6DB1F87AFF"
+			subtitle: "Understand the spin."
+			tasks: [{
+				id: "6E995CAC951C987C"
+				item: "create:goggles"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6BCF288A844E90CE"]
+			id: "1708072E3F73F7B4"
+			subtitle: "Manipulate the spin."
+			tasks: [{
+				id: "3B0E031923BA153C"
+				item: "create:wrench"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6D4DF04150746D33"]
+			description: ["You'll need a lot of it."]
+			id: "6C41095F5141898E"
+			subtitle: "Actually, you didn't craft enough of this yet"
+			tasks: [{
+				count: 32L
+				id: "4119521E35038751"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			title: "More Andesite Alloy"
+			x: 2.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["5DF6CA781FDF19BA"]
+			description: ["*untill you get something better"]
+			id: "56D7242A92C31115"
+			subtitle: "Your goto logistics for the entire* pack"
+			tasks: [{
+				id: "0F950E1F0418441E"
+				item: "create:belt_connector"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["1948E1403F19C3AF"]
+			id: "5DF6CA781FDF19BA"
+			tasks: [{
+				id: "0672621FF10CAF78"
+				item: "thermal:cured_rubber"
+				type: "item"
+			}]
+			title: "Cooked Rubber"
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["591FAF4E45A1A2F6"]
+			description: ["Great source of early automated rotation!"]
+			id: "0CFF7D81BABFD1F8"
+			tasks: [{
+				id: "3F9CD4056508FCF8"
+				item: "create:water_wheel"
+				type: "item"
+			}]
+			title: "Stressful Water"
+			x: -0.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0CFF7D81BABFD1F8"]
+			description: ["Spins slower, but generates more then the small one."]
+			id: "1B235364D7BEECA3"
+			tasks: [{
+				id: "5BB2E907417AB806"
+				item: "create:large_water_wheel"
+				type: "item"
+			}]
+			title: "Very Stressful Water"
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["401D572A11DC166C"]
+			description: ["Running your raw metals through this will give you a chace to get 2 equivalent dust, which melts into the same amount of nuggets as the raw metal."]
+			id: "485800E64CB8D9D2"
+			subtitle: "Better metal yield"
+			tasks: [{
+				id: "41FC615909A1F8CA"
+				item: "create:millstone"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"26D0378013B7F902"
+				"1F9D3C1F476D2010"
+			]
+			description: [
+				"Before you begin designing your contraptions, you'll want to keep this in mind."
+				""
+				"All forms of kinetic relays have a reduced speed limit you'll have to work with for now. But later in the game you'll gain access to better materials you can craft better cogs and such out of."
+				""
+				"&6Wood can reach speeds of 64 RPM"
+				"&cCopper can reach speeds of 128 RPM"
+				"&eBrass can reach speeds of 256 RPM"
+				"&bSteel can reach speeds of 512 RPM"
+			]
+			id: "591FAF4E45A1A2F6"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "3DCA916E803C6B36"
+				title: "Hold on there space engineer"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["6C41095F5141898E"]
+			description: ["Linear rotation extention pole."]
+			id: "26D0378013B7F902"
+			subtitle: "Extendo Spin"
+			tasks: [{
+				id: "30B0039B1734BE8E"
+				item: "create:shaft_tier_0"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["372BB54D83AB3197"]
+			id: "1A710E31CBBEBDF6"
+			rewards: [{
+				id: "300FAD66E41387CE"
+				item: "farmersdelight:hamburger"
+				type: "item"
+			}]
+			tasks: [{
+				id: "76F4E191020B7097"
+				title: "Run out of hunger? Here have a boost."
+				type: "checkmark"
+			}]
+			title: "Ran out of hunger? Here, have a boost."
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"6F68C93AF9CBBFAB"
+				"7E40227E141ADEAE"
+			]
+			description: [""]
+			id: "45AA7670ACBF33D0"
+			shape: "diamond"
+			size: 2.0d
+			subtitle: "Unlocks Chapter 2"
+			tasks: [{
+				id: "12C1A9E6006349C4"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			title: "By fire we melt"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5467889AC09EC745"]
+			description: [
+				"Where do you find a blaze if there's no nether? You'll find it in volcanic biomes of course!"
+				""
+				"Use that new Natures Compass to locate the nearest volcanic biomes. Also be prepared for hostile blazes."
+			]
+			id: "7E40227E141ADEAE"
+			tasks: [{
+				icon: "minecraft:blaze_powder"
+				id: "4EB1F24FC5D71350"
+				observe_type: 5
+				timer: 0L
+				title: "Find a Blaze"
+				to_observe: "minecraft:blaze"
+				type: "observation"
+			}]
+			title: "Blazing"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["591FAF4E45A1A2F6"]
+			id: "5467889AC09EC745"
+			tasks: [{
+				id: "2C3A0F572BA6C8B0"
+				item: {
+					Count: 1b
+					id: "naturescompass:naturescompass"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Nature finds a way, they say."
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6CEE27AA330A29C8"]
+			description: [
+				"This is where you begin to automate rubber."
+				""
+				"Rubber is essential for getting basic logistics up and running through things like belts, funnels, and fluid pipes."
+				""
+				"Putting bonemeal inside will increase it's yield."
+				""
+				"While you can place multiple on the same tree, it will reduce the effiency of the others on the same tree."
+			]
+			id: "2BEE9F926A57B535"
+			tasks: [{
+				id: "7EAC7CBD5A5CBBE6"
+				item: "thermal:device_tree_extractor"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["645CF73984B2363C"]
+			id: "7146C151E1F6F560"
+			tasks: [{
+				id: "044B6697E635FDAC"
+				item: "create:mechanical_mixer"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["40ABD03967244736"]
+			id: "6BCF288A844E90CE"
+			subtitle: "For your tools"
+			tasks: [{
+				id: "11393B28858C9924"
+				item: "create:golden_sheet"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["645CF73984B2363C"]
+			id: "5E5964435E8AB2D6"
+			tasks: [{
+				id: "14435B74CE906A0F"
+				item: "createaddition:rolling_mill"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["40ABD03967244736"]
+			id: "6CEE27AA330A29C8"
+			subtitle: "For your fluid and item handling"
+			tasks: [{
+				id: "7915CB09717F3509"
+				item: "create:copper_sheet"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["40ABD03967244736"]
+			id: "645CF73984B2363C"
+			subtitle: "For all things mechanical"
+			tasks: [{
+				id: "4470AC18DF1FB6A1"
+				item: "create:iron_sheet"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["485800E64CB8D9D2"]
+			id: "53E183C8D50982E2"
+			tasks: [{
+				id: "04FF8DD0EA24B106"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			title: "Cobble To Gravel"
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["53E183C8D50982E2"]
+			id: "0FD2A7D124EED1DE"
+			subtitle: "At a lower chance"
+			tasks: [{
+				id: "7DA795C63405EBCE"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			title: "Gravel to Sand"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"606A73ABF8FFCA5D"
+				"53E183C8D50982E2"
+			]
+			id: "6A5E61917579C7AE"
+			tasks: [{
+				id: "0C4F63106A93C6BD"
+				item: "minecraft:flint"
+				type: "item"
+			}]
+			title: "Gravel to Flint"
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6A5E61917579C7AE"
+				"0FD2A7D124EED1DE"
+			]
+			id: "381A7E2D7412B88F"
+			tasks: [{
+				id: "49736874E31964D3"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			title: "Sand to Clay"
+			x: -3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["485800E64CB8D9D2"]
+			dependency_requirement: "one_completed"
+			icon: "minecraft:water_bucket"
+			id: "606A73ABF8FFCA5D"
+			tasks: [
+				{
+					id: "3F5EDE97331338C7"
+					item: "create:encased_fan"
+					type: "item"
+				}
+				{
+					id: "1D59EF1FF1E70014"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+			]
+			title: "Washing"
+			x: -3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["485800E64CB8D9D2"]
+			dependency_requirement: "one_completed"
+			description: [
+				"Very slow, but it's something..."
+				""
+				"The better versions of sifters will be more useful."
+			]
+			id: "247B563530BB9F77"
+			subtitle: "Even more slightly better yield"
+			tasks: [{
+				id: "30DBB98BC80CBAD2"
+				item: "createsifter:sifter"
+				type: "item"
+			}]
+			title: "Sifting"
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"0B97E9DC5BBA11B5"
+				"0FD2A7D124EED1DE"
+			]
+			id: "7D4F47D623B8AF34"
+			tasks: [{
+				id: "17B0681C6B00C089"
+				item: "minecraft:gunpowder"
+				type: "item"
+			}]
+			title: "Sand to Gunpowder"
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"247B563530BB9F77"
+				"53E183C8D50982E2"
+			]
+			id: "0B97E9DC5BBA11B5"
+			tasks: [{
+				id: "1F7C7A541C7E44F1"
+				item: "minecraft:coal"
+				type: "item"
+			}]
+			title: "Gravel to Coal"
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6CEE27AA330A29C8"]
+			description: ["Tom's Storage allows you to connect all your inventories into one panel for the early game. You won't have to look through your hundreds of chests to find the one item you need."]
+			icon: "toms_storage:ts.storage_terminal"
+			id: "4C90095BBAE8DE2F"
+			rewards: [
+				{
+					count: 12
+					id: "40EA1B6494E0D1FD"
+					item: "toms_storage:ts.inventory_cable"
+					type: "item"
+				}
+				{
+					id: "3F647526477A0D14"
+					item: "toms_storage:ts.inventory_cable_connector"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "742E5A7A1549DFA2"
+					item: "toms_storage:ts.storage_terminal"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "24CAF6CF96B0E482"
+					item: "toms_storage:ts.inventory_cable"
+					type: "item"
+				}
+				{
+					id: "7C179B1C70AFA424"
+					item: "toms_storage:ts.inventory_cable_connector"
+					type: "item"
+				}
+				{
+					id: "1532FCE328E480D5"
+					item: "toms_storage:ts.inventory_connector"
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2BEE9F926A57B535"]
+			description: [
+				"Place the arborial extractor next to a rubberwood tree or jungle tree to start slowly extracting latex."
+				""
+				"You might want a few more extractors."
+			]
+			id: "3F8FB1B8B0B39AF0"
+			tasks: [{
+				id: "28C3D49D17207475"
+				item: "thermal:latex_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5E5964435E8AB2D6"]
+			id: "6F68C93AF9CBBFAB"
+			tasks: [{
+				id: "2AE89E86212360F8"
+				item: "create:empty_blaze_burner"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7146C151E1F6F560"]
+			id: "2FABE4670706D355"
+			tasks: [{
+				id: "05FF96BEE67200F3"
+				item: "create:basin"
+				type: "item"
+			}]
+			title: "A place for your liquids"
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"3F8FB1B8B0B39AF0"
+				"2FABE4670706D355"
+			]
+			description: ["Mix the latex into rubber"]
+			id: "1948E1403F19C3AF"
+			tasks: [{
+				id: "44CF23B2D6D90254"
+				item: "thermal:rubber"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"26D0378013B7F902"
+				"1F9D3C1F476D2010"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"We won't explain how everything works in Create. But worry not, Create does that for you!"
+				""
+				"Holding W on some items will cause you to ponder them, giving you very detailed instructions on how to use them."
+			]
+			id: "26886B3C84BFF984"
+			rewards: [{
+				id: "4DE0DCAACA226A69"
+				title: "Knowledge"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "78FA33E711DBF6E6"
+				title: "Ponder the Spin"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["4C90095BBAE8DE2F"]
+			description: [
+				"Large scale storage multi-block!"
+				""
+				"Works great with your new terminal."
+			]
+			id: "413799DB883E8CF0"
+			rewards: [{
+				count: 4
+				id: "1DACF5F6D7395AF3"
+				item: "create:item_vault"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "2C0276DB39EDA195"
+				item: "create:item_vault"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["591FAF4E45A1A2F6"]
+			description: [
+				"If you find yourself needing a lot more stress units. You best start building upwards."
+				""
+				"The minimum sails required to get a windmill spinning is 16."
+				"The maximum sails a windmill can support is 128."
+			]
+			icon: "create:white_sail"
+			id: "52D375BD6A1B74C1"
+			subtitle: "Swoosh"
+			tasks: [
+				{
+					count: 16L
+					id: "3C1C684FE92DD2E9"
+					item: "create:white_sail"
+					type: "item"
+				}
+				{
+					id: "3AA7A606A1EDF40A"
+					item: "create:windmill_bearing"
+					type: "item"
+				}
+			]
+			title: "SAIL"
+			x: 4.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["59680D6DB1F87AFF"]
+			description: ["Holding Left Alt (default binding) will bring up a wheel that lets you select items inside the toolbox, allowing you to quickly switch between up to 8 different items."]
+			id: "11A262C7F43F16A6"
+			subtitle: "Long range inventory switcharoo"
+			tasks: [{
+				id: "6251DC658DD40FCA"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "create:toolboxes"
+					}
+				}
+				title: "Any Toolbox"
+				type: "item"
+			}]
+			title: "Toolbox"
+			x: 8.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["40ABD03967244736"]
+			description: [
+				"You can now generate cobblestone..."
+				"However, placing a catalyst under the extruder will grant different levels of cobblestone. Sometimes, it's not even cobblestone..."
+			]
+			id: "504DA2A573C69C70"
+			subtitle: "\"I need to make a cobblestone generator\" - Aiz_"
+			tasks: [{
+				id: "1755F78732A754AF"
+				item: "create_mechanical_extruder:mechanical_extruder"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["504DA2A573C69C70"]
+			id: "684279AF4CAFC350"
+			rewards: [{
+				id: "2B8AC3E499791B0B"
+				item: "minecraft:andesite"
+				type: "item"
+			}]
+			subtitle: "100 Bonks per Andesite"
+			tasks: [{
+				id: "3104B96AD0EFC17E"
+				item: "createcompression:compressed_andesite_2x"
+				type: "item"
+			}]
+			title: "Andesite (Slow)"
+			x: 5.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["684279AF4CAFC350"]
+			id: "3FD104FF25D6ABA9"
+			rewards: [{
+				id: "2933A0952E2B84ED"
+				item: "createcompression:compressed_andesite_1x"
+				type: "item"
+			}]
+			subtitle: "10 Bonks per Andesite"
+			tasks: [{
+				id: "20CA0FEE59B5D809"
+				item: "createcompression:compressed_andesite_3x"
+				type: "item"
+			}]
+			title: "Andesite (Fast)"
+			x: 5.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3FD104FF25D6ABA9"]
+			id: "36F168FC149D1F0E"
+			rewards: [{
+				id: "3857739B0C93C53F"
+				item: "createcompression:compressed_andesite_2x"
+				type: "item"
+			}]
+			subtitle: "1 Bonk per Andesite"
+			tasks: [{
+				id: "748CEA7B939C7EB0"
+				item: "createcompression:compressed_andesite_4x"
+				type: "item"
+			}]
+			title: "Andesite (Infinity)"
+			x: 5.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["504DA2A573C69C70"]
+			description: ["Wait it's just air why is this a quest?"]
+			id: "5C0AD90EDE316663"
+			rewards: [{
+				id: "04448037EF5FBD75"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			subtitle: "3 Bonks per Cobblestone"
+			title: "Cobblestone (Meh)"
+			x: 7.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5C0AD90EDE316663"]
+			id: "0E9F17DCB4569FDF"
+			rewards: [{
+				id: "1CBFD4FA5317FD46"
+				item: "createcompression:compressed_cobblestone_1x"
+				type: "item"
+			}]
+			subtitle: "2 Bonks per Cobblestone"
+			tasks: [{
+				id: "643F812AD1128C65"
+				item: "createcompression:compressed_cobblestone_4x"
+				type: "item"
+			}]
+			title: "Cobblestone (Wow)"
+			x: 7.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0E9F17DCB4569FDF"]
+			id: "3A3A8FDB527FF5BF"
+			rewards: [{
+				id: "21156B20064C7F0D"
+				item: "createcompression:compressed_cobblestone_2x"
+				type: "item"
+			}]
+			subtitle: "1 Bonk per cobblestone"
+			tasks: [{
+				id: "2C5F9AF82B44130C"
+				item: "createcompression:compressed_cobblestone_6x"
+				type: "item"
+			}]
+			title: "Cobblestone (yippee)"
+			x: 7.5d
+			y: -6.5d
+		}
+	]
+	title: "Chapter 1: To Rotation"
+}
