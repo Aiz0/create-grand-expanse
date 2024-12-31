@@ -437,6 +437,16 @@ ServerEvents.recipes((event) => {
             P: "create:precision_mechanism",
             C: "minecraft:copper_block",
         })
+    
+    event
+        .shaped("createaddition:modular_accumulator", ["NRN", "CBC", "NSN"], {
+            N: "#forge:plates/nickel",
+            R: "#forge:rods/copper",
+            C: "createaddition:capacitor",
+            B: "create:brass_casing",
+            S: "createaddition:electrum_spool",
+        })
+        .id("createaddition:crafting/modular_accumulator_electrum");
 
     //Thermal
     event.replaceInput(
@@ -454,6 +464,10 @@ ServerEvents.recipes((event) => {
         }).id("ae2:charger/meteorite_compass")
     
     event
+        .replaceInput({id: "ae2:network/blocks/crystal_processing_quartz_growth_accelerator"}, 
+            "#forge:ingots/iron", "#forge:ingots/silver");
+    
+    event
         .shaped("ae2:energy_acceptor", ["TIT", "CAC", "TIT"], {
             T: "#forge:plates/tin",
             I: "#forge:plates/iron",
@@ -463,22 +477,52 @@ ServerEvents.recipes((event) => {
         .id("ae2:network/blocks/energy_energy_acceptor");
     
     event
-        .shaped(Item.of("ae2:formation_core", 4), ["SPS", "CRL", "SPS"], {
+        .shaped(Item.of("ae2:formation_core", 4), ["QS ", "RFR", " SL"], {
+            Q: "create:polished_rose_quartz",
             S: "#forge:plates/silicon",
-            P: "#forge:plates/silver",
-            C: "ae2:charged_certus_quartz_crystal",
             R: "#forge:rods/silver",
             L: "ae2:logic_processor",
+            F: "ae2:fluix_dust",
         })
         .id("ae2:materials/formationcore");
     
     event
-        .shaped(Item.of("ae2:annihilation_core", 4), ["SPS", "LRF", "SPS"], {
+        .shaped(Item.of("ae2:annihilation_core", 4), ["LS ", "RFR", " SA"], {
+            F: "ae2:fluix_dust",
             S: "#forge:plates/silicon",
-            P: "#forge:plates/silver",
-            F: "ae2:fluix_crystal",
             R: "#forge:rods/silver",
             L: "ae2:logic_processor",
+            A: "#forge:gems/amethyst"
         })
         .id("ae2:materials/annihilationcore");
+
+    event
+        .shaped("ae2:semi_dark_monitor", [" GQ", "SRQ", " GQ"], {
+            G: "minecraft:glowstone_dust",
+            Q: "ae2:quartz_glass",
+            S: "#forge:ingots/silver",
+            R: "minecraft:redstone"
+        })
+        .id("ae2:network/parts/panels_semi_dark_monitor");
+    
+    event
+        .replaceInput({id: "ae2:network/blocks/energy_energy_cell"}, 
+            Item.of("ae2:quartz_glass"), Item.of("createaddition:capacitor"));
+    
+    event
+        .replaceInput({ id: "ae2:materials/basiccard" },
+            Item.of("minecraft:iron_ingot"), "#forge:ingots/silver");    
+    event
+        .replaceInput({ id: "ae2:materials/advancedcard" },
+            Item.of("minecraft:iron_ingot"), "#forge:ingots/silver");
+    event
+        .replaceInput({ id: "ae2:materials/basiccard" },
+            Item.of("minecraft:redstone"), "#forge:ingots/silicon");
+    event
+        .replaceInput({ id: "ae2:materials/advancedcard" },
+            Item.of("minecraft:redstone"), "#forge:ingots/silicon");
+    
+    event
+        .replaceInput({ id: "ae2:network/parts/terminals_crafting"},
+            "minecraft:crafting_table", "#ae2:quartz_wrench")
 });

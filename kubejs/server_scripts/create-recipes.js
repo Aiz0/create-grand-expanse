@@ -74,6 +74,12 @@ ServerEvents.recipes((event) => {
         ])
         .heated()
         .id("minecraft:compacting/cast_iron_ingot");
+    
+    event.recipes.create
+        .pressing("thermal:sulfur_dust", "thermal:sulfur");
+    
+    event.recipes.create
+        .mixing("minecraft:glowstone_dust", ["thermal:sulfur_dust", "minecraft:redstone"]);
 
     // Sturdy hull
     event.recipes.create.compacting(global.items.sturdy_hull, [
@@ -224,11 +230,22 @@ ServerEvents.recipes((event) => {
             tag: "forge:ingots/bronze",
         },
         result: {
-            item: global.items.bronze_rod,
+            item: "unify:bronze_rod",
             count: 2,
         },
     });
 
+    event.custom({
+        type: "createaddition:rolling",
+        input: {
+            item: "ae2:certus_quartz_crystal",
+        },
+        result: {
+            item: "ae2:quartz_fiber",
+        },
+    })
+        .id("ae2:network/parts/quartz_fiber_part");
+    
     //Chapter 2 Sequenced Assemblies
 
     event.recipes.create
@@ -349,7 +366,7 @@ ServerEvents.recipes((event) => {
             [
                 event.recipes.create.deploying("create:electron_tube", [
                     "create:electron_tube",
-                    "#forge:plates/zinc",
+                    "#forge:plates/nickel",
                 ]),
                 event.recipes.create.deploying("create:electron_tube", [
                     "create:electron_tube",
@@ -377,6 +394,10 @@ ServerEvents.recipes((event) => {
     event.remove({id: "createaddition:crafting/capacitor_2"});
     
     //Applied Energistics
+    event.recipes.create
+        .mixing(Fluid.of(global.fluids.molten_silicon, FluidAmounts.INGOT), ["ae2:certus_quartz_dust", "minecraft:sand"])
+        .heated();
+    
     event.recipes.create
         .sequenced_assembly(
             [Item.of("ae2:printed_silicon")],
@@ -501,6 +522,28 @@ ServerEvents.recipes((event) => {
         .transitionalItem("printed_engineering_processor")
         .loops(1)
         .id("ae2:inscriber/engineering_processor");
+    
+    event.recipes.create
+        .sequenced_assembly(
+            [Item.of("ae2:fluix_glass_cable", 4)],
+            "ae2:quartz_fiber",
+            [
+                event.recipes.create.deploying("ae2:quartz_fiber", [
+                    "ae2:quartz_fiber",
+                    "ae2:quartz_glass"]),
+                event.recipes.create.filling("ae2:quartz_fiber", [
+                    "ae2:quartz_fiber",
+                    Fluid.of(global.fluids.fluix_shimmer, FluidAmounts.INGOT)]),
+                event.recipes.create.deploying("ae2:quartz_fiber", [
+                    "ae2:quartz_fiber",
+                    "ae2:fluix_crystal"]),
+            ]
+        )
+        .transitionalItem("ae2:quartz_fiber")
+        .loops(1)
+        .id("ae2:network/cables/glass_fluix");
+    
+    
 
     event.recipes.create.mechanical_crafting(
         "ae2:controller",

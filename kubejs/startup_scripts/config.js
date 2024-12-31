@@ -5,7 +5,6 @@ global.items = {
     andesite_compound: null,
     rocket_hull: null,
     incomplete_electron_tube: null,
-    bronze_rod: null,
     copper_coil_block: null,
     electrolyzer: null,
     sturdy_hull: null,
