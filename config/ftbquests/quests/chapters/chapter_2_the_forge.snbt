@@ -1,0 +1,874 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_2_the_forge"
+	group: ""
+	hide_quest_details_until_startable: true
+	hide_quest_until_deps_visible: true
+	icon: "create:blaze_burner"
+	id: "2C6DAF45162839EC"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"5223A45B8090BF5A"
+				"4A599D0FCF1CE768"
+				"25EAA96827B3AB14"
+				"1F7C0CD4DD589298"
+			]
+			description: ["Off to the moon you go."]
+			id: "4D09C8F85B86CC07"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Fling yourself into space"
+			tasks: [{
+				id: "3E8EE4905ED88C22"
+				item: {
+					Count: 1b
+					id: "ad_astra:tier_1_rocket"
+					tag: {
+						BotariumData: { }
+					}
+				}
+				type: "item"
+			}]
+			title: "Space Trebuchet"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["120B40536E00838B"]
+			description: ["1 to 1 ore processing."]
+			icon: "tconstruct:seared_melter"
+			id: "6BC94859A06B4DEF"
+			rewards: [
+				{
+					id: "7AA8CA9EC71416A2"
+					item: "minecraft:raw_iron"
+					type: "item"
+				}
+				{
+					id: "79942CDE3CA68E93"
+					item: "tconstruct:puny_smelting"
+					type: "item"
+				}
+			]
+			subtitle: "Finally, some proper ore processing."
+			tasks: [
+				{
+					id: "4BE2BDD47398E395"
+					item: "tconstruct:seared_melter"
+					type: "item"
+				}
+				{
+					id: "246D113CC51BAF4C"
+					item: "tconstruct:seared_heater"
+					type: "item"
+				}
+			]
+			title: "Let's heat things up."
+			x: 0.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"6BC94859A06B4DEF"
+				"1BB250A9EC4719DD"
+			]
+			description: ["An easier way to shape metal"]
+			id: "7AD37F839DAB1F70"
+			tasks: [{
+				id: "74B9C5B2AD4116DB"
+				item: "tconstruct:ingot_cast"
+				type: "item"
+			}]
+			title: "Casts!"
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6F2E66C8CD8478F8"]
+			id: "120B40536E00838B"
+			subtitle: "Cream gravy"
+			tasks: [{
+				count: 24L
+				id: "4C20F80ACAD4118A"
+				item: "tconstruct:seared_brick"
+				type: "item"
+			}]
+			title: "Seared Bricks"
+			x: 0.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["7AD37F839DAB1F70"]
+			icon: "tconstruct:gear_cast"
+			id: "1362028D4997AB31"
+			tasks: [
+				{
+					id: "408DB33849509A7D"
+					item: "tconstruct:rod_cast"
+					type: "item"
+				}
+				{
+					id: "46790737FD75A0D2"
+					item: "tconstruct:gear_cast"
+					type: "item"
+				}
+				{
+					id: "5B0905C57816EBEC"
+					item: "tconstruct:plate_cast"
+					type: "item"
+				}
+			]
+			title: "Useful Casts"
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5E9800F6A11C389A"]
+			id: "4355442EB09D60B3"
+			subtitle: "Without tools of iron, you must rely on flesh and indefatigable purpose."
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "tconstruct:pickaxe"
+					tag: {
+						Damage: 0
+						tic_broken: 0b
+						tic_materials: [
+							"tconstruct:iron"
+							"tconstruct:wood"
+							"tconstruct:iron"
+						]
+						tic_modifiers: [
+							{
+								level: 2
+								name: "tconstruct:magnetic"
+							}
+							{
+								level: 1
+								name: "tconstruct:cultivated"
+							}
+							{
+								level: 1
+								name: "tconstruct:pierce"
+							}
+						]
+						tic_persistent: { }
+						tic_stats: {
+							"tconstruct:attack_damage": 3.0f
+							"tconstruct:attack_speed": 1.2f
+							"tconstruct:durability": 250.0f
+							"tconstruct:harvest_tier": "minecraft:iron"
+							"tconstruct:mining_speed": 6.0f
+						}
+						tic_volatile_data: {
+							abilities: 1
+							upgrades: 3
+						}
+					}
+				}
+				id: "37E424FDCB3BF63B"
+				item: {
+					Count: 1b
+					id: "tconstruct:pickaxe"
+					tag: {
+						Damage: 0
+						tic_broken: 0b
+					}
+				}
+				title: "Pick with and iron head"
+				type: "item"
+			}]
+			title: "Iron Tools"
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7AD37F839DAB1F70"]
+			description: ["In order to make higher tier tools and armor. You'll have to cast the metals down into it's respective parts first."]
+			icon: "tconstruct:pick_head_cast"
+			id: "5E9800F6A11C389A"
+			tasks: [
+				{
+					id: "02F64816E9A59F36"
+					item: "tconstruct:pick_head_cast"
+					type: "item"
+				}
+				{
+					id: "043B2E6B4FF7174D"
+					item: "tconstruct:tool_handle_cast"
+					type: "item"
+				}
+				{
+					id: "6BBF007481F325B2"
+					item: "tconstruct:tool_binding_cast"
+					type: "item"
+				}
+			]
+			title: "Tool Casts"
+			x: 2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["44F9942A8D88B0F6"]
+			description: ["Max speed is now &c128 RPM"]
+			icon: "create:large_cogwheel_tier_1"
+			id: "699A03A6863E343F"
+			subtitle: "Spin Fast!"
+			tasks: [
+				{
+					id: "2F035C655721DF6B"
+					item: "create:large_cogwheel_tier_1"
+					type: "item"
+				}
+				{
+					id: "18AE0D83C65B0DF9"
+					item: "create:cogwheel_tier_1"
+					type: "item"
+				}
+				{
+					id: "1F886D8B9C2E2F3E"
+					item: "create:shaft_tier_1"
+					type: "item"
+				}
+			]
+			title: "Better Kinetics"
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4355442EB09D60B3"]
+			id: "405F7359964F1C27"
+			subtitle: "Is unbreakable"
+			tasks: [{
+				count: 3L
+				id: "6F1ED86EA72C7B24"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			title: "Diamond"
+			x: 4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7AD37F839DAB1F70"]
+			dependency_requirement: "one_completed"
+			description: [
+				"With your new foundry you will be able to melt some of the softer metals down for basic alloying, this being copper and tin. Bronze will be used in making our first rocket."
+				""
+				"&8Hint for filtering the output:"
+				"&8The basin will output it's crafted contents to a basin diagonally downwards. Check the ponder for more details."
+			]
+			id: "28368E7EC377D967"
+			tasks: [{
+				id: "66857644F4A8A271"
+				item: "thermal:bronze_ingot"
+				type: "item"
+			}]
+			title: "Bronze"
+			x: -2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7AD37F839DAB1F70"]
+			description: ["Rebuilding the same contraption might get tiresome after a while. So stock up on some gunpowder from sifting and start blasting your blocks into place."]
+			icon: "create:schematicannon"
+			id: "47BBA765C3724920"
+			rewards: [
+				{
+					id: "4B110A56BF65DAEF"
+					item: "create:schematic_and_quill"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "4F3DC03FC62F2BF9"
+					item: "minecraft:gunpowder"
+					type: "item"
+				}
+				{
+					id: "2BBAF4BD1B0AAB26"
+					item: "create:clipboard"
+					type: "item"
+				}
+			]
+			subtitle: "Module factories"
+			tasks: [
+				{
+					id: "7CF04AB23965DCEB"
+					item: "create:schematicannon"
+					type: "item"
+				}
+				{
+					id: "26383398D0AB6CCB"
+					item: "create:schematic_table"
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["405F7359964F1C27"]
+			description: [
+				"Wait a minute that's not..."
+				""
+				"As it turns out diamond tools are actually quite brittle, but excellent for cutting! The mechanical drill will be enough to mine some tougher materials such as obsidian."
+				""
+				"&8Note: While you can still find diamond tools, they are worthless."
+			]
+			hide_details_until_startable: true
+			icon: {
+				Count: 1b
+				id: "minecraft:diamond_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "728BA33403D2C935"
+			tasks: [{
+				id: "4167C62B2215BDC9"
+				item: "create:mechanical_drill"
+				type: "item"
+			}]
+			title: "Okay now for diamond tools!"
+			x: 4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["728BA33403D2C935"]
+			description: ["Note: You have to progress through the other side first to get the spout."]
+			id: "13DBCD18714DD5EE"
+			subtitle: "You need a lot of this..."
+			tasks: [{
+				id: "41777217265FD012"
+				item: "create:sturdy_sheet"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7AD37F839DAB1F70"]
+			description: ["I'm talking about a lot of farming here."]
+			icon: "create:mechanical_harvester"
+			id: "3E14839F7843E424"
+			subtitle: "Expand your farm with contraptions."
+			tasks: [
+				{
+					id: "52534B550C0388FE"
+					item: "create:mechanical_harvester"
+					type: "item"
+				}
+				{
+					id: "6E2BA0583869325D"
+					item: "create:sticky_mechanical_piston"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "2C40C1253D4799C6"
+					item: "create:linear_chassis"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "0BE98C071C9EB88E"
+					item: "create:piston_extension_pole"
+					type: "item"
+				}
+			]
+			title: "Happy farming."
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3E14839F7843E424"]
+			id: "0EDB3BA69991D086"
+			subtitle: "An amalgamation of carbon based life forms."
+			tasks: [{
+				id: "7D3A19A4F5979BFB"
+				item: "createaddition:biomass"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6ACC432A49E04484"]
+			icon: {
+				Count: 1b
+				id: "ad_astra:space_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5223A45B8090BF5A"
+			subtitle: "Oxygen not included."
+			tasks: [
+				{
+					id: "387BCC715ABF6E05"
+					item: {
+						Count: 1b
+						id: "ad_astra:space_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7CFA8408D75CBD67"
+					item: {
+						Count: 1b
+						id: "ad_astra:space_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1BC28F34ED11053E"
+					item: {
+						Count: 1b
+						id: "ad_astra:space_suit"
+						tag: {
+							BotariumData: { }
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "032EDBC17C5A83B1"
+					item: {
+						Count: 1b
+						id: "ad_astra:space_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Space immunity"
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4D09C8F85B86CC07"]
+			description: ["Heh, this chapter looks like a rocket."]
+			id: "4529442A7FEDBB89"
+			shape: "diamond"
+			size: 2.0d
+			subtitle: "SPACE!!! (Unlocks Chapter 3)"
+			tasks: [{
+				dimension: "ad_astra:moon"
+				icon: "ad_astra:moon_globe"
+				id: "58C6164B9A85F807"
+				type: "dimension"
+			}]
+			title: "The one place that hasn't been corrupted by Capitalism"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0EDB3BA69991D086"]
+			description: ["Rememeber to keep an extra supply, sucks to get stranded on the moon."]
+			id: "4A599D0FCF1CE768"
+			subtitle: "Somehow enough to propel you into space."
+			tasks: [{
+				amount: 1000L
+				fluid: "createaddition:bioethanol"
+				icon: "createaddition:bioethanol_bucket"
+				id: "05583A4BED6B9D5F"
+				type: "fluid"
+			}]
+			title: "Biofuel"
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["704D57788DF9907A"]
+			description: [
+				"Ponder the Electrolyzer to see how to assmble the multiblock."
+				""
+				"Then provide it with water and rotation to start generating oxygen and hydrogen."
+				""
+				"Though do be careful, the machine can only spin at a maximum of 64 RPM."
+			]
+			id: "25EAA96827B3AB14"
+			subtitle: "The void often leaves you breathless"
+			tasks: [{
+				amount: 1000L
+				fluid: "mekanism:oxygen"
+				icon: "mekanism:oxygen_bucket"
+				id: "7717F90CD3426E17"
+				type: "fluid"
+			}]
+			title: "Remember to Breathe"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4BCF9E2F8454F4B7"]
+			icon: "grand_expanse:electrolyzer"
+			id: "704D57788DF9907A"
+			subtitle: "Very slow, but gets the job done."
+			tasks: [
+				{
+					count: 8L
+					id: "0E2218254A91F0AD"
+					item: "grand_expanse:copper_coil_block"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "552B4F3E567EF0AC"
+					item: "create:copper_casing"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "7A18A487F864CB53"
+					item: "create:fluid_tank"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "09EEA1DC20447223"
+					item: "create:shaft_tier_0"
+					type: "item"
+				}
+				{
+					id: "1A609942E1540E69"
+					item: "grand_expanse:electrolyzer"
+					type: "item"
+				}
+			]
+			title: "Electrolyzer Multi-block"
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["25EAA96827B3AB14"]
+			id: "3477C566745A644F"
+			size: 0.5d
+			subtitle: "You don't need it yet."
+			tasks: [{
+				id: "2DFE467A476BC01C"
+				item: "trashcans:liquid_trash_can"
+				type: "item"
+			}]
+			title: "Oh you get hydrogen too..."
+			x: -1.5d
+			y: 2.25d
+		}
+		{
+			dependencies: ["13DBCD18714DD5EE"]
+			id: "1F7C0CD4DD589298"
+			tasks: [{
+				id: "68E8A55C1A9DC817"
+				item: "ad_astra:launch_pad"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["44F9942A8D88B0F6"]
+			id: "4BCF9E2F8454F4B7"
+			subtitle: "Your substitute for low tier electronics."
+			tasks: [{
+				id: "04CA1DE9038259C2"
+				item: "create:electron_tube"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5A9D0B301A3FA5AF"]
+			icon: {
+				Count: 1b
+				id: "create:copper_diving_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6ACC432A49E04484"
+			subtitle: "It's kinda like a space suit..."
+			tasks: [
+				{
+					id: "4D02722977D26113"
+					item: {
+						Count: 1b
+						id: "create:copper_diving_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "79BB7542B76C315F"
+					item: {
+						Count: 1b
+						id: "create:copper_diving_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0BE2118E29D16AD9"
+					item: {
+						Count: 1b
+						id: "create:copper_backtank"
+						tag: {
+							Air: 900
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Diving Gear"
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7AD37F839DAB1F70"]
+			description: [
+				"You can also use them as oxygen buffers while in oxygen-less areas."
+				""
+				"Simply drink the oxygen."
+			]
+			id: "5A9D0B301A3FA5AF"
+			tasks: [{
+				id: "2EC3A93D2F7934B0"
+				item: {
+					Count: 1b
+					id: "ad_astra:oxygen_tank"
+					tag: {
+						BotariumData: { }
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["45AA7670ACBF33D0"]
+			description: [
+				"Just remember you can't filter fluids yet..."
+				"But there's ways around it."
+			]
+			icon: "create:mechanical_pump"
+			id: "6F2E66C8CD8478F8"
+			subtitle: "Mechanically, of course."
+			tasks: [
+				{
+					count: 8L
+					id: "241FE9D6D9A15A24"
+					item: "create:fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "7AEC570B901966D8"
+					item: "create:mechanical_pump"
+					type: "item"
+				}
+			]
+			title: "Dealing with fluids"
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["28368E7EC377D967"]
+			id: "1FD2770B54C90D8C"
+			subtitle: "Sequenced Assembly Time."
+			tasks: [{
+				id: "5B026C83C3094817"
+				item: "create:deployer"
+				type: "item"
+			}]
+			title: "Deployment"
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1FD2770B54C90D8C"]
+			id: "44F9942A8D88B0F6"
+			subtitle: "Next gen rotational technology."
+			tasks: [{
+				id: "10F9DDAFDAD2FD84"
+				item: "create:copper_casing"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["405F7359964F1C27"]
+			id: "639696DF4CE4ABA2"
+			subtitle: "Photons kill mobs before they even spawn isn't that crazy?"
+			tasks: [{
+				id: "062229CBC670ABCA"
+				item: "torchmaster:megatorch"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["44F9942A8D88B0F6"]
+			description: ["Flopper"]
+			id: "0AD197ED379B3F54"
+			rewards: [{
+				id: "03921EEA499BF1C9"
+				item: "flopper:flopper"
+				type: "item"
+			}]
+			subtitle: "Flopper"
+			tasks: [{
+				id: "71D3913D067522D8"
+				item: "flopper:flopper"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["405F7359964F1C27"]
+			description: ["Right click to empty your inventory into your drawer network"]
+			id: "6E263201004F7ED6"
+			tasks: [{
+				id: "3C93E8E96FCC6C4F"
+				item: "storagedrawers:controller"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["728BA33403D2C935"]
+			id: "3F4DA74763F1B076"
+			rewards: [{
+				auto: "invisible"
+				id: "37146E24D847779E"
+				ignore_reward_blocking: true
+				stage: "Fumo Side-Quest"
+				type: "gamestage"
+			}]
+			size: 0.2d
+			tasks: [{
+				id: "243DB26DFD7C491B"
+				item: "grand_expanse:fumo_base"
+				type: "item"
+			}]
+			title: "What on earth?.."
+			x: 4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6F2E66C8CD8478F8"]
+			id: "4E6A77941E700787"
+			subtitle: "You know... For casting things."
+			tasks: [{
+				count: 14L
+				id: "75F5F14FB7275A77"
+				item: "createdeco:cast_iron_ingot"
+				type: "item"
+			}]
+			title: "Cast Iron"
+			x: -0.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["4E6A77941E700787"]
+			icon: "tconstruct:seared_table"
+			id: "1BB250A9EC4719DD"
+			subtitle: "Cast into Ingots, Blocks, and More"
+			tasks: [
+				{
+					id: "5D25369330BEAF9B"
+					item: "tconstruct:seared_table"
+					type: "item"
+				}
+				{
+					id: "214DA138E9DAC831"
+					item: "tconstruct:seared_basin"
+					type: "item"
+				}
+			]
+			title: "Casting"
+			x: -0.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["15208F67387D40DE"]
+			description: ["Allows you to mine in a 3x3 area so long as the block's corisponding tool matches."]
+			icon: {
+				Count: 1b
+				id: "tconstruct:sledge_hammer"
+				tag: {
+					Damage: 0
+					tic_broken: 0b
+				}
+			}
+			id: "29BAF09DCC7274B1"
+			subtitle: "3 by 3"
+			tasks: [
+				{
+					id: "7B149055112E1637"
+					item: {
+						Count: 1b
+						id: "tconstruct:sledge_hammer"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					title: "Any Hammer"
+					type: "item"
+				}
+				{
+					id: "523D4664A63E99EE"
+					item: {
+						Count: 1b
+						id: "tconstruct:excavator"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					title: "Any Excavator"
+					type: "item"
+				}
+			]
+			title: "Power Tools"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7AD37F839DAB1F70"]
+			description: ["Allows you to access more powerful tools."]
+			id: "15208F67387D40DE"
+			subtitle: "Powerful"
+			tasks: [{
+				id: "7581CE18B98C8A6D"
+				item: "tconstruct:tinkers_anvil"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+	]
+	title: "Chapter 2: The Forge"
+}
