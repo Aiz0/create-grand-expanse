@@ -508,21 +508,94 @@ ServerEvents.recipes((event) => {
     event
         .replaceInput({id: "ae2:network/blocks/energy_energy_cell"}, 
             Item.of("ae2:quartz_glass"), Item.of("createaddition:capacitor"));
+
+    const iron_to_silver = [
+        "ae2:material/basiccard",
+        "ae2:materials/advancedcard",
+        "ae2:network/blocks/interfaces_interface",
+        "ae2:network/crafting/cpu_crafting_unit",
+    ];
+    
+    iron_to_silver.forEach(recipe => {
+        event
+            .replaceInput({ id: recipe },
+                Item.of("minecraft:iron_ingot"), "#forge:ingots/silver");
+    });
+    
+    const redstone_to_silicon = [
+        "ae2:material/basiccard",
+        "ae2:materials/advancedcard",
+    ]
+    
+    redstone_to_silicon.forEach(recipe => {
+        event
+            .replaceInput({ id: recipe },
+                Item.of("minecraft:redstone"), "#forge:ingots/silicon");
+    });
     
     event
-        .replaceInput({ id: "ae2:materials/basiccard" },
-            Item.of("minecraft:iron_ingot"), "#forge:ingots/silver");    
-    event
-        .replaceInput({ id: "ae2:materials/advancedcard" },
-            Item.of("minecraft:iron_ingot"), "#forge:ingots/silver");
-    event
-        .replaceInput({ id: "ae2:materials/basiccard" },
-            Item.of("minecraft:redstone"), "#forge:ingots/silicon");
-    event
-        .replaceInput({ id: "ae2:materials/advancedcard" },
-            Item.of("minecraft:redstone"), "#forge:ingots/silicon");
-    
-    event
-        .replaceInput({ id: "ae2:network/parts/terminals_crafting"},
+        .replaceInput({ id: "ae2:network/parts/terminals_crafting" },
             "minecraft:crafting_table", "#ae2:quartz_wrench")
+    
+    event
+        .replaceInput({ id: "ae2:network/blocks/interfaces_interface" },
+            "#forge:glass", "#forge:rods/invar")
+    
+    event
+        .shaped("ae2:export_bus", ["SFS", "BIC"], {
+            S: "#forge:plates/silver",
+            F: "ae2:formation_core",
+            B: "#forge:rods/bronze",
+            I: "#forge:ingots/silicon",
+            C: "#forge:rods/constantan",
+        })
+        .id("ae2:network/parts/export_bus");    
+    
+    event
+        .shaped("ae2:import_bus", ["SFS", "BIC"], {
+            S: "#forge:plates/silver",
+            F: "ae2:formation_core",
+            B: "#forge:gears/bronze",
+            I: "#forge:ingots/silicon",
+            C: "#forge:gears/constantan",
+        })
+        .id("ae2:network/parts/import_bus");    
+    
+    event
+        .shaped("ae2:storage_bus", ["BDC", "RIG"], {
+            B: "#forge:gears/bronze",
+            D: "#ae2:interface",
+            C: "#forge:gears/constantan",
+            R: "#forge:rods/bronze",
+            I: "#forge:ingots/silicon",
+            G: "#forge:rods/constantan",
+        })
+        .id("ae2:network/parts/storage_bus");    
+    
+    event
+        .shaped("ae2:blank_pattern", ["SQS", "GCG", "SES"], {
+            S: "#forge:plates/silver",
+            Q: "ae2:quartz_glass",
+            G: "minecraft:glowstone_dust",
+            C: "ae2:certus_quartz_crystal",
+            E: "#forge:ingots/invar",
+        })
+        .id("ae2:network/crafting/patterns_blank");
+    
+    event
+        .replaceInput({ id: "ae2:network/crafting/molecular_assembler" },
+            "minecraft:crafting_table", "#forge:gears/lunium_nova");
+    event
+        .replaceInput({ id: "ae2:network/crafting/molecular_assembler" },
+            "#forge:ingots/iron", "#forge:rods/invar");
+    
+    event
+        .shaped("ae2:pattern_provider", ["SPS", "AEF", "SPS"], {
+            S: "#forge:ingots/silver",
+            P: "#forge:plates/electrum",
+            A: "ae2:annihilation_core",
+            E: "#forge:gears/invar",
+            F: "ae2:formation_core",
+        })
+        .id("ae2:network/blocks/pattern_providers_interface");
 });
