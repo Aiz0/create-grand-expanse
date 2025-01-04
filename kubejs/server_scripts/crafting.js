@@ -464,10 +464,6 @@ ServerEvents.recipes((event) => {
         }).id("ae2:charger/meteorite_compass")
     
     event
-        .replaceInput({id: "ae2:network/blocks/crystal_processing_quartz_growth_accelerator"}, 
-            "#forge:ingots/iron", "#forge:ingots/silver");
-    
-    event
         .shaped("ae2:energy_acceptor", ["TIT", "CAC", "TIT"], {
             T: "#forge:plates/tin",
             I: "#forge:plates/iron",
@@ -509,29 +505,25 @@ ServerEvents.recipes((event) => {
         .replaceInput({id: "ae2:network/blocks/energy_energy_cell"}, 
             Item.of("ae2:quartz_glass"), Item.of("createaddition:capacitor"));
 
-    const iron_to_silver = [
-        "ae2:materials/basiccard",
-        "ae2:materials/advancedcard",
-        "ae2:network/blocks/interfaces_interface",
-        "ae2:network/crafting/cpu_crafting_unit",
-    ];
-    
-    iron_to_silver.forEach(recipe => {
-        event
-            .replaceInput({ id: recipe },
-                Item.of("minecraft:iron_ingot"), "#forge:ingots/silver");
-    });
-    
-    const redstone_to_silicon = [
-        "ae2:material/basiccard",
-        "ae2:materials/advancedcard",
-    ]
-    
-    redstone_to_silicon.forEach(recipe => {
-        event
-            .replaceInput({ id: recipe },
-                Item.of("minecraft:redstone"), "#forge:ingots/silicon");
-    });
+    event.replaceInput(
+        [
+            { id: "ae2:materials/basiccard" },
+            { id: "ae2:materials/advancedcard" },
+            { id: "ae2:network/blocks/interfaces_interface" },
+            { id: "ae2:network/crafting/cpu_crafting_unit" },
+            { id: "ae2:network/blocks/crystal_processing_quartz_growth_accelerator" },
+        ],
+        Item.of("minecraft:iron_ingot"),
+        "#forge:ingots/silicon"
+    );
+
+    event.replaceInput(
+        [
+            { id: "ae2:materials/basiccard" },
+            { id: "ae2:materials/advancedcard" },
+        ],
+        Item.of("minecraft:redstone"),
+        "#forge:ingots/silicon");
     
     event
         .replaceInput({ id: "ae2:network/parts/terminals_crafting" },
