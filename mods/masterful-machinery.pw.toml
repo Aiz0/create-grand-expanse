@@ -1,0 +1,13 @@
+name = "Masterful Machinery"
+filename = "MasterfulMachinery-3-1.20.1-0.1.15.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/CIQfBdpM/versions/OMzppSUe/MasterfulMachinery-3-1.20.1-0.1.15.jar"
+hash-format = "sha512"
+hash = "4fdfb9e9786e02eabd2bf766544394853b85baac7289a29f0696dde083901cd42ce3d385e432231e424d534886a7b9c5289f6225a9183ce229c2f6d06dc82137"
+
+[update]
+[update.modrinth]
+mod-id = "CIQfBdpM"
+version = "OMzppSUe"
