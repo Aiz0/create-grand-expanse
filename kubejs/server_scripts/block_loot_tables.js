@@ -12,4 +12,11 @@
                 "minecraft:fortune"
             )
         );
+
+    event
+        .addLootTableModifier(
+            /^minecraft:chests\/.*|terralith:underground\/chest/
+        )
+        .removeLoot(ItemFilter.TOOLS)
+        .removeLoot(IetmFilter.WEAPON);
 });

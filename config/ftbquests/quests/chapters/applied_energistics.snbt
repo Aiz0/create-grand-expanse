@@ -1,0 +1,744 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "applied_energistics"
+	group: "264C0F7A4C9E2F2A"
+	hide_quest_details_until_startable: true
+	hide_quest_until_deps_visible: true
+	icon: "ae2:controller"
+	id: "51FA2D510E6D333B"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"2BD469631144C355"
+				"7D629E7EA4091095"
+			]
+			description: ["You need energy to flow through it first."]
+			id: "4C329058A032799B"
+			tasks: [{
+				id: "52DEBFEA8B063242"
+				item: "ae2:controller"
+				type: "item"
+			}]
+			title: "All systems not quite online."
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4C329058A032799B"]
+			description: ["Allow the system consume your entire energy grid."]
+			id: "3676556C1B4D8FBD"
+			tasks: [{
+				id: "71211ADAD69708D2"
+				item: "ae2:energy_acceptor"
+				type: "item"
+			}]
+			title: "Energy Hatch"
+			x: 3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1F50932AD735B70A"]
+			description: [
+				"It's a good idea to have a buffer..."
+				"Your items may become inaccessable otherwise."
+			]
+			id: "47EF9107D88FC9F2"
+			tasks: [{
+				id: "3B2D29E1638C02B3"
+				item: {
+					Count: 1b
+					id: "ae2:energy_cell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Buffer Cell"
+			x: 2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["2AEF37983170E622"]
+			description: [
+				"Seems like the energy is trapped between the shimmer and crystal..."
+				""
+				"Maybe it's possible to harness this trapped energy."
+			]
+			id: "2BD469631144C355"
+			tasks: [{
+				id: "1554F552E5242E55"
+				item: "ae2:fluix_crystal"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4969E07B50198BA6"]
+			description: ["The crystal seems to be drawn to something, almost like a compass."]
+			id: "30A0F22CFE2B5663"
+			tasks: [{
+				id: "45BFEE9760F668EB"
+				item: "ae2:meteorite_compass"
+				type: "item"
+			}]
+			title: "Meteorite Scanning"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["52830CB28E6C300E"]
+			description: [
+				"The lake consists of 3 materials..."
+				""
+				"A stone: Otherworldly and light but hard to break."
+				"A crystal: Resembles quartz but with unmatched purity."
+				"A liquid: It shimmers when I approach it."
+			]
+			icon: "ae2:certus_quartz_crystal"
+			id: "320954BFDA58774A"
+			tasks: [
+				{
+					id: "3823E41EEE18E43C"
+					item: "ae2:certus_quartz_crystal"
+					type: "item"
+				}
+				{
+					amount: 1000L
+					fluid: "grand_expanse:fluix_shimmer"
+					id: "074C01B20EF9125A"
+					type: "fluid"
+				}
+				{
+					id: "35D58621EC13D48B"
+					item: "ae2:sky_stone_block"
+					type: "item"
+				}
+			]
+			title: "The shimmering lake"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["30A0F22CFE2B5663"]
+			description: ["Looks like it's in the shape of a strange circuit board."]
+			id: "43267F3E16B6CE9F"
+			tasks: [{
+				id: "0CC443A866004832"
+				item: "ae2:silicon_press"
+				type: "item"
+			}]
+			title: "Strange Molds"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["43267F3E16B6CE9F"]
+			id: "2B16F2A56A756CAD"
+			tasks: [{
+				id: "1112EF547742C6E8"
+				item: "ae2:calculation_processor_press"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["43267F3E16B6CE9F"]
+			id: "2566118A896A2944"
+			tasks: [{
+				id: "0334678C3116AB3F"
+				item: "ae2:logic_processor_press"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["43267F3E16B6CE9F"]
+			id: "27AC176711B38E85"
+			tasks: [{
+				id: "4472CFD64B876040"
+				item: "ae2:engineering_processor_press"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["320954BFDA58774A"]
+			description: [
+				"The quartz is so dense that it almost appears infinite..."
+				"Useful, yes, but it also makes it completely immovable."
+			]
+			icon: "ae2:flawless_budding_quartz"
+			id: "4969E07B50198BA6"
+			tasks: [
+				{
+					icon: "ae2:flawless_budding_quartz"
+					id: "3E9AF0EDE35E62AD"
+					observe_type: 0
+					timer: 0L
+					title: "Look at the flawless quartz"
+					to_observe: "ae2:flawless_budding_quartz"
+					type: "observation"
+				}
+				{
+					id: "07AD82C7CC89A44C"
+					title: "Understood"
+					type: "checkmark"
+				}
+			]
+			title: "Infinite Crystal"
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2566118A896A2944"]
+			description: ["Processes atomic structures."]
+			id: "13D999504F624CCE"
+			tasks: [{
+				id: "363C068782FE7E80"
+				item: "ae2:logic_processor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2B16F2A56A756CAD"]
+			description: ["Counts atomic structures."]
+			id: "26A8267B0A04F5EB"
+			tasks: [{
+				id: "6674DFA69CCD705D"
+				item: "ae2:calculation_processor"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["27AC176711B38E85"]
+			description: ["Manipulates atomic structures."]
+			id: "7D629E7EA4091095"
+			tasks: [{
+				id: "1C740D77192548CB"
+				item: "ae2:engineering_processor"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["320954BFDA58774A"]
+			description: [
+				"They retain their energy on the surface of the crystal... "
+				""
+				"Quite facinating."
+			]
+			id: "2AEF37983170E622"
+			tasks: [{
+				id: "1AC51AF157DE5BFE"
+				item: "ae2:charged_certus_quartz_crystal"
+				type: "item"
+			}]
+			title: "Charged Crystals"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"13D999504F624CCE"
+				"1F50932AD735B70A"
+			]
+			id: "74AE8ED3E7F29494"
+			tasks: [
+				{
+					id: "65424BF7D031D80B"
+					item: "ae2:formation_core"
+					type: "item"
+				}
+				{
+					id: "32D221C29B5D5E47"
+					item: "ae2:annihilation_core"
+					type: "item"
+				}
+			]
+			title: "Atomic manipulation cores"
+			x: 1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4C329058A032799B"]
+			description: ["Amazingly, the energy is preserved even in this state."]
+			id: "1F50932AD735B70A"
+			tasks: [{
+				id: "50C52A28A84B5EDA"
+				item: "ae2:fluix_dust"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2BD469631144C355"]
+			description: ["The energy trapped within these crystals is able to link with other crystals and tranfer fundimental energy."]
+			id: "457A04C00285BCB3"
+			tasks: [{
+				count: 12L
+				id: "59244869B3026FC1"
+				item: "ae2:fluix_glass_cable"
+				type: "item"
+			}]
+			title: "The network flows"
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["26A8267B0A04F5EB"]
+			description: ["This allows you to read the network and emit redstone singals based on the threshhold of a given item. Useful for turning off automation when you have enough of something."]
+			id: "750960BC8F5B6976"
+			tasks: [{
+				id: "1897EF9DA5921E71"
+				item: "ae2:level_emitter"
+				type: "item"
+			}]
+			title: "Level Emitter"
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["74AE8ED3E7F29494"]
+			description: ["Through this you can access the network's contents and pull out items from other containers."]
+			id: "7051E766B251FBB0"
+			tasks: [{
+				id: "589C83E789AB6064"
+				item: "ae2:terminal"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["457A04C00285BCB3"]
+			description: [
+				"There is a limit to how many connections each network can handle."
+				""
+				"These smaller cables can handle 8 opperations at a time."
+				"But larger cables can handle up to 32, of course at the price of being more expensive to create."
+				""
+				"Each side of the ME Controller is capable of emitting up to 32 channels at a time, use them wisely."
+			]
+			icon: "ae2:fluix_pearl"
+			id: "08D0DD2294D591DB"
+			shape: "gear"
+			tasks: [{
+				id: "7BBE694FF7DB99B8"
+				title: "A limit"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["08D0DD2294D591DB"]
+			id: "4BE3DADC91285A58"
+			tasks: [{
+				id: "401656AC1F009680"
+				item: "ae2:fluix_covered_cable"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["08D0DD2294D591DB"]
+			id: "6118493DB083AC67"
+			tasks: [{
+				id: "5436A01C12B0C9F1"
+				item: "ae2:fluix_covered_dense_cable"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6118493DB083AC67"]
+			description: ["Can also display how many channels are active."]
+			id: "2E31E461EBE52B42"
+			tasks: [{
+				id: "090696B914BDD756"
+				item: "ae2:fluix_smart_dense_cable"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4BE3DADC91285A58"]
+			description: ["Can also display how many channels are active."]
+			id: "41F72A2F21B2CEA5"
+			tasks: [{
+				id: "4126C24F702F6DB9"
+				item: "ae2:fluix_smart_cable"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7051E766B251FBB0"
+				"26A8267B0A04F5EB"
+			]
+			description: ["May as well upgrade it to include crafting."]
+			id: "612E80F1EA1E684C"
+			tasks: [{
+				id: "65A0CBBAEC941119"
+				item: "ae2:crafting_terminal"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["7051E766B251FBB0"]
+			description: ["The interface is very powerful. It allows you to create smaller subnetworks that branch from this as a root."]
+			id: "298BC3F9816A7C73"
+			tasks: [{
+				id: "718D3B39E1892B68"
+				item: "ae2:interface"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["298BC3F9816A7C73"]
+			description: ["Transfers items into the network."]
+			id: "33A604A76340B6E2"
+			tasks: [{
+				id: "3D3052C08D0ECC0D"
+				item: "ae2:import_bus"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["298BC3F9816A7C73"]
+			description: ["Transfers items out of the network."]
+			id: "2C0FE5E5AFCF2EE7"
+			tasks: [{
+				id: "579C2D93713213F7"
+				item: "ae2:export_bus"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["13D999504F624CCE"]
+			description: [
+				"Normally you'd be able to gain access to complex storage systems by now... "
+				""
+				"But somethings is missing. You need something that can retain the atomic state of the matter that flows through the network. Unfortunetly this does not appear to be within our grasp."
+				""
+				"For now you'll have to make due with standard storage methods along side storage busses."
+			]
+			icon: "mmt:adamanite_ingot"
+			id: "7590B16C8C903D64"
+			rewards: [
+				{
+					count: 8
+					id: "0043591C2937891A"
+					item: "create:item_vault"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "3A6C0274501F7E9A"
+					item: "create:fluid_tank"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [{
+				id: "5A8A69F375835D80"
+				title: "Somethings missing..."
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"13D999504F624CCE"
+				"298BC3F9816A7C73"
+			]
+			description: ["Allows the network to access existing storage methods and transfer them throughout the network."]
+			id: "60A56DAA6D2518D5"
+			tasks: [{
+				id: "4587526A7E3D6A76"
+				item: "ae2:storage_bus"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7857EBCF97173B2F"]
+			description: ["Encode the things that we build with our hands and tools."]
+			id: "3345EEC42B23C650"
+			tasks: [{
+				id: "7B22FBAD2A74CAE5"
+				item: "ae2:pattern_encoding_terminal"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["612E80F1EA1E684C"]
+			description: ["Can encode instructions of where to place things."]
+			id: "7857EBCF97173B2F"
+			tasks: [{
+				id: "60B88B96E3A3BC5F"
+				item: "ae2:blank_pattern"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["38AECB7049759F92"]
+			id: "5FF6EB46F6F048D2"
+			tasks: [{
+				id: "6086BCC7B8177E5A"
+				item: "ae2:molecular_assembler"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["38AECB7049759F92"]
+			id: "0BC5358094CDF31A"
+			tasks: [{
+				id: "790773C396D2987A"
+				item: "ae2:pattern_provider"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["3345EEC42B23C650"]
+			description: [
+				"The heart of autocrafting. The bigger the crafting storage the more complex crafts it can perform."
+				""
+				"Or the item limit, to put it in simpler terms."
+			]
+			id: "38AECB7049759F92"
+			tasks: [{
+				id: "7FD9FD7D91840C06"
+				item: "ae2:crafting_unit"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["38AECB7049759F92"]
+			description: [
+				"Allows multiple items to be crafting at the same time in the same crafting command."
+				""
+				"Note: If you want to have multiple crafting commands you will need more crafting units."
+			]
+			id: "6F60F450411CB1E8"
+			tasks: [{
+				id: "7FACF188F3F0B180"
+				item: "ae2:crafting_accelerator"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["750960BC8F5B6976"]
+			id: "206CA7B6A9DB0442"
+			tasks: [{
+				id: "4C0AC6D63531BECD"
+				item: "ae2:basic_card"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["750960BC8F5B6976"]
+			id: "5097EA8C97FA54D9"
+			tasks: [{
+				id: "05261613A62ACFF0"
+				item: "ae2:advanced_card"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["206CA7B6A9DB0442"]
+			description: ["Allows you to control devices using redstone signals"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "470C1D14F9E3D47C"
+			tasks: [{
+				id: "07239D28B0D1E3F7"
+				item: "ae2:redstone_card"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["206CA7B6A9DB0442"]
+			description: ["Increases the capacity of devices, allowing you to push or pull more of spesific items."]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "3D5F818BEE366AE8"
+			tasks: [{
+				id: "2F15311DD8FE9855"
+				item: "ae2:capacity_card"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["206CA7B6A9DB0442"]
+			description: ["Destroys items that exceed the limit of the device."]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "79F538AA7658454A"
+			tasks: [{
+				id: "01C835D55E56A315"
+				item: "ae2:void_card"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["206CA7B6A9DB0442"]
+			description: ["Automatically tries to craft items using the network and fill the device with said items."]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "6115F2FFC7D4DE26"
+			tasks: [{
+				id: "609D1D79EA701226"
+				item: "ae2:crafting_card"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5097EA8C97FA54D9"]
+			description: ["Allows the device to match items by durability thresholds."]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "6982A3600BAC9EDB"
+			tasks: [{
+				id: "1E0D54A100A194F5"
+				item: "ae2:fuzzy_card"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5097EA8C97FA54D9"]
+			description: ["Increases the speed of the device."]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "1AA685634D49D5E5"
+			tasks: [{
+				id: "3FE5089813629944"
+				item: "ae2:speed_card"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5097EA8C97FA54D9"]
+			description: ["Flips the filters of the device. Turning a whitelist into a blacklist."]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "4B97A46C1D5AA66A"
+			tasks: [{
+				id: "558BF9AB205C2880"
+				item: "ae2:inverter_card"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5097EA8C97FA54D9"]
+			description: ["Attempts to equalize invetories the device is connected to. Creating a more ballanced item distribution."]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "7E9BF4916D681D08"
+			tasks: [{
+				id: "658255FD3F718081"
+				item: "ae2:equal_distribution_card"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5097EA8C97FA54D9"]
+			description: ["Increases energy effeciency."]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "352BA2286792D816"
+			tasks: [{
+				id: "18D020DD44279338"
+				item: "ae2:energy_card"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4969E07B50198BA6"]
+			description: [
+				"When provided with power, the crystal growth accelerator can boost the output of the hyper dense crystal."
+				""
+				"When combined with a smart observer, you can check to see when the crystal is the correct size to mine it."
+			]
+			icon: "ae2:quartz_growth_accelerator"
+			id: "57B3FF4C205B7663"
+			tasks: [
+				{
+					id: "3965EAE570F95E10"
+					item: "ae2:quartz_growth_accelerator"
+					type: "item"
+				}
+				{
+					id: "0DAF4700C7C8F9A8"
+					item: "create:content_observer"
+					type: "item"
+				}
+			]
+			title: "Crystal Automation"
+			x: 1.0d
+			y: 1.0d
+		}
+	]
+	title: "Applied Energistics"
+}
