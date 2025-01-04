@@ -74,6 +74,14 @@ ServerEvents.recipes((event) => {
         ])
         .heated()
         .id("minecraft:compacting/cast_iron_ingot");
+    
+    event.recipes.create
+        .crushing("thermal:sulfur_dust", "thermal:sulfur");
+    event.recipes.create
+        .milling("thermal:sulfur_dust", "thermal:sulfur");
+    
+    event.recipes.create
+        .mixing("minecraft:glowstone_dust", ["thermal:sulfur_dust", "minecraft:redstone"]);
 
     // Sturdy hull
     event.recipes.create.compacting(global.items.sturdy_hull, [
@@ -224,11 +232,22 @@ ServerEvents.recipes((event) => {
             tag: "forge:ingots/bronze",
         },
         result: {
-            item: global.items.bronze_rod,
+            item: "unify:bronze_rod",
             count: 2,
         },
     });
 
+    event.custom({
+        type: "createaddition:rolling",
+        input: {
+            item: "ae2:certus_quartz_crystal",
+        },
+        result: {
+            item: "ae2:quartz_fiber",
+        },
+    })
+        .id("ae2:network/parts/quartz_fiber_part");
+    
     //Chapter 2 Sequenced Assemblies
 
     event.recipes.create
@@ -349,19 +368,23 @@ ServerEvents.recipes((event) => {
             [
                 event.recipes.create.deploying("create:electron_tube", [
                     "create:electron_tube",
-                    "#forge:plates/zinc",
+                    "#forge:plates/nickel",
                 ]),
                 event.recipes.create.deploying("create:electron_tube", [
                     "create:electron_tube",
-                    "createaddition:electrum_spool",
+                    "#forge:wires/electrum",
                 ]),
                 event.recipes.create.deploying("create:electron_tube", [
                     "create:electron_tube",
-                    "createaddition:electrum_wire",
+                    "#forge:wires/electrum",
                 ]),
                 event.recipes.create.deploying("create:electron_tube", [
                     "create:electron_tube",
-                    "createaddition:electrum_wire",
+                    "minecraft:paper",
+                ]),
+                event.recipes.create.deploying("create:electron_tube", [
+                    "create:electron_tube",
+                    "createaddition:copper_spool",
                 ]),
             ]
         )
@@ -371,7 +394,180 @@ ServerEvents.recipes((event) => {
 
     //There's 2 for some reason, so I delete the other
     event.remove({id: "createaddition:crafting/capacitor_2"});
+    
+    //Applied Energistics
+    event.recipes.create
+        .mixing(Fluid.of(global.fluids.molten_silicon, FluidAmounts.INGOT), ["ae2:certus_quartz_dust", "minecraft:sand"])
+        .heated();
+    
+    event.recipes.create
+        .sequenced_assembly(
+            [Item.of("ae2:printed_silicon")],
+            "#forge:plates/silicon",
+            [
+                event.recipes.create.cutting("ae2:printed_silicon", "ae2:printed_silicon"),
+                event.recipes.create.deploying("ae2:printed_silicon", [
+                    "ae2:printed_silicon",
+                    "ae2:silicon_press",
+                ]).keepHeldItem(),
+                event.recipes.create.pressing("ae2:printed_silicon", "ae2:printed_silicon"),
+            ]
+        )
+        .transitionalItem("mmt:silicon_plate")
+        .loops(1)
+        .id("ae2:inscriber/silicon_print");
+    
+    event.recipes.create
+        .sequenced_assembly(
+            [Item.of("ae2:printed_calculation_processor")],
+            "ae2:certus_quartz_crystal",
+            [
+                event.recipes.create.cutting("ae2:printed_calculation_processor", "ae2:printed_calculation_processor"),
+                event.recipes.create.deploying("ae2:printed_calculation_processor", [
+                    "ae2:printed_calculation_processor",
+                    "ae2:calculation_processor_press",
+                ]).keepHeldItem(),
+                event.recipes.create.pressing("ae2:printed_calculation_processor", "ae2:printed_calculation_processor"),
+            ]
+        )
+        .transitionalItem("ae2:certus_quartz_crystal")
+        .loops(1)
+        .id("ae2:inscriber/calculation_processor_print");
 
+    event.recipes.create
+        .sequenced_assembly(
+            [Item.of("ae2:printed_logic_processor")],
+            "#forge:plates/gold",
+            [
+                event.recipes.create.cutting("minecraft:gold_ingot", "minecraft:gold_ingot"),
+                event.recipes.create.deploying("minecraft:gold_ingot", [
+                    "minecraft:gold_ingot",
+                    "ae2:logic_processor_press",
+                ]).keepHeldItem(),
+                event.recipes.create.pressing("minecraft:gold_ingot", "minecraft:gold_ingot"),
+            ]
+        )
+        .transitionalItem("minecraft:gold_ingot")
+        .loops(1)
+        .id("ae2:inscriber/logic_processor_print");
+    
+    event.recipes.create
+        .sequenced_assembly(
+            [Item.of("ae2:printed_engineering_processor")],
+            "#forge:gems/diamond",
+            [
+                event.recipes.create.cutting("minecraft:diamond", "minecraft:diamond"),
+                event.recipes.create.deploying("minecraft:diamond", [
+                    "minecraft:diamond",
+                    "ae2:engineering_processor_press",
+                ]).keepHeldItem(),
+                event.recipes.create.pressing("minecraft:diamond", "minecraft:diamond"),
+            ]
+        )
+        .transitionalItem("minecraft:diamond")
+        .loops(1)
+        .id("ae2:inscriber/engineering_processor_print");
+    
+    event.recipes.create
+        .sequenced_assembly(
+            [Item.of("ae2:calculation_processor")],
+            "ae2:printed_silicon",
+            [
+                event.recipes.create.deploying("ae2:printed_calculation_processor", [
+                    "ae2:printed_calculation_processor",
+                    "ae2:printed_calculation_processor",
+                ]),                event.recipes.create.deploying("ae2:printed_calculation_processor", [
+                    "ae2:printed_calculation_processor",
+                    "minecraft:redstone",
+                ]),
+                event.recipes.create.pressing("ae2:printed_calculation_processor", "ae2:printed_calculation_processor"),
+            ]
+        )
+        .transitionalItem("printed_calculation_processor")
+        .loops(1)
+        .id("ae2:inscriber/calculation_processor");    
+    
+    event.recipes.create
+        .sequenced_assembly(
+            [Item.of("ae2:logic_processor")],
+            "ae2:printed_silicon",
+            [
+                event.recipes.create.deploying("ae2:printed_logic_processor", [
+                    "ae2:printed_logic_processor",
+                    "ae2:printed_logic_processor",
+                ]),                event.recipes.create.deploying("ae2:printed_logic_processor", [
+                    "ae2:printed_logic_processor",
+                    "minecraft:redstone",
+                ]),
+                event.recipes.create.pressing("ae2:printed_logic_processor", "ae2:printed_logic_processor"),
+            ]
+        )
+        .transitionalItem("printed_logic_processor")
+        .loops(1)
+        .id("ae2:inscriber/logic_processor");    
+    
+    event.recipes.create
+        .sequenced_assembly(
+            [Item.of("ae2:engineering_processor")],
+            "ae2:printed_silicon",
+            [
+                event.recipes.create.deploying("ae2:printed_engineering_processor", [
+                    "ae2:printed_engineering_processor",
+                    "ae2:printed_engineering_processor",
+                ]),                event.recipes.create.deploying("ae2:printed_engineering_processor", [
+                    "ae2:printed_engineering_processor",
+                    "minecraft:redstone",
+                ]),
+                event.recipes.create.pressing("ae2:printed_engineering_processor", "ae2:printed_engineering_processor"),
+            ]
+        )
+        .transitionalItem("printed_engineering_processor")
+        .loops(1)
+        .id("ae2:inscriber/engineering_processor");
+    
+    event.recipes.create
+        .sequenced_assembly(
+            [Item.of("ae2:fluix_glass_cable", 4)],
+            "ae2:quartz_fiber",
+            [
+                event.recipes.create.deploying("ae2:quartz_fiber", [
+                    "ae2:quartz_fiber",
+                    "ae2:quartz_glass"]),
+                event.recipes.create.filling("ae2:quartz_fiber", [
+                    "ae2:quartz_fiber",
+                    Fluid.of(global.fluids.fluix_shimmer, FluidAmounts.INGOT)]),
+                event.recipes.create.deploying("ae2:quartz_fiber", [
+                    "ae2:quartz_fiber",
+                    "ae2:fluix_crystal"]),
+            ]
+        )
+        .transitionalItem("ae2:quartz_fiber")
+        .loops(1)
+        .id("ae2:network/cables/glass_fluix");
+    
+    
+
+    event.recipes.create.mechanical_crafting(
+        "ae2:controller",
+        [
+            // prettier-ignore
+            " FGF ",
+            "FSQSF",
+            "GELCG",
+            "FSQSF",
+            " FGF ",
+        ],
+        {
+            F: "ae2:fluix_dust",
+            G: "#forge:glass",
+            Q: "ae2:certus_quartz_crystal",
+            S: "ae2:smooth_sky_stone_block",
+            E: "ae2:engineering_processor",
+            C: "ae2:calculation_processor",
+            L: "mmt:lunium_nova_ingot",
+        })
+        .id("ae2:network/blocks/controller");
+    
     //Biofuel
     event.replaceInput(
         {id: "createaddition:mixing/bioethanol"},

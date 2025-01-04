@@ -13,6 +13,7 @@ StartupEvents.registry("fluid", (event) => {
 
     event.create(global.fluids.andesite_mixture).thinTexture(0x808582);
     event.create(global.fluids.molten_lunium_nova).thickTexture(0x8affd8);
+    event.create(global.fluids.molten_silicon).thinTexture(0x6d7275);
     event.create(global.fluids.cryo_solution).thinTexture(0xbae6fd);
   
     // Molten stuff

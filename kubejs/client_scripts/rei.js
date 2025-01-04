@@ -49,4 +49,8 @@ REIEvents.hide("item", (event) => {
 
     event.hide(Ingredient.of(/^fumo:.*icon/).itemIds);
     event.hide("fumo:fumoitem");
+    event.hide("ae2:silicon");
+    event.hide("mmt:silicon_gear");
+    event.hide("mmt:silicon_rod");
+    event.hide("mmt:silicon_wire");
 });

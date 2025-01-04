@@ -5,7 +5,6 @@ global.items = {
     andesite_compound: null,
     rocket_hull: null,
     incomplete_electron_tube: null,
-    bronze_rod: null,
     copper_coil_block: null,
     electrolyzer: null,
     sturdy_hull: null,
@@ -26,6 +25,7 @@ global.fluids = {
     molten_cast_iron: null,
     fluix_shimmer: null,
     molten_lunium_nova: null,
+    molten_silicon : null,
     cryo_solution: null,
 };
 // define names from keys
