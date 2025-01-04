@@ -76,7 +76,9 @@ ServerEvents.recipes((event) => {
         .id("minecraft:compacting/cast_iron_ingot");
     
     event.recipes.create
-        .pressing("thermal:sulfur_dust", "thermal:sulfur");
+        .crushing("thermal:sulfur_dust", "thermal:sulfur");
+    event.recipes.create
+        .milling("thermal:sulfur_dust", "thermal:sulfur");
     
     event.recipes.create
         .mixing("minecraft:glowstone_dust", ["thermal:sulfur_dust", "minecraft:redstone"]);
