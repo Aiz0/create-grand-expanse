@@ -510,7 +510,7 @@ ServerEvents.recipes((event) => {
             Item.of("ae2:quartz_glass"), Item.of("createaddition:capacitor"));
 
     const iron_to_silver = [
-        "ae2:material/basiccard",
+        "ae2:materials/basiccard",
         "ae2:materials/advancedcard",
         "ae2:network/blocks/interfaces_interface",
         "ae2:network/crafting/cpu_crafting_unit",
