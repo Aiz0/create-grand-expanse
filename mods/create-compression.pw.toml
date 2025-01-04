@@ -1,13 +1,13 @@
 name = "Create Compression"
-filename = "CreateCompression-1.19.2-1.8.1.jar"
+filename = "CreateCompression-1.20.1-1.8.1.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/bgEPzFnZ/versions/HMzH7Ebs/CreateCompression-1.19.2-1.8.1.jar"
-hash-format = "sha1"
-hash = "4c412760d2ac0b10a277caa2d972b653f6497250"
+url = "https://cdn.modrinth.com/data/bgEPzFnZ/versions/VUAvbDY8/CreateCompression-1.20.1-1.8.1.jar"
+hash-format = "sha512"
+hash = "6cd1f1963af02f9d412cdf1c6c1abe2dbdbbea632208ea78bd9e62bf4b119e616058deaafb5579107a5267c6ba2eba69b4677089ee5cf32618f089b4148ae6da"
 
 [update]
 [update.modrinth]
 mod-id = "bgEPzFnZ"
-version = "HMzH7Ebs"
+version = "VUAvbDY8"

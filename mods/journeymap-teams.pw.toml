@@ -1,13 +1,13 @@
 name = "JourneyMap Teams"
-filename = "JourneyMap-Teams-forge-1.19.2-1.0.2.jar"
+filename = "JourneyMap-Teams-forge-1.20.1-1.1.0.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/EV5wjtvP/versions/xl4bszuY/JourneyMap-Teams-forge-1.19.2-1.0.2.jar"
-hash-format = "sha1"
-hash = "183c1d18a86214b0758e1210c5dc0cab2b798488"
+url = "https://cdn.modrinth.com/data/EV5wjtvP/versions/2wlmcdKq/JourneyMap-Teams-forge-1.20.1-1.1.0.jar"
+hash-format = "sha512"
+hash = "d678a3c63bdf7dfb91238e9e5c61ce27cd3234dd14146e547b7ba9fc406f91b9b0eed6e1267a67930ba126320e5170203835a243658b6b311d5b5c147c09e574"
 
 [update]
 [update.modrinth]
 mod-id = "EV5wjtvP"
-version = "xl4bszuY"
+version = "2wlmcdKq"

@@ -1,13 +1,13 @@
 name = "Create Heat JS"
-filename = "CreateHeatJS-1.19.2-0.0.1.jar"
+filename = "CreateHeatJS-1.20.1-0.0.1.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/KNph12WD/versions/ichGMY7E/CreateHeatJS-1.19.2-0.0.1.jar"
-hash-format = "sha1"
-hash = "17f177782583895709530e134f667ed3ce154bee"
+url = "https://cdn.modrinth.com/data/KNph12WD/versions/70J59rVJ/CreateHeatJS-1.20.1-0.0.1.jar"
+hash-format = "sha512"
+hash = "6bb379f112e0f3d4b196d4857873e9251b24eac35985b2389ab84a234213aebc3717960d6e3ee72ea325c603956f79ee48caac83cfc8bc6d74ca7218007a2292"
 
 [update]
 [update.modrinth]
 mod-id = "KNph12WD"
-version = "ichGMY7E"
+version = "70J59rVJ"

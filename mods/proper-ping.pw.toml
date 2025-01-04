@@ -1,13 +1,13 @@
 name = "Proper Ping"
-filename = "proper_ping-1.19.2-1.0.1.jar"
+filename = "proper_ping-1.20.1-1.0.0.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/1SvzcA6G/versions/XJ6crTbQ/proper_ping-1.19.2-1.0.1.jar"
-hash-format = "sha1"
-hash = "4c7dffdb01d20e706ba6b3bb08468e09946d71a6"
+url = "https://cdn.modrinth.com/data/1SvzcA6G/versions/j4ny4OP7/proper_ping-1.20.1-1.0.0.jar"
+hash-format = "sha512"
+hash = "af5321d9f7b3e7aa3ffd9180fe00e396781ac4f2ae95508bcedcde6b3ae4c2a7e376a98c02b930521956f600de40c8ba3ddda229057ce4831986bb41c1fd544e"
 
 [update]
 [update.modrinth]
 mod-id = "1SvzcA6G"
-version = "XJ6crTbQ"
+version = "j4ny4OP7"

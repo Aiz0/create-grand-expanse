@@ -1,13 +1,13 @@
 name = "Fumo"
-filename = "Fumo 14.0.1 1.19.2 Forge.jar"
+filename = "fumo-17.0.1 1.20.1 Forge.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/Abkqr1E0/versions/t7D24ocU/Fumo%2014.0.1%201.19.2%20Forge.jar"
-hash-format = "sha1"
-hash = "82b6410e4d32692f126a4176c3100b52a60f905e"
+url = "https://cdn.modrinth.com/data/Abkqr1E0/versions/gtroFDbm/fumo-17.0.1%201.20.1%20Forge.jar"
+hash-format = "sha512"
+hash = "258de2d12bb2d79fdbe07100b0f84259631f6806148396592439a579ec5fdad6873d91f8b7828d662e11eb058fb715fe489d712b73dd991ba906f65a63ab08df"
 
 [update]
 [update.modrinth]
 mod-id = "Abkqr1E0"
-version = "t7D24ocU"
+version = "gtroFDbm"

@@ -1,13 +1,13 @@
 name = "Flopper"
-filename = "Flopper-1.19.2-1.1.5.jar"
+filename = "Flopper-1.20.1-1.1.5.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/aTMAqQMY/versions/3j5oNzc2/Flopper-1.19.2-1.1.5.jar"
-hash-format = "sha1"
-hash = "3035ef36f816666058f28fd2722f649c3d51cc5d"
+url = "https://cdn.modrinth.com/data/aTMAqQMY/versions/Lpnooten/Flopper-1.20.1-1.1.5.jar"
+hash-format = "sha512"
+hash = "2c008853d47cbc36ba53bfd6774252e01979bf76c64fc7a34d5c2787d226adea9bc83d2cdb76be4c0ee31cc8b289b70abd07fb6ac9a1827259a473d145593b32"
 
 [update]
 [update.modrinth]
 mod-id = "aTMAqQMY"
-version = "3j5oNzc2"
+version = "Lpnooten"

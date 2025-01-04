@@ -1,13 +1,13 @@
 name = "Create: Unify"
-filename = "Create-Unify-1.19.2-1.0a.Release.jar"
+filename = "Create-Unify-1.20.1-1.0a.Release.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/fmHq5iI6/versions/5Ri7kSda/Create-Unify-1.19.2-1.0a.Release.jar"
-hash-format = "sha1"
-hash = "78986cb664269dd9aec7f76326331c52ec96dbb0"
+url = "https://cdn.modrinth.com/data/fmHq5iI6/versions/n75f2vFA/Create-Unify-1.20.1-1.0a.Release.jar"
+hash-format = "sha512"
+hash = "f2dd1941ec0f09084d95ba25a6f6c06319b3b64a2b76d6492dd304e46343b7a8b202eb5cb426fc1abdcbf411bec90b294fd481ca00d267c38f2111cc09cad351"
 
 [update]
 [update.modrinth]
 mod-id = "fmHq5iI6"
-version = "5Ri7kSda"
+version = "n75f2vFA"

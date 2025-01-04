@@ -1,13 +1,13 @@
 name = "Rainbow Lamp"
-filename = "rainbowlamp-forge-1.1-1.19.X.jar"
+filename = "rainbowlamp-forge-1.3-1.20.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/pCWLDHSQ/versions/llE1Vb74/rainbowlamp-forge-1.1-1.19.X.jar"
-hash-format = "sha1"
-hash = "0f64313117d73472e860ab484190260b637a1f86"
+url = "https://cdn.modrinth.com/data/pCWLDHSQ/versions/TC5D7IyY/rainbowlamp-forge-1.3-1.20.jar"
+hash-format = "sha512"
+hash = "a1d5d9071c3dc7f61a7cc5bc3ac74c00f31ce123c43022baa973a6e9a2b9b25b616709ae59e19a1af685b9ad26d0cc42559e88a3080793ad2f7fd07d7c8c0eae"
 
 [update]
 [update.modrinth]
 mod-id = "pCWLDHSQ"
-version = "llE1Vb74"
+version = "TC5D7IyY"
