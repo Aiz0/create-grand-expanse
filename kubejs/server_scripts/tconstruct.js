@@ -150,12 +150,11 @@ ServerEvents.recipes((event) => {
     }
 
     function mix(output, ingredients) {
-        let ingMix = [];
-        ingredients.forEach((i) => {
-            ingMix.push({ fluid: i, amount: 10 });
-        });
         event.recipes.create
-            .mixing(Fluid.of(output, FluidAmounts.NUGGET), ingMix)
+            .mixing(
+                Fluid.of(output, FluidAmounts.NUGGET),
+                ingredients.map((i) => ({ fluid: i, amount: 10 }))
+            )
             .heated();
     }
 
