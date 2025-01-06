@@ -98,7 +98,7 @@ ServerEvents.recipes((event) => {
         basin
     ) {
         event.custom({
-            type: "tconstruct:casting_" + (basin ? "basin" : "table"),
+            type: `tconstruct:casting_${basin ? "basin" : "table"}`,
             cast: { item: catalyst },
             cast_consumed: consume,
             cooling_time: cooling_ticks,
@@ -110,7 +110,7 @@ ServerEvents.recipes((event) => {
     function cast_type(fluid, amount, output, type, cooling_ticks) {
         event.custom({
             type: "tconstruct:casting_table",
-            cast: { tag: "tconstruct:casts/multi_use/" + type },
+            cast: { tag: `tconstruct:casts/multi_use/${type}` },
             cast_consumed: false,
             cooling_time: cooling_ticks,
             fluid: { amount: amount, fluid: fluid },
@@ -118,7 +118,7 @@ ServerEvents.recipes((event) => {
         });
         event.custom({
             type: "tconstruct:casting_table",
-            cast: { tag: "tconstruct:casts/single_use/" + type },
+            cast: { tag: `tconstruct:casts/single_use/${type}` },
             cast_consumed: true,
             cooling_time: cooling_ticks,
             fluid: { amount: amount, fluid: fluid },
@@ -128,7 +128,7 @@ ServerEvents.recipes((event) => {
 
     function pour(fluid, amount, output, cooling_ticks, basin) {
         event.custom({
-            type: "tconstruct:casting_" + (basin ? "basin" : "table"),
+            type: `tconstruct:casting_${basin ? "basin" : "table"}`,
             cast_consumed: false,
             cooling_time: cooling_ticks,
             fluid: { amount: amount, fluid: fluid },
@@ -171,9 +171,9 @@ ServerEvents.recipes((event) => {
         const block_melt_ticks = ingot_melt_ticks * 9;
         const nugget_cool_ticks = ingot_cool_ticks / 9;
         const block_cool_ticks = ingot_cool_ticks * 9;
-        const liquid = "grand_expanse:molten_" + material_name;
+        const liquid = `grand_expanse:molten_${material_name}`;
 
-        const raw = "mmt:raw_" + material_name;
+        const raw = `mmt:raw_${material_name}`;
         if ((exclude_types & mmt_filter.raw) !== mmt_filter.raw) {
             melt(
                 raw,
@@ -184,7 +184,7 @@ ServerEvents.recipes((event) => {
             );
         }
 
-        const dust = "mmt:" + material_name + "_dust";
+        const dust = `mmt:${material_name}_dust`;
         if ((exclude_types & mmt_filter.dust) !== mmt_filter.dust) {
             melt(
                 dust,
@@ -195,7 +195,7 @@ ServerEvents.recipes((event) => {
             );
         }
 
-        const rawBlock = "mmt:raw_" + material_name + "_block";
+        const rawBlock = `mmt:raw_${material_name}_block`;
         if ((exclude_types & mmt_filter.rawBlock) !== mmt_filter.rawBlock) {
             melt(
                 rawBlock,
@@ -206,7 +206,7 @@ ServerEvents.recipes((event) => {
             );
         }
 
-        const nugget = "mmt:" + material_name + "_nugget";
+        const nugget = `mmt:${material_name}_nugget`;
         if ((exclude_types & mmt_filter.nugget) !== mmt_filter.nugget) {
             melt(
                 nugget,
@@ -224,7 +224,7 @@ ServerEvents.recipes((event) => {
             );
         }
 
-        const ingot = "mmt:" + material_name + "_ingot";
+        const ingot = `mmt:${material_name}_ingot`;
         if ((exclude_types & mmt_filter.ingot) !== mmt_filter.ingot) {
             melt(
                 ingot,
@@ -242,7 +242,7 @@ ServerEvents.recipes((event) => {
             );
         }
 
-        const plate = "mmt:" + material_name + "_plate";
+        const plate = `mmt:${material_name}_plate`;
         if ((exclude_types & mmt_filter.plate) !== mmt_filter.plate) {
             melt(
                 plate,
@@ -260,7 +260,7 @@ ServerEvents.recipes((event) => {
             );
         }
 
-        const block = "mmt:" + material_name + "_block";
+        const block = `mmt:${material_name}_block`;
         if ((exclude_types & mmt_filter.block) !== mmt_filter.block) {
             melt(
                 block,
@@ -278,7 +278,7 @@ ServerEvents.recipes((event) => {
             );
         }
 
-        const gear = "mmt:" + material_name + "_gear";
+        const gear = `mmt:${material_name}_gear`;
         if ((exclude_types & mmt_filter.gear) !== mmt_filter.gear) {
             melt(
                 gear,
@@ -296,7 +296,7 @@ ServerEvents.recipes((event) => {
             );
         }
 
-        const rod = "mmt:" + material_name + "_rod";
+        const rod = `mmt:${material_name}_rod`;
         if ((exclude_types & mmt_filter.rod) !== mmt_filter.rod) {
             melt(
                 rod,
@@ -314,7 +314,7 @@ ServerEvents.recipes((event) => {
             );
         }
 
-        const wire = "mmt:" + material_name + "_wire";
+        const wire = `mmt:${material_name}_wire`;
         if ((exclude_types & mmt_filter.wire) !== mmt_filter.wire) {
             melt(
                 wire,
