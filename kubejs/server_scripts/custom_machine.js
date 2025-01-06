@@ -12,7 +12,7 @@ ServerEvents.recipes((event) => {
                 b: "create:copper_casing",
                 c: "grand_expanse:copper_coil_block",
                 s: "create:andesite_encased_shaft_tier_0",
-            },
+            }
         )
         .requireSU(64, 4)
         .requireFluid(Fluid.of("minecraft:water", 100))

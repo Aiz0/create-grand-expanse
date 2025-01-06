@@ -1,10 +1,15 @@
 ServerEvents.recipes((event) => {
-
     //More Materials
     addMMT("lunium_nova", 120, 60, 1200, 1);
-    addMMT("silicon", 40, 20, 600, 1,
-        mmt_filter.gear | mmt_filter.wire | mmt_filter.rod);
-    
+    addMMT(
+        "silicon",
+        40,
+        20,
+        600,
+        1,
+        mmt_filter.gear | mmt_filter.wire | mmt_filter.rod
+    );
+
     // Alloying
     // early game alloys can be mixed as well
 
@@ -153,8 +158,15 @@ ServerEvents.recipes((event) => {
             .mixing(Fluid.of(output, FluidAmounts.NUGGET), ingMix)
             .heated();
     }
-    
-    function addMMT(material_name, ingot_melt_ticks, ingot_cool_ticks, temperature, crushing_nuggets, exclude_types) {
+
+    function addMMT(
+        material_name,
+        ingot_melt_ticks,
+        ingot_cool_ticks,
+        temperature,
+        crushing_nuggets,
+        exclude_types
+    ) {
         const nugget_melt_ticks = ingot_melt_ticks / 9;
         const block_melt_ticks = ingot_melt_ticks * 9;
         const nugget_cool_ticks = ingot_cool_ticks / 9;
@@ -163,78 +175,183 @@ ServerEvents.recipes((event) => {
 
         const raw = "mmt:raw_" + material_name;
         if ((exclude_types & mmt_filter.raw) !== mmt_filter.raw) {
-            melt(raw, liquid, FluidAmounts.INGOT, ingot_melt_ticks, temperature);
+            melt(
+                raw,
+                liquid,
+                FluidAmounts.INGOT,
+                ingot_melt_ticks,
+                temperature
+            );
         }
 
         const dust = "mmt:" + material_name + "_dust";
         if ((exclude_types & mmt_filter.dust) !== mmt_filter.dust) {
-            melt(dust, liquid, FluidAmounts.INGOT, ingot_melt_ticks, temperature);
+            melt(
+                dust,
+                liquid,
+                FluidAmounts.INGOT,
+                ingot_melt_ticks,
+                temperature
+            );
         }
 
         const rawBlock = "mmt:raw_" + material_name + "_block";
         if ((exclude_types & mmt_filter.rawBlock) !== mmt_filter.rawBlock) {
-            melt(rawBlock, liquid, FluidAmounts.METAL_BLOCK, block_melt_ticks, temperature);
+            melt(
+                rawBlock,
+                liquid,
+                FluidAmounts.METAL_BLOCK,
+                block_melt_ticks,
+                temperature
+            );
         }
 
         const nugget = "mmt:" + material_name + "_nugget";
         if ((exclude_types & mmt_filter.nugget) !== mmt_filter.nugget) {
-            melt(nugget, liquid, FluidAmounts.INGOT, nugget_melt_ticks, temperature);
-            cast_type(liquid, FluidAmounts.INGOT, nugget, "nugget", nugget_cool_ticks);
+            melt(
+                nugget,
+                liquid,
+                FluidAmounts.INGOT,
+                nugget_melt_ticks,
+                temperature
+            );
+            cast_type(
+                liquid,
+                FluidAmounts.INGOT,
+                nugget,
+                "nugget",
+                nugget_cool_ticks
+            );
         }
 
         const ingot = "mmt:" + material_name + "_ingot";
         if ((exclude_types & mmt_filter.ingot) !== mmt_filter.ingot) {
-            melt(ingot, liquid, FluidAmounts.INGOT, ingot_melt_ticks, temperature);
-            cast_type(liquid, FluidAmounts.INGOT, ingot, "ingot", ingot_cool_ticks);
+            melt(
+                ingot,
+                liquid,
+                FluidAmounts.INGOT,
+                ingot_melt_ticks,
+                temperature
+            );
+            cast_type(
+                liquid,
+                FluidAmounts.INGOT,
+                ingot,
+                "ingot",
+                ingot_cool_ticks
+            );
         }
 
         const plate = "mmt:" + material_name + "_plate";
         if ((exclude_types & mmt_filter.plate) !== mmt_filter.plate) {
-            melt(plate, liquid, FluidAmounts.INGOT, ingot_melt_ticks, temperature);
-            cast_type(liquid, FluidAmounts.INGOT, plate, "plate", ingot_cool_ticks);
+            melt(
+                plate,
+                liquid,
+                FluidAmounts.INGOT,
+                ingot_melt_ticks,
+                temperature
+            );
+            cast_type(
+                liquid,
+                FluidAmounts.INGOT,
+                plate,
+                "plate",
+                ingot_cool_ticks
+            );
         }
 
         const block = "mmt:" + material_name + "_block";
         if ((exclude_types & mmt_filter.block) !== mmt_filter.block) {
-            melt(block, liquid, FluidAmounts.METAL_BLOCK, block_melt_ticks, temperature);
-            pour(liquid, FluidAmounts.METAL_BLOCK, block, block_cool_ticks, true);
+            melt(
+                block,
+                liquid,
+                FluidAmounts.METAL_BLOCK,
+                block_melt_ticks,
+                temperature
+            );
+            pour(
+                liquid,
+                FluidAmounts.METAL_BLOCK,
+                block,
+                block_cool_ticks,
+                true
+            );
         }
 
         const gear = "mmt:" + material_name + "_gear";
         if ((exclude_types & mmt_filter.gear) !== mmt_filter.gear) {
-            melt(gear, liquid, FluidAmounts.INGOT * 4, ingot_melt_ticks * 4, temperature);
-            cast_type(liquid, FluidAmounts.INGOT * 4, gear, "gear", ingot_cool_ticks * 4);
+            melt(
+                gear,
+                liquid,
+                FluidAmounts.INGOT * 4,
+                ingot_melt_ticks * 4,
+                temperature
+            );
+            cast_type(
+                liquid,
+                FluidAmounts.INGOT * 4,
+                gear,
+                "gear",
+                ingot_cool_ticks * 4
+            );
         }
 
         const rod = "mmt:" + material_name + "_rod";
         if ((exclude_types & mmt_filter.rod) !== mmt_filter.rod) {
-            melt(rod, liquid, FluidAmounts.INGOT / 2, ingot_melt_ticks / 2, temperature);
-            cast_type(liquid, FluidAmounts.INGOT / 2, rod, "rod", ingot_cool_ticks / 2);
+            melt(
+                rod,
+                liquid,
+                FluidAmounts.INGOT / 2,
+                ingot_melt_ticks / 2,
+                temperature
+            );
+            cast_type(
+                liquid,
+                FluidAmounts.INGOT / 2,
+                rod,
+                "rod",
+                ingot_cool_ticks / 2
+            );
         }
 
         const wire = "mmt:" + material_name + "_wire";
         if ((exclude_types & mmt_filter.wire) !== mmt_filter.wire) {
-            melt(wire, liquid, FluidAmounts.INGOT / 2, ingot_melt_ticks / 2, temperature);
-            cast_type(liquid, FluidAmounts.INGOT / 2, wire, "wire", ingot_cool_ticks / 2);
+            melt(
+                wire,
+                liquid,
+                FluidAmounts.INGOT / 2,
+                ingot_melt_ticks / 2,
+                temperature
+            );
+            cast_type(
+                liquid,
+                FluidAmounts.INGOT / 2,
+                wire,
+                "wire",
+                ingot_cool_ticks / 2
+            );
         }
 
         if ((exclude_types & mmt_filter.crush) !== mmt_filter.crush) {
             event.recipes.create.crushing(dust, ingot);
-            event.recipes.create.crushing([dust, Item.of(nugget, crushing_nuggets)], raw);
+            event.recipes.create.crushing(
+                [dust, Item.of(nugget, crushing_nuggets)],
+                raw
+            );
         }
     }
 });
 
 const mmt_filter = {
-    raw:        0x1,
-    dust:       0x10,
-    rawBlock:   0x100,
-    nugget:     0x1000,
-    ingot:      0x10000,
-    plate:      0x100000,
-    block:      0x1000000,
-    gear:       0x10000000,
-    rod:        0x100000000,
-    wire:       0x1000000000,
-    crush:      0x10000000000,
-}
+    raw: 0x1,
+    dust: 0x10,
+    rawBlock: 0x100,
+    nugget: 0x1000,
+    ingot: 0x10000,
+    plate: 0x100000,
+    block: 0x1000000,
+    gear: 0x10000000,
+    rod: 0x100000000,
+    wire: 0x1000000000,
+    crush: 0x10000000000,
+};

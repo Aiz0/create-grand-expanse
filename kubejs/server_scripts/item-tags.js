@@ -29,7 +29,7 @@ ServerEvents.tags("item", (event) => {
     forgeCategory(
         global.items.high_density_tungsten,
         "ingots",
-        "high_density_tungsten",
+        "high_density_tungsten"
     );
 
     // Create crushed raw materials

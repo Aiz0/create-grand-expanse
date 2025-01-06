@@ -15,10 +15,9 @@ StartupEvents.registry("fluid", (event) => {
     event.create(global.fluids.molten_lunium_nova).thickTexture(0x8affd8);
     event.create(global.fluids.molten_silicon).thinTexture(0x6d7275);
     event.create(global.fluids.cryo_solution).thinTexture(0xbae6fd);
-  
+
     // Molten stuff
     molten_metal(global.fluids.molten_cast_iron, 0x313131);
-    
 
     function molten_metal(fluid, color) {
         event

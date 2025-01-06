@@ -19,28 +19,28 @@ ServerEvents.recipes((event) => {
 
     extrude(
         "minecraft:cobblestone",
-        "createcompression:compressed_cobblestone_3x",
+        "createcompression:compressed_cobblestone_3x"
     );
     extrude(
         "createcompression:compressed_cobblestone_1x",
-        "createcompression:compressed_cobblestone_5x",
+        "createcompression:compressed_cobblestone_5x"
     );
 
     // Andesite
     extrude(
         "minecraft:andesite",
         "createcompression:compressed_andesite_2x",
-        100,
+        100
     );
     extrude(
         "minecraft:andesite",
         "createcompression:compressed_andesite_3x",
-        10,
+        10
     );
     extrude(
         "createcompression:compressed_andesite_1x",
         "createcompression:compressed_andesite_5x",
-        2,
+        2
     );
 
     // Moon stone
