@@ -31,10 +31,10 @@ Instructions are based on the [packwiz installer tutorial](https://packwiz.infra
 -   We recommend [Prism Launcher](https://prismlauncher.org/).
 
 4. Create an instance matching the minecraft and modloader version the modpack uses.
-    |Name       |Version|
-    |-----------|-------|
-    |Minecraft  |1.19.2 |
-    |Forge      | 43.3.0|
+   |Name |Version|
+   |-----------|-------|
+   |Minecraft |1.19.2 |
+   |Forge | 43.3.0|
 
 5. Download [packwiz installer bootstrap](https://github.com/packwiz/packwiz-installer-bootstrap/releases) into the instance minecraft folder.
 
@@ -47,6 +47,7 @@ Instructions are based on the [packwiz installer tutorial](https://packwiz.infra
 $INST_JAVA" -jar packwiz-installer-bootstrap.jar http://localhost:8080/pack.toml
 ```
 
+<!-- prettier-ignore -->
 > [!TIP]
 > `packwiz-installer-bootstrap.jar` will query github for the latest version of packwiz installer
 > If you see it failing often you can add `--bootstrap-no-update` as an option to `packwiz-installer-bootstrap.jar` to disable update checking.

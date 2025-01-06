@@ -9,26 +9,26 @@ ServerEvents.recipes((event) => {
             C: "#forge:rope",
             D: "minecraft:barrel",
             E: "minecraft:bundle",
-        },
+        }
     );
 
     // First upgrade when you get plates
     backpack(
         "sophisticatedbackpacks:iron_backpack",
         "sophisticatedbackpacks:backpack",
-        "#forge:plates/iron",
+        "#forge:plates/iron"
     );
     // Second upgrade when you get molten metals.
     backpack(
         "sophisticatedbackpacks:gold_backpack",
         "sophisticatedbackpacks:iron_backpack",
-        "#forge:ingots/rose_gold",
+        "#forge:ingots/rose_gold"
     );
     // Third upgrade when you get alloying/brass
     backpack(
         "sophisticatedbackpacks:diamond_backpack",
         "sophisticatedbackpacks:gold_backpack",
-        "#forge:plates/brass",
+        "#forge:plates/brass"
     );
 
     // Upgrades
@@ -47,11 +47,11 @@ ServerEvents.recipes((event) => {
             B: upgrade_base,
             F: "create:funnel",
             I: "#forge:plates/iron",
-        },
+        }
     );
     FillBrass(
         "sophisticatedbackpacks:advanced_pickup_upgrade",
-        "sophisticatedbackpacks:pickup_upgrade",
+        "sophisticatedbackpacks:pickup_upgrade"
     );
     // Filters
     event.recipes.shapeless("sophisticatedbackpacks:filter_upgrade", [
@@ -60,7 +60,7 @@ ServerEvents.recipes((event) => {
     ]);
     FillBrass(
         "sophisticatedbackpacks:advanced_filter_upgrade",
-        "sophisticatedbackpacks:filter_upgrade",
+        "sophisticatedbackpacks:filter_upgrade"
     );
     // Magnet
     event.recipes.shaped(
@@ -71,11 +71,11 @@ ServerEvents.recipes((event) => {
             C: "minecraft:compass",
             I: "#forge:plates/iron",
             R: "minecraft:redstone",
-        },
+        }
     );
     FillBrass(
         "sophisticatedbackpacks:advanced_magnet_upgrade",
-        "sophisticatedbackpacks:magnet_upgrade",
+        "sophisticatedbackpacks:magnet_upgrade"
     );
 
     event.recipes.shaped(
@@ -86,7 +86,7 @@ ServerEvents.recipes((event) => {
             C: "minecraft:compass",
             I: "#forge:plates/iron",
             R: "minecraft:redstone",
-        },
+        }
     );
 
     // Feeding
@@ -111,7 +111,7 @@ ServerEvents.recipes((event) => {
             G: "#forge:plates/gold",
             R: "minecraft:redstone",
             T: "#forge:plates/tin",
-        },
+        }
     );
     // Restock
     event.recipes.shaped(
@@ -121,11 +121,11 @@ ServerEvents.recipes((event) => {
             B: upgrade_base,
             P: "minecraft:sticky_piston",
             I: "#forge:plates/iron",
-        },
+        }
     );
     FillBrass(
         "sophisticatedbackpacks:advanced_restock_upgrade",
-        "sophisticatedbackpacks:restock_upgrade",
+        "sophisticatedbackpacks:restock_upgrade"
     );
 
     // Deposit
@@ -136,11 +136,11 @@ ServerEvents.recipes((event) => {
             B: upgrade_base,
             C: "create:chute",
             I: "#forge:plates/iron",
-        },
+        }
     );
     FillBrass(
         "sophisticatedbackpacks:advanced_deposit_upgrade",
-        "sophisticatedbackpacks:deposit_upgrade",
+        "sophisticatedbackpacks:deposit_upgrade"
     );
 
     // Refill
@@ -151,11 +151,11 @@ ServerEvents.recipes((event) => {
             B: upgrade_base,
             C: "#forge:chests",
             I: "#forge:plates/iron",
-        },
+        }
     );
     FillBrass(
         "sophisticatedbackpacks:advanced_refill_upgrade",
-        "sophisticatedbackpacks:refill_upgrade",
+        "sophisticatedbackpacks:refill_upgrade"
     );
 
     // Void
@@ -165,7 +165,7 @@ ServerEvents.recipes((event) => {
     ]);
     FillBrass(
         "sophisticatedbackpacks:advanced_void_upgrade",
-        "sophisticatedbackpacks:void_upgrade",
+        "sophisticatedbackpacks:void_upgrade"
     );
 
     // Crafting
@@ -188,7 +188,7 @@ ServerEvents.recipes((event) => {
             B: upgrade_base,
             T: "create:fluid_tank",
             P: "#forge:plates/copper",
-        },
+        }
     );
 
     function backpack(outputBackpack, inputBackpack, inputItem) {

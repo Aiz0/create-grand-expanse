@@ -39,7 +39,7 @@ StartupEvents.registry("block", (event) => {
         .defaultCutout()
         .tagBlock("mineable/pickaxe")
         .tagBlock("minecraft:needs_iron_tool");
-    
+
     event
         .create(global.items.lunium_nova_ore)
         .soundType("stone")
