@@ -1,0 +1,13 @@
+name = "Create: Northstar"
+filename = "northstar-0.1cb-1.19.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/XuHYu7cF/versions/zJVVKIIW/northstar-0.1cb-1.19.2.jar"
+hash-format = "sha1"
+hash = "54b92a0b494ad1279966047bdb60ed5c4c3759f3"
+
+[update]
+[update.modrinth]
+mod-id = "XuHYu7cF"
+version = "zJVVKIIW"
