@@ -17,6 +17,5 @@
         .addLootTableModifier(
             /^minecraft:chests\/.*|terralith:underground\/chest/
         )
-        .removeLoot(ItemFilter.TOOLS)
-        .removeLoot(IetmFilter.WEAPON);
+        .removeLoot(ItemFilter.WEAPON);
 });
