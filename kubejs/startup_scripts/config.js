@@ -90,7 +90,7 @@ global.casts = {
 function defineNames(arr) {
     const result = {};
     arr.forEach((item) => {
-        result[item] = `${packname}:${item}`;
+        result[item] = `${global.packName}:${item}`;
     });
     return result;
 }
