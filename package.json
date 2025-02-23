@@ -8,10 +8,14 @@
     "scripts": {
         "dev": "packwiz serve --port $npm_package_config_port",
         "reload": "env-cmd -- ./reload.sh",
-        "format": "prettier . --write"
+        "format": "prettier . --write",
+        "refresh": "packwiz refresh",
+        "prepare": "husky",
+        "test": "npm run refresh"
     },
     "devDependencies": {
         "env-cmd": "^10.1.0",
+        "husky": "^9.1.7",
         "prettier": "^3.5.2"
     }
 }
