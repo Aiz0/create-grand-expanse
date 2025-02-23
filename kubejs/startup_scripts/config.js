@@ -1,35 +1,39 @@
+/**
+ * @import {defineNames, packname} from "config.d.ts"
+ */
+
+/**
+ * @type packname
+ */
 global.packName = "grand_expanse";
 
 // Define items here
-global.items = {
-    andesite_compound: null,
-    rocket_hull: null,
-    incomplete_electron_tube: null,
-    copper_coil_block: null,
-    electrolyzer: null,
-    sturdy_hull: null,
-    fumo_base: null,
-    low_density_structure: null,
-    smoldering_core: null,
-    lunium_nova_ore: null,
-    compressed_cryo_solution: null,
-    cryo_crystal: null,
-    charged_cryo_crystal: null,
-};
-defineNames(global.items);
+global.items = defineNames([
+    "andesite_compound",
+    "rocket_hull",
+    "incomplete_electron_tube",
+    "copper_coil_block",
+    "electrolyzer",
+    "sturdy_hull",
+    "fumo_base",
+    "low_density_structure",
+    "smoldering_core",
+    "lunium_nova_ore",
+    "compressed_cryo_solution",
+    "cryo_crystal",
+    "charged_cryo_crystal",
+]);
 
 // Define fluids here
 // Fluids beginning with molten will hava the lava tag.
-global.fluids = {
-    andesite_mixture: null,
-    molten_cast_iron: null,
-    fluix_shimmer: null,
-    molten_lunium_nova: null,
-    molten_silicon: null,
-    cryo_solution: null,
-};
-// define names from keys
-defineNames(global.fluids);
+global.fluids = defineNames([
+    "andesite_mixture",
+    "molten_cast_iron",
+    "fluix_shimmer",
+    "molten_lunium_nova",
+    "molten_silicon",
+    "cryo_solution",
+]);
 
 global.config = {
     // Default amount of bonks to get generate a block
@@ -83,8 +87,10 @@ global.casts = {
     wire: "wire",
 };
 
-function defineNames(object) {
-    Object.keys(object).forEach((key) => {
-        object[key] = `${global.packName}:${key}`;
+function defineNames(arr) {
+    const result = {};
+    arr.forEach((item) => {
+        result[item] = `${global.packName}:${item}`;
     });
+    return result;
 }
