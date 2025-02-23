@@ -28,7 +28,7 @@ Instructions are based on the [packwiz installer tutorial](https://packwiz.infra
 
 3. To install the modpack you need to to use a launcher that supports running prelaunch tasks.[^tasknote]
 
--   We recommend [Prism Launcher](https://prismlauncher.org/).
+- We recommend [Prism Launcher](https://prismlauncher.org/).
 
 4. Create an instance matching the minecraft and modloader version the modpack uses.
    |Name |Version|
@@ -68,5 +68,7 @@ To prevent merge conflicts we have enabled the [packwiz option](https://packwiz.
 > Because of this please make sure to run `packwiz refresh` before adding files to commit.
 
 [^installnote]: We haven't published this modpack anywhere yet so this is currently the only way to install it.
+
 [^tasknote]: Pre launch tasks are not really required but it simplifys things.
+
 [^portnote]: This should default to http://localhost:8080/pack.toml. The same url we entered in the pre-launch command field.
