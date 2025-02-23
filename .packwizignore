@@ -5,10 +5,14 @@
 /README.asc
 # Exclude everthing begining with a dot because it should only be editor stuff.
 /.*
+#exclude node stuff
+package.json
+package-lock.json
+node_modules
+reload.sh
 # probe stuff should not be necessary.
 /kubejs/probe
-# Aiz reload script
-/reload.sh
+
 # Star's scripts
 kubejs/.idea
 refresh.bat

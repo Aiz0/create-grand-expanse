@@ -1,0 +1,16 @@
+{
+    "name": "create-grand-expanse",
+    "version": "0.0.1",
+    "private": true,
+    "config": {
+        "port": 8080
+    },
+    "scripts": {
+        "dev": "packwiz serve --port $npm_package_config_port",
+        "reload": "env-cmd -- ./reload.sh"
+    },
+    "devDependencies": {
+        "env-cmd": "^10.1.0",
+        "prettier": "^3.5.2"
+    }
+}
