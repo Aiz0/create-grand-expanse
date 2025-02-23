@@ -7,7 +7,8 @@
     },
     "scripts": {
         "dev": "packwiz serve --port $npm_package_config_port",
-        "reload": "env-cmd -- ./reload.sh"
+        "reload": "env-cmd -- ./reload.sh",
+        "format": "prettier . --write"
     },
     "devDependencies": {
         "env-cmd": "^10.1.0",
