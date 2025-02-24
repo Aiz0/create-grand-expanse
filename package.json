@@ -1,0 +1,25 @@
+{
+    "name": "create-grand-expanse",
+    "version": "0.0.1",
+    "private": true,
+    "type": "module",
+    "config": {
+        "port": 8080
+    },
+    "scripts": {
+        "dev": "packwiz serve --port $npm_package_config_port",
+        "reload": "env-cmd -- ./reload.sh",
+        "postreload": "npm run refresh",
+        "format": "prettier . --write",
+        "refresh": "packwiz refresh",
+        "prepare": "husky",
+        "check-hash": "node test.js",
+        "test": "npm run check-hash"
+    },
+    "devDependencies": {
+        "env-cmd": "^10.1.0",
+        "husky": "^9.1.7",
+        "prettier": "^3.5.2",
+        "toml": "^3.0.0"
+    }
+}
